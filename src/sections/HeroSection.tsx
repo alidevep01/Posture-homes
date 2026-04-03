@@ -103,6 +103,24 @@ function HeroSection() {
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,10,18,0.14)_0%,rgba(6,10,18,0.04)_22%,rgba(6,10,18,0.06)_100%)]" />
 
       <div className="relative mx-auto flex min-h-[calc(100svh-81px)] max-w-7xl flex-col justify-between px-6 py-10 sm:py-12 lg:py-14">
+        <button
+          type="button"
+          onClick={goToPrevious}
+          aria-label="Previous hero slide"
+          className="absolute left-2 top-1/2 z-20 inline-flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/16 bg-slate-950/44 text-white backdrop-blur-md transition duration-300 hover:bg-white/14 sm:left-4 lg:left-2"
+        >
+          <ChevronLeft className="h-5 w-5" />
+        </button>
+
+        <button
+          type="button"
+          onClick={goToNext}
+          aria-label="Next hero slide"
+          className="absolute right-2 top-1/2 z-20 inline-flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/16 bg-slate-950/44 text-white backdrop-blur-md transition duration-300 hover:bg-white/14 sm:right-4 lg:right-2"
+        >
+          <ChevronRight className="h-5 w-5" />
+        </button>
+
         <AnimatePresence mode="wait">
           <motion.div
             key={currentSlide.title}
@@ -125,26 +143,7 @@ function HeroSection() {
           </motion.div>
         </AnimatePresence>
 
-        <div className="mt-auto flex flex-col items-end gap-4 self-end">
-          <div className="flex items-center gap-2">
-            <button
-              type="button"
-              onClick={goToPrevious}
-              aria-label="Previous hero slide"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/16 bg-slate-950/44 text-white backdrop-blur-md transition duration-300 hover:bg-white/14"
-            >
-              <ChevronLeft className="h-5 w-5" />
-            </button>
-            <button
-              type="button"
-              onClick={goToNext}
-              aria-label="Next hero slide"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/16 bg-slate-950/44 text-white backdrop-blur-md transition duration-300 hover:bg-white/14"
-            >
-              <ChevronRight className="h-5 w-5" />
-            </button>
-          </div>
-
+        <div className="mt-auto flex flex-col items-center gap-4 self-center">
           <div className="flex items-center justify-center gap-2">
             {heroSlides.map((slide, index) => (
               <button
