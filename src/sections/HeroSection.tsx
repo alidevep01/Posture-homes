@@ -1,97 +1,170 @@
-import { motion } from 'framer-motion'
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+const heroSlides = [
+  {
+    image: "/home-furniture-hero.jpg",
+    title: "Premium Home Furniture",
+    buttonLabel: "Explore Home Furniture",
+  },
+  {
+    image: "/office-furniture.jpg",
+    title: "Premium Office Furniture for Modern Workspaces",
+    buttonLabel: "Explore Office Furniture",
+  },
+  {
+    image: "/custom-furniture.jpg",
+    title: "Custom Furniture Built Around Your Vision",
+    buttonLabel: "Explore Custom Furniture",
+  },
+] as const;
+
+const buttonGlowVariants = {
+  rest: { x: "-140%", opacity: 0 },
+  hover: { x: "140%", opacity: 1 },
+};
+
+type HeroButtonProps = {
+  href: string;
+  label: string;
+  primary?: boolean;
+};
+
+function HeroButton({ href, label, primary = false }: HeroButtonProps) {
+  return (
+    <motion.a
+      href={href}
+      initial="rest"
+      whileHover="hover"
+      whileTap={{ scale: 0.99 }}
+      transition={{ duration: 0.22, ease: "easeOut" }}
+      className={`group relative inline-flex overflow-hidden rounded-full border px-6 py-3 text-sm font-medium transition duration-300 ${
+        primary
+          ? "border-white/20 bg-white text-slate-950 shadow-[0_16px_50px_-24px_rgba(255,255,255,0.8)]"
+          : "border-white/20 bg-white/8 text-white backdrop-blur-md"
+      }`}
+    >
+      <motion.span
+        variants={buttonGlowVariants}
+        transition={{ duration: 0.55, ease: "easeOut" }}
+        className={`absolute inset-y-0 left-0 w-20 -skew-x-12 blur-xl ${
+          primary ? "bg-amber-300/70" : "bg-white/40"
+        }`}
+      />
+      <motion.span
+        whileHover={{ y: -1 }}
+        className="relative z-10 inline-flex items-center gap-2"
+      >
+        {label}
+      </motion.span>
+    </motion.a>
+  );
+}
 
 function HeroSection() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = window.setInterval(() => {
+      setActiveIndex((current) => (current + 1) % heroSlides.length);
+    }, 5000);
+
+    return () => window.clearInterval(intervalId);
+  }, []);
+
+  const currentSlide = heroSlides[activeIndex];
+
+  const goToSlide = (index: number) => setActiveIndex(index);
+  const goToPrevious = () =>
+    setActiveIndex(
+      (current) => (current - 1 + heroSlides.length) % heroSlides.length,
+    );
+  const goToNext = () =>
+    setActiveIndex((current) => (current + 1) % heroSlides.length);
+
   return (
     <section
       id="home"
-      className="border-b border-slate-200 bg-[linear-gradient(180deg,#ffffff_0%,#f8f6f1_100%)]"
+      className="relative overflow-hidden border-b border-slate-900 bg-[linear-gradient(180deg,#0b111b_0%,#111827_100%)]"
     >
-      <div className="mx-auto grid max-w-6xl gap-14 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-24">
+      <AnimatePresence mode="wait">
         <motion.div
-          initial={{ opacity: 0, x: -32 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.65, ease: 'easeOut' }}
-        >
-          <p className="text-sm font-medium uppercase tracking-[0.24em] text-slate-500">
-            Global sourcing for premium spaces
-          </p>
-          <h1 className="mt-5 max-w-3xl text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-            Premium Furniture Sourcing from China
-          </h1>
-          <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
-            We help you source high-quality office and home furniture at
-            factory prices.
-          </p>
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <motion.a
-              href="#contact"
-              whileHover={{ y: -2, scale: 1.01 }}
-              whileTap={{ scale: 0.99 }}
-              transition={{ duration: 0.2, ease: 'easeOut' }}
-              className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-medium text-white transition duration-300 hover:bg-slate-700"
-            >
-              Get Free Consultation
-            </motion.a>
-            <motion.a
-              href="#products"
-              whileHover={{ y: -2, scale: 1.01 }}
-              whileTap={{ scale: 0.99 }}
-              transition={{ duration: 0.2, ease: 'easeOut' }}
-              className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-900 transition duration-300 hover:border-slate-900"
-            >
-              Explore Products
-            </motion.a>
-          </div>
-        </motion.div>
+          key={currentSlide.image}
+          aria-hidden="true"
+          initial={{ opacity: 0, scale: 1.03 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 1.01 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${currentSlide.image})` }}
+        />
+      </AnimatePresence>
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,10,18,0.14)_0%,rgba(6,10,18,0.04)_22%,rgba(6,10,18,0.06)_100%)]" />
 
-        <motion.div
-          initial={{ opacity: 0, x: 32 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.65, delay: 0.12, ease: 'easeOut' }}
-          className="relative"
-        >
-          <div className="absolute -left-4 -top-4 h-28 w-28 rounded-full bg-stone-200/70 blur-2xl" />
-          <div className="absolute -bottom-8 -right-4 h-32 w-32 rounded-full bg-amber-100/70 blur-2xl" />
-          <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-5 shadow-[0_24px_60px_-30px_rgba(15,23,42,0.35)]">
-            <div
-              role="img"
-              aria-label="Furniture sourcing visual placeholder"
-              className="aspect-[4/5] rounded-[1.5rem] bg-[linear-gradient(160deg,#d6c7b2_0%,#f7f2ea_45%,#efe7da_100%)] p-6"
-            >
-              <div className="flex h-full flex-col justify-between rounded-[1.25rem] border border-white/60 bg-white/40 p-6 backdrop-blur-sm">
-                <div>
-                  <p className="text-xs font-medium uppercase tracking-[0.24em] text-slate-500">
-                    Image Placeholder
-                  </p>
-                  <h2 className="mt-4 max-w-xs text-2xl font-semibold tracking-tight text-slate-900">
-                    Curated collections for office and home projects.
-                  </h2>
-                </div>
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="rounded-2xl bg-white/70 p-4">
-                    <p className="text-xs uppercase tracking-[0.18em] text-slate-500">
-                      Home
-                    </p>
-                    <p className="mt-2 text-sm font-medium text-slate-900">
-                      Sofas, beds, dining
-                    </p>
-                  </div>
-                  <div className="rounded-2xl bg-white/70 p-4">
-                    <p className="text-xs uppercase tracking-[0.18em] text-slate-500">
-                      Office
-                    </p>
-                    <p className="mt-2 text-sm font-medium text-slate-900">
-                      Desks, chairs, storage
-                    </p>
-                  </div>
-                </div>
-              </div>
+      <div className="relative mx-auto flex min-h-[calc(100svh-81px)] max-w-7xl flex-col justify-between px-6 py-10 sm:py-12 lg:py-14">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentSlide.title}
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -18 }}
+            transition={{ duration: 0.42, ease: "easeOut" }}
+            className="mx-auto mt-8 flex max-w-5xl flex-col items-center text-center text-white"
+          >
+            <h1 className="max-w-5xl text-[2rem] font-semibold leading-tight tracking-tight text-white sm:text-[3rem] lg:text-[4rem]">
+              {currentSlide.title}
+            </h1>
+            <div className="mt-6">
+              <HeroButton
+                href="#products"
+                label={currentSlide.buttonLabel}
+                primary
+              />
             </div>
+          </motion.div>
+        </AnimatePresence>
+
+        <div className="mt-auto flex flex-col items-end gap-4 self-end">
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={goToPrevious}
+              aria-label="Previous hero slide"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/16 bg-slate-950/44 text-white backdrop-blur-md transition duration-300 hover:bg-white/14"
+            >
+              <ChevronLeft className="h-5 w-5" />
+            </button>
+            <button
+              type="button"
+              onClick={goToNext}
+              aria-label="Next hero slide"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/16 bg-slate-950/44 text-white backdrop-blur-md transition duration-300 hover:bg-white/14"
+            >
+              <ChevronRight className="h-5 w-5" />
+            </button>
           </div>
-        </motion.div>
+
+          <div className="flex items-center justify-center gap-2">
+            {heroSlides.map((slide, index) => (
+              <button
+                key={slide.image}
+                type="button"
+                aria-label={`Go to hero slide ${index + 1}`}
+                aria-pressed={activeIndex === index}
+                onClick={() => goToSlide(index)}
+                className={`h-2.5 rounded-full transition-all duration-300 ${
+                  activeIndex === index
+                    ? "w-10 bg-white"
+                    : "w-2.5 bg-white/32 hover:bg-white/55"
+                }`}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default HeroSection
+export default HeroSection;

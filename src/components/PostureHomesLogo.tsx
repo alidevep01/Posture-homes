@@ -1,17 +1,16 @@
-import { memo } from 'react'
+import { memo } from "react";
 
 type PostureHomesLogoProps = {
-  className?: string
-  compact?: boolean
-}
+  className?: string;
+  compact?: boolean;
+};
 
 function PostureHomesLogo({
-  className = '',
+  className = "",
   compact = false,
 }: PostureHomesLogoProps) {
-  const markSize = compact ? 'h-9 w-9' : 'h-12 w-12'
-  const wordmarkSize = compact ? 'text-[1.65rem]' : 'text-[2.2rem]'
-  const submarkSize = compact ? 'text-[0.6rem]' : 'text-[0.72rem]'
+  const markSize = compact ? "h-9 w-9" : "h-12 w-12";
+  const wordmarkSize = compact ? "text-[1.65rem]" : "text-[2.2rem]";
 
   return (
     <div className={`inline-flex items-center gap-3 ${className}`}>
@@ -47,15 +46,9 @@ function PostureHomesLogo({
         >
           POSTURE
         </span>
-        <span
-          className={`mt-2 pl-[0.24em] ${submarkSize} tracking-[0.5em] text-slate-700`}
-          style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 500 }}
-        >
-          HOMES
-        </span>
       </div>
     </div>
-  )
+  );
 }
 
-export default memo(PostureHomesLogo)
+export default memo(PostureHomesLogo);
