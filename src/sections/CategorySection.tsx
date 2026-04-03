@@ -1,62 +1,79 @@
+import { motion } from 'framer-motion'
+import SectionReveal from '../components/SectionReveal'
+
 const categories = [
   {
-    title: 'Living Room',
-    type: 'Relaxed essentials',
+    title: 'Office Furniture',
     description:
-      'Explore sofas, accent chairs, coffee tables, and storage for your main gathering space.',
+      'Desks, seating, storage, and meeting essentials for efficient workspaces.',
+    palette: 'from-stone-200 via-stone-100 to-white',
   },
   {
-    title: 'Bedroom',
-    type: 'Restful comfort',
+    title: 'Home Furniture',
     description:
-      'Build restful rooms with beds, side tables, wardrobes, and soft supporting pieces.',
+      'Living, dining, and bedroom collections designed for elevated everyday living.',
+    palette: 'from-amber-100 via-stone-50 to-white',
   },
   {
-    title: 'Dining',
-    type: 'Shared moments',
+    title: 'Custom Furniture',
     description:
-      'Find dining tables, chairs, and storage pieces that support everyday meals and hosting.',
-  },
-  {
-    title: 'Workspace',
-    type: 'Focused productivity',
-    description:
-      'Create functional work areas with desks, ergonomic seating, and organized storage.',
+      'Tailored sourcing for project-specific dimensions, finishes, and large-volume needs.',
+    palette: 'from-slate-200 via-slate-100 to-white',
   },
 ]
 
 function CategorySection() {
   return (
-    <section id="categories" className="border-b border-slate-200 bg-white">
+    <SectionReveal
+      id="categories"
+      className="border-b border-slate-200 bg-white"
+    >
       <div className="mx-auto max-w-6xl px-6 py-16">
         <header className="max-w-2xl">
           <h2 className="text-2xl font-semibold text-slate-900">
             Shop by category
           </h2>
           <p className="mt-3 text-slate-600">
-            Start with the room you want to refine first.
+            Choose the sourcing path that matches your project requirements.
           </p>
         </header>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {categories.map((category) => (
-            <article
+        <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {categories.map((category, index) => (
+            <motion.article
               key={category.title}
-              className="rounded-2xl border border-slate-200 p-6"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.35 }}
+              transition={{ duration: 0.45, delay: index * 0.08, ease: 'easeOut' }}
+              whileHover={{ scale: 1.02, y: -4 }}
+              className="overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-[0_24px_60px_-32px_rgba(15,23,42,0.35)]"
             >
-              <p className="text-sm font-medium uppercase tracking-[0.2em] text-slate-500">
-                {category.type}
-              </p>
-              <h3 className="mt-3 text-lg font-medium text-slate-900">
-                {category.title}
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                {category.description}
-              </p>
-            </article>
+              <div
+                role="img"
+                aria-label={`${category.title} preview placeholder`}
+                className={`aspect-[4/3] transform-gpu bg-gradient-to-br ${category.palette} p-5 transition duration-500`}
+              >
+                <div className="flex h-full items-end rounded-[1.25rem] border border-white/70 bg-white/40 p-4 backdrop-blur-sm">
+                  <div className="w-full rounded-2xl bg-white/80 p-4 shadow-sm">
+                    <p className="text-xs font-medium uppercase tracking-[0.2em] text-slate-500">
+                      Image Placeholder
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-slate-900">
+                  {category.title}
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-slate-600">
+                  {category.description}
+                </p>
+              </div>
+            </motion.article>
           ))}
         </div>
       </div>
-    </section>
+    </SectionReveal>
   )
 }
 

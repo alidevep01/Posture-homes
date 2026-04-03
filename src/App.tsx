@@ -1,10 +1,16 @@
-import Footer from './components/Footer'
+import { Suspense, lazy } from 'react'
 import Navbar from './components/Navbar'
-import CategorySection from './sections/CategorySection'
-import ContactSection from './sections/ContactSection'
 import HeroSection from './sections/HeroSection'
-import ProcessSection from './sections/ProcessSection'
-import ProductSection from './sections/ProductSection'
+
+const CategorySection = lazy(() => import('./sections/CategorySection'))
+const ProductSection = lazy(() => import('./sections/ProductSection'))
+const ProcessSection = lazy(() => import('./sections/ProcessSection'))
+const ContactSection = lazy(() => import('./sections/ContactSection'))
+const Footer = lazy(() => import('./components/Footer'))
+
+function SectionFallback() {
+  return <div className="min-h-24" aria-hidden="true" />
+}
 
 function App() {
   return (
@@ -12,12 +18,16 @@ function App() {
       <Navbar />
       <main>
         <HeroSection />
-        <CategorySection />
-        <ProductSection />
-        <ProcessSection />
-        <ContactSection />
+        <Suspense fallback={<SectionFallback />}>
+          <CategorySection />
+          <ProductSection />
+          <ProcessSection />
+          <ContactSection />
+        </Suspense>
       </main>
-      <Footer />
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
     </div>
   )
 }

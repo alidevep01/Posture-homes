@@ -1,5 +1,7 @@
+import { AnimatePresence, motion } from 'framer-motion'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import PostureHomesLogo from './PostureHomesLogo'
 import { navigationLinks } from '../utils/navigation'
 
 function Navbar() {
@@ -16,16 +18,17 @@ function Navbar() {
         <a
           href="#home"
           onClick={closeMenu}
-          className="text-lg font-semibold tracking-[0.18em] text-slate-900 uppercase"
+          aria-label="Posture Homes"
+          className="transition duration-300 hover:opacity-80"
         >
-          Posture Homes
+          <PostureHomesLogo compact />
         </a>
         <ul className="hidden items-center gap-8 md:flex">
           {navigationLinks.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm font-medium text-slate-600 transition hover:text-slate-900"
+                className="text-sm font-medium text-slate-600 transition duration-300 hover:text-slate-900"
               >
                 {link.label}
               </a>
@@ -43,23 +46,32 @@ function Navbar() {
           {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
       </nav>
-      {isOpen && (
-        <div id="mobile-menu" className="border-t border-slate-200 bg-white md:hidden">
-          <ul className="mx-auto flex max-w-6xl flex-col px-6 py-4">
-            {navigationLinks.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  onClick={closeMenu}
-                  className="block py-3 text-base font-medium text-slate-700 transition hover:text-slate-900"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <motion.div
+            id="mobile-menu"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.22, ease: 'easeOut' }}
+            className="overflow-hidden border-t border-slate-200 bg-white md:hidden"
+          >
+            <ul className="mx-auto flex max-w-6xl flex-col px-6 py-4">
+              {navigationLinks.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    onClick={closeMenu}
+                    className="block py-3 text-base font-medium text-slate-700 transition duration-300 hover:text-slate-900"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   )
 }

@@ -1,3 +1,6 @@
+import ContactForm from '../components/ContactForm'
+import SectionReveal from '../components/SectionReveal'
+
 const locations = [
   {
     name: 'Posture Homes Banjara Hills',
@@ -23,22 +26,25 @@ const locations = [
 
 function ContactSection() {
   return (
-    <section id="contact" className="bg-white">
+    <SectionReveal id="contact" className="bg-white">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <header className="max-w-2xl">
           <h2 className="text-2xl font-semibold text-slate-900">
-            Visit or call our stores
+            Contact us
           </h2>
           <p className="mt-3 text-slate-600">
-            Reach out for product guidance, delivery information, or showroom
-            visits in Hyderabad.
+            Send your sourcing requirement through the form or connect directly
+            with our Hyderabad locations.
           </p>
         </header>
+        <div className="mt-8">
+          <ContactForm />
+        </div>
         <div className="mt-8 grid gap-4 lg:grid-cols-2">
           {locations.map((location) => (
             <article
               key={location.name}
-              className="overflow-hidden rounded-2xl border border-slate-200"
+              className="overflow-hidden rounded-2xl border border-slate-200 transition duration-300 hover:shadow-[0_24px_60px_-32px_rgba(15,23,42,0.28)]"
             >
               <div className="aspect-[4/3] w-full border-b border-slate-200 bg-slate-100">
                 <iframe
@@ -73,7 +79,7 @@ function ContactSection() {
           ))}
         </div>
       </div>
-    </section>
+    </SectionReveal>
   )
 }
 
