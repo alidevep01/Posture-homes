@@ -1,6 +1,5 @@
 export const navigationLinks = [
-  { href: '#home', label: 'Home' },
-  { href: '#products', label: 'Products' },
-  { href: '#process', label: 'Process' },
-  { href: '#contact', label: 'Contact' },
+  { href: '/', label: 'Home', type: 'route' },
+  { href: '#process', label: 'Process', type: 'anchor' },
+  { href: '#contact', label: 'Contact', type: 'anchor' },
 ]
