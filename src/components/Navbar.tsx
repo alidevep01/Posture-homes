@@ -7,7 +7,7 @@ import { navigationLinks } from '../utils/navigation'
 import { productDropdownLinks } from '../utils/productCategories'
 
 const desktopNavItemClassName =
-  'rounded-full px-4 py-2 text-sm font-medium text-slate-600 transition duration-300 hover:bg-[#efe3d2] hover:text-slate-900'
+  'rounded-full px-4 py-2 text-sm font-semibold text-slate-600 transition duration-300 hover:bg-[#efe3d2] hover:text-slate-900'
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -81,7 +81,7 @@ function Navbar() {
               aria-expanded={isProductsOpen}
               whileHover={{ y: -1, scale: 1.01 }}
               onClick={() => setIsProductsOpen((open) => !open)}
-              className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-slate-600 transition duration-300 hover:bg-[#efe3d2] hover:text-slate-900"
+              className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold text-slate-600 transition duration-300 hover:bg-[#efe3d2] hover:text-slate-900"
             >
               Products
               <ChevronDown
@@ -105,7 +105,7 @@ function Navbar() {
                       key={item.href}
                       to={item.href}
                       onClick={closeMenus}
-                      className="block rounded-xl px-4 py-3 text-sm font-medium text-slate-700 transition duration-300 hover:bg-[#f4ecdf] hover:text-slate-900"
+                      className="block rounded-xl px-4 py-3 text-sm font-semibold text-slate-700 transition duration-300 hover:bg-[#f4ecdf] hover:text-slate-900"
                     >
                       {item.label}
                     </Link>
@@ -149,7 +149,7 @@ function Navbar() {
                     <Link
                       to={link.href}
                       onClick={closeMenus}
-                      className="block rounded-2xl px-4 py-3 text-base font-medium text-slate-700 transition duration-300 hover:bg-[#f4ecdf] hover:text-slate-900"
+                      className="block rounded-2xl px-4 py-3 text-base font-semibold text-slate-700 transition duration-300 hover:bg-[#f4ecdf] hover:text-slate-900"
                     >
                       {link.label}
                     </Link>
@@ -157,7 +157,7 @@ function Navbar() {
                     <a
                       href={link.href}
                       onClick={closeMenus}
-                      className="block rounded-2xl px-4 py-3 text-base font-medium text-slate-700 transition duration-300 hover:bg-[#f4ecdf] hover:text-slate-900"
+                      className="block rounded-2xl px-4 py-3 text-base font-semibold text-slate-700 transition duration-300 hover:bg-[#f4ecdf] hover:text-slate-900"
                     >
                       {link.label}
                     </a>
@@ -170,7 +170,7 @@ function Navbar() {
                   type="button"
                   aria-expanded={isProductsOpen}
                   onClick={() => setIsProductsOpen((open) => !open)}
-                  className="flex w-full items-center justify-between rounded-2xl px-4 py-3 text-base font-medium text-slate-700 transition duration-300 hover:bg-[#f4ecdf] hover:text-slate-900"
+                  className="flex w-full items-center justify-between rounded-2xl px-4 py-3 text-base font-semibold text-slate-700 transition duration-300 hover:bg-[#f4ecdf] hover:text-slate-900"
                 >
                   Products
                   <ChevronDown
@@ -195,7 +195,7 @@ function Navbar() {
                             key={item.href}
                             to={item.href}
                             onClick={closeMenus}
-                            className="block rounded-xl px-4 py-3 text-sm font-medium text-slate-600 transition duration-300 hover:bg-[#f4ecdf] hover:text-slate-900"
+                            className="block rounded-xl px-4 py-3 text-sm font-semibold text-slate-600 transition duration-300 hover:bg-[#f4ecdf] hover:text-slate-900"
                           >
                             {item.label}
                           </Link>

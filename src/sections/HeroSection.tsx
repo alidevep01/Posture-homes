@@ -39,7 +39,7 @@ function HeroButton({ href, label, primary = false }: HeroButtonProps) {
       whileHover="hover"
       whileTap={{ scale: 0.99 }}
       transition={{ duration: 0.22, ease: "easeOut" }}
-      className={`group relative inline-flex overflow-hidden rounded-full border px-6 py-3 text-sm font-medium transition duration-300 ${
+      className={`group relative inline-flex overflow-hidden rounded-full border px-6 py-3 text-sm font-semibold transition duration-300 ${
         primary
           ? "border-white/20 bg-white text-slate-950 shadow-[0_16px_50px_-24px_rgba(255,255,255,0.8)]"
           : "border-white/20 bg-white/8 text-white backdrop-blur-md"

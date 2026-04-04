@@ -183,7 +183,7 @@ function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="inline-flex min-w-40 items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:bg-slate-400"
+          className="inline-flex min-w-40 items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:bg-slate-400"
         >
           {isSubmitting ? 'Sending...' : 'Get Quote'}
         </button>
