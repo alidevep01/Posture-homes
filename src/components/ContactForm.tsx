@@ -59,7 +59,7 @@ function ContactForm() {
   }
 
   return (
-    <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-[0_24px_60px_-36px_rgba(15,23,42,0.35)] sm:p-8">
+    <div className="rounded-[2rem] border border-stone-200 bg-[#fbf7f1] p-6 shadow-[0_24px_60px_-36px_rgba(15,23,42,0.35)] sm:p-8">
       <div className="max-w-xl">
         <p className="text-sm font-medium uppercase tracking-[0.22em] text-slate-500">
           Contact form

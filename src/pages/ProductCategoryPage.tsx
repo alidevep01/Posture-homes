@@ -47,7 +47,7 @@ function ProductCategoryPage() {
           {category.highlights.map((highlight) => (
             <article
               key={highlight.title}
-              className="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm"
+              className="rounded-[1.75rem] border border-stone-200 bg-[#fbf7f1] p-6 shadow-sm"
             >
               <div
                 role="img"
@@ -74,7 +74,7 @@ function ProductCategoryPage() {
             {category.coverage.map((item) => (
               <div
                 key={item}
-                className="rounded-2xl border border-slate-200 bg-white px-5 py-4 text-sm font-medium text-slate-700"
+                className="rounded-2xl border border-stone-200 bg-[#fbf7f1] px-5 py-4 text-sm font-medium text-slate-700"
               >
                 {item}
               </div>
@@ -89,7 +89,7 @@ function ProductCategoryPage() {
             How we deliver
           </h2>
           <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            <article className="rounded-[1.5rem] border border-slate-200 p-5">
+            <article className="rounded-[1.5rem] border border-stone-200 bg-[#fbf7f1] p-5">
               <Sofa className="h-6 w-6 text-slate-900" />
               <h3 className="mt-4 text-lg font-semibold text-slate-900">
                 Category expertise
@@ -98,7 +98,7 @@ function ProductCategoryPage() {
                 We shortlist pieces and suppliers specific to {category.label.toLowerCase()} requirements.
               </p>
             </article>
-            <article className="rounded-[1.5rem] border border-slate-200 p-5">
+            <article className="rounded-[1.5rem] border border-stone-200 bg-[#fbf7f1] p-5">
               <BadgeCheck className="h-6 w-6 text-slate-900" />
               <h3 className="mt-4 text-lg font-semibold text-slate-900">
                 Verified factories
@@ -107,7 +107,7 @@ function ProductCategoryPage() {
                 We work only with factories that match your quality and finishing expectations.
               </p>
             </article>
-            <article className="rounded-[1.5rem] border border-slate-200 p-5">
+            <article className="rounded-[1.5rem] border border-stone-200 bg-[#fbf7f1] p-5">
               <PackageCheck className="h-6 w-6 text-slate-900" />
               <h3 className="mt-4 text-lg font-semibold text-slate-900">
                 Quality checks
@@ -116,7 +116,7 @@ function ProductCategoryPage() {
                 Every order is reviewed before dispatch to reduce quality surprises.
               </p>
             </article>
-            <article className="rounded-[1.5rem] border border-slate-200 p-5">
+            <article className="rounded-[1.5rem] border border-stone-200 bg-[#fbf7f1] p-5">
               <Truck className="h-6 w-6 text-slate-900" />
               <h3 className="mt-4 text-lg font-semibold text-slate-900">
                 Delivery support

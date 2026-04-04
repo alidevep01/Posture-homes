@@ -72,16 +72,16 @@ function ProcessSection() {
                   initial={{ opacity: 0, y: 24 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.35 }}
-                transition={{
-                  duration: 0.45,
-                  delay: index * 0.08,
-                  ease: 'easeOut',
-                }}
-                whileHover={{ y: -4 }}
-                className="relative flex-1 pl-16 lg:pl-0 lg:pr-5"
-              >
-                  <div className="relative rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-[0_24px_60px_-36px_rgba(15,23,42,0.35)]">
-                    <div className="absolute left-[-2.85rem] top-6 flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-900 lg:left-6 lg:top-[-1.4rem]">
+                  transition={{
+                    duration: 0.45,
+                    delay: index * 0.08,
+                    ease: 'easeOut',
+                  }}
+                  whileHover={{ y: -4 }}
+                  className="relative flex flex-1 pl-16 lg:pl-0 lg:pr-5"
+                >
+                  <div className="relative flex h-full min-h-[22rem] w-full flex-col rounded-[1.75rem] border border-stone-200 bg-[#fbf7f1] p-6 shadow-[0_24px_60px_-36px_rgba(15,23,42,0.35)]">
+                    <div className="absolute left-[-2.85rem] top-6 flex h-11 w-11 items-center justify-center rounded-full border border-stone-200 bg-[#f6efe5] text-slate-900 lg:left-6 lg:top-[-1.4rem]">
                       <Icon className="h-5 w-5" />
                     </div>
                     <p className="text-sm font-medium uppercase tracking-[0.2em] text-slate-500">

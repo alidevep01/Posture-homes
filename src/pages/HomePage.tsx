@@ -5,6 +5,7 @@ const CategorySection = lazy(() => import('../sections/CategorySection'))
 const ProductSection = lazy(() => import('../sections/ProductSection'))
 const ProjectsSection = lazy(() => import('../sections/ProjectsSection'))
 const ProcessSection = lazy(() => import('../sections/ProcessSection'))
+const TestimonialsSection = lazy(() => import('../sections/TestimonialsSection'))
 const ContactSection = lazy(() => import('../sections/ContactSection'))
 
 function SectionFallback() {
@@ -20,6 +21,7 @@ function HomePage() {
         <ProductSection />
         <ProjectsSection />
         <ProcessSection />
+        <TestimonialsSection />
         <ContactSection />
       </Suspense>
     </main>

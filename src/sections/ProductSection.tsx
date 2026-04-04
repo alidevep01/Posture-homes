@@ -47,7 +47,7 @@ function ProductSection() {
           {products.map((product) => (
             <article
               key={product.name}
-              className="group overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-sm transition-shadow duration-300 hover:shadow-[0_24px_60px_-32px_rgba(15,23,42,0.35)]"
+              className="group overflow-hidden rounded-[1.75rem] border border-stone-200 bg-[#fbf7f1] shadow-sm transition-shadow duration-300 hover:shadow-[0_24px_60px_-32px_rgba(15,23,42,0.35)]"
             >
               <div className="overflow-hidden">
                 <div

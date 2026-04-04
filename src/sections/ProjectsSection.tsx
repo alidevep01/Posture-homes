@@ -69,7 +69,7 @@ function ProjectsSection() {
               viewport={{ once: true, amount: 0.25 }}
               transition={{ duration: 0.45, delay: index * 0.06, ease: 'easeOut' }}
               whileHover={{ y: -6 }}
-              className="group overflow-hidden rounded-[1.9rem] border border-stone-200 bg-white shadow-[0_24px_60px_-40px_rgba(15,23,42,0.25)] transition duration-300 hover:shadow-[0_30px_80px_-36px_rgba(15,23,42,0.32)]"
+              className="group overflow-hidden rounded-[1.9rem] border border-stone-200 bg-[#fbf7f1] shadow-[0_24px_60px_-40px_rgba(15,23,42,0.25)] transition duration-300 hover:shadow-[0_30px_80px_-36px_rgba(15,23,42,0.32)]"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img

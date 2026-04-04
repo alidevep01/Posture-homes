@@ -120,10 +120,10 @@ function AboutPage() {
       <SectionReveal className="border-b border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-6 py-18 sm:py-20">
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-            <div className="overflow-hidden rounded-[2rem] border border-stone-200 bg-stone-100 shadow-[0_30px_80px_-40px_rgba(15,23,42,0.22)]">
+            <div className="overflow-hidden rounded-[2rem] border border-stone-200 bg-[#fbf7f1] shadow-[0_30px_80px_-40px_rgba(15,23,42,0.22)]">
               {hasFounderImageError ? (
                 <div className="flex aspect-[4/3] flex-col items-center justify-center gap-4 bg-[radial-gradient(circle_at_top,#f3e8d7_0%,#efe5d6_35%,#f8f5ef_100%)] px-8 text-center">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-slate-950 shadow-sm">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#fbf7f1] text-slate-950 shadow-sm">
                     <Users className="h-7 w-7" />
                   </div>
                   <div>
@@ -177,7 +177,7 @@ function AboutPage() {
               </p>
 
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                <div className="rounded-[1.5rem] border border-stone-200 bg-stone-50 px-5 py-5">
+                <div className="rounded-[1.5rem] border border-stone-200 bg-[#f5efe6] px-5 py-5">
                   <p className="text-sm font-semibold text-slate-950">
                     Design-led foundation
                   </p>
@@ -186,7 +186,7 @@ function AboutPage() {
                     ergonomics, engineering, and business discipline.
                   </p>
                 </div>
-                <div className="rounded-[1.5rem] border border-stone-200 bg-stone-50 px-5 py-5">
+                <div className="rounded-[1.5rem] border border-stone-200 bg-[#f5efe6] px-5 py-5">
                   <p className="text-sm font-semibold text-slate-950">
                     Shared long-term vision
                   </p>
@@ -219,7 +219,7 @@ function AboutPage() {
               return (
                 <article
                   key={section.name}
-                  className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-[0_30px_80px_-40px_rgba(15,23,42,0.22)]"
+                  className="overflow-hidden rounded-[2rem] border border-stone-200 bg-[#fbf7f1] shadow-[0_30px_80px_-40px_rgba(15,23,42,0.22)]"
                 >
                   <div className="relative h-64 overflow-hidden">
                     <img
@@ -253,7 +253,7 @@ function AboutPage() {
                       ))}
                     </ul>
 
-                    <div className="mt-8 rounded-[1.5rem] bg-stone-50 px-5 py-5 text-sm leading-7 text-slate-700">
+                    <div className="mt-8 rounded-[1.5rem] bg-[#f5efe6] px-5 py-5 text-sm leading-7 text-slate-700">
                       <div className="flex items-center gap-2 font-semibold text-slate-950">
                         <Sparkles className="h-4 w-4 text-amber-700" />
                         Brand focus
@@ -283,7 +283,7 @@ function AboutPage() {
             {timeline.map((item, index) => (
               <div
                 key={`${item.year}-${item.title}`}
-                className="grid gap-5 rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-[0_24px_60px_-45px_rgba(15,23,42,0.25)] md:grid-cols-[160px_1fr]"
+                className="grid gap-5 rounded-[1.75rem] border border-stone-200 bg-[#fbf7f1] p-6 shadow-[0_24px_60px_-45px_rgba(15,23,42,0.25)] md:grid-cols-[160px_1fr]"
               >
                 <div className="relative">
                   <div className="inline-flex rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-900">
