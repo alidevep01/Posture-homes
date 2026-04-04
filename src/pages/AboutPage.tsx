@@ -9,6 +9,7 @@ import {
 } from 'lucide-react'
 import { Link } from 'react-router'
 import SectionReveal from '../components/SectionReveal'
+import Timeline, { type TimelineEntry } from '../components/Timeline'
 
 const brandSections = [
   {
@@ -75,6 +76,18 @@ const timeline = [
       'Posture Homes serves premium residential clients from Banjara Hills, while Posture Furniture serves office projects from Gachibowli, together reflecting one founder-led journey across home and workspace design.',
   },
 ] as const
+
+const timelineEntries: TimelineEntry[] = timeline.map((item) => ({
+  title: item.year,
+  content: (
+    <article className="rounded-[1.9rem] border border-stone-200 bg-[#fbf7f1] p-6 shadow-[0_24px_60px_-45px_rgba(15,23,42,0.25)]">
+      <h3 className="text-2xl text-slate-950">{item.title}</h3>
+      <p className="mt-3 text-base leading-8 text-slate-600">
+        {item.description}
+      </p>
+    </article>
+  ),
+}))
 
 function AboutPage() {
   const [hasFounderImageError, setHasFounderImageError] = useState(false)
@@ -279,29 +292,10 @@ function AboutPage() {
             </h2>
           </div>
 
-          <div className="mt-12 space-y-8">
-            {timeline.map((item, index) => (
-              <div
-                key={`${item.year}-${item.title}`}
-                className="grid gap-5 rounded-[1.75rem] border border-stone-200 bg-[#fbf7f1] p-6 shadow-[0_24px_60px_-45px_rgba(15,23,42,0.25)] md:grid-cols-[160px_1fr]"
-              >
-                <div className="relative">
-                  <div className="inline-flex rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-900">
-                    {item.year}
-                  </div>
-                  {index !== timeline.length - 1 && (
-                    <div className="ml-4 mt-4 hidden h-full w-px bg-stone-200 md:block" />
-                  )}
-                </div>
-                <div>
-                  <h3 className="text-2xl text-slate-950">{item.title}</h3>
-                  <p className="mt-3 max-w-3xl text-base leading-8 text-slate-600">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <Timeline
+            data={timelineEntries}
+            className="mt-12"
+          />
         </div>
       </SectionReveal>
 
