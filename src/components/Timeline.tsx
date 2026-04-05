@@ -52,7 +52,7 @@ function Timeline({ data, className = '' }: TimelineProps) {
             className="flex justify-start pt-10 md:gap-10 md:pt-24"
           >
             <div className="sticky top-28 z-30 hidden self-start md:block md:w-full md:max-w-xs lg:max-w-sm">
-              <div className="absolute left-3 flex h-10 w-10 items-center justify-center rounded-full bg-[#fcfaf7]">
+              <div className="absolute left-3 flex h-10 w-10 items-center justify-center rounded-full bg-white">
                 <div className="h-4 w-4 rounded-full border border-stone-300 bg-stone-200 shadow-[0_0_0_6px_rgba(252,250,247,0.92)]" />
               </div>
               <div className="md:pl-20">
@@ -69,7 +69,7 @@ function Timeline({ data, className = '' }: TimelineProps) {
             </div>
 
             <div className="relative w-full pl-20 pr-4 md:pl-4">
-              <div className="absolute left-3 top-1.5 flex h-10 w-10 items-center justify-center rounded-full bg-[#fcfaf7] md:hidden">
+              <div className="absolute left-3 top-1.5 flex h-10 w-10 items-center justify-center rounded-full bg-white md:hidden">
                 <div className="h-4 w-4 rounded-full border border-stone-300 bg-stone-200 shadow-[0_0_0_6px_rgba(252,250,247,0.92)]" />
               </div>
               <div className="mb-5 md:hidden">

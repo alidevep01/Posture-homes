@@ -1,8 +1,6 @@
 import { Suspense, lazy } from 'react'
 import HeroSection from '../sections/HeroSection'
 
-const CategorySection = lazy(() => import('../sections/CategorySection'))
-const ProductSection = lazy(() => import('../sections/ProductSection'))
 const ProjectsSection = lazy(() => import('../sections/ProjectsSection'))
 const ProcessSection = lazy(() => import('../sections/ProcessSection'))
 const TestimonialsSection = lazy(() => import('../sections/TestimonialsSection'))
@@ -17,8 +15,6 @@ function HomePage() {
     <main>
       <HeroSection />
       <Suspense fallback={<SectionFallback />}>
-        <CategorySection />
-        <ProductSection />
         <ProjectsSection />
         <ProcessSection />
         <TestimonialsSection />

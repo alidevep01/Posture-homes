@@ -80,7 +80,7 @@ const timeline = [
 const timelineEntries: TimelineEntry[] = timeline.map((item) => ({
   title: item.year,
   content: (
-    <article className="rounded-[1.9rem] border border-stone-200 bg-[#fbf7f1] p-6 shadow-[0_24px_60px_-45px_rgba(15,23,42,0.25)]">
+                  <article className="rounded-[1.9rem] border border-stone-200 bg-white p-6 shadow-[0_24px_60px_-45px_rgba(15,23,42,0.25)]">
       <h3 className="text-2xl text-slate-950">{item.title}</h3>
       <p className="mt-3 text-base leading-8 text-slate-600">
         {item.description}
@@ -93,7 +93,7 @@ function AboutPage() {
   const [hasFounderImageError, setHasFounderImageError] = useState(false)
 
   return (
-    <main className="bg-white">
+    <main className="bg-[#fafafa]">
       <SectionReveal className="border-b border-slate-200 bg-[radial-gradient(circle_at_top,#f6efe4_0%,#ffffff_52%,#ffffff_100%)]">
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
           <div className="max-w-4xl">
@@ -130,13 +130,13 @@ function AboutPage() {
         </div>
       </SectionReveal>
 
-      <SectionReveal className="border-b border-slate-200 bg-white">
+      <SectionReveal className="border-b border-slate-200 bg-[#fafafa]">
         <div className="mx-auto max-w-6xl px-6 py-18 sm:py-20">
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-            <div className="overflow-hidden rounded-[2rem] border border-stone-200 bg-[#fbf7f1] shadow-[0_30px_80px_-40px_rgba(15,23,42,0.22)]">
+            <div className="overflow-hidden rounded-[2rem] border border-stone-200 bg-white shadow-[0_30px_80px_-40px_rgba(15,23,42,0.22)]">
               {hasFounderImageError ? (
                 <div className="flex aspect-[4/3] flex-col items-center justify-center gap-4 bg-[radial-gradient(circle_at_top,#f3e8d7_0%,#efe5d6_35%,#f8f5ef_100%)] px-8 text-center">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#fbf7f1] text-slate-950 shadow-sm">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-slate-950 shadow-sm">
                     <Users className="h-7 w-7" />
                   </div>
                   <div>
@@ -190,7 +190,7 @@ function AboutPage() {
               </p>
 
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                <div className="rounded-[1.5rem] border border-stone-200 bg-[#f5efe6] px-5 py-5">
+                <div className="rounded-[1.5rem] border border-stone-200 bg-white px-5 py-5">
                   <p className="text-sm font-semibold text-slate-950">
                     Design-led foundation
                   </p>
@@ -199,7 +199,7 @@ function AboutPage() {
                     ergonomics, engineering, and business discipline.
                   </p>
                 </div>
-                <div className="rounded-[1.5rem] border border-stone-200 bg-[#f5efe6] px-5 py-5">
+                <div className="rounded-[1.5rem] border border-stone-200 bg-white px-5 py-5">
                   <p className="text-sm font-semibold text-slate-950">
                     Shared long-term vision
                   </p>
@@ -214,7 +214,7 @@ function AboutPage() {
         </div>
       </SectionReveal>
 
-      <SectionReveal className="border-b border-slate-200 bg-white">
+      <SectionReveal className="border-b border-slate-200 bg-[#fafafa]">
         <div className="mx-auto max-w-6xl px-6 py-18 sm:py-20">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">
@@ -232,7 +232,7 @@ function AboutPage() {
               return (
                 <article
                   key={section.name}
-                  className="overflow-hidden rounded-[2rem] border border-stone-200 bg-[#fbf7f1] shadow-[0_30px_80px_-40px_rgba(15,23,42,0.22)]"
+              className="overflow-hidden rounded-[2rem] border border-stone-200 bg-white shadow-[0_30px_80px_-40px_rgba(15,23,42,0.22)]"
                 >
                   <div className="relative h-64 overflow-hidden">
                     <img
@@ -266,7 +266,7 @@ function AboutPage() {
                       ))}
                     </ul>
 
-                    <div className="mt-8 rounded-[1.5rem] bg-[#f5efe6] px-5 py-5 text-sm leading-7 text-slate-700">
+            <div className="mt-8 rounded-[1.5rem] bg-white px-5 py-5 text-sm leading-7 text-slate-700">
                       <div className="flex items-center gap-2 font-semibold text-slate-950">
                         <Sparkles className="h-4 w-4 text-amber-700" />
                         Brand focus
@@ -281,7 +281,7 @@ function AboutPage() {
         </div>
       </SectionReveal>
 
-      <SectionReveal className="border-b border-slate-200 bg-[#fcfaf7]">
+      <SectionReveal className="border-b border-slate-200 bg-[#fafafa]">
         <div className="mx-auto max-w-6xl px-6 py-18 sm:py-20">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">
@@ -299,18 +299,18 @@ function AboutPage() {
         </div>
       </SectionReveal>
 
-      <SectionReveal className="bg-white">
+      <SectionReveal className="bg-[#fafafa]">
         <div className="mx-auto max-w-6xl px-6 py-18 sm:py-20">
-          <div className="rounded-[2rem] border border-slate-200 bg-slate-950 px-8 py-10 text-white shadow-[0_30px_80px_-40px_rgba(15,23,42,0.45)] sm:px-10">
+          <div className="rounded-[2rem] border border-stone-200 bg-white px-8 py-10 text-slate-900 shadow-[0_30px_80px_-40px_rgba(15,23,42,0.22)] sm:px-10">
             <div className="grid gap-8 lg:grid-cols-[1.3fr_0.7fr] lg:items-end">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/60">
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">
                   Hyderabad Presence
                 </p>
-                <h2 className="mt-4 text-3xl leading-tight text-white sm:text-4xl">
+                <h2 className="mt-4 text-3xl leading-tight text-slate-950 sm:text-4xl">
                   Two showrooms, one Posture standard.
                 </h2>
-                <p className="mt-4 max-w-2xl text-base leading-8 text-white/75">
+                <p className="mt-4 max-w-2xl text-base leading-8 text-slate-600">
                   Posture Homes operates from Banjara Hills for premium
                   residential furniture, while Posture Furniture serves office
                   projects from Gachibowli. Both are built around the same
@@ -320,21 +320,21 @@ function AboutPage() {
               </div>
 
               <div className="space-y-4">
-                <div className="rounded-[1.5rem] border border-white/12 bg-white/6 px-5 py-4">
-                  <div className="flex items-center gap-2 text-sm font-semibold text-white">
-                    <MapPin className="h-4 w-4 text-amber-300" />
+                <div className="rounded-[1.5rem] border border-stone-200 bg-white px-5 py-4">
+                  <div className="flex items-center gap-2 text-sm font-semibold text-slate-950">
+                    <MapPin className="h-4 w-4 text-amber-700" />
                     Posture Homes
                   </div>
-                  <p className="mt-2 text-sm leading-7 text-white/70">
+                  <p className="mt-2 text-sm leading-7 text-slate-600">
                     Banjara Hills, Hyderabad
                   </p>
                 </div>
-                <div className="rounded-[1.5rem] border border-white/12 bg-white/6 px-5 py-4">
-                  <div className="flex items-center gap-2 text-sm font-semibold text-white">
-                    <MapPin className="h-4 w-4 text-amber-300" />
+                <div className="rounded-[1.5rem] border border-stone-200 bg-white px-5 py-4">
+                  <div className="flex items-center gap-2 text-sm font-semibold text-slate-950">
+                    <MapPin className="h-4 w-4 text-amber-700" />
                     Posture Furniture
                   </div>
-                  <p className="mt-2 text-sm leading-7 text-white/70">
+                  <p className="mt-2 text-sm leading-7 text-slate-600">
                     Gachibowli, Hyderabad
                   </p>
                 </div>

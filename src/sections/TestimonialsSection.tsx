@@ -8,11 +8,14 @@ const FEATURABLE_WIDGET_ID = 'featurable-c3a40964-6ef8-4324-86fe-47d2e0d72a1c'
 
 function TestimonialsSection() {
   useEffect(() => {
+    const widgetElement = document.getElementById(FEATURABLE_WIDGET_ID)
     const existingScript = document.getElementById(FEATURABLE_SCRIPT_ID)
 
-    if (existingScript) {
-      return
+    if (widgetElement) {
+      widgetElement.innerHTML = ''
     }
+
+    existingScript?.remove()
 
     const script = document.createElement('script')
     script.id = FEATURABLE_SCRIPT_ID
@@ -20,6 +23,13 @@ function TestimonialsSection() {
     script.defer = true
     script.charset = 'UTF-8'
     document.body.appendChild(script)
+
+    return () => {
+      script.remove()
+      if (widgetElement) {
+        widgetElement.innerHTML = ''
+      }
+    }
   }, [])
 
   return (
@@ -41,7 +51,7 @@ function TestimonialsSection() {
           </p>
         </header>
 
-        <div className="mt-12 rounded-[2rem] border border-stone-200 bg-[#fbf7f1] p-4 shadow-[0_24px_60px_-45px_rgba(15,23,42,0.22)] sm:p-6">
+        <div className="mt-12 rounded-[2rem] border border-stone-200 bg-white p-4 shadow-[0_24px_60px_-45px_rgba(15,23,42,0.22)] sm:p-6">
           <div
             id={FEATURABLE_WIDGET_ID}
             data-featurable-async=""
@@ -53,7 +63,7 @@ function TestimonialsSection() {
             href="https://g.page/r/CX5asPYk22d4EBM/review"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-[#fbf7f1] px-5 py-3 text-sm font-semibold text-slate-900 transition duration-300 hover:border-slate-900 hover:bg-[#f5efe6]"
+              className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition duration-300 hover:border-slate-900 hover:bg-slate-50"
           >
             Write a review for Posture Homes
             <ExternalLink className="h-4 w-4" />
@@ -63,7 +73,7 @@ function TestimonialsSection() {
             href="https://g.page/r/CeCfb7uKQAl-EBM/review"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-[#fbf7f1] px-5 py-3 text-sm font-semibold text-slate-900 transition duration-300 hover:border-slate-900 hover:bg-[#f5efe6]"
+              className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition duration-300 hover:border-slate-900 hover:bg-slate-50"
           >
             Write a review for Posture Furniture
             <ExternalLink className="h-4 w-4" />

@@ -31,7 +31,7 @@ function ProductSection() {
   return (
     <SectionReveal
       id="products"
-      className="border-b border-slate-200 bg-white"
+      className="border-b border-slate-200 bg-[#fafafa]"
     >
       <div className="mx-auto max-w-6xl px-6 py-16">
         <header className="max-w-2xl">
@@ -47,7 +47,7 @@ function ProductSection() {
           {products.map((product) => (
             <article
               key={product.name}
-              className="group overflow-hidden rounded-[1.75rem] border border-stone-200 bg-[#fbf7f1] shadow-sm transition-shadow duration-300 hover:shadow-[0_24px_60px_-32px_rgba(15,23,42,0.35)]"
+              className="group overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white shadow-sm transition-shadow duration-300 hover:shadow-[0_24px_60px_-32px_rgba(15,23,42,0.35)]"
             >
               <div className="overflow-hidden">
                 <div

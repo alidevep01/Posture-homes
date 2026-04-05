@@ -9,9 +9,9 @@ const locations = [
     address:
       "833/64, 8-3, Kamalapuri Colony Road, Srinagar Colony Ext, Banjara Hills, Hyderabad, Telangana 500073",
     mapQuery:
-      "833/64, 8-3, Kamalapuri Colony Rd, Srinagar Colony Ext, Banjara Hills, Hyderabad, Telangana 500073",
+      "Posture Homes Banjara Hills, 833/64, 8-3, Kamalapuri Colony Rd, Srinagar Colony, Ext, Banjara Hills, Hyderabad, Telangana 500073",
     directionsUrl:
-      "https://www.google.com/maps/search/?api=1&query=833/64,+8-3,+Kamalapuri+Colony+Road,+Srinagar+Colony+Ext,+Banjara+Hills,+Hyderabad,+Telangana+500073",
+      "https://www.google.com/maps/search/?api=1&query=Posture+Homes+Banjara+Hills,+833/64,+8-3,+Kamalapuri+Colony+Rd,+Srinagar+Colony,+Ext,+Banjara+Hills,+Hyderabad,+Telangana+500073",
   },
   {
     name: "Posture Furniture Gachibowli",
@@ -28,7 +28,7 @@ const locations = [
 
 function ContactSection() {
   return (
-    <SectionReveal id="contact" className="bg-white">
+    <SectionReveal id="contact" className="bg-[#fafafa]">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <header className="max-w-2xl">
           <h2 className="text-2xl font-semibold text-slate-900">Contact us</h2>
@@ -44,7 +44,7 @@ function ContactSection() {
           {locations.map((location) => (
             <article
               key={location.name}
-              className="overflow-hidden rounded-[2rem] border border-stone-200 bg-[#fbf7f1] shadow-[0_24px_60px_-40px_rgba(15,23,42,0.24)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_30px_80px_-36px_rgba(15,23,42,0.28)]"
+              className="overflow-hidden rounded-[2rem] border border-stone-200 bg-white shadow-[0_24px_60px_-40px_rgba(15,23,42,0.24)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_30px_80px_-36px_rgba(15,23,42,0.28)]"
             >
               <div className="relative aspect-[5/4] w-full overflow-hidden border-b border-stone-200 bg-stone-100">
                 <iframe
@@ -70,7 +70,7 @@ function ContactSection() {
                 <div className="mt-6 flex flex-wrap items-center gap-3">
                   <a
                     href="tel:+919903889394"
-                    className="inline-flex items-center rounded-full border border-stone-300 bg-white/70 px-4 py-2.5 text-sm font-semibold text-slate-900 transition duration-300 hover:border-slate-900 hover:bg-white"
+                    className="inline-flex items-center rounded-full border border-stone-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-900 transition duration-300 hover:border-slate-900 hover:bg-slate-50"
                   >
                     +91 99038 89394
                   </a>

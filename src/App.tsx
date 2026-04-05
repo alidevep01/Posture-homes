@@ -1,6 +1,7 @@
 import { Suspense, lazy } from 'react'
 import { Route, Routes } from 'react-router'
 import Navbar from './components/Navbar'
+import ScrollToTop from './components/ScrollToTop'
 const Footer = lazy(() => import('./components/Footer'))
 const AboutPage = lazy(() => import('./pages/AboutPage'))
 const HomePage = lazy(() => import('./pages/HomePage'))
@@ -12,7 +13,8 @@ function SectionFallback() {
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-slate-900">
+    <div className="min-h-screen bg-[#fafafa] text-slate-900">
+      <ScrollToTop />
       <Navbar />
       <Suspense fallback={<SectionFallback />}>
         <Routes>
