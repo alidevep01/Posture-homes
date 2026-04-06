@@ -31,6 +31,26 @@ function Navbar() {
     setIsProductsOpen(false)
   }
 
+  if (isHomePage) {
+    return (
+      <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-xl">
+        <nav
+          aria-label="Primary"
+          className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4"
+        >
+          <Link
+            to="/"
+            onClick={closeMenus}
+            aria-label="Posture Homes"
+            className="transition duration-300 hover:opacity-80"
+          >
+            <PostureHomesLogo compact />
+          </Link>
+        </nav>
+      </header>
+    )
+  }
+
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-xl">
       <nav

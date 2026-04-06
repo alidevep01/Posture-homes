@@ -1,89 +1,118 @@
-import ContactForm from "../components/ContactForm";
+import { MapPin, Phone } from "lucide-react";
+import { FaInstagram } from "react-icons/fa";
 import SectionReveal from "../components/SectionReveal";
 
 const locations = [
   {
     name: "Posture Homes Banjara Hills",
-    type: "Furniture store",
     specialty: "Home furniture",
-    address:
-      "833/64, 8-3, Kamalapuri Colony Road, Srinagar Colony Ext, Banjara Hills, Hyderabad, Telangana 500073",
-    mapQuery:
-      "Posture Homes Banjara Hills, 833/64, 8-3, Kamalapuri Colony Rd, Srinagar Colony, Ext, Banjara Hills, Hyderabad, Telangana 500073",
+    mapQuery: "Posture Homes Banjara Hills, Hyderabad",
     directionsUrl:
-      "https://www.google.com/maps/search/?api=1&query=Posture+Homes+Banjara+Hills,+833/64,+8-3,+Kamalapuri+Colony+Rd,+Srinagar+Colony,+Ext,+Banjara+Hills,+Hyderabad,+Telangana+500073",
+      "https://www.google.com/maps/search/?api=1&query=Posture+Homes+Banjara+Hills+Hyderabad",
   },
   {
     name: "Posture Furniture Gachibowli",
-    type: "Office furniture store",
     specialty: "Office furniture",
-    address:
-      "Plot No: 25, 2nd Floor, PNR Square, 01, beside Jeep Showroom, Gachibowli, Serilingampalle, Hyderabad, Telangana 500032",
-    mapQuery:
-      "POSTURE FURNITURE Gachibowli, Plot No: 25, 2nd Floor, PNR Square, 01, beside Jeep Showroom, Gachibowli, Serilingampalle (M), Hyderabad, Telangana 500032",
+    mapQuery: "Posture Furniture Gachibowli, Hyderabad",
     directionsUrl:
-      "https://www.google.com/maps/search/?api=1&query=POSTURE+FURNITURE+Gachibowli,+Plot+No:+25,+2nd+Floor,+PNR+Square,+01,+beside+Jeep+Showroom,+Gachibowli,+Serilingampalle+(M),+Hyderabad,+Telangana+500032",
+      "https://www.google.com/maps/search/?api=1&query=Posture+Furniture+Gachibowli+Hyderabad",
   },
 ];
 
 function ContactSection() {
   return (
     <SectionReveal id="contact" className="bg-[#fafafa]">
-      <div className="mx-auto max-w-6xl px-6 py-16">
-        <header className="max-w-2xl">
+      <div className="mx-auto max-w-5xl px-6 py-16">
+        {/* Header */}
+        <header className="text-center">
           <h2 className="text-2xl font-semibold text-slate-900">Contact us</h2>
           <p className="mt-3 text-slate-600">
-            Send your sourcing requirement through the form or connect directly
-            with our Hyderabad locations.
+            Reach out to us directly or visit our stores in Hyderabad.
           </p>
         </header>
-        <div className="mt-8">
-          <ContactForm />
+
+        {/* Contact Info */}
+        <div className="mt-8 flex flex-col items-center gap-4 text-center">
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="tel:+919903889394"
+              className="flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium"
+            >
+              <Phone className="h-4 w-4" />
+              Mr Aditya Dugar - 9903889394
+            </a>
+
+            <a
+              href="tel:+919748545956"
+              className="flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium"
+            >
+              <Phone className="h-4 w-4" />
+              Mrs Namraja Dugar - 9748545956
+            </a>
+          </div>
+
+          <div className="flex gap-4">
+            <a
+              href="https://www.instagram.com/posturehomes/"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 text-sm font-medium text-pink-600 hover:underline"
+            >
+              <FaInstagram className="h-4 w-4" />
+              @posturehomes
+            </a>
+
+            <a
+              href="https://www.instagram.com/posturefurniture/"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 text-sm font-medium text-pink-600 hover:underline"
+            >
+              <FaInstagram className="h-4 w-4" />
+              @postureFurniture
+            </a>
+          </div>
         </div>
-        <div className="mt-10 grid gap-6 lg:grid-cols-2">
+
+        {/* Locations */}
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
           {locations.map((location) => (
             <article
               key={location.name}
-              className="overflow-hidden rounded-[2rem] border border-stone-200 bg-white shadow-[0_24px_60px_-40px_rgba(15,23,42,0.24)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_30px_80px_-36px_rgba(15,23,42,0.28)]"
+              className="overflow-hidden rounded-2xl border bg-white shadow-sm"
             >
-              <div className="relative aspect-[5/4] w-full overflow-hidden border-b border-stone-200 bg-stone-100">
+              {/* Smaller Map */}
+              <div className="h-48 w-full">
                 <iframe
-                  title={`${location.name} map`}
-                  src={`https://www.google.com/maps?q=${encodeURIComponent(location.mapQuery)}&z=16&output=embed`}
+                  title={location.name}
+                  src={`https://www.google.com/maps?q=${encodeURIComponent(
+                    location.mapQuery,
+                  )}&z=15&output=embed`}
                   className="h-full w-full"
                   loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
                 />
-                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/18 to-transparent" />
               </div>
-              <address className="p-7 not-italic text-slate-600">
-                <div>
-                  <h3 className="mt-2 text-[2rem] leading-tight text-slate-950">
-                    {location.name}
-                  </h3>
+
+              {/* Info */}
+              <div className="p-5">
+                <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-amber-700">
+                  <MapPin className="h-4 w-4" />
+                  {location.specialty}
                 </div>
 
-                <p className="mt-5 text-base leading-8 text-slate-700">
-                  {location.address}
-                </p>
+                <h3 className="mt-2 text-lg font-semibold text-slate-900">
+                  {location.name}
+                </h3>
 
-                <div className="mt-6 flex flex-wrap items-center gap-3">
-                  <a
-                    href="tel:+919903889394"
-                    className="inline-flex items-center rounded-full border border-stone-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-900 transition duration-300 hover:border-slate-900 hover:bg-slate-50"
-                  >
-                    +91 99038 89394
-                  </a>
-                  <a
-                    href={location.directionsUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center rounded-full bg-slate-950 px-4 py-2.5 text-sm font-semibold text-white transition duration-300 hover:bg-slate-800"
-                  >
-                    Get directions
-                  </a>
-                </div>
-              </address>
+                <a
+                  href={location.directionsUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-4 inline-block text-sm font-medium text-slate-900 underline"
+                >
+                  Get directions →
+                </a>
+              </div>
             </article>
           ))}
         </div>

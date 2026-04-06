@@ -6,6 +6,7 @@ const Footer = lazy(() => import('./components/Footer'))
 const AboutPage = lazy(() => import('./pages/AboutPage'))
 const HomePage = lazy(() => import('./pages/HomePage'))
 const ProductCategoryPage = lazy(() => import('./pages/ProductCategoryPage'))
+const SourcingPage = lazy(() => import('./pages/SourcingPage'))
 
 function SectionFallback() {
   return <div className="min-h-24" aria-hidden="true" />
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/sourcing" element={<SourcingPage />} />
           <Route
             path="/products/:categorySlug"
             element={<ProductCategoryPage />}

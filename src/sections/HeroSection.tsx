@@ -1,24 +1,6 @@
-import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-
-const heroSlides = [
-  {
-    image: "/home-furniture-hero.jpg",
-    title: "Premium Home Furniture",
-    buttonLabel: "Explore Home Furniture",
-  },
-  {
-    image: "/office-furniture.jpg",
-    title: "Premium Office Furniture for Modern Workspaces",
-    buttonLabel: "Explore Office Furniture",
-  },
-  {
-    image: "/custom-furniture.jpg",
-    title: "Custom Furniture Built Around Your Vision",
-    buttonLabel: "Explore Custom Furniture",
-  },
-] as const;
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router";
 
 const buttonGlowVariants = {
   rest: { x: "-140%", opacity: 0 },
@@ -57,110 +39,78 @@ function HeroButton({ href, label, primary = false }: HeroButtonProps) {
         className="relative z-10 inline-flex items-center gap-2"
       >
         {label}
+        {primary ? <ArrowRight className="h-4 w-4" /> : null}
       </motion.span>
     </motion.a>
   );
 }
 
 function HeroSection() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  useEffect(() => {
-    const intervalId = window.setInterval(() => {
-      setActiveIndex((current) => (current + 1) % heroSlides.length);
-    }, 5000);
-
-    return () => window.clearInterval(intervalId);
-  }, []);
-
-  const currentSlide = heroSlides[activeIndex];
-
-  const goToSlide = (index: number) => setActiveIndex(index);
-  const goToPrevious = () =>
-    setActiveIndex(
-      (current) => (current - 1 + heroSlides.length) % heroSlides.length,
-    );
-  const goToNext = () =>
-    setActiveIndex((current) => (current + 1) % heroSlides.length);
-
   return (
     <section
       id="home"
       className="relative overflow-hidden border-b border-slate-900 bg-[linear-gradient(180deg,#0b111b_0%,#111827_100%)]"
     >
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={currentSlide.image}
-          aria-hidden="true"
-          initial={{ opacity: 0, scale: 1.03 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 1.01 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${currentSlide.image})` }}
-        />
-      </AnimatePresence>
+      <motion.div
+        aria-hidden="true"
+        initial={{ opacity: 0, scale: 1.02 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url(/home-furniture-hero.jpg)" }}
+      />
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,10,18,0.14)_0%,rgba(6,10,18,0.04)_22%,rgba(6,10,18,0.06)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(15,23,42,0.82)_5%,rgba(15,23,42,0.48)_42%,rgba(15,23,42,0.18)_100%)]" />
 
-      <div className="relative mx-auto flex min-h-[calc(100svh-81px)] max-w-7xl flex-col justify-between px-6 py-10 sm:py-12 lg:py-14">
-        <button
-          type="button"
-          onClick={goToPrevious}
-          aria-label="Previous hero slide"
-          className="absolute left-2 top-1/2 z-20 inline-flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/16 bg-slate-950/44 text-white backdrop-blur-md transition duration-300 hover:bg-white/14 sm:left-4 lg:left-2"
+      <div className="relative mx-auto flex min-h-[calc(100svh-81px)] max-w-6xl flex-col justify-center px-6 py-18 sm:py-24 lg:py-28">
+        <motion.div
+          initial={{ opacity: 0, y: 18 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.42, ease: "easeOut" }}
+          className="max-w-4xl text-white"
         >
-          <ChevronLeft className="h-5 w-5" />
-        </button>
+          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-amber-200">
+            Posture Homes
+          </p>
+          <h1 className="mt-5 max-w-4xl text-[2.5rem] font-semibold leading-tight tracking-tight text-white sm:text-[3.6rem] lg:text-[4.6rem]">
+            Premium furniture for homes, offices, and sourcing-led projects.
+          </h1>
+          <p className="mt-6 max-w-2xl text-base leading-8 text-slate-200 sm:text-lg">
+            Discover refined residential collections, workplace furniture, and
+            sourcing support built around quality, craftsmanship, and project
+            clarity.
+          </p>
 
-        <button
-          type="button"
-          onClick={goToNext}
-          aria-label="Next hero slide"
-          className="absolute right-2 top-1/2 z-20 inline-flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/16 bg-slate-950/44 text-white backdrop-blur-md transition duration-300 hover:bg-white/14 sm:right-4 lg:right-2"
-        >
-          <ChevronRight className="h-5 w-5" />
-        </button>
-
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentSlide.title}
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -18 }}
-            transition={{ duration: 0.42, ease: "easeOut" }}
-            className="mx-auto mt-8 flex max-w-5xl flex-col items-center text-center text-white"
-          >
-            <h1 className="max-w-5xl text-[2rem] font-semibold leading-tight tracking-tight text-white sm:text-[3rem] lg:text-[4rem]">
-              {currentSlide.title}
-            </h1>
-            <div className="mt-6">
-              <HeroButton
-                href="#products"
-                label={currentSlide.buttonLabel}
-                primary
-              />
-            </div>
-          </motion.div>
-        </AnimatePresence>
-
-        <div className="mt-auto flex flex-col items-center gap-4 self-center">
-          <div className="flex items-center justify-center gap-2">
-            {heroSlides.map((slide, index) => (
-              <button
-                key={slide.image}
-                type="button"
-                aria-label={`Go to hero slide ${index + 1}`}
-                aria-pressed={activeIndex === index}
-                onClick={() => goToSlide(index)}
-                className={`h-2.5 rounded-full transition-all duration-300 ${
-                  activeIndex === index
-                    ? "w-10 bg-white"
-                    : "w-2.5 bg-white/32 hover:bg-white/55"
-                }`}
-              />
-            ))}
+          <div className="mt-8 flex flex-wrap gap-4">
+            <HeroButton
+              href="#collections"
+              label="Explore categories"
+              primary
+            />
+            <HeroButton href="#contact" label="Contact us" />
           </div>
-        </div>
+
+          <div className="mt-10 flex flex-wrap gap-3 text-sm text-slate-200/90">
+            <Link
+              to="/products/office-furniture"
+              className="rounded-full border border-white/16 bg-white/10 px-4 py-2 backdrop-blur-md transition duration-300 hover:bg-white/16"
+            >
+              Office furniture
+            </Link>
+            <Link
+              to="/products/home-furniture"
+              className="rounded-full border border-white/16 bg-white/10 px-4 py-2 backdrop-blur-md transition duration-300 hover:bg-white/16"
+            >
+              Home furniture
+            </Link>
+            <Link
+              to="/sourcing"
+              className="rounded-full border border-white/16 bg-white/10 px-4 py-2 backdrop-blur-md transition duration-300 hover:bg-white/16"
+            >
+              Sourcing
+            </Link>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
