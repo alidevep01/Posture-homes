@@ -12,9 +12,9 @@ function SectionReveal({ id, className, children }: SectionRevealProps) {
       id={id}
       initial={{ opacity: 0, y: 28 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.05 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      className={className}
+      className={['scroll-mt-28', className].filter(Boolean).join(' ')}
     >
       {children}
     </motion.section>

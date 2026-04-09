@@ -1,116 +1,158 @@
-import { MapPin, Phone } from "lucide-react";
-import { FaInstagram } from "react-icons/fa";
+import { ArrowRight, MapPin, Phone } from "lucide-react";
 import SectionReveal from "../components/SectionReveal";
+
+const contactPeople = [
+  {
+    name: "Mr Aditya Dugar",
+    phoneLabel: "9903889394",
+    phoneHref: "tel:+919903889394",
+  },
+  {
+    name: "Mrs Namraja Dugar",
+    phoneLabel: "9748545956",
+    phoneHref: "tel:+919748545956",
+  },
+] as const;
+
+const socialLinks = [
+  {
+    label: "@posturehomes",
+    href: "https://www.instagram.com/posturehomes/",
+  },
+  {
+    label: "@postureFurniture",
+    href: "https://www.instagram.com/posturefurniture/",
+  },
+] as const;
+
+function InstagramIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className="h-4 w-4"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+    </svg>
+  );
+}
 
 const locations = [
   {
     name: "Posture Homes Banjara Hills",
-    specialty: "Home furniture",
-    mapQuery: "Posture Homes Banjara Hills, Hyderabad",
+    specialty: "Home Furniture",
+    address:
+      "833/64, 8-3, Kamalapuri Colony Road, Srinagar Colony Ext, Banjara Hills, Hyderabad, Telangana 500073",
+    mapQuery:
+      "Posture Homes Banjara Hills, 833/64, 8-3, Kamalapuri Colony Road, Banjara Hills, Hyderabad",
     directionsUrl:
-      "https://www.google.com/maps/search/?api=1&query=Posture+Homes+Banjara+Hills+Hyderabad",
+      "https://www.google.com/maps/search/?api=1&query=Posture+Homes+Banjara+Hills,+833/64,+8-3,+Kamalapuri+Colony+Road,+Banjara+Hills,+Hyderabad",
   },
   {
     name: "Posture Furniture Gachibowli",
-    specialty: "Office furniture",
-    mapQuery: "Posture Furniture Gachibowli, Hyderabad",
+    specialty: "Office Furniture",
+    address:
+      "Plot No: 25, 2nd Floor, PNR Square, 01, beside Jeep Showroom, Gachibowli, Serilingampalle, Hyderabad, Telangana 500032",
+    mapQuery:
+      "Posture Furniture Gachibowli, Plot No 25, PNR Square, Gachibowli, Hyderabad",
     directionsUrl:
-      "https://www.google.com/maps/search/?api=1&query=Posture+Furniture+Gachibowli+Hyderabad",
+      "https://www.google.com/maps/search/?api=1&query=Posture+Furniture+Gachibowli,+Plot+No+25,+PNR+Square,+Gachibowli,+Hyderabad",
   },
-];
+] as const;
 
 function ContactSection() {
   return (
     <SectionReveal id="contact" className="bg-[#fafafa]">
-      <div className="mx-auto max-w-5xl px-6 py-16">
-        {/* Header */}
-        <header className="text-center">
-          <h2 className="text-2xl font-semibold text-slate-900">Contact us</h2>
-          <p className="mt-3 text-slate-600">
+      <div className="mx-auto max-w-7xl px-6 py-18 sm:py-20">
+        <header className="mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl leading-tight text-slate-950 sm:text-4xl">
+            Contact us
+          </h2>
+          <p className="mt-4 text-base leading-8 text-slate-600 sm:text-lg">
             Reach out to us directly or visit our stores in Hyderabad.
           </p>
         </header>
 
-        {/* Contact Info */}
-        <div className="mt-8 flex flex-col items-center gap-4 text-center">
-          <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="tel:+919903889394"
-              className="flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium"
-            >
-              <Phone className="h-4 w-4" />
-              Mr Aditya Dugar - 9903889394
-            </a>
-
-            <a
-              href="tel:+919748545956"
-              className="flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium"
-            >
-              <Phone className="h-4 w-4" />
-              Mrs Namraja Dugar - 9748545956
-            </a>
+        <div className="mt-10 flex flex-col items-center gap-5">
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            {contactPeople.map((person) => (
+              <a
+                key={person.phoneHref}
+                href={person.phoneHref}
+                className="inline-flex items-center gap-3 rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-[0_10px_30px_-22px_rgba(15,23,42,0.45)] transition duration-300 hover:-translate-y-0.5 hover:border-slate-900 hover:bg-slate-50"
+              >
+                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f7f2ea] text-slate-900">
+                  <Phone className="h-4 w-4" />
+                </span>
+                <span>
+                  {person.name} - {person.phoneLabel}
+                </span>
+              </a>
+            ))}
           </div>
 
-          <div className="flex gap-4">
-            <a
-              href="https://www.instagram.com/posturehomes/"
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-2 text-sm font-medium text-pink-600 hover:underline"
-            >
-              <FaInstagram className="h-4 w-4" />
-              @posturehomes
-            </a>
-
-            <a
-              href="https://www.instagram.com/posturefurniture/"
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-2 text-sm font-medium text-pink-600 hover:underline"
-            >
-              <FaInstagram className="h-4 w-4" />
-              @postureFurniture
-            </a>
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+            {socialLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 text-base font-semibold text-[#ff0f7b] transition duration-300 hover:text-[#d60c67]"
+              >
+                <InstagramIcon />
+                {link.label}
+              </a>
+            ))}
           </div>
         </div>
 
-        {/* Locations */}
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
+        <div className="mt-14 grid gap-8 lg:grid-cols-2">
           {locations.map((location) => (
             <article
               key={location.name}
-              className="overflow-hidden rounded-2xl border bg-white shadow-sm"
+              className="overflow-hidden rounded-[2rem] border border-slate-300 bg-white shadow-[0_20px_60px_-35px_rgba(15,23,42,0.3)]"
             >
-              {/* Smaller Map */}
-              <div className="h-48 w-full">
+              <div className="relative overflow-hidden border-b border-slate-200">
+                <div className="absolute left-5 top-5 z-10"></div>
                 <iframe
-                  title={location.name}
-                  src={`https://www.google.com/maps?q=${encodeURIComponent(
-                    location.mapQuery,
-                  )}&z=15&output=embed`}
-                  className="h-full w-full"
+                  title={`${location.name} map`}
+                  src={`https://www.google.com/maps?q=${encodeURIComponent(location.mapQuery)}&z=15&output=embed`}
+                  className="h-64 w-full"
                   loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>
 
-              {/* Info */}
-              <div className="p-5">
-                <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-amber-700">
+              <div className="p-7 sm:p-8">
+                <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">
                   <MapPin className="h-4 w-4" />
                   {location.specialty}
                 </div>
 
-                <h3 className="mt-2 text-lg font-semibold text-slate-900">
+                <h3 className="mt-4 text-3xl leading-tight text-slate-950">
                   {location.name}
                 </h3>
+
+                <p className="mt-4 max-w-xl text-sm leading-7 text-slate-600 sm:text-base">
+                  {location.address}
+                </p>
 
                 <a
                   href={location.directionsUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-4 inline-block text-sm font-medium text-slate-900 underline"
+                  className="mt-6 inline-flex items-center gap-2 text-base font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 transition duration-300 hover:text-slate-700"
                 >
-                  Get directions →
+                  Get directions
+                  <ArrowRight className="h-4 w-4" />
                 </a>
               </div>
             </article>

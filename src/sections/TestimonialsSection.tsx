@@ -6,7 +6,40 @@ const FEATURABLE_SCRIPT_ID = 'featurable-bundle-script'
 const FEATURABLE_SCRIPT_SRC = 'https://featurable.com/assets/bundle.js'
 const FEATURABLE_WIDGET_ID = 'featurable-c3a40964-6ef8-4324-86fe-47d2e0d72a1c'
 
-function TestimonialsSection() {
+const reviewLinks = {
+  home: {
+    label: 'Write a review for Posture Homes',
+    href: 'https://g.page/r/CX5asPYk22d4EBM/review',
+  },
+  office: {
+    label: 'Write a review for Posture Furniture',
+    href: 'https://g.page/r/CeCfb7uKQAl-EBM/review',
+  },
+} as const
+
+const reviewContent = {
+  both: {
+    heading: 'Verified Google reviews from Posture Homes and Posture Furniture.',
+    description:
+      'Browse the live review feed below, or leave a review directly for either showroom.',
+  },
+  home: {
+    heading: 'Verified Google reviews for Posture Homes.',
+    description:
+      'Browse the live review feed below, or leave a review directly for Posture Homes.',
+  },
+  office: {
+    heading: 'Verified Google reviews for Posture Furniture.',
+    description:
+      'Browse the live review feed below, or leave a review directly for Posture Furniture.',
+  },
+} as const
+
+function TestimonialsSection({
+  reviewMode = 'both',
+}: {
+  reviewMode?: 'home' | 'office' | 'both'
+}) {
   useEffect(() => {
     const widgetElement = document.getElementById(FEATURABLE_WIDGET_ID)
     const existingScript = document.getElementById(FEATURABLE_SCRIPT_ID)
@@ -32,6 +65,12 @@ function TestimonialsSection() {
     }
   }, [])
 
+  const visibleLinks =
+    reviewMode === 'both'
+      ? [reviewLinks.home, reviewLinks.office]
+      : [reviewLinks[reviewMode]]
+  const content = reviewContent[reviewMode]
+
   return (
     <SectionReveal
       id="testimonials"
@@ -43,11 +82,10 @@ function TestimonialsSection() {
             Testimonials
           </p>
           <h2 className="mt-4 text-3xl leading-tight text-slate-950 sm:text-4xl">
-            Verified Google reviews from Posture Homes and Posture Furniture.
+            {content.heading}
           </h2>
           <p className="mt-4 text-base leading-8 text-slate-600">
-            Browse the live review feed below, or leave a review directly for
-            either showroom.
+            {content.description}
           </p>
         </header>
 
@@ -59,25 +97,18 @@ function TestimonialsSection() {
         </div>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-          <a
-            href="https://g.page/r/CX5asPYk22d4EBM/review"
-            target="_blank"
-            rel="noreferrer"
+          {visibleLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition duration-300 hover:border-slate-900 hover:bg-slate-50"
-          >
-            Write a review for Posture Homes
-            <ExternalLink className="h-4 w-4" />
-          </a>
-
-          <a
-            href="https://g.page/r/CeCfb7uKQAl-EBM/review"
-            target="_blank"
-            rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition duration-300 hover:border-slate-900 hover:bg-slate-50"
-          >
-            Write a review for Posture Furniture
-            <ExternalLink className="h-4 w-4" />
-          </a>
+            >
+              {link.label}
+              <ExternalLink className="h-4 w-4" />
+            </a>
+          ))}
         </div>
       </div>
     </SectionReveal>
