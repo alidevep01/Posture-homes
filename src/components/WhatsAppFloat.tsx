@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 
 const defaultMessage =
@@ -20,15 +21,37 @@ function WhatsAppFloat() {
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(configuredMessage)}`;
 
   return (
-    <a
-      href={whatsappUrl}
-      target="_blank"
-      rel="noreferrer"
-      aria-label="Chat on WhatsApp"
-      className="fixed bottom-5 right-5 z-[70] inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_18px_45px_-18px_rgba(37,211,102,0.7)] transition duration-300 hover:scale-[1.04] hover:shadow-[0_22px_55px_-18px_rgba(37,211,102,0.82)] sm:bottom-6 sm:right-6"
+    <motion.div
+      initial={{ opacity: 0, y: 18 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.35, ease: "easeOut" }}
+      className="fixed bottom-5 right-5 z-[70] flex items-center gap-3 sm:bottom-6 sm:right-6"
     >
-      <FaWhatsapp className="h-7 w-7" />
-    </a>
+      <motion.a
+        href={whatsappUrl}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Chat on WhatsApp"
+        animate={{
+          y: [0, -5, 0],
+          scale: [1, 1.06, 1],
+          boxShadow: [
+            "0 18px 45px -18px rgba(37,211,102,0.7)",
+            "0 24px 58px -18px rgba(37,211,102,0.9)",
+            "0 18px 45px -18px rgba(37,211,102,0.7)",
+          ],
+        }}
+        transition={{
+          duration: 1.8,
+          repeat: Number.POSITIVE_INFINITY,
+          ease: "easeInOut",
+        }}
+        whileHover={{ scale: 1.08 }}
+        className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white"
+      >
+        <FaWhatsapp className="h-7 w-7" />
+      </motion.a>
+    </motion.div>
   );
 }
 
