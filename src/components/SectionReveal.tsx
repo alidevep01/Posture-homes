@@ -1,4 +1,4 @@
-import { useRef, type PropsWithChildren } from 'react'
+import { useEffect, useRef, useState, type PropsWithChildren } from 'react'
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion'
 
 type SectionRevealProps = PropsWithChildren<{
@@ -14,6 +14,7 @@ function SectionReveal({
   revealMode = 'default',
 }: SectionRevealProps) {
   const sectionRef = useRef<HTMLElement | null>(null)
+  const [isMobileViewport, setIsMobileViewport] = useState(false)
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -30,7 +31,22 @@ function SectionReveal({
   const opacity = useTransform(revealProgress, [0, 0.25, 1], [0, 0.72, 1])
   const y = useTransform(revealProgress, [0, 1], [72, 0])
 
-  if (revealMode === 'footer') {
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 767px)')
+
+    const updateViewport = () => {
+      setIsMobileViewport(mediaQuery.matches)
+    }
+
+    updateViewport()
+    mediaQuery.addEventListener('change', updateViewport)
+
+    return () => {
+      mediaQuery.removeEventListener('change', updateViewport)
+    }
+  }, [])
+
+  if (revealMode === 'footer' && !isMobileViewport) {
     return (
       <motion.section
         ref={sectionRef}
