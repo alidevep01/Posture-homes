@@ -67,9 +67,17 @@ const locations = [
   },
 ] as const;
 
-function ContactSection() {
+function ContactSection({
+  revealMode,
+}: {
+  revealMode?: "default" | "footer";
+}) {
   return (
-    <SectionReveal id="contact" className="bg-[#fafafa]">
+    <SectionReveal
+      id="contact"
+      revealMode={revealMode}
+      className="bg-[#fafafa]"
+    >
       <div className="mx-auto max-w-7xl px-6 py-18 sm:py-20">
         <header className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl leading-tight text-slate-950 sm:text-4xl">

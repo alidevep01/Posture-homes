@@ -5,9 +5,9 @@ import AboutSection from "../sections/AboutSection";
 function HomePage() {
   return (
     <main>
-      <CategoryGridSection />
-      <ContactSection />
-      <AboutSection />
+      <CategoryGridSection revealMode="footer" />
+      <ContactSection revealMode="footer" />
+      <AboutSection revealMode="footer" />
     </main>
   );
 }

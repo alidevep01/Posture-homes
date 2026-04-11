@@ -3,12 +3,17 @@ import { ArrowRight, Users } from "lucide-react";
 import { Link } from "react-router";
 import SectionReveal from "../components/SectionReveal";
 
-function AboutSection() {
+function AboutSection({
+  revealMode,
+}: {
+  revealMode?: "default" | "footer";
+}) {
   const [hasFounderImageError, setHasFounderImageError] = useState(false);
 
   return (
     <SectionReveal
       id="about"
+      revealMode={revealMode}
       className="border-b border-slate-200 bg-[#fafafa]"
     >
       <div className="mx-auto max-w-6xl px-6 py-18 sm:py-20">

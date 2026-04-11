@@ -35,10 +35,15 @@ const categoryCards = [
   },
 ] as const;
 
-function CategoryGridSection() {
+function CategoryGridSection({
+  revealMode,
+}: {
+  revealMode?: "default" | "footer";
+}) {
   return (
     <SectionReveal
       id="collections"
+      revealMode={revealMode}
       className="border-b border-slate-200 bg-[#f7f2ea]"
     >
       <div className="grid min-h-[calc(100svh-81px)] gap-px bg-white/40 lg:grid-cols-3">
