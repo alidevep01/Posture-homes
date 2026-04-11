@@ -2,6 +2,7 @@ import { Suspense, lazy } from 'react'
 import { Route, Routes } from 'react-router'
 import Navbar from './components/Navbar'
 import ScrollToTop from './components/ScrollToTop'
+import WhatsAppFloat from './components/WhatsAppFloat'
 const Footer = lazy(() => import('./components/Footer'))
 const AboutPage = lazy(() => import('./pages/AboutPage'))
 const HomePage = lazy(() => import('./pages/HomePage'))
@@ -17,6 +18,7 @@ function App() {
     <div className="min-h-screen bg-[#fafafa] text-slate-900">
       <ScrollToTop />
       <Navbar />
+      <WhatsAppFloat />
       <Suspense fallback={<SectionFallback />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
