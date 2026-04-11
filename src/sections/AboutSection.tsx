@@ -1,13 +1,16 @@
-import { useState } from 'react'
-import { ArrowRight, Users } from 'lucide-react'
-import { Link } from 'react-router'
-import SectionReveal from '../components/SectionReveal'
+import { useState } from "react";
+import { ArrowRight, Users } from "lucide-react";
+import { Link } from "react-router";
+import SectionReveal from "../components/SectionReveal";
 
 function AboutSection() {
-  const [hasFounderImageError, setHasFounderImageError] = useState(false)
+  const [hasFounderImageError, setHasFounderImageError] = useState(false);
 
   return (
-    <SectionReveal id="about" className="border-b border-slate-200 bg-[#fafafa]">
+    <SectionReveal
+      id="about"
+      className="border-b border-slate-200 bg-[#fafafa]"
+    >
       <div className="mx-auto max-w-6xl px-6 py-18 sm:py-20">
         <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="overflow-hidden rounded-[2rem] border border-stone-200 bg-white shadow-[0_30px_80px_-40px_rgba(15,23,42,0.22)]">
@@ -18,13 +21,13 @@ function AboutSection() {
                 </div>
                 <div>
                   <p className="text-lg font-semibold text-slate-950">
-                    Mr. Aditya Dugar & Mrs. Namrata Dugar
+                    Mr. Aditya Dugar & Mrs. Namrata Jain
                   </p>
                   <p className="mt-2 text-sm leading-7 text-slate-600">
-                    Add the founders image at{' '}
+                    Add the founders image at{" "}
                     <span className="font-semibold text-slate-900">
                       public/founders.png
-                    </span>{' '}
+                    </span>{" "}
                     to display it here.
                   </p>
                 </div>
@@ -32,7 +35,7 @@ function AboutSection() {
             ) : (
               <img
                 src="/founders.png"
-                alt="Mr. Aditya Dugar and Mrs. Namrata Dugar"
+                alt="Mr. Aditya Dugar and Mrs. Namrata Jain"
                 loading="lazy"
                 className="aspect-[4/3] w-full object-cover"
                 onError={() => setHasFounderImageError(true)}
@@ -45,35 +48,39 @@ function AboutSection() {
               About us
             </p>
             <h2 className="mt-4 text-3xl leading-tight text-slate-950 sm:text-4xl">
-              One Posture vision across luxury homes and high-performance workspaces.
+              Luxury furniture, curated decor, and founder-led craftsmanship for
+              refined homes.
             </h2>
             <p className="mt-5 text-base leading-8 text-slate-600">
-              Posture operates through two focused verticals. Posture Homes
-              serves premium residential interiors, while Posture Furniture
-              delivers office solutions designed for comfort, durability, and
-              project efficiency.
+              Posture Homes is a premier destination for homeowners seeking to
+              elevate their living spaces through luxury furniture, curated
+              artifacts, mix media art, and custom-made rugs. Every collection
+              is shaped around craftsmanship, creativity, and a personalized
+              design point of view.
             </p>
             <p className="mt-4 text-base leading-8 text-slate-600">
-              The business was founded in 2021 with a design-led philosophy:
-              furniture should improve how people live and work while reflecting
-              craftsmanship, material quality, and a tailored client
-              experience.
+              Our approach is rooted in bespoke furniture traditions, where each
+              piece is tailored to the client, the space, and the lifestyle it
+              supports. The result is a home experience built around timeless
+              design, elevated materials, and furniture that feels distinctly
+              personal.
             </p>
             <p className="mt-4 text-base leading-8 text-slate-600">
-              Built by Mr. Aditya Dugar and Mrs. Namrata Dugar, Posture brings
-              together interior design insight, ergonomics, engineering, and
-              business discipline across both its residential and office
-              verticals.
+              Founded in 2021 by Mr. Aditya Dugar and Mrs. Namrata Jain,
+              Posture Homes brings together interior design insight,
+              ergonomics, engineering, and a commitment to exceptional
+              craftsmanship, sustainability, and customer satisfaction.
             </p>
 
             <div className="mt-8 rounded-[1.75rem] border border-stone-200 bg-white px-6 py-6 shadow-[0_20px_50px_-42px_rgba(15,23,42,0.18)]">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
-                Founder-led focus
+                Meet our founders
               </p>
               <p className="mt-3 text-sm leading-7 text-slate-600">
-                Bespoke home furniture, ergonomic office solutions, curated
-                decor, sourcing support, and execution built around material
-                quality and long-term client trust.
+                Mr. Aditya Dugar and Mrs. Namrata Jain founded Posture Homes
+                with a clear vision: create timeless designs using high-quality
+                materials and exceptional craftsmanship, while delivering a
+                thoughtful and personalized client experience.
               </p>
             </div>
 
@@ -88,7 +95,7 @@ function AboutSection() {
         </div>
       </div>
     </SectionReveal>
-  )
+  );
 }
 
-export default AboutSection
+export default AboutSection;

@@ -3,14 +3,14 @@ import SectionReveal from "../components/SectionReveal";
 
 const contactPeople = [
   {
-    name: "Mr Aditya Dugar",
-    phoneLabel: "9903889394",
-    phoneHref: "tel:+919903889394",
+    name: "Posture Homes",
+    phoneLabel: "+91 7815819394",
+    phoneHref: "tel:+917815819394",
   },
   {
-    name: "Mrs Namraja Dugar",
-    phoneLabel: "9748545956",
-    phoneHref: "tel:+919748545956",
+    name: "Posture Office Furniture",
+    phoneLabel: "+91 7003746544",
+    phoneHref: "tel:+917003746544",
   },
 ] as const;
 
@@ -46,7 +46,7 @@ function InstagramIcon() {
 
 const locations = [
   {
-    name: "Posture Homes Banjara Hills",
+    name: "Posture Homes(Banjara Hills)",
     specialty: "Home Furniture",
     address:
       "833/64, 8-3, Kamalapuri Colony Road, Srinagar Colony Ext, Banjara Hills, Hyderabad, Telangana 500073",
@@ -56,7 +56,7 @@ const locations = [
       "https://www.google.com/maps/search/?api=1&query=Posture+Homes+Banjara+Hills,+833/64,+8-3,+Kamalapuri+Colony+Road,+Banjara+Hills,+Hyderabad",
   },
   {
-    name: "Posture Furniture Gachibowli",
+    name: "Posture Furniture(Gachibowli)",
     specialty: "Office Furniture",
     address:
       "Plot No: 25, 2nd Floor, PNR Square, 01, beside Jeep Showroom, Gachibowli, Serilingampalle, Hyderabad, Telangana 500032",

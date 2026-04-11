@@ -1,252 +1,251 @@
-import { useMemo } from 'react'
-import { Link, Navigate, useParams } from 'react-router'
+import { useMemo } from "react";
+import { Navigate, useParams } from "react-router";
 import {
-  ArrowRight,
   BadgeCheck,
   PackageCheck,
   Sofa,
   Truck,
-} from 'lucide-react'
-import SectionReveal from '../components/SectionReveal'
-import ContactForm from '../components/ContactForm'
-import ProcessSection from '../sections/ProcessSection'
-import ProjectsSection from '../sections/ProjectsSection'
-import TestimonialsSection from '../sections/TestimonialsSection'
-import { productCategories } from '../utils/productCategories'
+} from "lucide-react";
+import SectionReveal from "../components/SectionReveal";
+import ContactForm from "../components/ContactForm";
+import ProcessSection from "../sections/ProcessSection";
+import ProjectsSection from "../sections/ProjectsSection";
+import TestimonialsSection from "../sections/TestimonialsSection";
+import { productCategories } from "../utils/productCategories";
 
-type ProductCategory = (typeof productCategories)[number]
-type ProductCategorySlug = ProductCategory['slug']
+type ProductCategory = (typeof productCategories)[number];
+type ProductCategorySlug = ProductCategory["slug"];
 
 const categoryHeroImages: Record<ProductCategorySlug, string> = {
-  'home-furniture': '/home-background-1.jpg',
-  'office-furniture': '/office-background-1.jpg',
-}
+  "home-furniture": "/home-background-1.jpg",
+  "office-furniture": "/office-background-1.jpg",
+};
 
 const officeProjectCategories = [
   {
-    title: 'Executive Cabins',
+    title: "Executive Cabins",
     description:
-      'Executive desks, premium storage, and leadership seating designed for high-function private workspaces.',
-    image: '/office-furniture1.jpg',
+      "Executive desks, premium storage, and leadership seating designed for high-function private workspaces.",
+    image: "/office-furniture1.jpg",
   },
   {
-    title: 'Workstations',
+    title: "Workstations",
     description:
-      'Open office workstation layouts that support team productivity, movement, and daily utility.',
-    image: '/office-furniture2.jpg',
+      "Open office workstation layouts that support team productivity, movement, and daily utility.",
+    image: "/office-furniture2.jpg",
   },
   {
-    title: 'Conference Rooms',
+    title: "Conference Rooms",
     description:
-      'Conference tables, meeting chairs, and collaboration setups for formal discussions and client-facing spaces.',
-    image: '/office-furniture4.jpg',
+      "Conference tables, meeting chairs, and collaboration setups for formal discussions and client-facing spaces.",
+    image: "/office-furniture4.jpg",
   },
   {
-    title: 'Reception Areas',
+    title: "Reception Areas",
     description:
-      'Reception desks, waiting lounge seating, and front-of-house furniture that define first impressions.',
-    image: '/office-furniture5.jpg',
+      "Reception desks, waiting lounge seating, and front-of-house furniture that define first impressions.",
+    image: "/office-furniture5.jpg",
   },
   {
-    title: 'Breakout and Cafeteria',
+    title: "Breakout and Cafeteria",
     description:
-      'Loose furniture for cafeteria zones, breakout corners, and informal interaction spaces inside the workplace.',
-    image: '/office-furniture.jpg',
+      "Loose furniture for cafeteria zones, breakout corners, and informal interaction spaces inside the workplace.",
+    image: "/office-furniture.jpg",
   },
   {
-    title: 'Custom Office Solutions',
+    title: "Custom Office Solutions",
     description:
-      'Project-led sourcing support for custom dimensions, finish selections, and office-specific furniture requirements.',
-    image: '/custom-furniture1.jpg',
+      "Project-led sourcing support for custom dimensions, finish selections, and office-specific furniture requirements.",
+    image: "/custom-furniture1.jpg",
   },
-] as const
+] as const;
 
 const officeClienteleLogos = [
-  'sattva.png',
-  'apple.png',
-  'servicenow.png',
-  'hyundai.png',
-  'chubb.png',
-  'phonepe.svg',
-  'polycab.png',
-  'curia.png',
-  'citizens-specialty-hospital.png',
-  'msn-labs.png',
-  'hitex-hyderabad.png',
-  'CBIT-LOGO.png',
-  'isb.png',
-  'care-health-insurance.png',
-  'divis-laboratories.svg',
-  'lawrence-and-mayo.png',
-  'devx.svg',
-  'concrete-infra.png',
-  'code-astra.png',
-  'panzer-technologies.png',
-  'muzigal.svg',
-  'nest-makers.svg',
-  'oremus.png',
-  'proclink.png',
-  'samashti-international-school.png',
-  'aakruthi-hospitals.jpg',
-  'elegans-group.svg',
-  'futura.jpg',
-  'hetero.png',
-  'jito-hyderabad.jpg',
-  'mirrors-luxury-salons.png',
-  'cokarma.png',
-  'shubha-fertility.jpg',
-  'sln-projects.jpg',
-  'us-consulate-general-hyderabad.svg',
-  'vinati-jewellers.jpg',
-] as const
+  "sattva.png",
+  "apple.png",
+  "servicenow.png",
+  "hyundai.png",
+  "chubb.png",
+  "phonepe.svg",
+  "polycab.png",
+  "curia.png",
+  "citizens-specialty-hospital.png",
+  "msn-labs.png",
+  "hitex-hyderabad.png",
+  "CBIT-LOGO.png",
+  "isb.png",
+  "care-health-insurance.png",
+  "divis-laboratories.svg",
+  "lawrence-and-mayo.png",
+  "devx.svg",
+  "concrete-infra.png",
+  "code-astra.png",
+  "panzer-technologies.png",
+  "muzigal.svg",
+  "nest-makers.svg",
+  "oremus.png",
+  "proclink.png",
+  "samashti-international-school.png",
+  "aakruthi-hospitals.jpg",
+  "elegans-group.svg",
+  "futura.jpg",
+  "hetero.png",
+  "jito-hyderabad.jpg",
+  "mirrors-luxury-salons.png",
+  "cokarma.png",
+  "shubha-fertility.jpg",
+  "sln-projects.jpg",
+  "us-consulate-general-hyderabad.svg",
+  "vinati-jewellers.jpg",
+] as const;
 
-type ClienteleLogoFile = (typeof officeClienteleLogos)[number]
+type ClienteleLogoFile = (typeof officeClienteleLogos)[number];
 
 const clienteleLogoDisplay: Partial<
   Record<
     ClienteleLogoFile,
     {
-      label?: string
-      cardClassName?: string
-      imageClassName?: string
+      label?: string;
+      cardClassName?: string;
+      imageClassName?: string;
     }
   >
 > = {
-  'apple.png': {
-    label: 'Apple',
-    imageClassName: 'max-h-16',
+  "apple.png": {
+    label: "Apple",
+    imageClassName: "max-h-16",
   },
-  'aakruthi-hospitals.jpg': {
-    label: 'Aakruthi Hospitals',
-    imageClassName: 'max-h-16',
+  "aakruthi-hospitals.jpg": {
+    label: "Aakruthi Hospitals",
+    imageClassName: "max-h-16",
   },
-  'care-health-insurance.png': {
-    label: 'Care Health Insurance',
-    imageClassName: 'max-h-14',
+  "care-health-insurance.png": {
+    label: "Care Health Insurance",
+    imageClassName: "max-h-14",
   },
-  'CBIT-LOGO.png': {
-    label: 'Chaitanya Bharathi Institute of Technology',
-    imageClassName: 'max-h-14',
+  "CBIT-LOGO.png": {
+    label: "Chaitanya Bharathi Institute of Technology",
+    imageClassName: "max-h-14",
   },
-  'chubb.png': {
-    label: 'Chubb',
-    imageClassName: 'max-h-12',
+  "chubb.png": {
+    label: "Chubb",
+    imageClassName: "max-h-12",
   },
-  'citizens-specialty-hospital.png': {
-    label: 'Citizens Specialty Hospital',
-    imageClassName: 'max-h-14',
+  "citizens-specialty-hospital.png": {
+    label: "Citizens Specialty Hospital",
+    imageClassName: "max-h-14",
   },
-  'cokarma.png': {
-    label: 'CoKarma',
-    imageClassName: 'max-h-14',
+  "cokarma.png": {
+    label: "CoKarma",
+    imageClassName: "max-h-14",
   },
-  'code-astra.png': {
-    label: 'Code Astra',
-    cardClassName: 'border-slate-800 bg-slate-900',
-    imageClassName: 'max-h-10 brightness-110 contrast-125',
+  "code-astra.png": {
+    label: "Code Astra",
+    cardClassName: "border-slate-800 bg-slate-900",
+    imageClassName: "max-h-10 brightness-110 contrast-125",
   },
-  'concrete-infra.png': {
-    label: 'Concrete Infra',
-    imageClassName: 'max-h-14',
+  "concrete-infra.png": {
+    label: "Concrete Infra",
+    imageClassName: "max-h-14",
   },
-  'curia.png': {
-    label: 'Curia',
-    imageClassName: 'max-h-14',
+  "curia.png": {
+    label: "Curia",
+    imageClassName: "max-h-14",
   },
-  'devx.svg': {
-    label: 'DEVX',
-    cardClassName: 'border-slate-800 bg-slate-900',
-    imageClassName: 'max-h-12',
+  "devx.svg": {
+    label: "DEVX",
+    cardClassName: "border-slate-800 bg-slate-900",
+    imageClassName: "max-h-12",
   },
-  'divis-laboratories.svg': {
+  "divis-laboratories.svg": {
     label: "Divi's Laboratories",
-    imageClassName: 'max-h-14',
+    imageClassName: "max-h-14",
   },
-  'futura.jpg': {
-    label: 'Futura',
-    imageClassName: 'max-h-14',
+  "futura.jpg": {
+    label: "Futura",
+    imageClassName: "max-h-14",
   },
-  'hitex-hyderabad.png': {
-    label: 'HITEX Hyderabad',
-    imageClassName: 'max-h-14',
+  "hitex-hyderabad.png": {
+    label: "HITEX Hyderabad",
+    imageClassName: "max-h-14",
   },
-  'hyundai.png': {
-    label: 'Hyundai',
-    cardClassName: 'border-slate-800 bg-slate-900',
-    imageClassName: 'max-h-12 brightness-110 contrast-125',
+  "hyundai.png": {
+    label: "Hyundai",
+    cardClassName: "border-slate-800 bg-slate-900",
+    imageClassName: "max-h-12 brightness-110 contrast-125",
   },
-  'isb.png': {
-    label: 'Indian School of Business',
-    imageClassName: 'max-h-16',
+  "isb.png": {
+    label: "Indian School of Business",
+    imageClassName: "max-h-16",
   },
-  'jito-hyderabad.jpg': {
-    label: 'JITO Hyderabad',
-    imageClassName: 'max-h-14',
+  "jito-hyderabad.jpg": {
+    label: "JITO Hyderabad",
+    imageClassName: "max-h-14",
   },
-  'lawrence-and-mayo.png': {
-    label: 'Lawrence and Mayo',
-    imageClassName: 'max-h-14',
+  "lawrence-and-mayo.png": {
+    label: "Lawrence and Mayo",
+    imageClassName: "max-h-14",
   },
-  'mirrors-luxury-salons.png': {
-    label: 'Mirrors Luxury Salons',
-    cardClassName: 'border-zinc-800 bg-zinc-950',
-    imageClassName: 'max-h-12 brightness-110',
+  "mirrors-luxury-salons.png": {
+    label: "Mirrors Luxury Salons",
+    cardClassName: "border-zinc-800 bg-zinc-950",
+    imageClassName: "max-h-12 brightness-110",
   },
-  'msn-labs.png': {
-    label: 'MSN',
-    imageClassName: 'max-h-14',
+  "msn-labs.png": {
+    label: "MSN",
+    imageClassName: "max-h-14",
   },
-  'phonepe.svg': {
-    label: 'PhonePe',
-    imageClassName: 'max-h-12',
+  "phonepe.svg": {
+    label: "PhonePe",
+    imageClassName: "max-h-12",
   },
-  'polycab.png': {
-    label: 'Polycab',
-    imageClassName: 'max-h-12',
+  "polycab.png": {
+    label: "Polycab",
+    imageClassName: "max-h-12",
   },
-  'nest-makers.svg': {
-    label: 'Nest Makers',
-    imageClassName: 'max-h-12',
+  "nest-makers.svg": {
+    label: "Nest Makers",
+    imageClassName: "max-h-12",
   },
-  'panzer-technologies.png': {
-    label: 'Panzer Technologies',
-    imageClassName: 'max-h-14',
+  "panzer-technologies.png": {
+    label: "Panzer Technologies",
+    imageClassName: "max-h-14",
   },
-  'samashti-international-school.png': {
-    label: 'Samashti International School',
-    imageClassName: 'max-h-14',
+  "samashti-international-school.png": {
+    label: "Samashti International School",
+    imageClassName: "max-h-14",
   },
-  'sattva.png': {
-    label: 'Sattva',
-    cardClassName: 'border-slate-800 bg-slate-900',
-    imageClassName: 'max-h-14 brightness-125 contrast-125',
+  "sattva.png": {
+    label: "Sattva",
+    cardClassName: "border-slate-800 bg-slate-900",
+    imageClassName: "max-h-14 brightness-125 contrast-125",
   },
-  'servicenow.png': {
-    label: 'ServiceNow',
-    imageClassName: 'max-h-12',
+  "servicenow.png": {
+    label: "ServiceNow",
+    imageClassName: "max-h-12",
   },
-  'shubha-fertility.jpg': {
-    label: 'Shubha Fertility',
-    imageClassName: 'max-h-14',
+  "shubha-fertility.jpg": {
+    label: "Shubha Fertility",
+    imageClassName: "max-h-14",
   },
-  'us-consulate-general-hyderabad.svg': {
-    label: 'U.S. Consulate General Hyderabad',
-    imageClassName: 'max-h-16',
+  "us-consulate-general-hyderabad.svg": {
+    label: "U.S. Consulate General Hyderabad",
+    imageClassName: "max-h-16",
   },
-  'vinati-jewellers.jpg': {
-    label: 'Vinati Jewellers',
-    imageClassName: 'max-h-14',
+  "vinati-jewellers.jpg": {
+    label: "Vinati Jewellers",
+    imageClassName: "max-h-14",
   },
-}
+};
 
 function CategoryProductsSection({
-  title = 'Products',
+  title = "Products",
   description,
   category,
 }: {
-  title?: string
-  description?: string
-  category: (typeof productCategories)[number]
+  title?: string;
+  description?: string;
+  category: (typeof productCategories)[number];
 }) {
   return (
     <SectionReveal
@@ -287,26 +286,26 @@ function CategoryProductsSection({
         </div>
       </div>
     </SectionReveal>
-  )
+  );
 }
 
-function OfficeProjectsSection() {
+function OfficeProductsSection() {
   return (
     <SectionReveal
-      id="projects"
+      id="products"
       className="border-b border-slate-200 bg-[#fafafa]"
     >
       <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
         <header className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-amber-700">
-            Projects
+            Products
           </p>
           <h2 className="mt-4 text-3xl leading-tight text-slate-950 sm:text-4xl">
-            Office environments we build through category-led sourcing.
+            Office furniture categories for productive and modern workspaces.
           </h2>
           <p className="mt-4 text-base leading-8 text-slate-600">
-            From executive rooms to collaborative work areas, these are the key
-            project categories we support for modern office interiors.
+            From executive rooms to collaborative work areas, these are the
+            office furniture categories we support for modern workplaces.
           </p>
         </header>
 
@@ -339,7 +338,7 @@ function OfficeProjectsSection() {
         </div>
       </div>
     </SectionReveal>
-  )
+  );
 }
 
 function ClienteleSection() {
@@ -354,7 +353,8 @@ function ClienteleSection() {
             Clientele
           </p>
           <h2 className="mt-4 text-3xl leading-tight text-slate-950 sm:text-4xl">
-            Brands and institutions that reflect the scale of office projects we support.
+            Brands and institutions that reflect the scale of office projects we
+            support.
           </h2>
           <p className="mt-4 text-base leading-8 text-slate-600">
             A snapshot of the companies and organizations represented in our
@@ -364,26 +364,23 @@ function ClienteleSection() {
 
         <div className="mt-12 rounded-[2rem] border border-stone-200 bg-white p-6 shadow-[0_24px_60px_-45px_rgba(15,23,42,0.22)] sm:p-8">
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {officeClienteleLogos.map((logo) => (
+            {officeClienteleLogos.map((logo) =>
               (() => {
-                const logoDisplay = clienteleLogoDisplay[logo]
+                const logoDisplay = clienteleLogoDisplay[logo];
                 const cardClassName = [
-                  'flex min-h-28 items-center justify-center rounded-[1.5rem] border p-5 shadow-sm transition duration-300 hover:-translate-y-0.5',
-                  logoDisplay?.cardClassName ?? 'border-stone-200 bg-[#fcfbf8]',
-                ].join(' ')
+                  "flex min-h-28 items-center justify-center rounded-[1.5rem] border p-5 shadow-sm transition duration-300 hover:-translate-y-0.5",
+                  logoDisplay?.cardClassName ?? "border-stone-200 bg-[#fcfbf8]",
+                ].join(" ");
                 const imageClassName = [
-                  'h-auto w-auto max-w-full object-contain drop-shadow-[0_2px_6px_rgba(15,23,42,0.08)]',
-                  logoDisplay?.imageClassName ?? 'max-h-14',
-                ].join(' ')
+                  "h-auto w-auto max-w-full object-contain drop-shadow-[0_2px_6px_rgba(15,23,42,0.08)]",
+                  logoDisplay?.imageClassName ?? "max-h-14",
+                ].join(" ");
                 const alt =
                   logoDisplay?.label ??
-                  logo.replace(/\.[^.]+$/, '').replace(/[-_]/g, ' ')
+                  logo.replace(/\.[^.]+$/, "").replace(/[-_]/g, " ");
 
                 return (
-                  <div
-                    key={logo}
-                    className={cardClassName}
-                  >
+                  <div key={logo} className={cardClassName}>
                     <img
                       src={`/clientele/${logo}`}
                       alt={alt}
@@ -391,20 +388,20 @@ function ClienteleSection() {
                       className={imageClassName}
                     />
                   </div>
-                )
-              })()
-            ))}
+                );
+              })(),
+            )}
           </div>
         </div>
       </div>
     </SectionReveal>
-  )
+  );
 }
 
 function CategoryCoverageSection({
   category,
 }: {
-  category: (typeof productCategories)[number]
+  category: (typeof productCategories)[number];
 }) {
   return (
     <SectionReveal className="border-b border-slate-200 bg-slate-50/60">
@@ -424,13 +421,13 @@ function CategoryCoverageSection({
         </div>
       </div>
     </SectionReveal>
-  )
+  );
 }
 
 function DeliverySection({
   category,
 }: {
-  category: (typeof productCategories)[number]
+  category: (typeof productCategories)[number];
 }) {
   return (
     <SectionReveal className="border-b border-slate-200 bg-[#fafafa]">
@@ -445,7 +442,7 @@ function DeliverySection({
               Category expertise
             </h3>
             <p className="mt-2 text-sm leading-7 text-slate-600">
-              We shortlist pieces and suppliers specific to{' '}
+              We shortlist pieces and suppliers specific to{" "}
               {category.label.toLowerCase()} requirements.
             </p>
           </article>
@@ -482,19 +479,12 @@ function DeliverySection({
         </div>
       </div>
     </SectionReveal>
-  )
+  );
 }
 
-function ContactFormSection({
-  categoryLabel,
-}: {
-  categoryLabel: string
-}) {
+function ContactFormSection({ categoryLabel }: { categoryLabel: string }) {
   return (
-    <SectionReveal
-      id="contact"
-      className="bg-[#fafafa]"
-    >
+    <SectionReveal id="contact" className="bg-[#fafafa]">
       <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
         <header className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-amber-700">
@@ -514,14 +504,10 @@ function ContactFormSection({
         </div>
       </div>
     </SectionReveal>
-  )
+  );
 }
 
-function CategoryHeroSection({
-  category,
-}: {
-  category: ProductCategory
-}) {
+function CategoryHeroSection({ category }: { category: ProductCategory }) {
   return (
     <section className="relative overflow-hidden border-b border-slate-900 bg-slate-950 text-white">
       <div
@@ -533,14 +519,7 @@ function CategoryHeroSection({
       <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(15,23,42,0.88)_0%,rgba(15,23,42,0.58)_45%,rgba(15,23,42,0.2)_100%)]" />
 
       <div className="relative mx-auto flex min-h-[420px] max-w-6xl flex-col justify-center px-6 py-16 sm:min-h-[460px] lg:py-20">
-        <Link
-          to="/"
-          className="inline-flex w-fit items-center gap-2 text-sm font-medium text-white/75 transition hover:text-white"
-        >
-          <ArrowRight className="h-4 w-4 rotate-180" />
-          Back to home
-        </Link>
-        <p className="mt-8 text-sm font-medium uppercase tracking-[0.24em] text-amber-200">
+        <p className="text-sm font-medium uppercase tracking-[0.24em] text-amber-200">
           {category.label}
         </p>
         <h1 className="mt-4 max-w-4xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
@@ -551,26 +530,23 @@ function CategoryHeroSection({
         </p>
       </div>
     </section>
-  )
+  );
 }
 
 function ProductCategoryPage() {
-  const { categorySlug } = useParams()
+  const { categorySlug } = useParams();
 
   const category = useMemo(
-    () =>
-      productCategories.find(
-        (entry) => entry.slug === categorySlug,
-      ),
+    () => productCategories.find((entry) => entry.slug === categorySlug),
     [categorySlug],
-  )
+  );
 
   if (!category) {
-    return <Navigate to="/" replace />
+    return <Navigate to="/" replace />;
   }
 
-  const isHomeFurniturePage = category.slug === 'home-furniture'
-  const isOfficeFurniturePage = category.slug === 'office-furniture'
+  const isHomeFurniturePage = category.slug === "home-furniture";
+  const isOfficeFurniturePage = category.slug === "office-furniture";
 
   return (
     <main className="bg-[#fafafa]">
@@ -589,11 +565,7 @@ function ProductCategoryPage() {
         </>
       ) : isOfficeFurniturePage ? (
         <>
-          <CategoryProductsSection
-            category={category}
-            description="Explore the office furniture categories we source for productive, durable, and design-led workspaces."
-          />
-          <OfficeProjectsSection />
+          <OfficeProductsSection />
           <ProcessSection />
           <ClienteleSection />
           <TestimonialsSection reviewMode="office" />
@@ -607,7 +579,7 @@ function ProductCategoryPage() {
         </>
       )}
     </main>
-  )
+  );
 }
 
-export default ProductCategoryPage
+export default ProductCategoryPage;

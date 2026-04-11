@@ -7,11 +7,11 @@ const categoryCards = [
     title: "Office",
     eyebrow: "Office Furniture",
     description:
-      "Workplace furniture for executive cabins, open offices, meeting rooms, and support spaces.",
+      "Workplace furniture for executive cabins, open offices, meeting rooms, and loose furniture.",
     image: "/office-furniture.jpg",
     href: "/products/office-furniture",
     icon: Building2,
-    ctaLabel: "Explore office furniture",
+    ctaLabel: "Explore Office Furniture",
   },
   {
     title: "Home",
@@ -21,7 +21,7 @@ const categoryCards = [
     image: "/home-furniture-hero.jpg",
     href: "/products/home-furniture",
     icon: Home,
-    ctaLabel: "Explore home furniture",
+    ctaLabel: "Explore Home Furniture",
   },
   {
     title: "Sourcing",
@@ -31,7 +31,7 @@ const categoryCards = [
     image: "/custom-furniture.jpeg",
     href: "/sourcing",
     icon: PackageSearch,
-    ctaLabel: "Go to Sourcing",
+    ctaLabel: "Explore Sourcing",
   },
 ] as const;
 

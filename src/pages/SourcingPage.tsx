@@ -5,89 +5,88 @@ import {
   PackageSearch,
   Ship,
   Truck,
-} from 'lucide-react'
-import { Link } from 'react-router'
-import ContactForm from '../components/ContactForm'
-import SectionReveal from '../components/SectionReveal'
+} from "lucide-react";
+import ContactForm from "../components/ContactForm";
+import SectionReveal from "../components/SectionReveal";
 
 const sourcingSteps = [
   {
-    title: 'Industry experience',
+    title: "Industry experience",
     description:
-      'Over 70 years of industry experience, including 30 years specifically focused on importing from China and navigating Chinese manufacturing.',
+      "Over 70 years of industry experience, including 30 years specifically focused on importing from China and navigating Chinese manufacturing.",
     icon: PackageSearch,
   },
   {
-    title: 'Sourcing expertise',
+    title: "Sourcing expertise",
     description:
-      'Practical guidance through the full sourcing process, helping teams navigate challenges and keep project execution smooth.',
+      "Practical guidance through the full sourcing process, helping teams navigate challenges and keep project execution smooth.",
     icon: Globe2,
   },
   {
-    title: 'Quality assurance',
+    title: "Quality assurance",
     description:
-      'Factory vetting, complete compliance documentation, regular status updates, and on-site quality checks before shipment.',
+      "Factory vetting, complete compliance documentation, regular status updates, and on-site quality checks before shipment.",
     icon: BadgeCheck,
   },
   {
-    title: 'Service delivery',
+    title: "Service delivery",
     description:
-      'Last-mile delivery, installation, damage resolution, and project management support designed to exceed expectations.',
+      "Last-mile delivery, installation, damage resolution, and project management support designed to exceed expectations.",
     icon: Ship,
   },
-] as const
+] as const;
 
 const efficiencyPoints = [
-  'Streamlined processes refined over decades of industry experience.',
-  'Technically advanced systems that support smoother operations.',
-  'Punctual delivery that helps keep projects on schedule.',
-  'Proven methods that bring efficiency and reliability to every project.',
-] as const
+  "Streamlined processes refined over decades of industry experience.",
+  "Technically advanced systems that support smoother operations.",
+  "Punctual delivery that helps keep projects on schedule.",
+  "Proven methods that bring efficiency and reliability to every project.",
+] as const;
 
 const sourcingGalleryCategories = [
   {
-    title: 'Sofas',
+    title: "Sofas",
     files: [
-      'sofa01.jpg',
-      'sofa02.jpg',
-      'sofa03.jpg',
-      'sofa04.jpg',
-      'sofa05.jpg',
-      'sofa06.jpg',
-      'sofa07.jpg',
-      'sofa08.jpg',
-      'sofa09.jpg',
-      'sofa10.jpg',
-      'sofa11.jpg',
-      'sofa13.jpg',
-      'sofa14.jpg',
-      'sofa15.jpg',
-      'sofa16.jpg',
-      'sofa17.jpg',
-      'sofa19.jpg',
+      "sofa01.jpg",
+      "sofa02.jpg",
+      "sofa03.jpg",
+      "sofa04.jpg",
+      "sofa05.jpg",
+      "sofa06.jpg",
+      "sofa07.jpg",
+      "sofa08.jpg",
+      "sofa09.jpg",
+      "sofa10.jpg",
+      "sofa11.jpg",
+      "sofa13.jpg",
+      "sofa14.jpg",
+      "sofa15.jpg",
+      "sofa16.jpg",
+      "sofa17.jpg",
+      "sofa19.jpg",
     ],
   },
   {
-    title: 'Beds',
-    files: ['bed01.jpg', 'bed02.jpg', 'bed03.jpg', 'Kids-bed.jpg'],
+    title: "Beds",
+    files: ["bed01.jpg", "bed02.jpg", "bed03.jpg", "Kids-bed.jpg"],
   },
   {
-    title: 'Dining',
-    files: ['dinnig01.jpg', 'dinning02.jpg', 'dinning03.jpg'],
+    title: "Dining",
+    files: ["dinnig01.jpg", "dinning02.jpg", "dinning03.jpg"],
   },
   {
-    title: 'Center Tables',
-    files: ['center-table.jpg', 'center-table01.jpg', 'center-table03.jpg'],
+    title: "Center Tables",
+    files: ["center-table.jpg", "center-table01.jpg", "center-table03.jpg"],
   },
   {
-    title: 'Art',
-    files: ['art01.jpg', 'art02.jpg', 'art03.jpg', 'art04.jpg'],
+    title: "Art",
+    files: ["art01.jpg", "art02.jpg", "art03.jpg", "art04.jpg"],
   },
   {
-    title: 'Wall Decor',
-    files: ['wall01.jpg'],
+    title: "Wall Decor",
+    files: ["wall01.jpg"],
   },
-] as const
+] as const;
 
 function SourcingPage() {
   return (
@@ -97,27 +96,20 @@ function SourcingPage() {
         style={{
           backgroundImage:
             "linear-gradient(90deg, rgba(15, 23, 42, 0.78) 0%, rgba(15, 23, 42, 0.56) 42%, rgba(15, 23, 42, 0.34) 100%), url('/china-background.jpg')",
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
+          backgroundPosition: "center",
+          backgroundSize: "cover",
         }}
       >
         <div className="mx-auto max-w-6xl px-6 py-16 lg:py-20">
-          <Link
-            to="/"
-            className="inline-flex items-center gap-2 text-sm font-medium text-white/72 transition hover:text-white"
-          >
-            <ArrowRight className="h-4 w-4 rotate-180" />
-            Back to home
-          </Link>
-          <p className="mt-8 text-sm font-medium uppercase tracking-[0.24em] text-amber-200/90">
+          <p className="text-sm font-medium uppercase tracking-[0.24em] text-amber-200/90">
             Sourcing
           </p>
           <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            Premier interior sourcing solutions from China.
+            Premier Furniture sourcing solutions from China.
           </h1>
           <p className="mt-6 max-w-3xl text-base leading-8 text-white/82 sm:text-lg">
-            Complete sourcing for every interior need, from aluminum windows
-            and bath fittings to furniture, kitchens, and wardrobes. Built for
+            Complete sourcing for every interior need, from aluminum windows and
+            bath fittings to furniture, kitchens, and wardrobes. Built for
             design teams that need clarity, reliability, and execution support.
           </p>
         </div>
@@ -143,7 +135,7 @@ function SourcingPage() {
 
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {sourcingSteps.map((step) => {
-              const Icon = step.icon
+              const Icon = step.icon;
 
               return (
                 <article
@@ -158,7 +150,7 @@ function SourcingPage() {
                     {step.description}
                   </p>
                 </article>
-              )
+              );
             })}
           </div>
         </div>
@@ -175,7 +167,8 @@ function SourcingPage() {
                 Complete sourcing
               </p>
               <h2 className="text-2xl font-semibold text-slate-900">
-                One-stop interior sourcing for products, execution, and support.
+                One-stop Furniture sourcing for products, execution, and
+                support.
               </h2>
               <p className="mt-4 max-w-2xl text-base leading-8 text-slate-600">
                 The sourcing scope extends across furniture, kitchens,
@@ -240,10 +233,12 @@ function SourcingPage() {
               <section key={category.title}>
                 <div className="flex items-end justify-between gap-4 border-b border-stone-200 pb-4">
                   <div>
-                    <h3 className="text-2xl text-slate-950">{category.title}</h3>
+                    <h3 className="text-2xl text-slate-950">
+                      {category.title}
+                    </h3>
                     <p className="mt-2 text-sm text-slate-500">
                       {category.files.length} image
-                      {category.files.length > 1 ? 's' : ''}
+                      {category.files.length > 1 ? "s" : ""}
                     </p>
                   </div>
                 </div>
@@ -274,10 +269,7 @@ function SourcingPage() {
         </div>
       </section>
 
-      <SectionReveal
-        id="contact"
-        className="bg-[#fafafa]"
-      >
+      <SectionReveal id="contact" className="bg-[#fafafa]">
         <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
           <header className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-amber-700">
@@ -299,7 +291,7 @@ function SourcingPage() {
         </div>
       </SectionReveal>
     </main>
-  )
+  );
 }
 
-export default SourcingPage
+export default SourcingPage;

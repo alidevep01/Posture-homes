@@ -16,6 +16,12 @@ type NavigationLink = {
 }
 
 const pageSectionNavigation: Record<string, NavigationLink[]> = {
+  '/about': [
+    { href: '#founders', label: 'Founders', type: 'anchor' },
+    { href: '#brands', label: 'Brands', type: 'anchor' },
+    { href: '#mission', label: 'Mission', type: 'anchor' },
+    { href: '#locations', label: 'Locations', type: 'anchor' },
+  ],
   '/products/home-furniture': [
     { href: '#products', label: 'Products', type: 'anchor' },
     { href: '#projects', label: 'Projects', type: 'anchor' },
@@ -24,7 +30,6 @@ const pageSectionNavigation: Record<string, NavigationLink[]> = {
   ],
   '/products/office-furniture': [
     { href: '#products', label: 'Products', type: 'anchor' },
-    { href: '#projects', label: 'Projects', type: 'anchor' },
     { href: '#process', label: 'Process', type: 'anchor' },
     { href: '#clientele', label: 'Clientele', type: 'anchor' },
     { href: '#contact', label: 'Contact us', type: 'anchor' },
@@ -82,7 +87,7 @@ function Navbar() {
       <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-xl">
         <nav
           aria-label="Primary"
-          className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4"
+          className="mx-auto flex max-w-6xl items-center justify-center px-6 py-4"
         >
           <Link
             to="/"
@@ -90,7 +95,7 @@ function Navbar() {
             aria-label="Posture Homes"
             className="transition duration-300 hover:opacity-80"
           >
-            <PostureHomesLogo compact />
+            <PostureHomesLogo />
           </Link>
         </nav>
       </header>

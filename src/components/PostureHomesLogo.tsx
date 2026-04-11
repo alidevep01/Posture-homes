@@ -9,8 +9,8 @@ function PostureHomesLogo({
   className = '',
   compact = false,
 }: PostureHomesLogoProps) {
-  const logoHeightClassName = compact ? 'h-11' : 'h-14'
-  const wordmarkSizeClassName = compact ? 'text-[2.05rem]' : 'text-[2.55rem]'
+  const logoHeightClassName = compact ? 'h-14' : 'h-16'
+  const wordmarkSizeClassName = compact ? 'text-[2.55rem]' : 'text-[2.9rem]'
 
   return (
     <div className={`inline-flex items-center gap-3 ${className}`}>
