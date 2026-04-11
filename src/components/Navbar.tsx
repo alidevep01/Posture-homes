@@ -24,7 +24,6 @@ const pageSectionNavigation: Record<string, NavigationLink[]> = {
   ],
   '/products/home-furniture': [
     { href: '#products', label: 'Products', type: 'anchor' },
-    { href: '#projects', label: 'Projects', type: 'anchor' },
     { href: '#process', label: 'Process', type: 'anchor' },
     { href: '#contact', label: 'Contact us', type: 'anchor' },
   ],

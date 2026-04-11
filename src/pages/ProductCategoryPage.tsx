@@ -26,37 +26,37 @@ const officeProjectCategories = [
     title: "Executive Cabins",
     description:
       "Executive desks, premium storage, and leadership seating designed for high-function private workspaces.",
-    image: "/office-furniture1.jpg",
+    image: "/executive-cabin.jpg",
   },
   {
     title: "Workstations",
     description:
       "Open office workstation layouts that support team productivity, movement, and daily utility.",
-    image: "/office-furniture2.jpg",
+    image: "/workstations.jpg",
   },
   {
     title: "Conference Rooms",
     description:
       "Conference tables, meeting chairs, and collaboration setups for formal discussions and client-facing spaces.",
-    image: "/office-furniture4.jpg",
+    image: "/conference-rooms.jpg",
   },
   {
     title: "Reception Areas",
     description:
       "Reception desks, waiting lounge seating, and front-of-house furniture that define first impressions.",
-    image: "/office-furniture5.jpg",
+    image: "/office-reception.jpg",
   },
   {
     title: "Breakout and Cafeteria",
     description:
       "Loose furniture for cafeteria zones, breakout corners, and informal interaction spaces inside the workplace.",
-    image: "/office-furniture.jpg",
+    image: "/cafeteria.jpg",
   },
   {
     title: "Custom Office Solutions",
     description:
       "Project-led sourcing support for custom dimensions, finish selections, and office-specific furniture requirements.",
-    image: "/custom-furniture1.jpg",
+    image: "/custom-office.jpg",
   },
 ] as const;
 
@@ -554,10 +554,6 @@ function ProductCategoryPage() {
 
       {isHomeFurniturePage ? (
         <>
-          <CategoryProductsSection
-            category={category}
-            description="Explore the core home furniture categories we source for refined residential spaces."
-          />
           <ProjectsSection />
           <ProcessSection />
           <TestimonialsSection reviewMode="home" />

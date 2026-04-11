@@ -42,21 +42,22 @@ const projectCategories = [
 function ProjectsSection() {
   return (
     <SectionReveal
-      id="projects"
+      id="products"
       className="border-b border-slate-200 bg-[#fafafa]"
     >
       <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
         <header className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-amber-700">
-            Project Categories
+            Products
           </p>
           <h2 className="mt-4 text-3xl leading-tight text-slate-950 sm:text-4xl">
-            Explore the categories that shape the Posture Homes project portfolio.
+            Explore the categories that define Posture Homes collections.
           </h2>
           <p className="mt-4 text-base leading-8 text-slate-600">
             From complete living spaces to finishing layers like art, artifacts,
-            and rugs, these categories reflect the type of residential projects
-            we build around design-led sourcing and bespoke execution.
+            and rugs, these categories reflect the residential products and
+            curated pieces we build around design-led sourcing and bespoke
+            execution.
           </p>
         </header>
 
