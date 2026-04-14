@@ -324,7 +324,7 @@ function BlogDetailPage() {
                     href="tel:+917815819394"
                     className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-white/10"
                   >
-                    Call Posture India
+                    Call Posture
                   </a>
                 </div>
               </section>
