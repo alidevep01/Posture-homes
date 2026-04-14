@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import ContactForm from "../components/ContactForm";
 import SectionReveal from "../components/SectionReveal";
+import Seo from "../components/Seo";
 
 const sourcingSteps = [
   {
@@ -43,54 +44,56 @@ const efficiencyPoints = [
   "Proven methods that bring efficiency and reliability to every project.",
 ] as const;
 
-const sourcingGalleryCategories = [
-  {
-    title: "Sofas",
-    files: [
-      "sofa01.jpg",
-      "sofa02.jpg",
-      "sofa03.jpg",
-      "sofa04.jpg",
-      "sofa05.jpg",
-      "sofa06.jpg",
-      "sofa07.jpg",
-      "sofa08.jpg",
-      "sofa09.jpg",
-      "sofa10.jpg",
-      "sofa11.jpg",
-      "sofa13.jpg",
-      "sofa14.jpg",
-      "sofa15.jpg",
-      "sofa16.jpg",
-      "sofa17.jpg",
-      "sofa19.jpg",
-    ],
-  },
-  {
-    title: "Beds",
-    files: ["bed01.jpg", "bed02.jpg", "bed03.jpg", "Kids-bed.jpg"],
-  },
-  {
-    title: "Dining",
-    files: ["dinnig01.jpg", "dinning02.jpg", "dinning03.jpg"],
-  },
-  {
-    title: "Center Tables",
-    files: ["center-table.jpg", "center-table01.jpg", "center-table03.jpg"],
-  },
-  {
-    title: "Art",
-    files: ["art01.jpg", "art02.jpg", "art03.jpg", "art04.jpg"],
-  },
-  {
-    title: "Wall Decor",
-    files: ["wall01.jpg"],
-  },
+const sourcingGalleryFiles = [
+  "art01.jpg",
+  "art02.jpg",
+  "art03.jpg",
+  "art04.jpg",
+  "bed01.jpg",
+  "bed02.jpg",
+  "bed03.jpg",
+  "center-table.jpg",
+  "center-table01.jpg",
+  "center-table03.jpg",
+  "dinnig01.jpg",
+  "dinning02.jpg",
+  "dinning03.jpg",
+  "Kids-bed.jpg",
+  "sofa01.jpg",
+  "sofa02.jpg",
+  "sofa03.jpg",
+  "sofa04.jpg",
+  "sofa05.jpg",
+  "sofa06.jpg",
+  "sofa07.jpg",
+  "sofa08.jpg",
+  "sofa09.jpg",
+  "sofa10.jpg",
+  "sofa11.jpg",
+  "sofa13.jpg",
+  "sofa14.jpg",
+  "sofa15.jpg",
+  "sofa16.jpg",
+  "sofa17.jpg",
+  "wall01.jpg",
 ] as const;
 
 function SourcingPage() {
   return (
     <main className="bg-[#fafafa]">
+      <Seo
+        title="Sourcing from China | Posture India"
+        description="Posture India offers furniture sourcing from China with factory vetting, quality checks, compliance support, shipment tracking, installation, and last-mile delivery."
+        canonicalPath="/sourcing"
+        image="/china-background.jpg"
+        imageAlt="Furniture sourcing from China"
+        keywords={[
+          "import furniture from China India",
+          "furniture sourcing China",
+          "factory vetting",
+          "shipment tracking",
+        ]}
+      />
       <section
         className="relative overflow-hidden border-b border-slate-200 bg-slate-950"
         style={{
@@ -198,7 +201,7 @@ function SourcingPage() {
                 ))}
               </ul>
               <a
-                href="#contact"
+                href="tel:+917815819394"
                 className="mt-6 inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-slate-800"
               >
                 Contact us
@@ -219,51 +222,39 @@ function SourcingPage() {
               Gallery
             </p>
             <h2 className="mt-4 text-3xl leading-tight text-slate-950 sm:text-4xl">
-              Browse the sourcing collection by furniture category.
+              Browse the sourcing collection.
             </h2>
             <p className="mt-4 text-base leading-8 text-slate-600">
-              The gallery below groups the images you added into practical
-              sourcing categories so visitors can scan the collection more
-              easily.
+              A single curated gallery keeps the page cleaner while still
+              showing the breadth of sourcing references available for client
+              projects.
             </p>
           </header>
 
-          <div className="mt-12 space-y-12">
-            {sourcingGalleryCategories.map((category) => (
-              <section key={category.title}>
-                <div className="flex items-end justify-between gap-4 border-b border-stone-200 pb-4">
-                  <div>
-                    <h3 className="text-2xl text-slate-950">
-                      {category.title}
-                    </h3>
-                    <p className="mt-2 text-sm text-slate-500">
-                      {category.files.length} image
-                      {category.files.length > 1 ? "s" : ""}
-                    </p>
-                  </div>
-                </div>
+          <div className="mt-12 border-b border-stone-200 pb-4">
+            <p className="text-sm text-slate-500">
+              {sourcingGalleryFiles.length} images
+            </p>
+          </div>
 
-                <div className="mt-6 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-                  {category.files.map((file) => (
-                    <a
-                      key={file}
-                      href={`/sourcing-gallery/${file}`}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="group overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white shadow-[0_24px_60px_-44px_rgba(15,23,42,0.24)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_28px_80px_-36px_rgba(15,23,42,0.3)]"
-                    >
-                      <div className="aspect-[4/3] overflow-hidden bg-[#f7f4ee]">
-                        <img
-                          src={`/sourcing-gallery/${file}`}
-                          alt={`${category.title} sourcing reference`}
-                          loading="lazy"
-                          className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
-                        />
-                      </div>
-                    </a>
-                  ))}
+          <div className="mt-6 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+            {sourcingGalleryFiles.map((file) => (
+              <a
+                key={file}
+                href={`/sourcing-gallery/${file}`}
+                target="_blank"
+                rel="noreferrer"
+                className="group overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white shadow-[0_24px_60px_-44px_rgba(15,23,42,0.24)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_28px_80px_-36px_rgba(15,23,42,0.3)]"
+              >
+                <div className="aspect-[4/3] overflow-hidden bg-[#f7f4ee]">
+                  <img
+                    src={`/sourcing-gallery/${file}`}
+                    alt="Furniture sourcing reference"
+                    loading="lazy"
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
+                  />
                 </div>
-              </section>
+              </a>
             ))}
           </div>
         </div>

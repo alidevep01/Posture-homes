@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router";
 import SectionReveal from "../components/SectionReveal";
+import Seo from "../components/Seo";
 
 const brandSections = [
   {
@@ -48,6 +49,19 @@ function AboutPage() {
 
   return (
     <main className="bg-[#fafafa]">
+      <Seo
+        title="About Posture India | Furniture Brand in Hyderabad"
+        description="Learn about Posture India, a Hyderabad-based furniture brand focused on luxury residential furniture, office furniture, and founder-led execution."
+        canonicalPath="/about"
+        image="/founders.png"
+        imageAlt="Posture India founders"
+        keywords={[
+          "Posture India",
+          "furniture brand Hyderabad",
+          "residential furniture",
+          "office furniture",
+        ]}
+      />
       <SectionReveal className="border-b border-slate-200 bg-[radial-gradient(circle_at_top,#f6efe4_0%,#ffffff_52%,#ffffff_100%)]">
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
           <div className="max-w-4xl">

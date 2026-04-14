@@ -5,6 +5,8 @@ import ScrollToTop from './components/ScrollToTop'
 import WhatsAppFloat from './components/WhatsAppFloat'
 const Footer = lazy(() => import('./components/Footer'))
 const AboutPage = lazy(() => import('./pages/AboutPage'))
+const BlogDetailPage = lazy(() => import('./pages/BlogDetailPage'))
+const BlogListingPage = lazy(() => import('./pages/BlogListingPage'))
 const HomePage = lazy(() => import('./pages/HomePage'))
 const ProductCategoryPage = lazy(() => import('./pages/ProductCategoryPage'))
 const SourcingPage = lazy(() => import('./pages/SourcingPage'))
@@ -22,6 +24,8 @@ function App() {
       <Suspense fallback={<SectionFallback />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/blog" element={<BlogListingPage />} />
+          <Route path="/blog/:slug" element={<BlogDetailPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/sourcing" element={<SourcingPage />} />
           <Route

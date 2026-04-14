@@ -9,6 +9,7 @@ import {
   useTransform,
 } from "framer-motion";
 import { useCurrentYear } from "../hooks/useCurrentYear";
+import { primaryContactPhoneHref } from "../utils/contact";
 
 type ContactBlock = {
   label: string;
@@ -20,6 +21,7 @@ const footerLinks = [
   { label: "Home Furniture", href: "/products/home-furniture" },
   { label: "Office Furniture", href: "/products/office-furniture" },
   { label: "Sourcing", href: "/sourcing" },
+  { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
 ] as const;
 
@@ -82,7 +84,7 @@ function Footer() {
               </h2>
 
               <a
-                href="/#contact"
+                href={primaryContactPhoneHref}
                 className="mt-8 inline-flex items-center gap-2 rounded-[8px] bg-amber-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-white transition duration-300 hover:bg-amber-500"
               >
                 Book a consultation

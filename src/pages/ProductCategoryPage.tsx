@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import SectionReveal from "../components/SectionReveal";
 import ContactForm from "../components/ContactForm";
+import Seo from "../components/Seo";
 import ProcessSection from "../sections/ProcessSection";
 import ProjectsSection from "../sections/ProjectsSection";
 import TestimonialsSection from "../sections/TestimonialsSection";
@@ -550,6 +551,19 @@ function ProductCategoryPage() {
 
   return (
     <main className="bg-[#fafafa]">
+      <Seo
+        title={`${category.pageTitle} | Posture India`}
+        description={category.pageDescription}
+        canonicalPath={`/products/${category.slug}`}
+        image={category.slug === "office-furniture" ? "/office-furniture.jpg" : "/home-furniture-hero.jpg"}
+        imageAlt={category.label}
+        keywords={[
+          category.label,
+          "furniture in Hyderabad",
+          "custom furniture India",
+          "Posture India",
+        ]}
+      />
       <CategoryHeroSection category={category} />
 
       {isHomeFurniturePage ? (

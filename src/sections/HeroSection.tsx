@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router";
+import { primaryContactPhoneHref } from "../utils/contact";
 
 const buttonGlowVariants = {
   rest: { x: "-140%", opacity: 0 },
@@ -87,7 +88,7 @@ function HeroSection() {
               label="Explore categories"
               primary
             />
-            <HeroButton href="#contact" label="Contact us" />
+            <HeroButton href={primaryContactPhoneHref} label="Contact us" />
           </div>
 
           <div className="mt-10 flex flex-wrap gap-3 text-sm text-slate-200/90">

@@ -15,10 +15,22 @@ type SubmissionState =
   | { type: 'success'; message: string }
   | { type: 'error'; message: string }
 
+type ContactFormProps = {
+  title?: string
+  description?: string
+  submitLabel?: string
+  defaultMessage?: string
+}
+
 const fieldBaseClassName =
   'w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-slate-900'
 
-function ContactForm() {
+function ContactForm({
+  title = 'Request a sourcing quote',
+  description = 'Share your furniture requirements and our team will respond with the next steps.',
+  submitLabel = 'Get Quote',
+  defaultMessage = '',
+}: ContactFormProps) {
   const [submissionState, setSubmissionState] = useState<SubmissionState>({
     type: 'idle',
     message: '',
@@ -30,13 +42,13 @@ function ContactForm() {
     reset,
     formState: { errors, isSubmitting },
   } = useForm<ContactFormValues>({
-    defaultValues: {
-      name: '',
-      phone: '',
-      email: '',
-      message: '',
-    },
-  })
+      defaultValues: {
+        name: '',
+        phone: '',
+        email: '',
+        message: defaultMessage,
+      },
+    })
 
   const onSubmit = async (values: ContactFormValues) => {
     setSubmissionState({ type: 'idle', message: '' })
@@ -65,11 +77,10 @@ function ContactForm() {
           Contact form
         </p>
         <h3 className="mt-3 text-2xl font-semibold tracking-tight text-slate-900">
-          Request a sourcing quote
+          {title}
         </h3>
         <p className="mt-3 text-sm leading-7 text-slate-600">
-          Share your furniture requirements and our team will respond with the
-          next steps.
+          {description}
         </p>
       </div>
 
@@ -185,7 +196,7 @@ function ContactForm() {
           disabled={isSubmitting}
           className="inline-flex min-w-40 items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:bg-slate-400"
         >
-          {isSubmitting ? 'Sending...' : 'Get Quote'}
+          {isSubmitting ? 'Sending...' : submitLabel}
         </button>
       </form>
     </div>

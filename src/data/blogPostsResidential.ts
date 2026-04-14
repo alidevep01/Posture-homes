@@ -1,0 +1,329 @@
+import { createBlogPost, type BlogPost } from './blogSchema'
+
+export const residentialBlogPosts: BlogPost[] = [
+  createBlogPost({
+    title: 'Best Furniture for a 2BHK in Hyderabad',
+    slug: 'best-furniture-for-2bhk-in-hyderabad',
+    category: 'Residential',
+    keywords: [
+      'best furniture for 2BHK in Hyderabad',
+      '2BHK furniture Hyderabad',
+      'home furniture Hyderabad',
+      'space saving furniture India',
+    ],
+    metaTitle: 'Best Furniture for a 2BHK in Hyderabad | Posture India',
+    metaDescription:
+      'Discover the best furniture for a 2BHK in Hyderabad, with room-by-room buying tips, space planning advice, and realistic budget ranges for modern homes.',
+    excerpt:
+      'A 2BHK needs furniture that feels complete without making the rooms heavy or cramped. This guide covers what to buy first, what to size carefully, and how to budget room by room.',
+    heroImage: '/blog-images/residential1-blog.jpg',
+    featuredImage: '/blog-images/residential1-blog.jpg',
+    imageAlt: 'Premium 2BHK furniture setup in Hyderabad',
+    readTime: '10 min read',
+    datePublished: '2026-04-14',
+    introduction: [
+      'A 2BHK in Hyderabad usually has to do a lot with limited square footage. One home may be built for a young family in Gachibowli, another for a couple upgrading in Banjara Hills, and another for an investor furnishing a flat for immediate use. In all of those situations, the furniture plan matters as much as the furniture itself. If the sizes are off, even expensive pieces can make the home feel tighter and harder to use.',
+      'The best furniture for a 2BHK in Hyderabad is rarely the biggest or the most decorative option in a showroom. It is the mix that balances comfort, circulation, storage, and finish quality. That means measuring carefully, choosing fewer but better pieces, and knowing where custom furniture makes more sense than ready-made catalog items.',
+      'At Posture India, 2BHK projects usually begin with the same questions: how much storage is enough, how large can the sofa be, should the dining area stay compact, and how should the home look finished without feeling crowded. The answers change from one home to another, but the planning framework stays consistent.',
+    ],
+    sections: [
+      {
+        id: 'start-with-layout-not-products',
+        heading: 'Start with the layout, not the product list',
+        paragraphs: [
+          'Many homeowners begin by listing products first: sofa, bed, side tables, dining set, TV unit, accent chair, and so on. That is understandable, but the stronger approach is to start with movement. In a 2BHK, the walking path between the entrance, living room, dining corner, bedrooms, and balcony determines how comfortable the home will feel every day.',
+          'A good plan marks out the sofa depth, the clearance in front of the TV unit, the width around the dining table, and the access needed for wardrobes and bedside movement. Once those circulation zones are clear, the product decisions become easier. This is also where a supplier with practical planning experience becomes useful, because they can tell you when a catalog size is going to work against the room.',
+        ],
+        bullets: [
+          'Measure wall lengths, door swings, and window positions before selecting any major furniture.',
+          'Leave clear movement around the sofa and between the dining area and adjacent walls.',
+          'Check bedroom access with the bed, side tables, and wardrobe doors all considered together.',
+        ],
+      },
+      {
+        id: 'living-room-priorities',
+        heading: 'What to buy first for the living room',
+        paragraphs: [
+          'In most Hyderabad 2BHK homes, the living room creates the strongest first impression, so it deserves the first spending priority. The anchor piece is usually the sofa. For a compact living room, a well-proportioned three-seater or an L-shape with disciplined dimensions works better than an oversized unit chosen only for visual impact. The center table and side table should support the layout, not crowd it.',
+          'A media unit is another important decision. Wall-mounted or visually lighter units often work better than bulky floor-based cabinets in smaller apartments. Rugs can help define the living area, but the size needs to be intentional. A rug that is too small can make the space feel disconnected, while one that is too large can make the room feel heavier than it should.',
+        ],
+        bullets: [
+          'A typical mid to premium living room budget in Hyderabad can start around Rs 1.8 lakh and move past Rs 4 lakh depending on upholstery, table materials, and custom finishes.',
+          'Loose accent chairs are worth adding only if the room can still breathe after the sofa is placed.',
+          'Media units with concealed storage work well when the living room doubles as the main family storage zone.',
+        ],
+      },
+      {
+        id: 'bedroom-furniture-for-2bhk',
+        heading: 'Bedroom furniture should prioritise comfort and storage',
+        paragraphs: [
+          'The primary bedroom in a 2BHK should feel calm, practical, and easy to maintain. That usually means getting the bed proportions right, choosing side tables that actually fit, and deciding early whether the room needs additional storage through a dresser, bench, or compact study corner. In many cases, the wrong decision is not under-buying but overfilling the room with too many pieces.',
+          'The second bedroom needs even more discipline. It may serve as a guest room, children room, home office, or multipurpose room. Furniture in that room should be selected for flexibility. A storage bed, a compact study table, or a wardrobe with internal organisation can add more daily value than decorative items that only occupy floor area.',
+        ],
+        bullets: [
+          'For a primary bedroom, a mid to premium setup with bed, side tables, and storage elements may range from Rs 1.5 lakh to Rs 3.5 lakh.',
+          'For a secondary bedroom, a practical setup often ranges from Rs 90,000 to Rs 2 lakh depending on storage and finish choices.',
+          'Custom beds are worth considering when room dimensions or mattress sizes do not align with standard production sizes.',
+        ],
+      },
+      {
+        id: 'dining-and-multiuse-zones',
+        heading: 'Dining and multi-use areas need tighter decisions',
+        paragraphs: [
+          'A dedicated dining room is uncommon in many 2BHK apartments, so the dining set usually shares space with the living area. A four-seater is often the right answer, even when the homeowner initially wants a six-seater. The better question is not how many people the table can technically seat, but how often the home will comfortably use that size without hurting movement.',
+          'Console tables, slim storage pieces, and art-led accent furniture can help complete the home without weighing it down. These pieces work best when they serve a visual purpose and a practical one, such as entry storage, display, or lighting support. This is where premium homes often benefit from careful curation rather than adding more furniture for the sake of fullness.',
+        ],
+        bullets: [
+          'A compact four-seater dining set is usually the safest fit for a 2BHK unless the layout clearly allows larger proportions.',
+          'Bench seating on one side can save space in some apartment layouts.',
+          'Artifacts and rugs add finish, but they should come after the room proportions are resolved.',
+        ],
+      },
+      {
+        id: 'custom-vs-ready-made-for-2bhk',
+        heading: 'When custom furniture makes more sense than ready-made',
+        paragraphs: [
+          'Custom furniture is often the better choice in a 2BHK when every inch matters. A ready-made sofa may look attractive in a store, but if its arm thickness, depth, or length pushes into the circulation zone, the room loses comfort immediately. The same applies to beds, side tables, study units, and media consoles. Custom sizing can create a much cleaner result without necessarily turning the home into a luxury-only project.',
+          'The other reason to choose custom furniture is finish control. In many Hyderabad homes, owners want a coordinated palette across the living room and bedrooms. That is difficult when each piece is bought from a different source. A more organised supplier like Posture India can help align upholstery, wood tone, proportions, and delivery timing so the home feels consistent rather than assembled in stages.',
+        ],
+      },
+      {
+        id: 'sample-budget-and-buying-sequence',
+        heading: 'A practical buying sequence and budget range',
+        paragraphs: [
+          'A useful way to furnish a 2BHK is to stage the buying sequence. Start with the living room anchor pieces, move to the primary bedroom, then finish the second bedroom and dining area. Soft furnishings, rugs, art, and accent pieces should usually come after the major dimensions are locked. This reduces the chance of buying decorative items that no longer fit once the essential furniture arrives.',
+          'For a mid to premium 2BHK in Hyderabad, the total furnishing cost can vary widely based on scope, finish level, and how much is custom. A focused, well-planned project may start around Rs 6 lakh to Rs 8 lakh, while a more premium setup with upgraded upholstery, custom storage, rugs, and decorative layers can move into the Rs 10 lakh to Rs 16 lakh range. The right budget is not the cheapest possible one. It is the one that matches the layout, finish expectation, and how long the furniture is expected to serve the home.',
+        ],
+        bullets: [
+          'Phase 1: sofa, center table, media unit, primary bed, side tables.',
+          'Phase 2: second bedroom, dining set, rugs, accent storage.',
+          'Phase 3: art, artifacts, occasional seating, styling upgrades.',
+        ],
+      },
+    ],
+    internalLinks: [
+      {
+        label: 'Home furniture',
+        href: '/products/home-furniture',
+        description:
+          'Explore the categories Posture India supports for living rooms, bedrooms, dining spaces, rugs, and loose furniture.',
+      },
+      {
+        label: 'Custom sourcing support',
+        href: '/sourcing',
+        description:
+          'See how factory vetting, quality checks, shipment tracking, and installation support work for custom-led projects.',
+      },
+    ],
+  }),
+  createBlogPost({
+    title: 'Cost of Furnishing a Home in Hyderabad',
+    slug: 'cost-of-furnishing-a-home-in-hyderabad',
+    category: 'Residential',
+    keywords: [
+      'cost of furnishing a home in Hyderabad',
+      'home furnishing cost Hyderabad',
+      'furniture budget Hyderabad',
+      'premium furniture Hyderabad',
+    ],
+    metaTitle: 'Cost of Furnishing a Home in Hyderabad | Posture India',
+    metaDescription:
+      'Understand the cost of furnishing a home in Hyderabad, from living room and bedroom budgets to custom furniture, styling, and premium upgrade decisions.',
+    excerpt:
+      'Furnishing costs in Hyderabad depend on home size, finish expectations, and how much of the project is custom. This guide explains where the budget usually goes and how to plan it better.',
+    heroImage: '/blog-images/residential2-blog.jpg',
+    featuredImage: '/blog-images/residential2-blog.jpg',
+    imageAlt: 'Cost planning for home furniture in Hyderabad',
+    readTime: '11 min read',
+    datePublished: '2026-04-13',
+    introduction: [
+      'One of the most common questions from Hyderabad homeowners is simple: how much will it actually cost to furnish the home properly? The difficulty is that "properly" means different things to different buyers. One person wants a practical move-in package, another wants a polished mid-premium home, and another is building a fully customised interior with tailored finishes, rugs, and accessories.',
+      'The cost of furnishing a home in Hyderabad is influenced by three factors more than anything else: the size of the home, the finish level expected, and whether the project relies mostly on ready-made pieces or on custom furniture. The city has buyers at every level, but for Posture India the typical enquiry usually comes from homeowners who want a better look, stronger quality, and more reliable execution than generic market furniture can provide.',
+      'A realistic budget conversation should not begin with a headline number alone. It should begin with the rooms being furnished, the products needed in each room, and the standard of comfort and finish the family expects to live with every day.',
+    ],
+    sections: [
+      {
+        id: 'what-shapes-the-budget',
+        heading: 'What shapes the furnishing budget most',
+        paragraphs: [
+          'The furnishing cost rises when the scope expands beyond the obvious anchor pieces. A living room does not stop at the sofa and center table. The final number also includes side tables, media units, rugs, lighting-support furniture, accent chairs, artifacts, and occasionally custom wall-facing pieces. The same logic applies to bedrooms and dining areas.',
+          'The second major driver is quality level. Upholstery density, wood finish, veneer, hardware quality, joinery detail, and how carefully the piece is executed all affect cost. A cheaper piece and a better piece may look similar in a photo, but the comfort, longevity, and finish consistency can be very different in a real home.',
+        ],
+        bullets: [
+          'Scope determines how many categories are included.',
+          'Finish level determines how premium the outcome feels.',
+          'Custom work determines how much sizing, detailing, and execution control are needed.',
+        ],
+      },
+      {
+        id: 'living-room-costs',
+        heading: 'Typical living room cost ranges in Hyderabad',
+        paragraphs: [
+          'For a mid-segment living room, a practical combination of sofa, center table, side tables, and a simple media unit may start around Rs 1.8 lakh to Rs 2.5 lakh. This is usually enough for buyers who want a finished look without going deep into premium materials or layered styling.',
+          'For a mid to premium living room, where upholstery quality improves and the tables, rug, media unit, and occasional seating are chosen more carefully, the budget often sits between Rs 3 lakh and Rs 5.5 lakh. A luxury leaning living room with custom furniture, better fabrics, imported influences, and statement styling can move well beyond that range.',
+        ],
+        bullets: [
+          'A rug alone can meaningfully shift the final number if the finish expectation is premium.',
+          'Accent chairs increase value when the room size supports them; otherwise they become expensive crowding.',
+          'Custom media units are worth the cost when layout precision matters.',
+        ],
+      },
+      {
+        id: 'bedroom-and-dining-costs',
+        heading: 'Bedroom and dining budgets are often underestimated',
+        paragraphs: [
+          'The primary bedroom usually needs the most balanced investment after the living room. A bed, side tables, optional bench, dresser, and selected loose pieces can range from roughly Rs 1.5 lakh to Rs 3.5 lakh for a mid to premium room. The range increases if the bed is custom, if the upholstery is upgraded, or if the supporting furniture is designed as a coordinated set.',
+          'A secondary bedroom can be much leaner, but it is still easy to underbudget if it includes a study setup, storage bed, or multipurpose use. Dining budgets are often overlooked as well. In Hyderabad, a four-seater dining setup may begin around Rs 80,000 to Rs 1.5 lakh in a mid-level project, while a more premium table-and-chair combination can move significantly higher depending on the material and detailing.',
+        ],
+      },
+      {
+        id: 'what-custom-furniture-does-to-the-cost',
+        heading: 'How custom furniture changes the cost equation',
+        paragraphs: [
+          'Custom furniture can increase cost, but it can also prevent waste. Homeowners often compare a ready-made sofa price against a custom sofa price and stop there. That misses the more important question: will the ready-made size fit the room properly and hold the same design intent? If the answer is no, then the cheaper piece can become the more expensive mistake.',
+          'In projects where room proportions are tight, finishes need to align across multiple rooms, or a homeowner wants a particular visual language, custom furniture usually improves value rather than reducing it. Posture India sees this often in apartments where standard catalog dimensions create avoidable compromises in circulation and storage.',
+        ],
+        bullets: [
+          'Custom work is strongest when the room has awkward dimensions.',
+          'It also makes sense when buyers want consistency across rooms.',
+          'The value is highest when delivery coordination matters as much as product quality.',
+        ],
+      },
+      {
+        id: 'sample-budgets-by-home-size',
+        heading: 'Sample furnishing ranges by home size and finish level',
+        paragraphs: [
+          'For a 2BHK in Hyderabad, a focused move-in furniture package may begin around Rs 6 lakh. A stronger mid to premium execution commonly lands in the Rs 8 lakh to Rs 14 lakh range, especially when the home includes rugs, loose furniture, media units, and better upholstery. A design-led 2BHK with custom detailing can move higher.',
+          'For a 3BHK, the spread becomes wider. A sensible mid to premium furnishing budget can begin around Rs 10 lakh to Rs 18 lakh, while premium homes that include custom pieces across the living room, bedrooms, dining, and decorative layers often move past Rs 20 lakh. These are not universal rules, but they are realistic planning bands for Hyderabad buyers who want a quality result rather than an incomplete one.',
+        ],
+      },
+      {
+        id: 'how-to-control-the-budget-without-lowering-the-standard',
+        heading: 'How to control the budget without lowering the standard',
+        paragraphs: [
+          'The best way to protect the budget is to prioritise the high-visibility and high-usage items first. Spend more on the sofa, bed, dining table, and the pieces that define daily comfort. Save decorative layering for later if needed. This helps the home feel complete even if the project is phased.',
+          'Another smart move is to brief the supplier properly from day one. Share the room sizes, reference images, preferred finish range, and whether you want a short delivery window. When the supplier understands the real scope early, the quotation becomes more accurate and fewer surprises appear later.',
+        ],
+        bullets: [
+          'Do not spread the budget too evenly across every room.',
+          'Phase artifacts, styling pieces, and occasional furniture if needed.',
+          'Choose one execution partner where coordination matters.',
+        ],
+      },
+    ],
+    internalLinks: [
+      {
+        label: 'Best furniture for a 2BHK in Hyderabad',
+        href: '/blog/best-furniture-for-2bhk-in-hyderabad',
+        description:
+          'See a room-by-room guide for choosing the right furniture mix for compact and mid-premium apartment layouts.',
+      },
+      {
+        label: 'Home furniture',
+        href: '/products/home-furniture',
+        description:
+          'Review the residential categories available through Posture India, including sofas, beds, dining tables, accent chairs, media units, rugs, and loose furniture.',
+      },
+    ],
+  }),
+  createBlogPost({
+    title: 'Custom Furniture vs Ready-Made: What Works Better for Indian Homes?',
+    slug: 'custom-furniture-vs-ready-made',
+    category: 'Residential',
+    keywords: [
+      'custom furniture vs ready-made',
+      'custom furniture India',
+      'ready made furniture Hyderabad',
+      'bespoke furniture comparison',
+    ],
+    metaTitle: 'Custom Furniture vs Ready-Made | Posture India',
+    metaDescription:
+      'Compare custom furniture vs ready-made furniture for Indian homes with practical guidance on sizing, pricing, quality, delivery, and long-term value.',
+    excerpt:
+      'The right choice depends on layout, finish goals, timeline, and how exact the room needs to feel. This guide explains when custom furniture is worth it and when ready-made is enough.',
+    heroImage: '/blog-images/residential3-blog.jpg',
+    featuredImage: '/blog-images/residential3-blog.jpg',
+    imageAlt: 'Custom furniture and ready-made furniture comparison',
+    readTime: '10 min read',
+    datePublished: '2026-04-12',
+    introduction: [
+      'The debate between custom furniture and ready-made furniture is usually framed as a price question. In reality, it is a fit question. The right option depends on the room dimensions, design expectations, timeline, and how much control the buyer wants over the final outcome. In some homes, ready-made works well. In others, it creates visual and functional compromises that are hard to ignore once the furniture is installed.',
+      'In Hyderabad, many homeowners start with showroom browsing and later realise that the pieces they liked do not fit the room depth, the finish does not match the rest of the home, or the proportions look too heavy once they are placed. That is often the point where custom furniture becomes relevant, especially for living rooms, bedrooms, dining spaces, media units, and accent storage.',
+      'Posture India works with both types of buying logic. Some clients want faster decisions with a disciplined ready-made selection, while others need custom sizing, finish control, and sourcing flexibility. The stronger choice is the one that matches the project, not the one that sounds more premium on paper.',
+    ],
+    sections: [
+      {
+        id: 'where-ready-made-furniture-works-best',
+        heading: 'Where ready-made furniture works best',
+        paragraphs: [
+          'Ready-made furniture works well when the layout is forgiving, the room is large enough to accept standard sizes, and the buyer needs to furnish quickly. It can also be a practical option when the requirement is straightforward and the design language does not need to be tightly coordinated across multiple rooms.',
+          'For example, a guest room, rental apartment, or secondary study space may not need deep customisation. In those cases, a disciplined ready-made selection can save time and reduce decision fatigue. The key word is disciplined. Ready-made works best when someone still checks dimensions, material quality, and how the piece sits within the room.',
+        ],
+        bullets: [
+          'Best for faster timelines and simpler layouts.',
+          'Useful when the furniture category is not highly space-sensitive.',
+          'Works best when the buyer still verifies measurements carefully.',
+        ],
+      },
+      {
+        id: 'where-custom-furniture-wins',
+        heading: 'Where custom furniture clearly wins',
+        paragraphs: [
+          'Custom furniture wins when the room has tight measurements, when the buyer wants a precise finish, or when multiple pieces need to feel like part of one coherent design. That is why it performs especially well in compact apartments, premium villas, client-facing living rooms, and rooms where storage and movement need to be balanced carefully.',
+          'A custom sofa can reduce arm thickness and adjust depth without losing comfort. A custom dining table can match the exact clearance the room allows. A custom bed can align with mattress size, side tables, and wardrobe movement. These adjustments may sound minor, but they often make the difference between a room that feels resolved and one that feels compromised.',
+        ],
+      },
+      {
+        id: 'price-comparison-needs-context',
+        heading: 'Price comparison needs more context than the sticker',
+        paragraphs: [
+          'Ready-made furniture is often cheaper at first glance, but the comparison is not always honest. If the ready-made option needs additional pieces to compensate for poor fit, or if it forces compromises in layout, the total value changes. Likewise, custom furniture may cost more because it includes design interpretation, material coordination, and build precision.',
+          'A sensible comparison asks four questions. Does the piece fit the room correctly? Does the finish align with the rest of the home? Will the comfort and durability hold up? And will the supplier execute the project reliably? Once those questions are added, custom furniture often looks more defensible than buyers initially expect.',
+        ],
+        bullets: [
+          'Ready-made usually wins on speed and immediate price visibility.',
+          'Custom usually wins on precision, finish matching, and long-term fit.',
+          'A bad fit is an expensive problem even if the original price looked lower.',
+        ],
+      },
+      {
+        id: 'delivery-speed-and-project-risk',
+        heading: 'Delivery speed matters, but so does project risk',
+        paragraphs: [
+          'Ready-made furniture usually has an advantage when the move-in date is very close. Buyers can see the product faster, make a quicker choice, and often receive the item on a shorter timeline. But speed only helps when the selected piece is actually right for the home.',
+          'Custom furniture takes longer because design approval, production, finishing, and coordination all need time. That said, the longer timeline can reduce risk in projects where layout precision matters. Posture India often advises clients to choose speed on low-risk items and choose custom execution on high-visibility items that define the room.',
+        ],
+      },
+      {
+        id: 'what-homeowners-regret-most',
+        heading: 'What homeowners regret most after the purchase',
+        paragraphs: [
+          'The most common regret with ready-made furniture is size mismatch. A sofa may be too deep, a dining table too large, or a bed too bulky for the room. Another frequent issue is finish inconsistency. A home that was supposed to feel premium ends up looking pieced together because each product comes from a different source with a different standard.',
+          'The most common regret with custom furniture is weak briefing. If the buyer has not clarified the dimensions, function, finish expectations, or reference direction, the final result can drift away from the intended design. That is why custom furniture requires a better process, not just a better workshop.',
+        ],
+      },
+      {
+        id: 'how-to-decide-room-by-room',
+        heading: 'The strongest approach is often a hybrid one',
+        paragraphs: [
+          'Most homes do not need to be furnished entirely one way or the other. A hybrid approach is often stronger. Use custom furniture where the room needs precision, such as the main sofa, media unit, dining table, or beds. Use ready-made pieces where the risk is lower, such as occasional chairs, utility-side furniture, or certain accessories.',
+          'This is also where a supplier with sourcing capability has an advantage. Posture India can support both tailored furniture solutions and broader sourcing decisions, which helps homeowners avoid an all-or-nothing approach. The goal is not to make every piece custom. The goal is to make the important pieces correct.',
+        ],
+      },
+    ],
+    internalLinks: [
+      {
+        label: 'Cost of furnishing a home in Hyderabad',
+        href: '/blog/cost-of-furnishing-a-home-in-hyderabad',
+        description:
+          'Review how furnishing budgets shift when a project moves from practical ready-made buying to a more custom or premium execution.',
+      },
+      {
+        label: 'Home furniture',
+        href: '/products/home-furniture',
+        description:
+          'Explore the furniture categories most often handled as custom or semi-custom projects for residential spaces.',
+      },
+    ],
+  }),
+]

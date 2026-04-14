@@ -1,0 +1,290 @@
+import { createBlogPost, type BlogPost } from './blogSchema'
+
+export const chinaSourcingBlogPosts: BlogPost[] = [
+  createBlogPost({
+    title: 'Import Furniture from China to India: A Complete Guide',
+    slug: 'import-furniture-from-china-to-india-guide',
+    category: 'China Sourcing',
+    keywords: [
+      'import furniture from China to India guide',
+      'import furniture from China India',
+      'china furniture sourcing India',
+      'furniture import process India',
+    ],
+    metaTitle: 'Import Furniture from China to India Guide | Posture India',
+    metaDescription:
+      'Learn how to import furniture from China to India with a practical guide to factory selection, quality checks, compliance, shipping, and delivery.',
+    excerpt:
+      'Importing from China can improve pricing and widen product choice, but only when the process is controlled properly. This guide explains the steps, risks, and decisions that matter most.',
+    heroImage: '/blog-images/sourcing1-blog.jpg',
+    featuredImage: '/blog-images/sourcing1-blog.jpg',
+    imageAlt: 'Import furniture from China to India guide',
+    readTime: '11 min read',
+    datePublished: '2026-04-08',
+    introduction: [
+      'Importing furniture from China to India attracts buyers for good reasons. The manufacturing ecosystem is deep, the range of products is wide, and customisation options can be far stronger than what local traders alone are able to offer. For residential, office, hospitality, and builder-led projects, the commercial opportunity is real.',
+      'At the same time, importing is not a shortcut. It is a process. Better pricing can disappear quickly if the wrong factory is selected, if the quality check is weak, or if the compliance and logistics steps are treated casually. Buyers who succeed usually do not succeed because they found the cheapest catalog. They succeed because the sourcing chain was controlled from start to finish.',
+      'Posture India supports clients who want that control. The right import process combines factory vetting, sampling, specification clarity, quality checks, shipment tracking, and final delivery coordination in India. Remove any one of those layers and the risk rises sharply.',
+    ],
+    sections: [
+      {
+        id: 'why-clients-import-from-china',
+        heading: 'Why clients import furniture from China',
+        paragraphs: [
+          'China remains attractive because it offers manufacturing depth across many furniture categories, from sofas and beds to office tables, workstations, dining furniture, rugs, and decorative objects. It is especially strong for projects that need variety or customisation at scale. Buyers can often access finishes, material combinations, and production capabilities that are difficult to assemble through fragmented local sourcing.',
+          'Importing also helps when a project needs better commercial efficiency. That does not always mean the lowest possible price. In many cases it means better value for the same budget or a stronger finish level for the amount being spent. This is one reason architects, interior designers, corporates, and builders continue to explore China sourcing for India-bound projects.',
+        ],
+      },
+      {
+        id: 'the-right-way-to-start',
+        heading: 'The right way to start the sourcing process',
+        paragraphs: [
+          'A good import process starts with a clear brief. That brief should define the categories required, the dimensions, finish direction, quantity, and project timeline. Without that, factories are forced to make assumptions, and the buyer ends up comparing quotations that are not actually comparable.',
+          'The next step is supplier filtering. This is where experience matters. Not every factory that looks strong online is the right fit for the project. Some may be good at hospitality furniture but weak on residential details. Some may be suitable for bulk workstations but not premium upholstery. Posture India usually begins by narrowing the factory list based on actual project need, not catalog appearance.',
+        ],
+        bullets: [
+          'Start with scope, quantities, and reference direction.',
+          'Match the factory to the category and finish expectation.',
+          'Do not compare prices before specifications are aligned.',
+        ],
+      },
+      {
+        id: 'sampling-and-technical-clarity',
+        heading: 'Sampling and technical clarity reduce expensive mistakes',
+        paragraphs: [
+          'Once the right suppliers are shortlisted, the buyer needs technical clarity. This includes dimensions, structure, finish, upholstery, cushioning, hardware, and any performance requirements. If the product is custom, drawings and approval logic become even more important. The factory should know exactly what is being produced and what standard it will be judged against.',
+          'Sampling is one of the strongest protections in the process. Whether that means material approvals, finish references, or actual mock-up logic, the point is the same: verify before scaling. Buyers who skip this step often discover the real interpretation only after production is already underway, which is the most expensive moment to correct course.',
+        ],
+      },
+      {
+        id: 'quality-control-before-shipment',
+        heading: 'Quality control before shipment is non-negotiable',
+        paragraphs: [
+          'One of the biggest myths in importing is that quality can be sorted out after the goods arrive in India. That is the wrong stage for discovery. The correct stage is before shipment, when corrections are still possible and the container has not yet started its journey.',
+          'A structured quality check should verify finish, dimensions, consistency, packaging readiness, and whether the production matches the approved standard. This is exactly where sourcing support creates value. Posture India helps reduce the risk of avoidable surprises by making quality control part of the process rather than an optional add-on.',
+        ],
+        bullets: [
+          'Inspect before shipment, not after landing.',
+          'Check finish, structure, dimensions, and packaging quality.',
+          'Treat quality control as part of execution, not as a separate convenience.',
+        ],
+      },
+      {
+        id: 'documents-shipping-and-tracking',
+        heading: 'Documents, shipping, and tracking decide how smooth the project feels',
+        paragraphs: [
+          'After production, the project moves into documentation and logistics. This includes compliance papers, shipment coordination, loading, and milestone visibility. Buyers often underestimate how much anxiety can come from a shipment that is technically moving but poorly tracked. The commercial risk may be under control, but the project still feels unstable.',
+          'Clear shipment tracking matters because downstream activities in India depend on it. Site readiness, installation labour, storage, and handover planning all sit on the expected arrival date. A supplier or sourcing partner who can communicate milestones properly adds real operational value at this stage.',
+        ],
+      },
+      {
+        id: 'when-to-use-a-sourcing-partner',
+        heading: 'When using a sourcing partner is the smarter decision',
+        paragraphs: [
+          'A direct factory relationship can look attractive, but it also puts more responsibility on the buyer. That can work for teams with strong import experience, but it becomes risky when the client is managing multiple stakeholders, tight deadlines, or a mixed-category order. In those cases, a sourcing partner reduces friction by acting as the operational layer between specification and delivery.',
+          'Posture India is especially useful when clients want end-to-end support, including factory vetting, quality checks, compliance handling, shipment tracking, installation, and last-mile delivery. That is the difference between buying products and managing a project well.',
+        ],
+      },
+    ],
+    internalLinks: [
+      {
+        label: 'Sourcing',
+        href: '/sourcing',
+        description:
+          'Review how Posture India supports furniture sourcing from China with end-to-end execution and quality control.',
+      },
+      {
+        label: 'Risks of importing furniture from China',
+        href: '/blog/risks-of-importing-furniture-from-china',
+        description:
+          'See the most common risks in the import process and how stronger planning reduces them.',
+      },
+    ],
+  }),
+  createBlogPost({
+    title: 'China vs India Furniture: Which One Makes More Sense?',
+    slug: 'china-vs-india-furniture-comparison',
+    category: 'China Sourcing',
+    keywords: [
+      'China vs India furniture comparison',
+      'China vs India furniture',
+      'imported furniture vs Indian furniture',
+      'custom furniture sourcing India',
+    ],
+    metaTitle: 'China vs India Furniture Comparison | Posture India',
+    metaDescription:
+      'Compare China vs India furniture across pricing, quality, customisation, lead times, and project suitability for homes and offices.',
+    excerpt:
+      'The better option depends on the category, timeline, finish expectation, and how much sourcing control the project needs. This comparison explains where each market performs best.',
+    heroImage: '/custom-office.jpg',
+    featuredImage: '/office-reception.jpg',
+    imageAlt: 'China vs India furniture comparison',
+    readTime: '10 min read',
+    datePublished: '2026-04-07',
+    introduction: [
+      'The question of China vs India furniture is usually asked as though one market must be better than the other in every case. In practice, that is not how projects work. The stronger choice depends on the product category, the level of customisation required, the delivery timeline, and the kind of support the buyer needs from specification through installation.',
+      'India offers obvious advantages in proximity, easier communication, and in some cases faster project movement. China offers wider factory depth, scale, and stronger flexibility in certain categories and custom executions. The real job is not to choose one flag over another. It is to understand which sourcing route suits the project best.',
+      'Posture India often helps clients make this decision by breaking the comparison into commercial value, finish expectation, logistics, and risk. That is a more useful framework than comparing sticker prices in isolation.',
+    ],
+    sections: [
+      {
+        id: 'where-india-has-an-edge',
+        heading: 'Where Indian furniture sourcing has the advantage',
+        paragraphs: [
+          'Indian sourcing usually has an advantage when the project needs quicker coordination, smaller order sizes, or easier communication among multiple stakeholders. It is also helpful when site changes are still happening and the buyer needs more agility. Local lead times can be easier to manage, and the logistics chain is naturally simpler.',
+          'For buyers who want to physically review samples, communicate frequently, and keep the execution loop shorter, Indian sourcing can feel more comfortable. This is especially true for projects with tight deadlines, limited import appetite, or categories where local manufacturing already performs well enough for the required standard.',
+        ],
+      },
+      {
+        id: 'where-china-has-an-edge',
+        heading: 'Where China sourcing becomes more compelling',
+        paragraphs: [
+          'China becomes more compelling when the project needs scale, factory variety, or customisation that is difficult to achieve through fragmented local supply. It is also strong when buyers want access to a broader mix of finishes, component systems, or design interpretations across residential and office categories.',
+          'For larger or more specification-sensitive orders, China sourcing can offer better value and stronger manufacturing depth. This does not mean every category should be imported. It means some categories, especially when quality and customisation matter together, can benefit from a China-led sourcing strategy supported by proper execution controls.',
+        ],
+      },
+      {
+        id: 'pricing-vs-value',
+        heading: 'Pricing should be evaluated against value, not in isolation',
+        paragraphs: [
+          'China often wins the headline comparison because the factory base is deep and commercial competitiveness can be strong. But the true comparison should include freight, compliance, quality checks, and execution effort. Once those are added, the value may still be strong, but the equation becomes more realistic.',
+          'India, meanwhile, may sometimes show a higher direct product number but reduce complexity in other parts of the project. That is why the correct commercial question is not which source is cheapest. It is which source gives the stronger total result for the budget, timeline, and risk tolerance available.',
+        ],
+      },
+      {
+        id: 'lead-times-and-project-speed',
+        heading: 'Lead times and project speed can change the answer completely',
+        paragraphs: [
+          'If the office must open in a short window or the home needs to be ready for immediate occupancy, Indian sourcing may be easier to manage simply because the timeline is shorter and the logistics chain is lighter. Projects that do not have that flexibility should be careful about relying heavily on import routes unless the planning is already mature.',
+          'On the other hand, if the project schedule is properly planned and the sourcing process is structured early, China can still be the stronger option. The key is not whether import takes longer. The key is whether the schedule was built with that timeline in mind from the start.',
+        ],
+      },
+      {
+        id: 'customisation-and-consistency',
+        heading: 'Customisation and consistency are often the real decision points',
+        paragraphs: [
+          'Buyers frequently turn to China because they want stronger consistency across multiple furniture categories. When a project needs dining tables, sofas, lounge seating, custom storage, workstations, and decorative layers to follow one visual language, the broader factory ecosystem can be an advantage.',
+          'India can absolutely deliver strong custom furniture too, especially when the scope is local and the right partner is involved. The question is whether the buyer needs a narrow custom solution or a larger sourcing matrix with multiple categories, finish standards, and coordinated execution. Posture India helps clients work through this distinction before the order is locked.',
+        ],
+      },
+      {
+        id: 'a-practical-way-to-choose',
+        heading: 'The strongest approach is often selective, not ideological',
+        paragraphs: [
+          'A smart project may use both routes. Some pieces may be better sourced locally for speed and convenience, while others may justify a China sourcing path for commercial or quality reasons. The best projects are not dogmatic. They are selective, brief-led, and execution-aware.',
+          'That is the approach Posture India takes with clients across residential and office projects. The decision is made category by category, with a close look at finish standards, quantity, timeline, and the level of execution support required. That is how the sourcing decision becomes strategic rather than reactive.',
+        ],
+      },
+    ],
+    internalLinks: [
+      {
+        label: 'Import furniture from China to India guide',
+        href: '/blog/import-furniture-from-china-to-india-guide',
+        description:
+          'Review the complete sourcing and import process if China is likely to be the right route for the project.',
+      },
+      {
+        label: 'Sourcing',
+        href: '/sourcing',
+        description:
+          'See how Posture India supports selective sourcing decisions across categories, suppliers, and project execution needs.',
+      },
+    ],
+  }),
+  createBlogPost({
+    title: 'Risks of Importing Furniture from China and How to Reduce Them',
+    slug: 'risks-of-importing-furniture-from-china',
+    category: 'China Sourcing',
+    keywords: [
+      'risks of importing furniture from China',
+      'china furniture sourcing risks',
+      'furniture import risk India',
+      'quality check China furniture',
+    ],
+    metaTitle:
+      'Risks of Importing Furniture from China and How to Reduce Them | Posture India',
+    metaDescription:
+      'Understand the risks of importing furniture from China, from factory selection and quality control to documentation, shipping, and project delays.',
+    excerpt:
+      'Importing furniture from China can deliver strong value, but only if the main risks are addressed early. This guide explains what usually goes wrong and how to avoid it.',
+    heroImage: '/china-background.jpg',
+    featuredImage: '/custom-furniture.jpeg',
+    imageAlt: 'Risks of importing furniture from China',
+    readTime: '10 min read',
+    datePublished: '2026-04-06',
+    introduction: [
+      'The biggest mistake in China sourcing is assuming that risk sits only in shipping. In reality, import risk begins much earlier. It begins when the wrong supplier is selected, when the technical brief is weak, when the buyer skips approvals, or when quality control is treated as optional. By the time the container is on the water, most of the real risk has already been created.',
+      'This matters because importing furniture is not only about cost. It is about whether the delivered product matches the project need and whether the goods arrive in a usable state within the expected schedule. Residential buyers, interior designers, offices, and builders all face that same reality, even if the categories and budgets differ.',
+      'Posture India works on the assumption that risk can be reduced only through structure. A better process does not remove all uncertainty, but it sharply improves the odds of a smooth outcome.',
+    ],
+    sections: [
+      {
+        id: 'wrong-factory-selection',
+        heading: 'Wrong factory selection is the first major risk',
+        paragraphs: [
+          'A factory may be capable and still be wrong for the project. Some factories are strong in bulk commercial output but not in refined residential detailing. Others are attractive on price but unreliable on finish consistency or communication. This is why early supplier selection is more than a sourcing step. It is the foundation of the entire project.',
+          'Factory vetting should include category capability, production reliability, communication quality, and how closely the supplier aligns with the expected finish standard. Posture India uses this filtering approach so clients are not forced to discover mismatch after the order has already begun.',
+        ],
+      },
+      {
+        id: 'weak-specification-control',
+        heading: 'Weak specification control creates expensive ambiguity',
+        paragraphs: [
+          'Factories cannot deliver what has not been defined properly. A vague brief leads to interpretation drift in dimensions, finish tone, upholstery quality, hardware, and packaging. Buyers sometimes assume that reference images are enough, but images alone do not replace technical clarity.',
+          'The safest process uses drawings, written specifications, material approvals, and explicit checkpoints. If the project needs custom furniture, this step becomes even more important. Ambiguity is one of the most expensive risks in imported furniture because correction becomes harder with every stage completed.',
+        ],
+      },
+      {
+        id: 'quality-control-risk',
+        heading: 'Skipping quality control before shipment is one of the biggest risks',
+        paragraphs: [
+          'A product that fails the final inspection in India is far more costly to fix than a product that is corrected at the factory. That is why pre-shipment quality control matters so much. It helps identify finish issues, structural inconsistencies, missing components, and packaging weaknesses while there is still room to act.',
+          'In many problem cases, the buyer assumed the supplier would self-correct or that the sample quality would automatically carry into the full order. That assumption is risky. A separate and structured quality check is a far more dependable safeguard, particularly for mixed-category orders.',
+        ],
+        bullets: [
+          'Inspect dimensions, finish, consistency, and packing readiness.',
+          'Do not rely on assumptions from the sample alone.',
+          'Treat quality control as part of execution planning, not as an optional extra.',
+        ],
+      },
+      {
+        id: 'documentation-and-compliance-risk',
+        heading: 'Documentation and compliance risk can slow the entire project',
+        paragraphs: [
+          'Furniture imports require the right paperwork and compliance handling. If documents are incomplete, late, or inconsistent with the goods being moved, the project timeline can suffer. Even when the product quality is acceptable, administrative weakness can still create stress, delay, and cost.',
+          'This is one area where a sourcing partner adds disproportionate value. Buyers may be comfortable evaluating design and price, but documentation discipline is often outside their daily expertise. Posture India helps clients close that gap by keeping the compliance side integrated with the sourcing process itself.',
+        ],
+      },
+      {
+        id: 'timeline-and-communication-risk',
+        heading: 'Timeline risk often comes from poor visibility, not only delay',
+        paragraphs: [
+          'A project can feel unstable even when the shipment is technically on schedule if the buyer has weak visibility into milestones. Communication gaps create planning problems on the India side because installation teams, client handovers, and site readiness decisions all depend on expected arrival dates.',
+          'A stronger communication structure reduces timeline risk even when the schedule is long. Buyers need clarity on production stage, quality check timing, dispatch, and shipment movement. This lets the India-side project team prepare properly instead of reacting late.',
+        ],
+      },
+      {
+        id: 'how-to-reduce-risk-practically',
+        heading: 'How buyers reduce import risk in practical terms',
+        paragraphs: [
+          'The practical answer is to strengthen the process, not just the purchase order. Use factory vetting, define the brief carefully, approve samples or materials properly, inspect before shipment, and keep the logistics chain visible. If the project is complex, use a sourcing partner that can manage those layers professionally.',
+          'Posture India supports exactly that kind of risk reduction. For clients who want better pricing and wider sourcing options without losing project control, the right support model turns a risky import idea into a more disciplined and usable sourcing system.',
+        ],
+      },
+    ],
+    internalLinks: [
+      {
+        label: 'Import furniture from China to India guide',
+        href: '/blog/import-furniture-from-china-to-india-guide',
+        description:
+          'See the full sourcing framework that reduces many of the risks outlined in this article.',
+      },
+      {
+        label: 'Sourcing',
+        href: '/sourcing',
+        description:
+          'Review Posture India support for factory vetting, quality assurance, documents, shipment tracking, and final delivery.',
+      },
+    ],
+  }),
+]

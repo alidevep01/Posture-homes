@@ -1,24 +1,15 @@
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
-
-const defaultMessage =
-  "Hello Posture, I would like to know more about your furniture and sourcing services.";
-
-function normalizePhoneNumber(phoneNumber: string) {
-  return phoneNumber.replace(/[^\d]/g, "");
-}
+import { getWhatsAppUrl, whatsappDefaultMessage } from "../utils/whatsapp";
 
 function WhatsAppFloat() {
-  const configuredPhoneNumber = import.meta.env.VITE_WHATSAPP_PHONE;
   const configuredMessage =
-    import.meta.env.VITE_WHATSAPP_MESSAGE || defaultMessage;
+    import.meta.env.VITE_WHATSAPP_MESSAGE || whatsappDefaultMessage;
+  const whatsappUrl = getWhatsAppUrl(configuredMessage);
 
-  if (!configuredPhoneNumber) {
+  if (!whatsappUrl) {
     return null;
   }
-
-  const phoneNumber = normalizePhoneNumber(configuredPhoneNumber);
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(configuredMessage)}`;
 
   return (
     <motion.div
