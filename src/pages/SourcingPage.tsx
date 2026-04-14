@@ -1,11 +1,15 @@
 import {
   ArrowRight,
   BadgeCheck,
+  ChevronLeft,
+  ChevronRight,
   Globe2,
   PackageSearch,
   Ship,
   Truck,
+  X,
 } from "lucide-react";
+import { useEffect, useState } from "react";
 import ContactForm from "../components/ContactForm";
 import SectionReveal from "../components/SectionReveal";
 import Seo from "../components/Seo";
@@ -44,41 +48,138 @@ const efficiencyPoints = [
   "Proven methods that bring efficiency and reliability to every project.",
 ] as const;
 
-const sourcingGalleryFiles = [
-  "art01.jpg",
-  "art02.jpg",
-  "art03.jpg",
-  "art04.jpg",
-  "bed01.jpg",
-  "bed02.jpg",
-  "bed03.jpg",
-  "center-table.jpg",
-  "center-table01.jpg",
-  "center-table03.jpg",
-  "dinnig01.jpg",
-  "dinning02.jpg",
-  "dinning03.jpg",
-  "Kids-bed.jpg",
-  "sofa01.jpg",
-  "sofa02.jpg",
-  "sofa03.jpg",
-  "sofa04.jpg",
-  "sofa05.jpg",
-  "sofa06.jpg",
-  "sofa07.jpg",
-  "sofa08.jpg",
-  "sofa09.jpg",
-  "sofa10.jpg",
-  "sofa11.jpg",
-  "sofa13.jpg",
-  "sofa14.jpg",
-  "sofa15.jpg",
-  "sofa16.jpg",
-  "sofa17.jpg",
-  "wall01.jpg",
-] as const;
+const sourcingGalleryExtensions = ["jpg", "jpeg", "png", "webp"] as const;
+const maxSourcingGalleryImages = 200;
+const galleryItemsPerPage = 18;
+
+function checkImageExists(src: string) {
+  return new Promise<boolean>((resolve) => {
+    const image = new Image();
+    image.onload = () => resolve(true);
+    image.onerror = () => resolve(false);
+    image.src = src;
+  });
+}
+
+async function discoverSourcingGalleryImages() {
+  const files: string[] = [];
+
+  for (let index = 1; index <= maxSourcingGalleryImages; index += 1) {
+    const fileNumber = String(index).padStart(3, "0");
+    let matchedFile: string | null = null;
+
+    for (const extension of sourcingGalleryExtensions) {
+      const candidate = `/sourcing-gallery/${fileNumber}.${extension}`;
+
+      if (await checkImageExists(candidate)) {
+        matchedFile = candidate;
+        break;
+      }
+    }
+
+    if (!matchedFile) {
+      break;
+    }
+
+    files.push(matchedFile);
+  }
+
+  return files;
+}
 
 function SourcingPage() {
+  const [sourcingGalleryFiles, setSourcingGalleryFiles] = useState<string[]>(
+    [],
+  );
+  const [currentGalleryPage, setCurrentGalleryPage] = useState(1);
+  const [activeImageIndex, setActiveImageIndex] = useState<number | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const loadGallery = async () => {
+      const files = await discoverSourcingGalleryImages();
+
+      if (!cancelled) {
+        setSourcingGalleryFiles(files);
+      }
+    };
+
+    void loadGallery();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    const totalPages = Math.max(
+      1,
+      Math.ceil(sourcingGalleryFiles.length / galleryItemsPerPage),
+    );
+
+    if (currentGalleryPage > totalPages) {
+      setCurrentGalleryPage(totalPages);
+    }
+  }, [currentGalleryPage, sourcingGalleryFiles.length]);
+
+  useEffect(() => {
+    if (activeImageIndex === null) {
+      document.body.style.overflow = "";
+      return;
+    }
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setActiveImageIndex(null);
+        return;
+      }
+
+      if (event.key === "ArrowLeft") {
+        setActiveImageIndex((currentIndex) => {
+          if (currentIndex === null || sourcingGalleryFiles.length === 0) {
+            return currentIndex;
+          }
+
+          return (
+            (currentIndex - 1 + sourcingGalleryFiles.length) %
+            sourcingGalleryFiles.length
+          );
+        });
+      }
+
+      if (event.key === "ArrowRight") {
+        setActiveImageIndex((currentIndex) => {
+          if (currentIndex === null || sourcingGalleryFiles.length === 0) {
+            return currentIndex;
+          }
+
+          return (currentIndex + 1) % sourcingGalleryFiles.length;
+        });
+      }
+    };
+
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [activeImageIndex, sourcingGalleryFiles.length]);
+
+  const totalGalleryPages = Math.max(
+    1,
+    Math.ceil(sourcingGalleryFiles.length / galleryItemsPerPage),
+  );
+  const galleryStartIndex = (currentGalleryPage - 1) * galleryItemsPerPage;
+  const currentGalleryFiles = sourcingGalleryFiles.slice(
+    galleryStartIndex,
+    galleryStartIndex + galleryItemsPerPage,
+  );
+  const activeImageSrc =
+    activeImageIndex === null ? null : sourcingGalleryFiles[activeImageIndex];
+
   return (
     <main className="bg-[#fafafa]">
       <Seo
@@ -232,31 +333,159 @@ function SourcingPage() {
           </header>
 
           <div className="mt-12 border-b border-stone-200 pb-4">
-            <p className="text-sm text-slate-500">
-              {sourcingGalleryFiles.length} images
-            </p>
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <p className="text-sm text-slate-500">
+                {sourcingGalleryFiles.length} images
+              </p>
+              <p className="text-sm text-slate-500">
+                Page {currentGalleryPage} of {totalGalleryPages}
+              </p>
+            </div>
           </div>
 
           <div className="mt-6 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-            {sourcingGalleryFiles.map((file) => (
-              <a
+            {currentGalleryFiles.map((file, pageIndex) => {
+              const actualIndex = galleryStartIndex + pageIndex;
+
+              return (
+              <button
                 key={file}
-                href={`/sourcing-gallery/${file}`}
-                target="_blank"
-                rel="noreferrer"
+                type="button"
+                onClick={() => setActiveImageIndex(actualIndex)}
                 className="group overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white shadow-[0_24px_60px_-44px_rgba(15,23,42,0.24)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_28px_80px_-36px_rgba(15,23,42,0.3)]"
               >
                 <div className="aspect-[4/3] overflow-hidden bg-[#f7f4ee]">
                   <img
-                    src={`/sourcing-gallery/${file}`}
+                    src={file}
                     alt="Furniture sourcing reference"
                     loading="lazy"
                     className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
                   />
                 </div>
-              </a>
-            ))}
+              </button>
+            )})}
           </div>
+
+          {totalGalleryPages > 1 ? (
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
+              <button
+                type="button"
+                onClick={() =>
+                  setCurrentGalleryPage((page) => Math.max(1, page - 1))
+                }
+                disabled={currentGalleryPage === 1}
+                className="rounded-full border border-stone-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition duration-300 hover:bg-stone-50 disabled:cursor-not-allowed disabled:opacity-45"
+              >
+                Previous
+              </button>
+
+              {Array.from({ length: totalGalleryPages }, (_, index) => {
+                const pageNumber = index + 1;
+                const isActive = pageNumber === currentGalleryPage;
+
+                return (
+                  <button
+                    key={pageNumber}
+                    type="button"
+                    onClick={() => setCurrentGalleryPage(pageNumber)}
+                    aria-current={isActive ? "page" : undefined}
+                    className={`h-11 min-w-11 rounded-full px-4 text-sm font-semibold transition duration-300 ${
+                      isActive
+                        ? "bg-slate-950 text-white"
+                        : "border border-stone-200 bg-white text-slate-700 hover:bg-stone-50"
+                    }`}
+                  >
+                    {pageNumber}
+                  </button>
+                );
+              })}
+
+              <button
+                type="button"
+                onClick={() =>
+                  setCurrentGalleryPage((page) =>
+                    Math.min(totalGalleryPages, page + 1),
+                  )
+                }
+                disabled={currentGalleryPage === totalGalleryPages}
+                className="rounded-full border border-stone-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition duration-300 hover:bg-stone-50 disabled:cursor-not-allowed disabled:opacity-45"
+              >
+                Next
+              </button>
+            </div>
+          ) : null}
+
+          {activeImageSrc ? (
+            <div
+              className="fixed inset-0 z-[120] flex items-center justify-center bg-slate-950/88 px-4 py-6"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Gallery image viewer"
+              onClick={() => setActiveImageIndex(null)}
+            >
+              <button
+                type="button"
+                aria-label="Close image viewer"
+                onClick={() => setActiveImageIndex(null)}
+                className="absolute right-4 top-4 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition duration-300 hover:bg-white/20"
+              >
+                <X className="h-5 w-5" />
+              </button>
+
+              <button
+                type="button"
+                aria-label="Previous image"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  setActiveImageIndex((currentIndex) => {
+                    if (currentIndex === null || sourcingGalleryFiles.length === 0) {
+                      return currentIndex;
+                    }
+
+                    return (
+                      (currentIndex - 1 + sourcingGalleryFiles.length) %
+                      sourcingGalleryFiles.length
+                    );
+                  });
+                }}
+                className="absolute left-4 top-1/2 inline-flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition duration-300 hover:bg-white/20"
+              >
+                <ChevronLeft className="h-6 w-6" />
+              </button>
+
+              <div
+                className="relative w-full max-w-6xl"
+                onClick={(event) => event.stopPropagation()}
+              >
+                <img
+                  src={activeImageSrc}
+                  alt="Furniture sourcing reference"
+                  className="max-h-[84vh] w-full rounded-[1.5rem] object-contain"
+                />
+                <p className="mt-4 text-center text-sm text-white/72">
+                  Image {(activeImageIndex ?? 0) + 1} of {sourcingGalleryFiles.length}
+                </p>
+              </div>
+
+              <button
+                type="button"
+                aria-label="Next image"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  setActiveImageIndex((currentIndex) => {
+                    if (currentIndex === null || sourcingGalleryFiles.length === 0) {
+                      return currentIndex;
+                    }
+
+                    return (currentIndex + 1) % sourcingGalleryFiles.length;
+                  });
+                }}
+                className="absolute right-4 top-1/2 inline-flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition duration-300 hover:bg-white/20"
+              >
+                <ChevronRight className="h-6 w-6" />
+              </button>
+            </div>
+          ) : null}
         </div>
       </section>
 
