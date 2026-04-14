@@ -51,6 +51,17 @@
   select {
     font: inherit;
   }
+
+  button:not(:disabled),
+  a[href],
+  [role="button"],
+  summary {
+    cursor: pointer;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+  }
 }
 
 #root {

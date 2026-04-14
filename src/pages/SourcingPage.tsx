@@ -4,6 +4,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Globe2,
+  LoaderCircle,
   PackageSearch,
   Ship,
   Truck,
@@ -50,6 +51,7 @@ const efficiencyPoints = [
 
 const sourcingGalleryExtensions = ["jpg", "jpeg", "png", "webp"] as const;
 const maxSourcingGalleryImages = 200;
+const maxConsecutiveMissingGalleryImages = 20;
 const galleryItemsPerPage = 18;
 
 function checkImageExists(src: string) {
@@ -63,24 +65,36 @@ function checkImageExists(src: string) {
 
 async function discoverSourcingGalleryImages() {
   const files: string[] = [];
+  let missingStreak = 0;
 
   for (let index = 1; index <= maxSourcingGalleryImages; index += 1) {
     const fileNumber = String(index).padStart(3, "0");
-    let matchedFile: string | null = null;
-
-    for (const extension of sourcingGalleryExtensions) {
-      const candidate = `/sourcing-gallery/${fileNumber}.${extension}`;
-
-      if (await checkImageExists(candidate)) {
-        matchedFile = candidate;
-        break;
-      }
-    }
+    const candidates = sourcingGalleryExtensions.map(
+      (extension) => `/sourcing-gallery/${fileNumber}.${extension}`,
+    );
+    const results = await Promise.all(
+      candidates.map(async (candidate) => ({
+        candidate,
+        exists: await checkImageExists(candidate),
+      })),
+    );
+    const matchedFile =
+      results.find((result) => result.exists)?.candidate ?? null;
 
     if (!matchedFile) {
-      break;
+      missingStreak += 1;
+
+      if (
+        files.length > 0 &&
+        missingStreak >= maxConsecutiveMissingGalleryImages
+      ) {
+        break;
+      }
+
+      continue;
     }
 
+    missingStreak = 0;
     files.push(matchedFile);
   }
 
@@ -91,17 +105,25 @@ function SourcingPage() {
   const [sourcingGalleryFiles, setSourcingGalleryFiles] = useState<string[]>(
     [],
   );
+  const [isGalleryLoading, setIsGalleryLoading] = useState(true);
+  const [loadedGalleryImages, setLoadedGalleryImages] = useState<
+    Record<string, boolean>
+  >({});
   const [currentGalleryPage, setCurrentGalleryPage] = useState(1);
   const [activeImageIndex, setActiveImageIndex] = useState<number | null>(null);
+  const [isActiveImageLoading, setIsActiveImageLoading] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
 
     const loadGallery = async () => {
+      setIsGalleryLoading(true);
       const files = await discoverSourcingGalleryImages();
 
       if (!cancelled) {
         setSourcingGalleryFiles(files);
+        setLoadedGalleryImages({});
+        setIsGalleryLoading(false);
       }
     };
 
@@ -111,6 +133,10 @@ function SourcingPage() {
       cancelled = true;
     };
   }, []);
+
+  useEffect(() => {
+    setIsActiveImageLoading(activeImageIndex !== null);
+  }, [activeImageIndex]);
 
   useEffect(() => {
     const totalPages = Math.max(
@@ -179,6 +205,10 @@ function SourcingPage() {
   );
   const activeImageSrc =
     activeImageIndex === null ? null : sourcingGalleryFiles[activeImageIndex];
+  const gallerySkeletonItems = Array.from(
+    { length: galleryItemsPerPage },
+    (_, index) => index,
+  );
 
   return (
     <main className="bg-[#fafafa]">
@@ -212,8 +242,8 @@ function SourcingPage() {
             Premier Furniture sourcing solutions from China.
           </h1>
           <p className="mt-6 max-w-3xl text-base leading-8 text-white/82 sm:text-lg">
-            Complete sourcing for every interior need, from aluminum windows and
-            bath fittings to furniture, kitchens, and wardrobes. Built for
+            Complete sourcing for every interior needs from furniture, kitchens, wardrobes, artifacts, accessories, aluminum windows and
+            bath fittings. Built for
             design teams that need clarity, reliability, and execution support.
           </p>
         </div>
@@ -335,38 +365,66 @@ function SourcingPage() {
           <div className="mt-12 border-b border-stone-200 pb-4">
             <div className="flex flex-wrap items-center justify-between gap-4">
               <p className="text-sm text-slate-500">
-                {sourcingGalleryFiles.length} images
+                {isGalleryLoading
+                  ? "Loading gallery images..."
+                  : `${sourcingGalleryFiles.length} images`}
               </p>
               <p className="text-sm text-slate-500">
-                Page {currentGalleryPage} of {totalGalleryPages}
+                {isGalleryLoading
+                  ? "Preparing gallery"
+                  : `Page ${currentGalleryPage} of ${totalGalleryPages}`}
               </p>
             </div>
           </div>
 
           <div className="mt-6 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-            {currentGalleryFiles.map((file, pageIndex) => {
-              const actualIndex = galleryStartIndex + pageIndex;
+            {isGalleryLoading
+              ? gallerySkeletonItems.map((item) => (
+                  <div
+                    key={item}
+                    className="overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white shadow-[0_24px_60px_-44px_rgba(15,23,42,0.12)]"
+                  >
+                    <div className="aspect-[4/3] animate-pulse bg-stone-200/70" />
+                  </div>
+                ))
+              : currentGalleryFiles.map((file, pageIndex) => {
+                  const actualIndex = galleryStartIndex + pageIndex;
+                  const isLoaded = loadedGalleryImages[file];
 
-              return (
-              <button
-                key={file}
-                type="button"
-                onClick={() => setActiveImageIndex(actualIndex)}
-                className="group overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white shadow-[0_24px_60px_-44px_rgba(15,23,42,0.24)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_28px_80px_-36px_rgba(15,23,42,0.3)]"
-              >
-                <div className="aspect-[4/3] overflow-hidden bg-[#f7f4ee]">
-                  <img
-                    src={file}
-                    alt="Furniture sourcing reference"
-                    loading="lazy"
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
-                  />
-                </div>
-              </button>
-            )})}
+                  return (
+                    <button
+                      key={file}
+                      type="button"
+                      onClick={() => setActiveImageIndex(actualIndex)}
+                      className="group overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white shadow-[0_24px_60px_-44px_rgba(15,23,42,0.24)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_28px_80px_-36px_rgba(15,23,42,0.3)]"
+                    >
+                      <div className="relative aspect-[4/3] overflow-hidden bg-[#f7f4ee]">
+                        {!isLoaded ? (
+                          <div className="absolute inset-0 flex items-center justify-center bg-stone-200/70">
+                            <LoaderCircle className="h-6 w-6 animate-spin text-slate-500" />
+                          </div>
+                        ) : null}
+                        <img
+                          src={file}
+                          alt="Furniture sourcing reference"
+                          loading="lazy"
+                          onLoad={() =>
+                            setLoadedGalleryImages((current) => ({
+                              ...current,
+                              [file]: true,
+                            }))
+                          }
+                          className={`h-full w-full object-cover transition duration-500 group-hover:scale-[1.04] ${
+                            isLoaded ? "opacity-100" : "opacity-0"
+                          }`}
+                        />
+                      </div>
+                    </button>
+                  );
+                })}
           </div>
 
-          {totalGalleryPages > 1 ? (
+          {!isGalleryLoading && totalGalleryPages > 1 ? (
             <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
               <button
                 type="button"
@@ -415,6 +473,21 @@ function SourcingPage() {
             </div>
           ) : null}
 
+          {!isGalleryLoading && sourcingGalleryFiles.length === 0 ? (
+            <div className="mt-10 rounded-[1.5rem] border border-stone-200 bg-white px-6 py-10 text-center shadow-[0_24px_60px_-44px_rgba(15,23,42,0.12)]">
+              <p className="text-base text-slate-600">
+                No gallery images were found. Add numbered files like
+                <span className="font-semibold text-slate-900"> `001.jpg` </span>
+                to
+                <span className="font-semibold text-slate-900">
+                  {" "}
+                  `public/sourcing-gallery`
+                </span>
+                .
+              </p>
+            </div>
+          ) : null}
+
           {activeImageSrc ? (
             <div
               className="fixed inset-0 z-[120] flex items-center justify-center bg-slate-950/88 px-4 py-6"
@@ -457,13 +530,22 @@ function SourcingPage() {
                 className="relative w-full max-w-6xl"
                 onClick={(event) => event.stopPropagation()}
               >
+                {isActiveImageLoading ? (
+                  <div className="absolute inset-0 flex items-center justify-center rounded-[1.5rem] bg-white/6 backdrop-blur-sm">
+                    <LoaderCircle className="h-8 w-8 animate-spin text-white" />
+                  </div>
+                ) : null}
                 <img
                   src={activeImageSrc}
                   alt="Furniture sourcing reference"
-                  className="max-h-[84vh] w-full rounded-[1.5rem] object-contain"
+                  onLoad={() => setIsActiveImageLoading(false)}
+                  className={`max-h-[84vh] w-full rounded-[1.5rem] object-contain ${
+                    isActiveImageLoading ? "opacity-0" : "opacity-100"
+                  }`}
                 />
                 <p className="mt-4 text-center text-sm text-white/72">
-                  Image {(activeImageIndex ?? 0) + 1} of {sourcingGalleryFiles.length}
+                  Image {(activeImageIndex ?? 0) + 1} of{" "}
+                  {sourcingGalleryFiles.length}
                 </p>
               </div>
 
