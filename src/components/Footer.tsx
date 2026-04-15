@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { ArrowRight, Mail, MapPin } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 import { FiInstagram } from "react-icons/fi";
 import { Link } from "react-router";
 import {
@@ -161,7 +161,12 @@ function Footer() {
           <div className="mt-12 border-t border-slate-700 pt-6 text-sm text-slate-400">
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <p>&copy; {year} Posture. All rights reserved.</p>
-              <p>Terms & Privacy</p>
+              <Link
+                to="/legal"
+                className="transition duration-300 hover:text-white"
+              >
+                Terms & Privacy
+              </Link>
             </div>
           </div>
         </div>

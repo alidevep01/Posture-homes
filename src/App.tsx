@@ -7,6 +7,7 @@ const Footer = lazy(() => import('./components/Footer'))
 const AboutPage = lazy(() => import('./pages/AboutPage'))
 const BlogDetailPage = lazy(() => import('./pages/BlogDetailPage'))
 const BlogListingPage = lazy(() => import('./pages/BlogListingPage'))
+const LegalPage = lazy(() => import('./pages/LegalPage'))
 const HomePage = lazy(() => import('./pages/HomePage'))
 const ProductCategoryPage = lazy(() => import('./pages/ProductCategoryPage'))
 const SourcingPage = lazy(() => import('./pages/SourcingPage'))
@@ -27,6 +28,7 @@ function App() {
           <Route path="/blog" element={<BlogListingPage />} />
           <Route path="/blog/:slug" element={<BlogDetailPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/legal" element={<LegalPage />} />
           <Route path="/sourcing" element={<SourcingPage />} />
           <Route
             path="/products/:categorySlug"
