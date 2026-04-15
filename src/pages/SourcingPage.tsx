@@ -3,14 +3,19 @@ import {
   BadgeCheck,
   ChevronLeft,
   ChevronRight,
+  Download,
   Globe2,
   LoaderCircle,
+  Pause,
   PackageSearch,
+  Play,
   Ship,
   Truck,
+  Volume2,
+  VolumeX,
   X,
 } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ContactForm from "../components/ContactForm";
 import SectionReveal from "../components/SectionReveal";
 import Seo from "../components/Seo";
@@ -102,9 +107,15 @@ async function discoverSourcingGalleryImages() {
 }
 
 function SourcingPage() {
+  const heroVideoRef = useRef<HTMLVideoElement | null>(null);
   const [sourcingGalleryFiles, setSourcingGalleryFiles] = useState<string[]>(
     [],
   );
+  const [heroVideoSrc] = useState(
+    () => `/sourcing-background-video.mp4?v=${Date.now()}`,
+  );
+  const [isHeroVideoPlaying, setIsHeroVideoPlaying] = useState(true);
+  const [isHeroVideoMuted, setIsHeroVideoMuted] = useState(false);
   const [isGalleryLoading, setIsGalleryLoading] = useState(true);
   const [loadedGalleryImages, setLoadedGalleryImages] = useState<
     Record<string, boolean>
@@ -133,6 +144,60 @@ function SourcingPage() {
       cancelled = true;
     };
   }, []);
+
+  useEffect(() => {
+    const video = heroVideoRef.current;
+
+    if (!video) {
+      return;
+    }
+
+    video.muted = isHeroVideoMuted;
+  }, [isHeroVideoMuted]);
+
+  useEffect(() => {
+    const video = heroVideoRef.current;
+
+    if (!video) {
+      return;
+    }
+
+    let cancelled = false;
+
+    const attemptAutoplay = async () => {
+      video.muted = false;
+
+      try {
+        await video.play();
+
+        if (!cancelled) {
+          setIsHeroVideoMuted(false);
+          setIsHeroVideoPlaying(true);
+        }
+      } catch {
+        video.muted = true;
+
+        try {
+          await video.play();
+
+          if (!cancelled) {
+            setIsHeroVideoMuted(true);
+            setIsHeroVideoPlaying(true);
+          }
+        } catch {
+          if (!cancelled) {
+            setIsHeroVideoPlaying(false);
+          }
+        }
+      }
+    };
+
+    void attemptAutoplay();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [heroVideoSrc]);
 
   useEffect(() => {
     setIsActiveImageLoading(activeImageIndex !== null);
@@ -210,6 +275,40 @@ function SourcingPage() {
     (_, index) => index,
   );
 
+  const toggleHeroVideoPlayback = async () => {
+    const video = heroVideoRef.current;
+
+    if (!video) {
+      return;
+    }
+
+    if (video.paused) {
+      try {
+        await video.play();
+        setIsHeroVideoPlaying(true);
+      } catch {
+        setIsHeroVideoPlaying(false);
+      }
+
+      return;
+    }
+
+    video.pause();
+    setIsHeroVideoPlaying(false);
+  };
+
+  const toggleHeroVideoAudio = () => {
+    const video = heroVideoRef.current;
+
+    if (!video) {
+      return;
+    }
+
+    const nextMutedState = !isHeroVideoMuted;
+    video.muted = nextMutedState;
+    setIsHeroVideoMuted(nextMutedState);
+  };
+
   return (
     <main className="bg-[#fafafa]">
       <Seo
@@ -227,25 +326,50 @@ function SourcingPage() {
       />
       <section
         className="relative overflow-hidden border-b border-slate-200 bg-slate-950"
-        style={{
-          backgroundImage:
-            "linear-gradient(90deg, rgba(15, 23, 42, 0.78) 0%, rgba(15, 23, 42, 0.56) 42%, rgba(15, 23, 42, 0.34) 100%), url('/china-background.jpg')",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-        }}
       >
-        <div className="mx-auto max-w-6xl px-6 py-16 lg:py-20">
-          <p className="text-sm font-medium uppercase tracking-[0.24em] text-amber-200/90">
-            Sourcing
-          </p>
-          <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            Premier Furniture sourcing solutions from China.
-          </h1>
-          <p className="mt-6 max-w-3xl text-base leading-8 text-white/82 sm:text-lg">
-            Complete sourcing for every interior needs from furniture, kitchens, wardrobes, artifacts, accessories, aluminum windows and
-            bath fittings. Built for
-            design teams that need clarity, reliability, and execution support.
-          </p>
+        <div className="relative aspect-[16/7] min-h-[260px] w-full sm:min-h-[340px] lg:min-h-[460px]">
+          <div className="absolute inset-0 z-10 bg-slate-950/18" />
+          <video
+            ref={heroVideoRef}
+            autoPlay
+            loop
+            playsInline
+            preload="metadata"
+            poster="/china-background.jpg"
+            onPlay={() => setIsHeroVideoPlaying(true)}
+            onPause={() => setIsHeroVideoPlaying(false)}
+            className="h-full w-full object-cover"
+          >
+            <source src={heroVideoSrc} type="video/mp4" />
+          </video>
+
+          <div className="absolute bottom-4 right-4 z-20 flex items-center gap-3">
+            <button
+              type="button"
+              aria-label={isHeroVideoPlaying ? "Pause video" : "Play video"}
+              onClick={() => void toggleHeroVideoPlayback()}
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/18 bg-black/35 text-white backdrop-blur-sm transition duration-300 hover:bg-black/50"
+            >
+              {isHeroVideoPlaying ? (
+                <Pause className="h-5 w-5" />
+              ) : (
+                <Play className="h-5 w-5" />
+              )}
+            </button>
+
+            <button
+              type="button"
+              aria-label={isHeroVideoMuted ? "Turn audio on" : "Turn audio off"}
+              onClick={toggleHeroVideoAudio}
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/18 bg-black/35 text-white backdrop-blur-sm transition duration-300 hover:bg-black/50"
+            >
+              {isHeroVideoMuted ? (
+                <VolumeX className="h-5 w-5" />
+              ) : (
+                <Volume2 className="h-5 w-5" />
+              )}
+            </button>
+          </div>
         </div>
       </section>
 
@@ -504,6 +628,16 @@ function SourcingPage() {
               >
                 <X className="h-5 w-5" />
               </button>
+
+              <a
+                href={activeImageSrc}
+                download={activeImageSrc.split("/").pop()}
+                aria-label="Download image"
+                className="absolute right-[4.75rem] top-4 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition duration-300 hover:bg-white/20"
+                onClick={(event) => event.stopPropagation()}
+              >
+                <Download className="h-5 w-5" />
+              </a>
 
               <button
                 type="button"

@@ -18,10 +18,11 @@ type NavigationLink = {
 
 const pageSectionNavigation: Record<string, NavigationLink[]> = {
   "/about": [
+    { href: "#about", label: "About us", type: "anchor" },
     { href: "#founders", label: "Founders", type: "anchor" },
-    { href: "#brands", label: "Brands", type: "anchor" },
+    { href: "#products", label: "Products", type: "anchor" },
     { href: "#mission", label: "Mission", type: "anchor" },
-    { href: "#locations", label: "Locations", type: "anchor" },
+    { href: "#presence", label: "Presence", type: "anchor" },
   ],
   "/products/home-furniture": [
     { href: "#products", label: "Products", type: "anchor" },

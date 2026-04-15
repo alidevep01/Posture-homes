@@ -11,36 +11,49 @@ import { Link } from "react-router";
 import SectionReveal from "../components/SectionReveal";
 import Seo from "../components/Seo";
 
-const brandSections = [
+const productSections = [
   {
-    name: "Posture Homes",
-    eyebrow: "Luxury Residential Furniture",
+    name: "Home Furniture",
+    eyebrow: "Residential collections",
     image: "/home-furniture-hero.jpg",
     icon: Home,
     description:
-      "Posture Homes was built for homeowners who want more than standard furniture. The brand focuses on bespoke home collections, curated artifacts, mix media art, and custom-made rugs that bring craftsmanship, individuality, and calm luxury into each space.",
+      "Residential collections shaped for homeowners who want more than standard furniture. The focus is on bespoke home pieces, curated artifacts, mix media art, and custom-made rugs that bring craftsmanship, individuality, and calm luxury into each space.",
     bullets: [
       "Bespoke furniture for living, dining, bedroom, and outdoor spaces",
-      "Curated artifacts, mix media art, and custom rug offerings",
+      "Curated artifacts, mix media art, and custom-made rugs",
       "A design language built around craftsmanship, refinement, and personalization",
     ],
     highlight:
       "The residential side of Posture is centered on timeless design, elevated materials, and a highly tailored client experience.",
   },
   {
-    name: "Posture Furniture",
-    eyebrow: "Ergonomic Office Solutions",
+    name: "Office Furniture",
+    eyebrow: "Workplace solutions",
     image: "/office-furniture.jpg",
     icon: Building2,
     description:
-      "Posture Furniture extends the same founder-led vision into workplaces. It is focused on ergonomic, robust, and aesthetically strong office furniture designed to improve comfort, productivity, and the everyday work experience for teams across India.",
+      "Workplace solutions extending the same founder-led vision into offices. The focus is on ergonomic, robust, and aesthetically strong office furniture designed to improve comfort, productivity, and the everyday work experience for teams across India.",
     bullets: [
       "Executive desks, ergonomic chairs, and conference furniture",
       "Modular workstations, loose furniture, and cafeteria solutions",
       "Execution built around efficient delivery, skilled production, and on-time handovers",
     ],
     highlight:
-      "The office vertical combines design, ergonomics, and project execution to create workspaces that perform as well as they look.",
+      "The office side combines design, ergonomics, and project execution to create workspaces that perform as well as they look.",
+  },
+] as const;
+
+const presenceLocations = [
+  {
+    title: "Banjara Hills",
+    description:
+      "Residential furniture and lifestyle collections for clients looking for a premium home experience in Hyderabad.",
+  },
+  {
+    title: "Gachibowli",
+    description:
+      "Office furniture and workplace projects supported from a location close to Hyderabad's business districts.",
   },
 ] as const;
 
@@ -50,40 +63,44 @@ function AboutPage() {
   return (
     <main className="bg-[#fafafa]">
       <Seo
-        title="About Posture India | Furniture Brand in Hyderabad"
-        description="Learn about Posture India, a Hyderabad-based furniture brand focused on luxury residential furniture, office furniture, and founder-led execution."
+        title="About Posture India | Home and Office Furniture in Hyderabad"
+        description="Learn about Posture India, a Hyderabad-based furniture brand focused on home furniture, office furniture, curated decor, and founder-led execution."
         canonicalPath="/about"
         image="/founders.png"
         imageAlt="Posture India founders"
         keywords={[
           "Posture India",
           "furniture brand Hyderabad",
-          "residential furniture",
+          "home furniture",
           "office furniture",
+          "residential furniture",
+          "bespoke furniture",
         ]}
       />
-      <SectionReveal className="border-b border-slate-200 bg-[radial-gradient(circle_at_top,#f6efe4_0%,#ffffff_52%,#ffffff_100%)]">
+      <SectionReveal
+        id="about"
+        className="border-b border-slate-200 bg-[radial-gradient(circle_at_top,#f6efe4_0%,#ffffff_52%,#ffffff_100%)]"
+      >
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
           <div className="max-w-4xl">
             <p className="text-sm font-semibold uppercase tracking-[0.26em] text-amber-700">
-              About Posture
+              About us
             </p>
             <h1 className="mt-6 max-w-4xl text-4xl leading-tight text-slate-950 sm:text-5xl lg:text-6xl">
-              Luxury furniture for discerning homes and thoughtfully designed
-              workspaces.
+              Furniture and sourcing solutions for homes, workspaces, and
+              projects that need more than standard off-the-shelf products.
             </h1>
             <p className="mt-6 max-w-3xl text-base leading-8 text-slate-600 sm:text-lg">
-              Posture Homes is built for homeowners seeking luxury furniture,
-              curated artifacts, mix media art, and custom-made rugs that bring
-              craftsmanship, creativity, and sophistication into every room.
-              Posture Furniture extends that same commitment into offices with
-              ergonomic, aesthetically appealing, and robust products designed
-              for modern work environments.
+              Posture brings together the residential focus of Posture Homes
+              and the workplace capability of Posture Furniture. Across both
+              sides, the brand combines craftsmanship, creativity, ergonomics,
+              and dependable execution to create spaces that feel personal,
+              refined, and practical.
             </p>
             <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600 sm:text-lg">
-              Across both brands, the focus remains the same: exceptional
-              materials, reliable execution, and a personalized experience that
-              helps clients shape spaces around the way they live and work.
+              The goal is simple: deliver quality furniture, curated decor, and
+              project support that help clients shape spaces around the way
+              they live, work, and welcome people.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -151,12 +168,12 @@ function AboutPage() {
                 exceptional craftsmanship.
               </h2>
               <p className="mt-5 text-base leading-8 text-slate-600">
-                Posture Homes was founded in 2021 by Mr. Aditya Dugar, a
-                passionate entrepreneur with a background in interior design and
-                expertise in furniture ergonomics, and Mrs. Namrata Jain, an
-                engineer and IIM Indore alumna. Together, they built a brand
-                that balances luxury, functionality, and long-term trust across
-                both residential and office environments.
+                Posture was founded in 2021 by Mr. Aditya Dugar, a passionate
+                entrepreneur with a background in interior design and expertise
+                in furniture ergonomics, and Mrs. Namrata Jain, an engineer and
+                IIM Indore alumna. Together, they built a brand that balances
+                luxury, functionality, and long-term trust across both
+                residential and office environments.
               </p>
               <p className="mt-4 text-base leading-8 text-slate-600">
                 Their founder vision was clear from the beginning: create spaces
@@ -191,22 +208,27 @@ function AboutPage() {
       </SectionReveal>
 
       <SectionReveal
-        id="brands"
+        id="products"
         className="border-b border-slate-200 bg-[#fafafa]"
       >
         <div className="mx-auto max-w-6xl px-6 py-18 sm:py-20">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">
-              About our brands
+              Products we deal in
             </p>
             <h2 className="mt-4 text-3xl leading-tight text-slate-950 sm:text-4xl">
-              Two distinct verticals shaped by the same commitment to quality,
-              comfort, and design.
+              Home and office furniture, along with curated decor and custom
+              pieces that complete the space.
             </h2>
+            <p className="mt-4 text-base leading-8 text-slate-600">
+              The product mix combines the residential collections of Posture
+              Homes with the office furniture capability of Posture Furniture,
+              so clients can work with one team across multiple space types.
+            </p>
           </div>
 
           <div className="mt-12 grid gap-8 lg:grid-cols-2">
-            {brandSections.map((section) => {
+            {productSections.map((section) => {
               const Icon = section.icon;
 
               return (
@@ -271,7 +293,7 @@ function AboutPage() {
               Mission & Vision
             </p>
             <h2 className="mt-4 text-3xl leading-tight text-slate-950 sm:text-4xl">
-              A luxury furniture vision shaped by craftsmanship, design, and
+              A furniture vision shaped by craftsmanship, ergonomics, and
               client experience.
             </h2>
           </div>
@@ -282,14 +304,15 @@ function AboutPage() {
                 Vision
               </p>
               <h3 className="mt-4 text-3xl leading-tight text-slate-950">
-                To be a global leader in bespoke furniture, known for
-                exceptional craftsmanship, innovative design, and an elevated
-                customer experience.
+                To be a trusted leader in bespoke home and office furniture,
+                known for exceptional craftsmanship, thoughtful design, and an
+                elevated customer experience.
               </h3>
               <p className="mt-5 text-base leading-8 text-slate-600">
-                Posture Homes is built to create handcrafted pieces that elevate
-                the art of living through timeless aesthetics, refined
-                materials, and a deeply personalized approach.
+                Posture is built to create handcrafted pieces and project-led
+                solutions that elevate the art of living and working through
+                timeless aesthetics, refined materials, and a deeply
+                personalized approach.
               </p>
             </article>
 
@@ -298,60 +321,55 @@ function AboutPage() {
                 Mission
               </p>
               <h3 className="mt-4 text-3xl leading-tight text-slate-950">
-                To redefine luxury living through exquisite furniture, curated
-                art, and bespoke rugs that reflect individual taste and inspire
-                elegance at home.
+                To deliver furniture and design solutions that reflect
+                individual taste, improve everyday comfort, and support the way
+                people live and work.
               </h3>
               <p className="mt-5 text-base leading-8 text-slate-600">
                 The mission is to deliver comfort, sophistication, and
-                individuality in every corner of the home, while maintaining a
-                strong commitment to quality, service, and long-term client
-                trust.
+                individuality across every project, while maintaining a strong
+                commitment to quality, service, and long-term client trust.
               </p>
             </article>
           </div>
         </div>
       </SectionReveal>
 
-      <SectionReveal id="locations" className="bg-[#fafafa]">
+      <SectionReveal id="presence" className="bg-[#fafafa]">
         <div className="mx-auto max-w-6xl px-6 py-18 sm:py-20">
           <div className="rounded-[2rem] border border-stone-200 bg-white px-8 py-10 text-slate-900 shadow-[0_30px_80px_-40px_rgba(15,23,42,0.22)] sm:px-10">
             <div className="grid gap-8 lg:grid-cols-[1.3fr_0.7fr] lg:items-end">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">
-                  Hyderabad Presence
+                  Presence
                 </p>
                 <h2 className="mt-4 text-3xl leading-tight text-slate-950 sm:text-4xl">
-                  Two showrooms, one Posture standard.
+                  Two Hyderabad locations, one Posture standard.
                 </h2>
                 <p className="mt-4 max-w-2xl text-base leading-8 text-slate-600">
                   Posture Homes operates from Banjara Hills for premium
-                  residential furniture, while Posture Furniture serves office
-                  projects from Gachibowli. Both are built around the same
-                  founder-driven approach to design quality, client service, and
-                  execution.
+                  residential furniture and lifestyle collections, while
+                  Posture Furniture serves office projects from Gachibowli.
+                  Both are built around the same founder-driven approach to
+                  design quality, client service, and execution.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <div className="rounded-[1.5rem] border border-stone-200 bg-white px-5 py-4">
-                  <div className="flex items-center gap-2 text-sm font-semibold text-slate-950">
-                    <MapPin className="h-4 w-4 text-amber-700" />
-                    Posture Homes
+                {presenceLocations.map((location) => (
+                  <div
+                    key={location.title}
+                    className="rounded-[1.5rem] border border-stone-200 bg-white px-5 py-4"
+                  >
+                    <div className="flex items-center gap-2 text-sm font-semibold text-slate-950">
+                      <MapPin className="h-4 w-4 text-amber-700" />
+                      {location.title}
+                    </div>
+                    <p className="mt-2 text-sm leading-7 text-slate-600">
+                      {location.description}
+                    </p>
                   </div>
-                  <p className="mt-2 text-sm leading-7 text-slate-600">
-                    Banjara Hills, Hyderabad
-                  </p>
-                </div>
-                <div className="rounded-[1.5rem] border border-stone-200 bg-white px-5 py-4">
-                  <div className="flex items-center gap-2 text-sm font-semibold text-slate-950">
-                    <MapPin className="h-4 w-4 text-amber-700" />
-                    Posture Furniture
-                  </div>
-                  <p className="mt-2 text-sm leading-7 text-slate-600">
-                    Gachibowli, Hyderabad
-                  </p>
-                </div>
+                ))}
               </div>
             </div>
           </div>
