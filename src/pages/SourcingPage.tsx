@@ -655,13 +655,13 @@ function SourcingPage() {
                     );
                   });
                 }}
-                className="absolute left-4 top-1/2 inline-flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition duration-300 hover:bg-white/20"
+                className="absolute left-3 top-1/2 z-30 inline-flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition duration-300 hover:bg-white/20 sm:left-4"
               >
                 <ChevronLeft className="h-6 w-6" />
               </button>
 
               <div
-                className="relative w-full max-w-6xl"
+                className="relative z-20 w-full max-w-6xl"
                 onClick={(event) => event.stopPropagation()}
               >
                 {isActiveImageLoading ? (
@@ -696,7 +696,7 @@ function SourcingPage() {
                     return (currentIndex + 1) % sourcingGalleryFiles.length;
                   });
                 }}
-                className="absolute right-4 top-1/2 inline-flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition duration-300 hover:bg-white/20"
+                className="absolute right-3 top-1/2 z-30 inline-flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition duration-300 hover:bg-white/20 sm:right-4"
               >
                 <ChevronRight className="h-6 w-6" />
               </button>
