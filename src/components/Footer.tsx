@@ -153,12 +153,7 @@ function Footer() {
                   })}
                 </div>
 
-                <div className="mt-8 inline-flex items-start gap-3 rounded-[8px] border border-slate-700 bg-slate-900/40 px-4 py-3 text-left lg:max-w-sm">
-                  <MapPin className="mt-1 h-4 w-4 shrink-0 text-amber-400" />
-                  <p className="text-sm leading-7 text-slate-300">
-                    Banjara Hills and Gachibowli, Hyderabad
-                  </p>
-                </div>
+             
               </div>
             </div>
           </div>
