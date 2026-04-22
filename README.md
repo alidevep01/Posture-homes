@@ -1,73 +1,93 @@
-# React + TypeScript + Vite
+# Posture India — Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Marketing and portfolio website for Posture India, a furniture sourcing company based in Hyderabad. Showcases home furniture, office furniture, China sourcing services, and a blog.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Layer | Technology |
+|-------|-----------|
+| Framework | React 19 + TypeScript |
+| Build tool | Vite |
+| Routing | React Router 7 |
+| Styling | Tailwind CSS 4 |
+| Animation | Framer Motion |
+| Forms | React Hook Form + EmailJS |
+| Deployment | Vercel |
 
-## React Compiler
+## Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── components/     # Shared UI (Navbar, Footer, ErrorBoundary, Seo, …)
+├── pages/          # Route-level components (lazy-loaded)
+├── sections/       # Reusable page sections (Hero, About, Contact, …)
+├── data/           # Content and configuration
+│   ├── json/       # Blog post content as JSON (edit here to update posts)
+│   ├── clientele.ts        # Office client logos + display config
+│   ├── blogPosts.ts        # Aggregator + filter/sort logic
+│   └── blogSchema.ts       # TypeScript types for blog content
+├── utils/          # Constants (productCategories, navigation, contact, …)
+└── hooks/          # Custom hooks (useCurrentYear)
+public/
+├── clientele/      # Client logo images
+├── blog-images/    # Blog hero images
+└── products/       # Product category images
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
+
+The dev server starts at `http://localhost:5173`.
+
+## Environment Variables
+
+Copy `.env.example` to `.env` and fill in your values:
+
+```
+VITE_EMAILJS_SERVICE_ID=
+VITE_EMAILJS_TEMPLATE_ID=
+VITE_EMAILJS_PUBLIC_KEY=
+VITE_WHATSAPP_PHONE=
+VITE_WHATSAPP_MESSAGE=
+```
+
+## Pages
+
+| Route | Page |
+|-------|------|
+| `/` | Home |
+| `/products/home-furniture` | Home Furniture |
+| `/products/office-furniture` | Office Furniture |
+| `/sourcing` | China Sourcing |
+| `/blog` | Blog listing |
+| `/blog/:slug` | Blog post |
+| `/about` | About us |
+| `/legal` | Terms & Privacy |
+
+## Updating Blog Content
+
+Blog posts live in `src/data/json/`. Each file is a JSON array of post objects. To add or edit a post:
+
+1. Open the relevant JSON file (`blogPostsResidential.json`, `blogPostsOffice.json`, `blogPostsChinaSourcing.json`, or `blogPostsLocalSeo.json`)
+2. Add or edit a post object — the required fields are defined in `src/data/blogSchema.ts`
+3. To make a post appear on the site, add its `slug` to the `selectedBlogSlugs` set in `src/data/blogPosts.ts`
+
+## Updating the Clientele Grid
+
+The office clientele logos and their display config live in `src/data/clientele.ts`. To add a new client:
+
+1. Drop the logo image into `public/clientele/`
+2. Add the filename to the `officeClienteleLogos` array
+3. Optionally add display overrides (label, card style, image size) to `clienteleLogoDisplay`
+
+## Build & Deploy
+
+```bash
+npm run build   # outputs to dist/
+```
+
+Deployed automatically to Vercel on push to `main`. The `vercel.json` handles SPA routing rewrites.

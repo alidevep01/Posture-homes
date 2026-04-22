@@ -1,0 +1,102 @@
+export const officeClienteleLogos = [
+  'sattva.png',
+  'apple.png',
+  'servicenow.png',
+  'hyundai.png',
+  'chubb.png',
+  'phonepe.svg',
+  'polycab.png',
+  'curia.png',
+  'citizens-specialty-hospital.png',
+  'msn-labs.png',
+  'hitex-hyderabad.png',
+  'CBIT-LOGO.png',
+  'isb.png',
+  'care-health-insurance.png',
+  'divis-laboratories.svg',
+  'lawrence-and-mayo.png',
+  'devx.svg',
+  'concrete-infra.png',
+  'code-astra.png',
+  'panzer-technologies.png',
+  'muzigal.svg',
+  'nest-makers.svg',
+  'oremus.png',
+  'proclink.png',
+  'samashti-international-school.png',
+  'aakruthi-hospitals.jpg',
+  'elegans-group.svg',
+  'futura.jpg',
+  'hetero.png',
+  'jito-hyderabad.jpg',
+  'mirrors-luxury-salons.png',
+  'cokarma.png',
+  'shubha-fertility.jpg',
+  'sln-projects.jpg',
+  'us-consulate-general-hyderabad.svg',
+  'vinati-jewellers.jpg',
+] as const
+
+export type ClienteleLogoFile = (typeof officeClienteleLogos)[number]
+
+export type ClienteleLogoDisplay = {
+  label?: string
+  cardClassName?: string
+  imageClassName?: string
+}
+
+export const clienteleLogoDisplay: Partial<Record<ClienteleLogoFile, ClienteleLogoDisplay>> = {
+  'apple.png': { label: 'Apple', imageClassName: 'max-h-16' },
+  'aakruthi-hospitals.jpg': { label: 'Aakruthi Hospitals', imageClassName: 'max-h-16' },
+  'care-health-insurance.png': { label: 'Care Health Insurance', imageClassName: 'max-h-14' },
+  'CBIT-LOGO.png': { label: 'Chaitanya Bharathi Institute of Technology', imageClassName: 'max-h-14' },
+  'chubb.png': { label: 'Chubb', imageClassName: 'max-h-12' },
+  'citizens-specialty-hospital.png': { label: 'Citizens Specialty Hospital', imageClassName: 'max-h-14' },
+  'cokarma.png': { label: 'CoKarma', imageClassName: 'max-h-14' },
+  'code-astra.png': {
+    label: 'Code Astra',
+    cardClassName: 'border-slate-800 bg-slate-900',
+    imageClassName: 'max-h-10 brightness-110 contrast-125',
+  },
+  'concrete-infra.png': { label: 'Concrete Infra', imageClassName: 'max-h-14' },
+  'curia.png': { label: 'Curia', imageClassName: 'max-h-14' },
+  'devx.svg': {
+    label: 'DEVX',
+    cardClassName: 'border-slate-800 bg-slate-900',
+    imageClassName: 'max-h-12',
+  },
+  'divis-laboratories.svg': { label: "Divi's Laboratories", imageClassName: 'max-h-14' },
+  'futura.jpg': { label: 'Futura', imageClassName: 'max-h-14' },
+  'hitex-hyderabad.png': { label: 'HITEX Hyderabad', imageClassName: 'max-h-14' },
+  'hyundai.png': {
+    label: 'Hyundai',
+    cardClassName: 'border-slate-800 bg-slate-900',
+    imageClassName: 'max-h-12 brightness-110 contrast-125',
+  },
+  'isb.png': { label: 'Indian School of Business', imageClassName: 'max-h-16' },
+  'jito-hyderabad.jpg': { label: 'JITO Hyderabad', imageClassName: 'max-h-14' },
+  'lawrence-and-mayo.png': { label: 'Lawrence and Mayo', imageClassName: 'max-h-14' },
+  'mirrors-luxury-salons.png': {
+    label: 'Mirrors Luxury Salons',
+    cardClassName: 'border-zinc-800 bg-zinc-950',
+    imageClassName: 'max-h-12 brightness-110',
+  },
+  'msn-labs.png': { label: 'MSN', imageClassName: 'max-h-14' },
+  'phonepe.svg': { label: 'PhonePe', imageClassName: 'max-h-12' },
+  'polycab.png': { label: 'Polycab', imageClassName: 'max-h-12' },
+  'nest-makers.svg': { label: 'Nest Makers', imageClassName: 'max-h-12' },
+  'panzer-technologies.png': { label: 'Panzer Technologies', imageClassName: 'max-h-14' },
+  'samashti-international-school.png': { label: 'Samashti International School', imageClassName: 'max-h-14' },
+  'sattva.png': {
+    label: 'Sattva',
+    cardClassName: 'border-slate-800 bg-slate-900',
+    imageClassName: 'max-h-14 brightness-125 contrast-125',
+  },
+  'servicenow.png': { label: 'ServiceNow', imageClassName: 'max-h-12' },
+  'shubha-fertility.jpg': { label: 'Shubha Fertility', imageClassName: 'max-h-14' },
+  'us-consulate-general-hyderabad.svg': {
+    label: 'U.S. Consulate General Hyderabad',
+    imageClassName: 'max-h-16',
+  },
+  'vinati-jewellers.jpg': { label: 'Vinati Jewellers', imageClassName: 'max-h-14' },
+}
