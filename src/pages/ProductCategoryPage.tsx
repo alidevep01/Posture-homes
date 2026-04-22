@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { Navigate, useParams } from "react-router";
+import { Link, Navigate, useParams } from "react-router";
 import {
   BadgeCheck,
   PackageCheck,
@@ -14,6 +14,7 @@ import ProjectsSection from "../sections/ProjectsSection";
 import TestimonialsSection from "../sections/TestimonialsSection";
 import { productCategories } from "../utils/productCategories";
 import { officeClienteleLogos, clienteleLogoDisplay } from "../data/clientele";
+import { getCategories } from "../data/productsData";
 
 type ProductCategory = (typeof productCategories)[number];
 type ProductCategorySlug = ProductCategory["slug"];
@@ -22,45 +23,6 @@ const categoryHeroImages: Record<ProductCategorySlug, string> = {
   "home-furniture": "/home-background-1.jpg",
   "office-furniture": "/office-background-1.jpg",
 };
-
-const officeProjectCategories = [
-  {
-    title: "Executive Cabins",
-    description:
-      "Executive desks, premium storage, and leadership seating designed for high-function private workspaces.",
-    image: "/executive-cabin.jpg",
-  },
-  {
-    title: "Workstations",
-    description:
-      "Open office workstation layouts that support team productivity, movement, and daily utility.",
-    image: "/workstations.jpg",
-  },
-  {
-    title: "Conference Rooms",
-    description:
-      "Conference tables, meeting chairs, and collaboration setups for formal discussions and client-facing spaces.",
-    image: "/conference-rooms.jpg",
-  },
-  {
-    title: "Reception Areas",
-    description:
-      "Reception desks, waiting lounge seating, and front-of-house furniture that define first impressions.",
-    image: "/office-reception.jpg",
-  },
-  {
-    title: "Breakout and Cafeteria",
-    description:
-      "Loose furniture for cafeteria zones, breakout corners, and informal interaction spaces inside the workplace.",
-    image: "/cafeteria.jpg",
-  },
-  {
-    title: "Custom Office Solutions",
-    description:
-      "Project-led sourcing support for custom dimensions, finish selections, and office-specific furniture requirements.",
-    image: "/custom-office.jpg",
-  },
-] as const;
 
 
 function CategoryProductsSection({
@@ -114,55 +76,91 @@ function CategoryProductsSection({
   );
 }
 
-function OfficeProductsSection() {
+function encodeImagePath(path: string): string {
+  return path
+    .split("/")
+    .map((segment, i) => (i === 0 ? segment : encodeURIComponent(segment)))
+    .join("/");
+}
+
+function CategoryGrid({
+  section,
+  basePath,
+  title,
+  subtitle,
+}: {
+  section: "home" | "office";
+  basePath: string;
+  title: string;
+  subtitle: string;
+}) {
+  const categories = getCategories(section);
   return (
-    <SectionReveal
-      id="products"
-      className="border-b border-slate-200 bg-[#fafafa]"
-    >
+    <SectionReveal id="products" className="border-b border-slate-200 bg-[#fafafa]">
       <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
         <header className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-amber-700">
             Products
           </p>
           <h2 className="mt-4 text-3xl leading-tight text-slate-950 sm:text-4xl">
-            Office furniture categories for productive and modern workspaces.
+            {title}
           </h2>
-          <p className="mt-4 text-base leading-8 text-slate-600">
-            From executive rooms to collaborative work areas, these are the
-            office furniture categories we support for modern workplaces.
-          </p>
+          <p className="mt-4 text-base leading-8 text-slate-600">{subtitle}</p>
         </header>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {officeProjectCategories.map((project) => (
-            <article
-              key={project.title}
-              className="group overflow-hidden rounded-[1.9rem] border border-stone-200 bg-white shadow-[0_24px_60px_-40px_rgba(15,23,42,0.25)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_30px_80px_-36px_rgba(15,23,42,0.32)]"
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {categories.map((cat) => (
+            <Link
+              key={cat.slug}
+              to={`${basePath}/${cat.slug}`}
+              className="group overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  loading="lazy"
-                  className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/55 via-slate-950/8 to-transparent" />
+              <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
+                {cat.coverImage ? (
+                  <img
+                    src={encodeImagePath(cat.coverImage)}
+                    alt={cat.label}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
+                  />
+                ) : (
+                  <div className="flex h-full items-center justify-center text-slate-300 text-sm">
+                    {cat.label}
+                  </div>
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent" />
               </div>
-
-              <div className="p-6">
-                <h3 className="text-2xl leading-tight text-slate-950">
-                  {project.title}
-                </h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">
-                  {project.description}
-                </p>
+              <div className="p-5">
+                <h3 className="text-lg font-semibold text-slate-900">{cat.label}</h3>
+                <p className="mt-1 text-sm text-slate-500">{cat.items.length} items</p>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </div>
     </SectionReveal>
+  );
+}
+
+function OfficeProductsSection() {
+  return (
+    <CategoryGrid
+      section="office"
+      basePath="/products/office-furniture"
+      title="Office furniture categories for productive and modern workspaces."
+      subtitle="From executive rooms to collaborative work areas, browse all the office furniture categories we carry."
+    />
+  );
+}
+
+function HomeProductsSection() {
+  return (
+    <CategoryGrid
+      section="home"
+      basePath="/products/home-furniture"
+      title="Home furniture categories for every room and style."
+      subtitle="From living rooms to dining spaces, browse all the home furniture categories we carry."
+    />
   );
 }
 
@@ -392,6 +390,7 @@ function ProductCategoryPage() {
 
       {isHomeFurniturePage ? (
         <>
+          <HomeProductsSection />
           <ProjectsSection />
           <ProcessSection />
           <TestimonialsSection reviewMode="home" />

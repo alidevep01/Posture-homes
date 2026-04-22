@@ -12,6 +12,8 @@ const LegalPage = lazy(() => import('./pages/LegalPage'))
 const HomePage = lazy(() => import('./pages/HomePage'))
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'))
 const ProductCategoryPage = lazy(() => import('./pages/ProductCategoryPage'))
+const ProductListingPage = lazy(() => import('./pages/ProductListingPage'))
+const ProductDetailPage = lazy(() => import('./pages/ProductDetailPage'))
 const SourcingPage = lazy(() => import('./pages/SourcingPage'))
 
 function SectionFallback() {
@@ -36,6 +38,14 @@ function App() {
             <Route
               path="/products/:categorySlug"
               element={<ProductCategoryPage />}
+            />
+            <Route
+              path="/products/:categorySlug/:subCategorySlug"
+              element={<ProductListingPage />}
+            />
+            <Route
+              path="/products/:categorySlug/:subCategorySlug/:itemSlug"
+              element={<ProductDetailPage />}
             />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
