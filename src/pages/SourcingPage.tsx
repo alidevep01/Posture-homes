@@ -672,6 +672,7 @@ function SourcingPage() {
                 <img
                   src={activeImageSrc}
                   alt="Furniture sourcing reference"
+                  loading="lazy"
                   onLoad={() => setIsActiveImageLoading(false)}
                   className={`max-h-[84vh] w-full rounded-[1.5rem] object-contain ${
                     isActiveImageLoading ? "opacity-0" : "opacity-100"

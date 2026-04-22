@@ -17,6 +17,7 @@ function PostureHomesLogo({
       <img
         src="/logo.png"
         alt="Posture Homes"
+        loading="eager"
         className={`${logoHeightClassName} w-auto`}
       />
       <span
