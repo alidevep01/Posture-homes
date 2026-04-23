@@ -41,3 +41,17 @@ export function sectionFromCategorySlug(categorySlug: string): ProductSection | 
   if (categorySlug === 'office-furniture') return 'office'
   return null
 }
+
+type CategoryLink = { slug: string; label: string; href: string; itemCount: number }
+
+function buildCategoryLinks(section: ProductSection, sectionSlug: string): CategoryLink[] {
+  return getCategories(section).map((c) => ({
+    slug: c.slug,
+    label: c.label,
+    href: `/products/${sectionSlug}/${c.slug}`,
+    itemCount: c.items.length,
+  }))
+}
+
+export const homeCategoryLinks: CategoryLink[] = buildCategoryLinks('home', 'home-furniture')
+export const officeCategoryLinks: CategoryLink[] = buildCategoryLinks('office', 'office-furniture')

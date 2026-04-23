@@ -77,10 +77,7 @@ function CategoryProductsSection({
 }
 
 function encodeImagePath(path: string): string {
-  return path
-    .split("/")
-    .map((segment, i) => (i === 0 ? segment : encodeURIComponent(segment)))
-    .join("/");
+  return encodeURI(path);
 }
 
 function CategoryGrid({

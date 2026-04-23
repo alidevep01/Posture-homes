@@ -2676,15 +2676,15 @@
     {
       "slug": "high-back-cushion-chairs",
       "label": "High Back Cushion Chairs",
-      "coverImage": "/products/office/High Back Cushion Chairs/acosta-tan/acosta-mb-p18000.png",
+      "coverImage": "/products/office/High Back Cushion Chairs/acosta-tan/acosta-tab-front-hb-p19000.png",
       "items": [
         {
           "slug": "acosta-tan",
           "name": "Acosta Tan",
-          "price": 18000,
+          "price": 19000,
           "images": [
-            "/products/office/High Back Cushion Chairs/acosta-tan/acosta-mb-p18000.png",
-            "/products/office/High Back Cushion Chairs/acosta-tan/acosta-tab-hb-p19000.png"
+            "/products/office/High Back Cushion Chairs/acosta-tan/acosta-tab-front-hb-p19000.png",
+            "/products/office/High Back Cushion Chairs/acosta-tan/acosta-mb-back--p18000.png"
           ],
           "colors": [],
           "description": ""
