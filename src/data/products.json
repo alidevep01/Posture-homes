@@ -21,8 +21,8 @@
           "name": "9809 Arm Chair",
           "price": 62000,
           "images": [
-            "/products/home/arm-chairs/9809 arm chair/9809-back-p62000.png",
-            "/products/home/arm-chairs/9809 arm chair/9809-front-p62000.png"
+            "/products/home/arm-chairs/9809 arm chair/9809-front-p62000.png",
+            "/products/home/arm-chairs/9809 arm chair/9809-back-p62000.png"
           ],
           "colors": [],
           "description": ""
@@ -53,8 +53,8 @@
           "name": "Beyl Arm Chair",
           "price": 122500,
           "images": [
-            "/products/home/arm-chairs/beyl arm chair/beyl-chair-back.png",
-            "/products/home/arm-chairs/beyl arm chair/beyl-chair-front-p122500.png"
+            "/products/home/arm-chairs/beyl arm chair/beyl-chair-front-p122500.png",
+            "/products/home/arm-chairs/beyl arm chair/beyl-chair-back.png"
           ],
           "colors": [],
           "description": ""
@@ -156,8 +156,8 @@
           "name": "Moda Chair",
           "price": 75000,
           "images": [
-            "/products/home/arm-chairs/moda chair/moda-chair-back.png",
-            "/products/home/arm-chairs/moda chair/moda-chair-front-p75000.png"
+            "/products/home/arm-chairs/moda chair/moda-chair-front-p75000.png",
+            "/products/home/arm-chairs/moda chair/moda-chair-back.png"
           ],
           "colors": [],
           "description": ""
@@ -188,8 +188,8 @@
           "name": "Roogle Accent Arm Chair 360 Rotation",
           "price": 60000,
           "images": [
-            "/products/home/arm-chairs/roogle accent arm chair 360 rotation/roogle-accent-chair-360rotation-back.png",
-            "/products/home/arm-chairs/roogle accent arm chair 360 rotation/roogle-accent-chair-360rotation-front-p60000.png"
+            "/products/home/arm-chairs/roogle accent arm chair 360 rotation/roogle-accent-chair-360rotation-front-p60000.png",
+            "/products/home/arm-chairs/roogle accent arm chair 360 rotation/roogle-accent-chair-360rotation-back.png"
           ],
           "colors": [],
           "description": ""
@@ -199,8 +199,8 @@
           "name": "Tori Arm Chair",
           "price": 80000,
           "images": [
-            "/products/home/arm-chairs/tori arm chair/tori-chair-back.png",
-            "/products/home/arm-chairs/tori arm chair/tori-chair-front-p80000.png"
+            "/products/home/arm-chairs/tori arm chair/tori-chair-front-p80000.png",
+            "/products/home/arm-chairs/tori arm chair/tori-chair-back.png"
           ],
           "colors": [],
           "description": ""
@@ -622,15 +622,15 @@
     {
       "slug": "dinning-chairs",
       "label": "Dining Chairs",
-      "coverImage": "/products/home/dinning-chairs/alina/alina-back.png",
+      "coverImage": "/products/home/dinning-chairs/alina/alina-front-p13200.png",
       "items": [
         {
           "slug": "alina",
           "name": "Alina",
           "price": 13200,
           "images": [
-            "/products/home/dinning-chairs/alina/alina-back.png",
             "/products/home/dinning-chairs/alina/alina-front-p13200.png",
+            "/products/home/dinning-chairs/alina/alina-back.png",
             "/products/home/dinning-chairs/alina/alina-side.png"
           ],
           "colors": [],
@@ -641,8 +641,8 @@
           "name": "Alto",
           "price": 8000,
           "images": [
-            "/products/home/dinning-chairs/alto/alto-back.png",
             "/products/home/dinning-chairs/alto/alto-front-p8000.png",
+            "/products/home/dinning-chairs/alto/alto-back.png",
             "/products/home/dinning-chairs/alto/alto-side.png"
           ],
           "colors": [],
@@ -653,8 +653,8 @@
           "name": "Amigo",
           "price": 26000,
           "images": [
-            "/products/home/dinning-chairs/amigo/amigo-back.png",
             "/products/home/dinning-chairs/amigo/amigo-front-p26000.png",
+            "/products/home/dinning-chairs/amigo/amigo-back.png",
             "/products/home/dinning-chairs/amigo/amigo-side.png"
           ],
           "colors": [],
@@ -665,8 +665,8 @@
           "name": "Arco",
           "price": 17500,
           "images": [
-            "/products/home/dinning-chairs/arco/arco-back.png",
             "/products/home/dinning-chairs/arco/arco-front-p17500.png",
+            "/products/home/dinning-chairs/arco/arco-back.png",
             "/products/home/dinning-chairs/arco/arco-side.png"
           ],
           "colors": [],
@@ -689,8 +689,8 @@
           "name": "Ascona",
           "price": 15000,
           "images": [
-            "/products/home/dinning-chairs/ascona/ascona-back.png",
             "/products/home/dinning-chairs/ascona/ascona-front-p15000.png",
+            "/products/home/dinning-chairs/ascona/ascona-back.png",
             "/products/home/dinning-chairs/ascona/ascona-side.png"
           ],
           "colors": [],
@@ -701,8 +701,8 @@
           "name": "Ash",
           "price": 19500,
           "images": [
-            "/products/home/dinning-chairs/ash/ash-back.png",
             "/products/home/dinning-chairs/ash/ash-front-p19500.png",
+            "/products/home/dinning-chairs/ash/ash-back.png",
             "/products/home/dinning-chairs/ash/ash-side.png"
           ],
           "colors": [],
@@ -725,8 +725,8 @@
           "name": "Berlin",
           "price": 19950,
           "images": [
-            "/products/home/dinning-chairs/berlin/berlin-back.png",
             "/products/home/dinning-chairs/berlin/berlin-front-p19950.png",
+            "/products/home/dinning-chairs/berlin/berlin-back.png",
             "/products/home/dinning-chairs/berlin/berlin-side.png"
           ],
           "colors": [],
@@ -737,8 +737,8 @@
           "name": "Berry",
           "price": 13000,
           "images": [
-            "/products/home/dinning-chairs/berry/berry-back.png",
             "/products/home/dinning-chairs/berry/berry-front-p13000.png",
+            "/products/home/dinning-chairs/berry/berry-back.png",
             "/products/home/dinning-chairs/berry/berry-side1.png"
           ],
           "colors": [],
@@ -749,8 +749,8 @@
           "name": "Blake",
           "price": 10950,
           "images": [
-            "/products/home/dinning-chairs/blake/blake-back.png",
             "/products/home/dinning-chairs/blake/blake-front-p10950.png",
+            "/products/home/dinning-chairs/blake/blake-back.png",
             "/products/home/dinning-chairs/blake/blake-side.png"
           ],
           "colors": [],
@@ -761,8 +761,8 @@
           "name": "Bliss",
           "price": 23000,
           "images": [
-            "/products/home/dinning-chairs/bliss/bliss-back.png",
             "/products/home/dinning-chairs/bliss/bliss-front-p23000.png",
+            "/products/home/dinning-chairs/bliss/bliss-back.png",
             "/products/home/dinning-chairs/bliss/bliss-side.png"
           ],
           "colors": [],
@@ -797,8 +797,8 @@
           "name": "Casper",
           "price": 21000,
           "images": [
-            "/products/home/dinning-chairs/casper/casper-back.png",
             "/products/home/dinning-chairs/casper/casper-front-p21000.png",
+            "/products/home/dinning-chairs/casper/casper-back.png",
             "/products/home/dinning-chairs/casper/casper-side.png"
           ],
           "colors": [],
@@ -809,8 +809,8 @@
           "name": "Charlie",
           "price": 11950,
           "images": [
-            "/products/home/dinning-chairs/charlie/charlie-back.png",
             "/products/home/dinning-chairs/charlie/charlie-front-p11950.png",
+            "/products/home/dinning-chairs/charlie/charlie-back.png",
             "/products/home/dinning-chairs/charlie/charlie-side.png"
           ],
           "colors": [],
@@ -833,8 +833,8 @@
           "name": "Ciana",
           "price": 13000,
           "images": [
-            "/products/home/dinning-chairs/ciana/ciana-back.png",
             "/products/home/dinning-chairs/ciana/ciana-front-p13000.png",
+            "/products/home/dinning-chairs/ciana/ciana-back.png",
             "/products/home/dinning-chairs/ciana/ciana-side1.png"
           ],
           "colors": [],
@@ -857,8 +857,8 @@
           "name": "Coach",
           "price": 28000,
           "images": [
-            "/products/home/dinning-chairs/coach/coach-back.png",
             "/products/home/dinning-chairs/coach/coach-front-p28000.png",
+            "/products/home/dinning-chairs/coach/coach-back.png",
             "/products/home/dinning-chairs/coach/coach-side.png"
           ],
           "colors": [],
@@ -881,8 +881,8 @@
           "name": "Corby",
           "price": 9500,
           "images": [
-            "/products/home/dinning-chairs/corby/corbback.png",
             "/products/home/dinning-chairs/corby/corby-front-p9500.png",
+            "/products/home/dinning-chairs/corby/corbback.png",
             "/products/home/dinning-chairs/corby/corby-side.png"
           ],
           "colors": [],
@@ -905,8 +905,8 @@
           "name": "Dalos",
           "price": null,
           "images": [
-            "/products/home/dinning-chairs/dalos/dalos-back.png",
             "/products/home/dinning-chairs/dalos/dalos-front-22000.png",
+            "/products/home/dinning-chairs/dalos/dalos-back.png",
             "/products/home/dinning-chairs/dalos/dalos-side.png"
           ],
           "colors": [],
@@ -929,8 +929,8 @@
           "name": "Dior",
           "price": 8500,
           "images": [
-            "/products/home/dinning-chairs/dior/dior-back.png",
             "/products/home/dinning-chairs/dior/dior-front-p8500.png",
+            "/products/home/dinning-chairs/dior/dior-back.png",
             "/products/home/dinning-chairs/dior/dior-side.png"
           ],
           "colors": [],
@@ -953,9 +953,9 @@
           "name": "Geneva",
           "price": 21000,
           "images": [
+            "/products/home/dinning-chairs/geneva/geneva-front-p21000.png",
             "/products/home/dinning-chairs/geneva/geneva-back1.png",
-            "/products/home/dinning-chairs/geneva/geneva-back2.png",
-            "/products/home/dinning-chairs/geneva/geneva-front-p21000.png"
+            "/products/home/dinning-chairs/geneva/geneva-back2.png"
           ],
           "colors": [],
           "description": ""
@@ -965,8 +965,8 @@
           "name": "Giona",
           "price": 16800,
           "images": [
-            "/products/home/dinning-chairs/giona/giona-back.png",
             "/products/home/dinning-chairs/giona/giona-front-p16800.png",
+            "/products/home/dinning-chairs/giona/giona-back.png",
             "/products/home/dinning-chairs/giona/giona-side.png"
           ],
           "colors": [],
@@ -977,8 +977,8 @@
           "name": "Grace",
           "price": 19000,
           "images": [
-            "/products/home/dinning-chairs/grace/grace-back-p19000.png",
             "/products/home/dinning-chairs/grace/grace-front-p19000.png",
+            "/products/home/dinning-chairs/grace/grace-back-p19000.png",
             "/products/home/dinning-chairs/grace/grace-side.png"
           ],
           "colors": [],
@@ -1013,8 +1013,8 @@
           "name": "Jimmy",
           "price": 7000,
           "images": [
-            "/products/home/dinning-chairs/jimmy/jimmy-back.png",
             "/products/home/dinning-chairs/jimmy/jimmy-front-p7000.png",
+            "/products/home/dinning-chairs/jimmy/jimmy-back.png",
             "/products/home/dinning-chairs/jimmy/jimmy-side1.png"
           ],
           "colors": [],
@@ -1025,8 +1025,8 @@
           "name": "Lara",
           "price": 20500,
           "images": [
-            "/products/home/dinning-chairs/lara/lara-back.png",
             "/products/home/dinning-chairs/lara/lara-front-p20500.png",
+            "/products/home/dinning-chairs/lara/lara-back.png",
             "/products/home/dinning-chairs/lara/lara-side.png"
           ],
           "colors": [],
@@ -1037,8 +1037,8 @@
           "name": "Linus",
           "price": null,
           "images": [
-            "/products/home/dinning-chairs/linus/linus-back.png",
             "/products/home/dinning-chairs/linus/linus-front-18500.png",
+            "/products/home/dinning-chairs/linus/linus-back.png",
             "/products/home/dinning-chairs/linus/linus-side.png"
           ],
           "colors": [],
@@ -1073,8 +1073,8 @@
           "name": "Melisa",
           "price": 13900,
           "images": [
-            "/products/home/dinning-chairs/melisa/melisa-back.png",
             "/products/home/dinning-chairs/melisa/melisa-front-p13900.png",
+            "/products/home/dinning-chairs/melisa/melisa-back.png",
             "/products/home/dinning-chairs/melisa/melisa-side1.png"
           ],
           "colors": [],
@@ -1097,8 +1097,8 @@
           "name": "Merry",
           "price": 15500,
           "images": [
-            "/products/home/dinning-chairs/merry/merry-back.png",
             "/products/home/dinning-chairs/merry/merry-front-p15500.png",
+            "/products/home/dinning-chairs/merry/merry-back.png",
             "/products/home/dinning-chairs/merry/merry-side.png"
           ],
           "colors": [],
@@ -1133,8 +1133,8 @@
           "name": "Nectar",
           "price": 21600,
           "images": [
-            "/products/home/dinning-chairs/nectar/nectar-back.png",
             "/products/home/dinning-chairs/nectar/nectar-front-p21600.png",
+            "/products/home/dinning-chairs/nectar/nectar-back.png",
             "/products/home/dinning-chairs/nectar/nectar-side.png"
           ],
           "colors": [],
@@ -1145,8 +1145,8 @@
           "name": "Olive Fixed",
           "price": 11000,
           "images": [
-            "/products/home/dinning-chairs/olive-fixed/olive-fixed-back.png",
             "/products/home/dinning-chairs/olive-fixed/olive-fixed-front-p11000.png",
+            "/products/home/dinning-chairs/olive-fixed/olive-fixed-back.png",
             "/products/home/dinning-chairs/olive-fixed/olive-fixed-side.png"
           ],
           "colors": [],
@@ -1169,8 +1169,8 @@
           "name": "Oracle",
           "price": 10000,
           "images": [
-            "/products/home/dinning-chairs/oracle/oracle-back.png",
             "/products/home/dinning-chairs/oracle/oracle-front-p10000.png",
+            "/products/home/dinning-chairs/oracle/oracle-back.png",
             "/products/home/dinning-chairs/oracle/oracle-side.png"
           ],
           "colors": [],
@@ -1205,8 +1205,8 @@
           "name": "Picasso",
           "price": null,
           "images": [
-            "/products/home/dinning-chairs/picasso/picasso-back.png",
             "/products/home/dinning-chairs/picasso/picasso-front-19950.png",
+            "/products/home/dinning-chairs/picasso/picasso-back.png",
             "/products/home/dinning-chairs/picasso/picasso-side.png"
           ],
           "colors": [],
@@ -1217,8 +1217,8 @@
           "name": "Rini",
           "price": 12800,
           "images": [
-            "/products/home/dinning-chairs/rini/rini-back.png",
             "/products/home/dinning-chairs/rini/rini-front-p12800.png",
+            "/products/home/dinning-chairs/rini/rini-back.png",
             "/products/home/dinning-chairs/rini/rini-side.png"
           ],
           "colors": [],
@@ -1229,8 +1229,8 @@
           "name": "Root",
           "price": 6800,
           "images": [
-            "/products/home/dinning-chairs/root/root-back.png",
             "/products/home/dinning-chairs/root/root-front-p6800.png",
+            "/products/home/dinning-chairs/root/root-back.png",
             "/products/home/dinning-chairs/root/root-side.png"
           ],
           "colors": [],
@@ -1265,8 +1265,8 @@
           "name": "Sierra",
           "price": 24000,
           "images": [
-            "/products/home/dinning-chairs/sierra/sierra-back.png",
             "/products/home/dinning-chairs/sierra/sierra-front-p24000.png",
+            "/products/home/dinning-chairs/sierra/sierra-back.png",
             "/products/home/dinning-chairs/sierra/sierra-side.png"
           ],
           "colors": [],
@@ -1277,8 +1277,8 @@
           "name": "Skyros",
           "price": 23000,
           "images": [
-            "/products/home/dinning-chairs/skyros/skyros-back.png",
             "/products/home/dinning-chairs/skyros/skyros-front-p23000.png",
+            "/products/home/dinning-chairs/skyros/skyros-back.png",
             "/products/home/dinning-chairs/skyros/skyros-side.png"
           ],
           "colors": [],
@@ -1325,8 +1325,8 @@
           "name": "Spice",
           "price": 7000,
           "images": [
-            "/products/home/dinning-chairs/spice/spice-back.png",
             "/products/home/dinning-chairs/spice/spice-front-p7000.png",
+            "/products/home/dinning-chairs/spice/spice-back.png",
             "/products/home/dinning-chairs/spice/spice-side.png"
           ],
           "colors": [],
@@ -1337,8 +1337,8 @@
           "name": "Tango",
           "price": 10400,
           "images": [
-            "/products/home/dinning-chairs/tango/tango-back.png",
             "/products/home/dinning-chairs/tango/tango-front-p10400.png",
+            "/products/home/dinning-chairs/tango/tango-back.png",
             "/products/home/dinning-chairs/tango/tango-side.png"
           ],
           "colors": [],
@@ -1397,8 +1397,8 @@
           "name": "Virtus",
           "price": 29000,
           "images": [
-            "/products/home/dinning-chairs/virtus/virtus-back.png",
             "/products/home/dinning-chairs/virtus/virtus-front-p29000.png",
+            "/products/home/dinning-chairs/virtus/virtus-back.png",
             "/products/home/dinning-chairs/virtus/virtus-side.png"
           ],
           "colors": [],
@@ -1431,8 +1431,8 @@
           "name": "Zeta",
           "price": 7000,
           "images": [
-            "/products/home/dinning-chairs/zeta/zeta-back.png",
             "/products/home/dinning-chairs/zeta/zeta-front-p7000.png",
+            "/products/home/dinning-chairs/zeta/zeta-back.png",
             "/products/home/dinning-chairs/zeta/zeta-side.png"
           ],
           "colors": [],
@@ -2692,10 +2692,10 @@
         {
           "slug": "cross",
           "name": "Cross",
-          "price": 17000,
+          "price": 18000,
           "images": [
-            "/products/office/High Back Cushion Chairs/cross/cross-back-mb-p17000.png",
-            "/products/office/High Back Cushion Chairs/cross/cross-front-hb-p18000.png"
+            "/products/office/High Back Cushion Chairs/cross/cross-front-hb-p18000.png",
+            "/products/office/High Back Cushion Chairs/cross/cross-back-mb-p17000.png"
           ],
           "colors": [],
           "description": ""
@@ -2716,8 +2716,8 @@
           "name": "Glaze Cushion Hb",
           "price": 8500,
           "images": [
-            "/products/office/High Back Cushion Chairs/glaze-cushion-hb/GLAZE CUSHION MB back.png",
-            "/products/office/High Back Cushion Chairs/glaze-cushion-hb/glaze-cushion-hb-front-p8500.png"
+            "/products/office/High Back Cushion Chairs/glaze-cushion-hb/glaze-cushion-hb-front-p8500.png",
+            "/products/office/High Back Cushion Chairs/glaze-cushion-hb/GLAZE CUSHION MB back.png"
           ],
           "colors": [],
           "description": ""
@@ -2725,10 +2725,10 @@
         {
           "slug": "perth",
           "name": "Perth",
-          "price": 18000,
+          "price": 19000,
           "images": [
-            "/products/office/High Back Cushion Chairs/perth/perth-back-mb-p18000.png",
-            "/products/office/High Back Cushion Chairs/perth/perth-front-hb-p19000.png"
+            "/products/office/High Back Cushion Chairs/perth/perth-front-hb-p19000.png",
+            "/products/office/High Back Cushion Chairs/perth/perth-back-mb-p18000.png"
           ],
           "colors": [],
           "description": ""
@@ -2738,8 +2738,8 @@
           "name": "Spark White",
           "price": 18000,
           "images": [
-            "/products/office/High Back Cushion Chairs/spark-white/spark-white-back-mb-17000.png",
-            "/products/office/High Back Cushion Chairs/spark-white/spark-white-front-hb-p18000.png"
+            "/products/office/High Back Cushion Chairs/spark-white/spark-white-front-hb-p18000.png",
+            "/products/office/High Back Cushion Chairs/spark-white/spark-white-back-mb-17000.png"
           ],
           "colors": [],
           "description": ""
@@ -2778,8 +2778,8 @@
           "name": "Bassel White Hb",
           "price": 29000,
           "images": [
-            "/products/office/High Back Mesh Chairs/bassel-white-hb/bassel-mb-back.png",
-            "/products/office/High Back Mesh Chairs/bassel-white-hb/bassel-white-hb-front-p29000.png"
+            "/products/office/High Back Mesh Chairs/bassel-white-hb/bassel-white-hb-front-p29000.png",
+            "/products/office/High Back Mesh Chairs/bassel-white-hb/bassel-mb-back.png"
           ],
           "colors": [],
           "description": ""
@@ -2855,8 +2855,8 @@
           "name": "Galaxy Grey Hb",
           "price": 24000,
           "images": [
-            "/products/office/High Back Mesh Chairs/galaxy-grey-hb/galaxy-grey-mb-23000.png",
-            "/products/office/High Back Mesh Chairs/galaxy-grey-hb/galaxy-hb--front-p24000.png"
+            "/products/office/High Back Mesh Chairs/galaxy-grey-hb/galaxy-hb--front-p24000.png",
+            "/products/office/High Back Mesh Chairs/galaxy-grey-hb/galaxy-grey-mb-23000.png"
           ],
           "colors": [],
           "description": ""
@@ -2965,8 +2965,8 @@
           "name": "Rooster Hb Grey",
           "price": 39000,
           "images": [
-            "/products/office/High Back Mesh Chairs/rooster-hb-grey/rooster-mb-back.png",
-            "/products/office/High Back Mesh Chairs/rooster-hb-grey/rooster-with-footrest-hb-front-p39000.png"
+            "/products/office/High Back Mesh Chairs/rooster-hb-grey/rooster-with-footrest-hb-front-p39000.png",
+            "/products/office/High Back Mesh Chairs/rooster-hb-grey/rooster-mb-back.png"
           ],
           "colors": [],
           "description": ""
@@ -3029,10 +3029,10 @@
         {
           "slug": "wisdom-black",
           "name": "Wisdom Black",
-          "price": 16500,
+          "price": 17500,
           "images": [
-            "/products/office/High Back Mesh Chairs/wisdom-black/wisdom-back-mb-p16500.png",
-            "/products/office/High Back Mesh Chairs/wisdom-black/wisdom-black-front-hb-p17500.png"
+            "/products/office/High Back Mesh Chairs/wisdom-black/wisdom-black-front-hb-p17500.png",
+            "/products/office/High Back Mesh Chairs/wisdom-black/wisdom-back-mb-p16500.png"
           ],
           "colors": [],
           "description": ""
@@ -5265,8 +5265,8 @@
           "name": "TRUSt PU Dark Gray",
           "price": null,
           "images": [
-            "/products/office/PU Office Chairs/TRUSt PU Dark Gray/trust-hb-back-dark-grey-p.png",
-            "/products/office/PU Office Chairs/TRUSt PU Dark Gray/trust-hb-dark-grey-front.png"
+            "/products/office/PU Office Chairs/TRUSt PU Dark Gray/trust-hb-dark-grey-front.png",
+            "/products/office/PU Office Chairs/TRUSt PU Dark Gray/trust-hb-back-dark-grey-p.png"
           ],
           "colors": [],
           "description": ""

@@ -108,31 +108,30 @@ function CategoryGrid({
           <p className="mt-4 text-base leading-8 text-slate-600">{subtitle}</p>
         </header>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {categories.map((cat) => (
             <Link
               key={cat.slug}
               to={`${basePath}/${cat.slug}`}
-              className="group overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+              className="group overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
             >
-              <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
+              <div className="relative aspect-[3/4] overflow-hidden bg-white">
                 {cat.coverImage ? (
                   <img
                     src={encodeImagePath(cat.coverImage)}
                     alt={cat.label}
                     loading="lazy"
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
+                    className="h-full w-full object-contain p-4 transition duration-500 group-hover:scale-[1.03]"
                   />
                 ) : (
                   <div className="flex h-full items-center justify-center text-slate-300 text-sm">
                     {cat.label}
                   </div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent" />
               </div>
-              <div className="p-5">
-                <h3 className="text-lg font-semibold text-slate-900">{cat.label}</h3>
-                <p className="mt-1 text-sm text-slate-500">{cat.items.length} items</p>
+              <div className="border-t border-stone-100 px-4 py-3">
+                <h3 className="text-sm font-semibold text-slate-900 truncate">{cat.label}</h3>
+                <p className="mt-0.5 text-xs text-slate-500">{cat.items.length} items</p>
               </div>
             </Link>
           ))}

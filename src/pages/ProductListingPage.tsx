@@ -73,21 +73,21 @@ function ProductListingPage() {
 
       {/* Grid */}
       <SectionReveal>
-        <div className="mx-auto max-w-6xl px-6 py-12">
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="mx-auto max-w-7xl px-6 py-12">
+          <div className="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {pageItems.map((item) => (
               <Link
                 key={item.slug}
                 to={`${basePath}/${item.slug}`}
-                className="group overflow-hidden rounded-[1.5rem] border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+                className="group overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
               >
-                <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
+                <div className="relative aspect-[3/4] overflow-hidden bg-white">
                   {item.images[0] ? (
                     <img
                       src={encodeImagePath(item.images[0])}
                       alt={item.name}
                       loading="lazy"
-                      className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
+                      className="h-full w-full object-contain p-4 transition duration-500 group-hover:scale-[1.03]"
                     />
                   ) : (
                     <div className="flex h-full items-center justify-center text-slate-300">
@@ -95,13 +95,13 @@ function ProductListingPage() {
                     </div>
                   )}
                 </div>
-                <div className="p-4">
-                  <h2 className="text-base font-semibold text-slate-900 leading-snug">
+                <div className="border-t border-stone-100 px-4 py-3">
+                  <h2 className="text-sm font-semibold text-slate-900 leading-snug truncate">
                     {item.name}
                   </h2>
                   <p
-                    className={`mt-1 text-sm font-medium ${
-                      item.price === null ? 'text-slate-500' : 'text-amber-700'
+                    className={`mt-0.5 text-sm font-medium ${
+                      item.price === null ? 'text-slate-400' : 'text-amber-700'
                     }`}
                   >
                     {formatPrice(item.price)}

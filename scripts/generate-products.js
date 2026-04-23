@@ -106,6 +106,15 @@ function publicPath(...parts) {
   return '/' + parts.map((p) => p.replace(/\\/g, '/')).join('/')
 }
 
+// Sort images so "front" images come first
+function sortImages(images) {
+  return [...images].sort((a, b) => {
+    const aFront = a.toLowerCase().includes('front') ? 0 : 1
+    const bFront = b.toLowerCase().includes('front') ? 0 : 1
+    return aFront - bFront
+  })
+}
+
 // Process a NESTED category: subfolders = products, images inside = gallery
 function processNestedCategory(catDir, section, catSlug) {
   const entries = readdirSync(catDir)
@@ -115,9 +124,9 @@ function processNestedCategory(catDir, section, catSlug) {
     const entryPath = join(catDir, entry)
     if (!isDirectory(entryPath)) continue
 
-    const images = readdirSync(entryPath)
-      .filter(isImageFile)
-      .sort()
+    const images = sortImages(
+      readdirSync(entryPath).filter(isImageFile)
+    )
 
     if (images.length === 0) continue
 
@@ -187,7 +196,7 @@ function processFlatCategory(catDir, section, catSlug) {
       slug,
       name,
       price,
-      images: groupFiles.map((img) =>
+      images: sortImages(groupFiles).map((img) =>
         publicPath('products', section, catSlug, img)
       ),
       colors: [],

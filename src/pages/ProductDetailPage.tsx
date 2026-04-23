@@ -27,11 +27,11 @@ function ImageGallery({ images, name }: { images: string[]; name: string }) {
   return (
     <div className="space-y-3">
       {/* Main image */}
-      <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem] bg-stone-100">
+      <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem] border border-stone-100 bg-white">
         <img
           src={encodeImagePath(images[activeIndex] ?? '')}
           alt={`${name} - view ${activeIndex + 1}`}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain p-6"
         />
         {images.length > 1 && (
           <>
