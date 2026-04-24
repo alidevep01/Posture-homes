@@ -8,12 +8,12 @@ import SectionReveal from "../components/SectionReveal";
 
 const contactPeople = [
   {
-    name: "Posture Homes",
+    name: "Posture Home",
     phoneLabel: "+91 7815819394",
     phoneHref: "tel:+917815819394",
   },
   {
-    name: "Posture Office Furniture",
+    name: "Posture Office",
     phoneLabel: "+91 7003746544",
     phoneHref: "tel:+917003746544",
   },
