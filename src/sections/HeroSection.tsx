@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { LuArrowRight as ArrowRight } from "react-icons/lu";
 import { Link } from "react-router";
 import { primaryContactPhoneHref } from "../utils/contact";
 

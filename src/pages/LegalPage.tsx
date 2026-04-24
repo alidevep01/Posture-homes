@@ -1,13 +1,13 @@
 import {
-  ArrowRight,
-  FileText,
-  Globe2,
-  LockKeyhole,
-  Mail,
-  MapPin,
-  ShieldCheck,
-  Users,
-} from "lucide-react";
+  LuArrowRight as ArrowRight,
+  LuFileText as FileText,
+  LuGlobe as Globe2,
+  LuLockKeyhole as LockKeyhole,
+  LuMail as Mail,
+  LuMapPin as MapPin,
+  LuShieldCheck as ShieldCheck,
+  LuUsers as Users,
+} from "react-icons/lu";
 import { Link } from "react-router";
 import SectionReveal from "../components/SectionReveal";
 import Seo from "../components/Seo";

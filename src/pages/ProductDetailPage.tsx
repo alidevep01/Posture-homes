@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import { Link, Navigate, useParams, useSearchParams } from 'react-router'
-import { ChevronLeft, ChevronRight, X } from 'lucide-react'
+import {
+  LuChevronLeft as ChevronLeft,
+  LuChevronRight as ChevronRight,
+  LuX as X,
+} from 'react-icons/lu'
 import Seo from '../components/Seo'
 import SectionReveal from '../components/SectionReveal'
 import ContactForm from '../components/ContactForm'

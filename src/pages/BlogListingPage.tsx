@@ -1,6 +1,11 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router";
-import { ArrowRight, CalendarDays, Clock3, Search } from "lucide-react";
+import {
+  LuArrowRight as ArrowRight,
+  LuCalendarDays as CalendarDays,
+  LuClock3 as Clock3,
+  LuSearch as Search,
+} from "react-icons/lu";
 import Seo from "../components/Seo";
 import {
   blogCategories,

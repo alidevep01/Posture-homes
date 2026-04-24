@@ -1,6 +1,10 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useRef, useState } from "react";
-import { ChevronDown, Menu, X } from "lucide-react";
+import {
+  LuChevronDown as ChevronDown,
+  LuMenu as Menu,
+  LuX as X,
+} from "react-icons/lu";
 import { Link, useLocation } from "react-router";
 import PostureHomesLogo from "./PostureHomesLogo";
 import { navigationLinks } from "../utils/navigation";

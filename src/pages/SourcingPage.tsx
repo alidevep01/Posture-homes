@@ -1,20 +1,20 @@
 import {
-  ArrowRight,
-  BadgeCheck,
-  ChevronLeft,
-  ChevronRight,
-  Download,
-  Globe2,
-  LoaderCircle,
-  Pause,
-  PackageSearch,
-  Play,
-  Ship,
-  Truck,
-  Volume2,
-  VolumeX,
-  X,
-} from "lucide-react";
+  LuArrowRight as ArrowRight,
+  LuBadgeCheck as BadgeCheck,
+  LuChevronLeft as ChevronLeft,
+  LuChevronRight as ChevronRight,
+  LuDownload as Download,
+  LuGlobe as Globe2,
+  LuLoaderCircle as LoaderCircle,
+  LuPackageSearch as PackageSearch,
+  LuPause as Pause,
+  LuPlay as Play,
+  LuShip as Ship,
+  LuTruck as Truck,
+  LuVolume2 as Volume2,
+  LuVolumeX as VolumeX,
+  LuX as X,
+} from "react-icons/lu";
 import { useEffect, useRef, useState } from "react";
 import ContactForm from "../components/ContactForm";
 import SectionReveal from "../components/SectionReveal";

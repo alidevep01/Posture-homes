@@ -1,4 +1,9 @@
-import { ArrowRight, Building2, Home, PackageSearch } from "lucide-react";
+import {
+  LuArrowRight as ArrowRight,
+  LuBuilding2 as Building2,
+  LuHouse as Home,
+  LuPackageSearch as PackageSearch,
+} from "react-icons/lu";
 import { Link } from "react-router";
 import SectionReveal from "../components/SectionReveal";
 

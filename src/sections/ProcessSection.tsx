@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion'
 import {
-  BadgeCheck,
-  Factory,
-  PhoneCall,
-  Plane,
-  Truck,
-} from 'lucide-react'
+  LuBadgeCheck as BadgeCheck,
+  LuFactory as Factory,
+  LuPhoneCall as PhoneCall,
+  LuPlane as Plane,
+  LuTruck as Truck,
+} from 'react-icons/lu'
 import SectionReveal from '../components/SectionReveal'
 
 const steps = [

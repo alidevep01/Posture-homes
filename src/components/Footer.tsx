@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import { ArrowRight, Mail } from "lucide-react";
-import { FiInstagram } from "react-icons/fi";
+import { FiInstagram, FiLinkedin } from "react-icons/fi";
+import { LuArrowRight as ArrowRight, LuMail as Mail } from "react-icons/lu";
 import { Link } from "react-router";
 import {
   motion,
@@ -27,9 +27,14 @@ const footerLinks = [
 
 const contactBlocks: ContactBlock[] = [
   {
-    label: "Address",
+    label: "Banjara Hills",
     value:
-      "833/64, 8-3, Kamalapuri Colony Road, Srinagar Colony Ext, Banjara Hills, Hyderabad",
+      "833/64, 8-3, Kamalapuri Colony Road, Srinagar Colony Ext, Banjara Hills, Hyderabad, Telangana 500073",
+  },
+  {
+    label: "Gachibowli",
+    value:
+      "Plot No: 25, 2nd Floor, PNR Square, 01, beside Jeep Showroom, Gachibowli, Serilingampalle, Hyderabad, Telangana 500032",
   },
   {
     label: "Email",
@@ -48,6 +53,11 @@ const socialLinks = [
     label: "Email",
     href: "mailto:info@postureindia.com",
     icon: Mail,
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/posture-home-office/",
+    icon: FiLinkedin,
   },
 ] as const;
 
@@ -91,7 +101,7 @@ function Footer() {
                 <ArrowRight className="h-4 w-4" />
               </a>
 
-              <div className="mt-12 grid gap-8 sm:max-w-xl sm:grid-cols-2">
+              <div className="mt-12 grid gap-8 sm:max-w-3xl sm:grid-cols-2">
                 {contactBlocks.map((item) => (
                   <div key={item.label}>
                     <p className="text-[0.68rem] font-semibold uppercase tracking-[0.26em] text-slate-400">

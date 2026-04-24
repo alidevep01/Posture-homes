@@ -1,10 +1,10 @@
 import { useMemo } from "react";
 import {
-  ArrowLeft,
-  CalendarDays,
-  Clock3,
-  Quote,
-} from "lucide-react";
+  LuArrowLeft as ArrowLeft,
+  LuCalendarDays as CalendarDays,
+  LuClock3 as Clock3,
+  LuQuote as Quote,
+} from "react-icons/lu";
 import { Link, Navigate, useParams } from "react-router";
 import ContactForm from "../components/ContactForm";
 import Seo from "../components/Seo";

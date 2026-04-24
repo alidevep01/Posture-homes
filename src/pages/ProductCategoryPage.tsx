@@ -1,11 +1,11 @@
 import { useMemo } from "react";
 import { Link, Navigate, useParams } from "react-router";
 import {
-  BadgeCheck,
-  PackageCheck,
-  Sofa,
-  Truck,
-} from "lucide-react";
+  LuBadgeCheck as BadgeCheck,
+  LuPackageCheck as PackageCheck,
+  LuSofa as Sofa,
+  LuTruck as Truck,
+} from "react-icons/lu";
 import SectionReveal from "../components/SectionReveal";
 import ContactForm from "../components/ContactForm";
 import Seo from "../components/Seo";

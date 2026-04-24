@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { ArrowRight, Users } from "lucide-react";
+import {
+  LuArrowRight as ArrowRight,
+  LuUsers as Users,
+} from "react-icons/lu";
 import { Link } from "react-router";
 import SectionReveal from "../components/SectionReveal";
 

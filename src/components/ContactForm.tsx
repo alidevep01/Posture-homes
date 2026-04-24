@@ -1,6 +1,11 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { Mail, MessageSquareText, Phone, UserRound } from 'lucide-react'
+import {
+  LuMail as Mail,
+  LuMessageSquareText as MessageSquareText,
+  LuPhone as Phone,
+  LuUserRound as UserRound,
+} from 'react-icons/lu'
 import { sendContactEmail } from '../utils/email'
 
 type ContactFormValues = {

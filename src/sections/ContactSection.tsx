@@ -1,4 +1,9 @@
-import { ArrowRight, MapPin, Phone } from "lucide-react";
+import { FiInstagram, FiLinkedin } from "react-icons/fi";
+import {
+  LuArrowRight as ArrowRight,
+  LuMapPin as MapPin,
+  LuPhone as Phone,
+} from "react-icons/lu";
 import SectionReveal from "../components/SectionReveal";
 
 const contactPeople = [
@@ -18,31 +23,19 @@ const socialLinks = [
   {
     label: "@posturehomes",
     href: "https://www.instagram.com/posturehomes/",
+    platform: "instagram",
   },
   {
     label: "@postureFurniture",
     href: "https://www.instagram.com/posturefurniture/",
+    platform: "instagram",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/posture-home-office/",
+    platform: "linkedin",
   },
 ] as const;
-
-function InstagramIcon() {
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      className="h-4 w-4"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-    </svg>
-  );
-}
 
 const locations = [
   {
@@ -113,9 +106,17 @@ function ContactSection({
                 href={link.href}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 text-base font-semibold text-[#ff0f7b] transition duration-300 hover:text-[#d60c67]"
+                className={`inline-flex items-center gap-2 text-base font-semibold transition duration-300 ${
+                  link.platform === "linkedin"
+                    ? "text-[#0a66c2] hover:text-[#084d93]"
+                    : "text-[#ff0f7b] hover:text-[#d60c67]"
+                }`}
               >
-                <InstagramIcon />
+                {link.platform === "linkedin" ? (
+                  <FiLinkedin className="h-4 w-4" />
+                ) : (
+                  <FiInstagram className="h-4 w-4" />
+                )}
                 {link.label}
               </a>
             ))}

@@ -1,12 +1,12 @@
 import { useState } from "react";
 import {
-  ArrowRight,
-  Building2,
-  Home,
-  MapPin,
-  Sparkles,
-  Users,
-} from "lucide-react";
+  LuArrowRight as ArrowRight,
+  LuBuilding2 as Building2,
+  LuHouse as Home,
+  LuMapPin as MapPin,
+  LuSparkles as Sparkles,
+  LuUsers as Users,
+} from "react-icons/lu";
 import { Link } from "react-router";
 import SectionReveal from "../components/SectionReveal";
 import Seo from "../components/Seo";

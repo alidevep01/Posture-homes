@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { ExternalLink } from 'lucide-react'
+import { LuExternalLink as ExternalLink } from 'react-icons/lu'
 import SectionReveal from '../components/SectionReveal'
 
 const FEATURABLE_SCRIPT_ID = 'featurable-bundle-script'
