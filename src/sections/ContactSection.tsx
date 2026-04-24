@@ -99,7 +99,7 @@ function ContactSection({
             ))}
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-x-8 sm:gap-y-3">
             {socialLinks.map((link) => (
               <a
                 key={link.href}
