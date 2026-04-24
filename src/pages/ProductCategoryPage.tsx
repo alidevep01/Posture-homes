@@ -10,7 +10,6 @@ import SectionReveal from "../components/SectionReveal";
 import ContactForm from "../components/ContactForm";
 import Seo from "../components/Seo";
 import ProcessSection from "../sections/ProcessSection";
-import ProjectsSection from "../sections/ProjectsSection";
 import TestimonialsSection from "../sections/TestimonialsSection";
 import { productCategories } from "../utils/productCategories";
 import { officeClienteleLogos, clienteleLogoDisplay } from "../data/clientele";
@@ -389,7 +388,6 @@ function ProductCategoryPage() {
       {isHomeFurniturePage ? (
         <>
           <HomeProductsSection />
-          <ProjectsSection />
           <ProcessSection />
           <TestimonialsSection reviewMode="home" />
           <ContactFormSection categoryLabel={category.label} />
