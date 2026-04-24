@@ -278,7 +278,7 @@ function ProductDetailPage() {
               {/* Response time badge */}
               <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm text-emerald-700">
                 <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                We respond within 12 hours
+                We respond within 24 hours
               </div>
 
               {/* CTA */}
