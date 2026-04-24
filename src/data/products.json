@@ -1523,8 +1523,8 @@
           "description": ""
         },
         {
-          "slug": "hand-made-sand-art-work-pcs",
-          "name": "Hand Made Sand Art Work Pcs",
+          "slug": "hand-made-sand-art-work-24-pcs",
+          "name": "Hand Made Sand Art Work 24 Pcs",
           "price": 165600,
           "images": [
             "/products/home/mix-media-art/hand-made-sand-art-work-24-pcs-p165600.png"
@@ -1563,7 +1563,7 @@
           "description": ""
         },
         {
-          "slug": "hand-made-wallart",
+          "slug": "hand-made-wallart-104000",
           "name": "Hand Made Wallart",
           "price": 104000,
           "images": [
@@ -1573,7 +1573,7 @@
           "description": ""
         },
         {
-          "slug": "hand-made-wallart",
+          "slug": "hand-made-wallart-74700",
           "name": "Hand Made Wallart",
           "price": 74700,
           "images": [
@@ -1831,7 +1831,7 @@
           "description": ""
         },
         {
-          "slug": "garden-chair-diva",
+          "slug": "garden-chair-diva-32500",
           "name": "Garden Chair Diva",
           "price": 32500,
           "images": [
@@ -1841,7 +1841,7 @@
           "description": ""
         },
         {
-          "slug": "garden-chair-diva",
+          "slug": "garden-chair-diva-35000",
           "name": "Garden Chair Diva",
           "price": 35000,
           "images": [
@@ -2763,6 +2763,105 @@
           "description": ""
         },
         {
+          "slug": "deca-hb-12000",
+          "name": "DECA HB",
+          "price": 12000,
+          "images": [
+            "/products/office/High Back Mesh Chairs/DECA HB  12000-/DECA HB front- p12000.png",
+            "/products/office/High Back Mesh Chairs/DECA HB  12000-/DECA MB-back-p11000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "eon-dlx-hb",
+          "name": "EON DLX HB",
+          "price": 8700,
+          "images": [
+            "/products/office/High Back Mesh Chairs/EON DLX HB/EON DLX HB-front-p8700.png",
+            "/products/office/High Back Mesh Chairs/EON DLX HB/eon-dlx-mb-front-p7700.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "hexa-hb",
+          "name": "HEXA HB",
+          "price": 13500,
+          "images": [
+            "/products/office/High Back Mesh Chairs/HEXA HB/HEXA HB-front-p13500.png",
+            "/products/office/High Back Mesh Chairs/HEXA HB/hexa-mb-back-p12500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "karina-dlx-hb",
+          "name": "KARINA DLX HB",
+          "price": 8700,
+          "images": [
+            "/products/office/High Back Mesh Chairs/KARINA DLX HB/KARINA DLX HB-front-p8700.png",
+            "/products/office/High Back Mesh Chairs/KARINA DLX HB/karina-dlx-mb-front-p7700.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "octa-hb",
+          "name": "OCTA HB",
+          "price": 9000,
+          "images": [
+            "/products/office/High Back Mesh Chairs/OCTA HB/OCTA HB-front-p9000.png",
+            "/products/office/High Back Mesh Chairs/OCTA HB/octa-mb-front-p8000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "omega-blk-mesh-hb",
+          "name": "OMEGA BLK MESH HB",
+          "price": 10000,
+          "images": [
+            "/products/office/High Back Mesh Chairs/OMEGA BLK MESH HB/OMEGA BLK MESH HB-front-p10000.png",
+            "/products/office/High Back Mesh Chairs/OMEGA BLK MESH HB/OMEGA BLK MESH mb-back-p9500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "omega-wht-mesh-hb",
+          "name": "OMEGA WHT MESH HB",
+          "price": 11000,
+          "images": [
+            "/products/office/High Back Mesh Chairs/OMEGA WHT MESH HB/OMEGA WHT MESH HB-front-p11000.png",
+            "/products/office/High Back Mesh Chairs/OMEGA WHT MESH HB/OMEGA WHT MESH MB-back-p10500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "trio-black-hb",
+          "name": "TRIO BLACK HB",
+          "price": 11250,
+          "images": [
+            "/products/office/High Back Mesh Chairs/TRIO BLACK HB/TRIO BLACK HB-front-p11250.png",
+            "/products/office/High Back Mesh Chairs/TRIO BLACK HB/trio-black-mb-back-10250.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "trio-grey-hb",
+          "name": "TRIO GREY HB",
+          "price": 12500,
+          "images": [
+            "/products/office/High Back Mesh Chairs/TRIO GREY HB/TRIO GREY HB-front-p12500.png",
+            "/products/office/High Back Mesh Chairs/TRIO GREY HB/TRIO GREY MB-back-p11500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
           "slug": "bassel-black-hb",
           "name": "Bassel Black Hb",
           "price": 26500,
@@ -2785,34 +2884,12 @@
           "description": ""
         },
         {
-          "slug": "deca-hb-12000",
-          "name": "DECA HB",
-          "price": 12000,
-          "images": [
-            "/products/office/High Back Mesh Chairs/DECA HB  12000-/DECA HB front- p12000.png",
-            "/products/office/High Back Mesh Chairs/DECA HB  12000-/DECA MB-back-p11000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
           "slug": "destiny-hb-grey",
           "name": "Destiny Hb Grey",
           "price": 39000,
           "images": [
             "/products/office/High Back Mesh Chairs/destiny-hb-grey/destiny-hb-grey-with-footrest-front-p39000.png",
             "/products/office/High Back Mesh Chairs/destiny-hb-grey/destiny-mb-back.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "eon-dlx-hb",
-          "name": "EON DLX HB",
-          "price": 8700,
-          "images": [
-            "/products/office/High Back Mesh Chairs/EON DLX HB/EON DLX HB-front-p8700.png",
-            "/products/office/High Back Mesh Chairs/EON DLX HB/eon-dlx-mb-front-p7700.png"
           ],
           "colors": [],
           "description": ""
@@ -2884,28 +2961,6 @@
           "description": ""
         },
         {
-          "slug": "hexa-hb",
-          "name": "HEXA HB",
-          "price": 13500,
-          "images": [
-            "/products/office/High Back Mesh Chairs/HEXA HB/HEXA HB-front-p13500.png",
-            "/products/office/High Back Mesh Chairs/HEXA HB/hexa-mb-back-p12500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "karina-dlx-hb",
-          "name": "KARINA DLX HB",
-          "price": 8700,
-          "images": [
-            "/products/office/High Back Mesh Chairs/KARINA DLX HB/KARINA DLX HB-front-p8700.png",
-            "/products/office/High Back Mesh Chairs/KARINA DLX HB/karina-dlx-mb-front-p7700.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
           "slug": "norway-hb-dark-grey",
           "name": "Norway Hb Dark Grey",
           "price": 33000,
@@ -2928,67 +2983,12 @@
           "description": ""
         },
         {
-          "slug": "octa-hb",
-          "name": "OCTA HB",
-          "price": 9000,
-          "images": [
-            "/products/office/High Back Mesh Chairs/OCTA HB/OCTA HB-front-p9000.png",
-            "/products/office/High Back Mesh Chairs/OCTA HB/octa-mb-front-p8000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "omega-blk-mesh-hb",
-          "name": "OMEGA BLK MESH HB",
-          "price": 10000,
-          "images": [
-            "/products/office/High Back Mesh Chairs/OMEGA BLK MESH HB/OMEGA BLK MESH HB-front-p10000.png",
-            "/products/office/High Back Mesh Chairs/OMEGA BLK MESH HB/OMEGA BLK MESH mb-back-p9500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "omega-wht-mesh-hb",
-          "name": "OMEGA WHT MESH HB",
-          "price": 11000,
-          "images": [
-            "/products/office/High Back Mesh Chairs/OMEGA WHT MESH HB/OMEGA WHT MESH HB-front-p11000.png",
-            "/products/office/High Back Mesh Chairs/OMEGA WHT MESH HB/OMEGA WHT MESH MB-back-p10500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
           "slug": "rooster-hb-grey",
           "name": "Rooster Hb Grey",
           "price": 39000,
           "images": [
             "/products/office/High Back Mesh Chairs/rooster-hb-grey/rooster-with-footrest-hb-front-p39000.png",
             "/products/office/High Back Mesh Chairs/rooster-hb-grey/rooster-mb-back.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "trio-black-hb",
-          "name": "TRIO BLACK HB",
-          "price": 11250,
-          "images": [
-            "/products/office/High Back Mesh Chairs/TRIO BLACK HB/TRIO BLACK HB-front-p11250.png",
-            "/products/office/High Back Mesh Chairs/TRIO BLACK HB/trio-black-mb-back-10250.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "trio-grey-hb",
-          "name": "TRIO GREY HB",
-          "price": 12500,
-          "images": [
-            "/products/office/High Back Mesh Chairs/TRIO GREY HB/TRIO GREY HB-front-p12500.png",
-            "/products/office/High Back Mesh Chairs/TRIO GREY HB/TRIO GREY MB-back-p11500.png"
           ],
           "colors": [],
           "description": ""
@@ -3064,8 +3064,48 @@
     {
       "slug": "highcounter",
       "label": "High Counter Chairs",
-      "coverImage": "/products/office/Highcounter/astoria/astoria-front-p15500.png",
+      "coverImage": "/products/office/Highcounter/BOLZANO/BOLZANO-front-p12600.png",
       "items": [
+        {
+          "slug": "bolzano",
+          "name": "BOLZANO",
+          "price": 12600,
+          "images": [
+            "/products/office/Highcounter/BOLZANO/BOLZANO-front-p12600.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "rimini-pp",
+          "name": "RIMINI Pp",
+          "price": 6250,
+          "images": [
+            "/products/office/Highcounter/RIMINI-pp/RIMINI-pp-front-p6250.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "santorini",
+          "name": "SANTORINI",
+          "price": 5500,
+          "images": [
+            "/products/office/Highcounter/SANTORINI/SANTORINI-front-p5500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "sweden",
+          "name": "SWEDEN",
+          "price": 5500,
+          "images": [
+            "/products/office/Highcounter/SWEDEN/sweden-front-p5500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
         {
           "slug": "astoria",
           "name": "Astoria",
@@ -3082,16 +3122,6 @@
           "price": 5600,
           "images": [
             "/products/office/Highcounter/bistro hc/bistro-hc-front-p5600.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "bolzano",
-          "name": "BOLZANO",
-          "price": 12600,
-          "images": [
-            "/products/office/Highcounter/BOLZANO/BOLZANO-front-p12600.png"
           ],
           "colors": [],
           "description": ""
@@ -3297,16 +3327,6 @@
           "description": ""
         },
         {
-          "slug": "rimini-pp",
-          "name": "RIMINI Pp",
-          "price": 6250,
-          "images": [
-            "/products/office/Highcounter/RIMINI-pp/RIMINI-pp-front-p6250.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
           "slug": "rimni",
           "name": "Rimni",
           "price": 7900,
@@ -3337,31 +3357,11 @@
           "description": ""
         },
         {
-          "slug": "santorini",
-          "name": "SANTORINI",
-          "price": 5500,
-          "images": [
-            "/products/office/Highcounter/SANTORINI/SANTORINI-front-p5500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
           "slug": "skyros-hc",
           "name": "Skyros Hc",
           "price": null,
           "images": [
             "/products/office/Highcounter/skyros-hc/skyros-front.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "sweden",
-          "name": "SWEDEN",
-          "price": 5500,
-          "images": [
-            "/products/office/Highcounter/SWEDEN/sweden-front-p5500.png"
           ],
           "colors": [],
           "description": ""
@@ -3854,7 +3854,7 @@
           "description": ""
         },
         {
-          "slug": "knoll",
+          "slug": "knoll-12500",
           "name": "Knoll",
           "price": 12500,
           "images": [
@@ -3864,7 +3864,7 @@
           "description": ""
         },
         {
-          "slug": "knoll",
+          "slug": "knoll-13000",
           "name": "Knoll",
           "price": 13000,
           "images": [
@@ -3894,11 +3894,11 @@
           "description": ""
         },
         {
-          "slug": "laxy-boy-set-leatherp84000-pup57000",
-          "name": "Laxy Boy Set Leatherp84000 Pup57000",
+          "slug": "lazy-boy-set-leatherp84000-pup57000",
+          "name": "Lazy Boy Set Leatherp84000 Pup57000",
           "price": null,
           "images": [
-            "/products/office/Office Lounge Chairs/laxy-boy-set-leatherp84000-pup57000.png"
+            "/products/office/Office Lounge Chairs/lazy-boy-set-leatherp84000-pup57000.png"
           ],
           "colors": [],
           "description": ""
@@ -4685,30 +4685,8 @@
     {
       "slug": "premium-leather-office-chairs",
       "label": "Premium Leather Office Chairs",
-      "coverImage": "/products/office/Premium Leather Office Chairs/attitude Pale Silver/attitude-pale-silver-hb-front-p60000.png",
+      "coverImage": "/products/office/Premium Leather Office Chairs/BENTLEY (LEATHER)/BENTLEY (LEATHER) HB-front-p67000.png",
       "items": [
-        {
-          "slug": "attitude-pale-silver",
-          "name": "Attitude Pale Silver",
-          "price": 60000,
-          "images": [
-            "/products/office/Premium Leather Office Chairs/attitude Pale Silver/attitude-pale-silver-hb-front-p60000.png",
-            "/products/office/Premium Leather Office Chairs/attitude Pale Silver/attitude-pale-silver-mb-back-58000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "austin",
-          "name": "Austin",
-          "price": 33000,
-          "images": [
-            "/products/office/Premium Leather Office Chairs/austin/austin-hb-front-p33000.png",
-            "/products/office/Premium Leather Office Chairs/austin/austin-mb-front-p31000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
         {
           "slug": "bentley-leather",
           "name": "BENTLEY (LEATHER)",
@@ -4754,17 +4732,6 @@
           "description": ""
         },
         {
-          "slug": "daisy",
-          "name": "Daisy",
-          "price": 31000,
-          "images": [
-            "/products/office/Premium Leather Office Chairs/daisy/daisy-hb-front-p31000.png",
-            "/products/office/Premium Leather Office Chairs/daisy/daisy-mb-front-p29000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
           "slug": "elite-sleek",
           "name": "ELITE SLEEK",
           "price": 23500,
@@ -4776,56 +4743,12 @@
           "description": ""
         },
         {
-          "slug": "epson",
-          "name": "Epson",
-          "price": 33000,
-          "images": [
-            "/products/office/Premium Leather Office Chairs/epson/epson-hb-front-p33000.png",
-            "/products/office/Premium Leather Office Chairs/epson/epson-mb-front-31000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "heritage",
-          "name": "Heritage",
-          "price": 124000,
-          "images": [
-            "/products/office/Premium Leather Office Chairs/heritage/heritage-hb-front-p124000.png",
-            "/products/office/Premium Leather Office Chairs/heritage/heritage-mb-front-p114000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
           "slug": "jaguar",
           "name": "JAGUAR",
           "price": 62000,
           "images": [
             "/products/office/Premium Leather Office Chairs/JAGUAR/JAGUAR-hb-front-p62000.png",
             "/products/office/Premium Leather Office Chairs/JAGUAR/jaguar-mb-front-p58000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "legacy",
-          "name": "Legacy",
-          "price": 28000,
-          "images": [
-            "/products/office/Premium Leather Office Chairs/legacy/legacy-hb-front-30000.png",
-            "/products/office/Premium Leather Office Chairs/legacy/legacy-mb-front-p28000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "lucy",
-          "name": "Lucy",
-          "price": 16000,
-          "images": [
-            "/products/office/Premium Leather Office Chairs/lucy/lucy-hb-front-p16000.png",
-            "/products/office/Premium Leather Office Chairs/lucy/lucy-mb-front-p15500.png"
           ],
           "colors": [],
           "description": ""
@@ -4864,56 +4787,12 @@
           "description": ""
         },
         {
-          "slug": "maverick",
-          "name": "Maverick",
-          "price": 31000,
-          "images": [
-            "/products/office/Premium Leather Office Chairs/maverick/maverick-hb-front-p31000.png",
-            "/products/office/Premium Leather Office Chairs/maverick/maverick-mb-front-p29000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "oxford",
-          "name": "Oxford",
-          "price": 24000,
-          "images": [
-            "/products/office/Premium Leather Office Chairs/oxford/oxford-hb-front-p24000.png",
-            "/products/office/Premium Leather Office Chairs/oxford/oxford-mb-front-p22000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
           "slug": "oyster-leather",
           "name": "OYSTER (LEATHER)",
           "price": 59000,
           "images": [
             "/products/office/Premium Leather Office Chairs/OYSTER (LEATHER)/OYSTER (LEATHER) HB-front-p59000.png",
             "/products/office/Premium Leather Office Chairs/OYSTER (LEATHER)/oyster-leather-mb-front-p54000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "sleek",
-          "name": "Sleek",
-          "price": 13000,
-          "images": [
-            "/products/office/Premium Leather Office Chairs/sleek/sleek-hb-front-p13000.png",
-            "/products/office/Premium Leather Office Chairs/sleek/sleek-mb-front-p12000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "stanley",
-          "name": "Stanley",
-          "price": 26000,
-          "images": [
-            "/products/office/Premium Leather Office Chairs/stanley/stanley-hb-front-p26000.png",
-            "/products/office/Premium Leather Office Chairs/stanley/stanley-mb-front-p24000.png"
           ],
           "colors": [],
           "description": ""
@@ -4947,6 +4826,127 @@
           "images": [
             "/products/office/Premium Leather Office Chairs/WINSTER/WINSTER-hb-front-p90000.png",
             "/products/office/Premium Leather Office Chairs/WINSTER/winster-mb-front-p80000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "attitude-pale-silver",
+          "name": "Attitude Pale Silver",
+          "price": 60000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/attitude Pale Silver/attitude-pale-silver-hb-front-p60000.png",
+            "/products/office/Premium Leather Office Chairs/attitude Pale Silver/attitude-pale-silver-mb-back-58000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "austin",
+          "name": "Austin",
+          "price": 33000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/austin/austin-hb-front-p33000.png",
+            "/products/office/Premium Leather Office Chairs/austin/austin-mb-front-p31000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "daisy",
+          "name": "Daisy",
+          "price": 31000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/daisy/daisy-hb-front-p31000.png",
+            "/products/office/Premium Leather Office Chairs/daisy/daisy-mb-front-p29000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "epson",
+          "name": "Epson",
+          "price": 33000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/epson/epson-hb-front-p33000.png",
+            "/products/office/Premium Leather Office Chairs/epson/epson-mb-front-31000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "heritage",
+          "name": "Heritage",
+          "price": 124000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/heritage/heritage-hb-front-p124000.png",
+            "/products/office/Premium Leather Office Chairs/heritage/heritage-mb-front-p114000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "legacy",
+          "name": "Legacy",
+          "price": 28000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/legacy/legacy-hb-front-30000.png",
+            "/products/office/Premium Leather Office Chairs/legacy/legacy-mb-front-p28000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "lucy",
+          "name": "Lucy",
+          "price": 16000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/lucy/lucy-hb-front-p16000.png",
+            "/products/office/Premium Leather Office Chairs/lucy/lucy-mb-front-p15500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "maverick",
+          "name": "Maverick",
+          "price": 31000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/maverick/maverick-hb-front-p31000.png",
+            "/products/office/Premium Leather Office Chairs/maverick/maverick-mb-front-p29000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "oxford",
+          "name": "Oxford",
+          "price": 24000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/oxford/oxford-hb-front-p24000.png",
+            "/products/office/Premium Leather Office Chairs/oxford/oxford-mb-front-p22000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "sleek",
+          "name": "Sleek",
+          "price": 13000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/sleek/sleek-hb-front-p13000.png",
+            "/products/office/Premium Leather Office Chairs/sleek/sleek-mb-front-p12000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "stanley",
+          "name": "Stanley",
+          "price": 26000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/stanley/stanley-hb-front-p26000.png",
+            "/products/office/Premium Leather Office Chairs/stanley/stanley-mb-front-p24000.png"
           ],
           "colors": [],
           "description": ""
@@ -5261,23 +5261,23 @@
           "description": ""
         },
         {
-          "slug": "trust-pu-dark-gray",
-          "name": "TRUSt PU Dark Gray",
-          "price": null,
-          "images": [
-            "/products/office/PU Office Chairs/TRUSt PU Dark Gray/trust-hb-dark-grey-front.png",
-            "/products/office/PU Office Chairs/TRUSt PU Dark Gray/trust-hb-back-dark-grey-p.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
           "slug": "trust-pu-warm-grey",
           "name": "TRUST PU Warm Grey",
           "price": 27500,
           "images": [
             "/products/office/PU Office Chairs/TRUST PU warm grey/TRUST-hb-front-p27500.png",
             "/products/office/PU Office Chairs/TRUST PU warm grey/trust-mb-back-p25500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "trust-pu-dark-gray",
+          "name": "TRUSt PU Dark Gray",
+          "price": null,
+          "images": [
+            "/products/office/PU Office Chairs/TRUSt PU Dark Gray/trust-hb-dark-grey-front.png",
+            "/products/office/PU Office Chairs/TRUSt PU Dark Gray/trust-hb-back-dark-grey-p.png"
           ],
           "colors": [],
           "description": ""

@@ -24,11 +24,11 @@ function ImageGallery({ images, name }: { images: string[]; name: string }) {
   return (
     <div className="space-y-3">
       {/* Main image */}
-      <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem] border border-stone-100 bg-white">
+      <div className="relative aspect-[5/3] overflow-hidden rounded-[1.5rem] border border-stone-100 bg-white">
         <img
           src={encodeImagePath(images[activeIndex] ?? '')}
           alt={`${name} - view ${activeIndex + 1}`}
-          className="h-full w-full object-contain p-6"
+          className="h-full w-full object-contain p-2 sm:p-3"
         />
         {images.length > 1 && (
           <>
@@ -185,8 +185,8 @@ function ProductDetailPage() {
 
       {/* Product detail */}
       <SectionReveal>
-        <div className="mx-auto max-w-6xl px-6 py-12">
-          <div className="grid gap-10 lg:grid-cols-2">
+        <div className="mx-auto max-w-[92rem] px-6 py-12">
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,1.25fr)_minmax(340px,0.75fr)]">
             {/* Gallery */}
             <div>
               {item.images.length > 0 ? (
@@ -287,30 +287,32 @@ function ProductDetailPage() {
 
       {/* Related products */}
       {relatedItems.length > 0 && (
-        <SectionReveal className="border-t border-slate-200">
-          <div className="mx-auto max-w-7xl px-6 py-12">
+        <SectionReveal className="border-t border-slate-200 bg-white">
+          <div className="mx-auto max-w-none px-3 py-14 sm:px-4 lg:px-6">
             <h2 className="text-xl font-semibold text-slate-900">More from {category.label}</h2>
-            <div className="mt-6 grid gap-4 grid-cols-2 md:grid-cols-4">
+            <div className="mt-8 grid grid-cols-2 gap-x-3 gap-y-12 md:grid-cols-4">
               {relatedItems.map((related) => (
                 <Link
-                  key={related.slug}
+                  key={`${related.slug}-${related.images[0] ?? related.name}`}
                   to={`/products/${categorySlug}/${subCategorySlug}/${related.slug}`}
-                  className="group overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+                  className="group block text-center"
                 >
-                  <div className="relative aspect-[3/4] overflow-hidden bg-white">
+                  <div className="relative flex aspect-square items-center justify-center overflow-hidden bg-white">
                     {related.images[0] ? (
                       <img
                         src={encodeImagePath(related.images[0])}
                         alt={related.name}
                         loading="lazy"
-                        className="h-full w-full object-contain p-4 transition duration-500 group-hover:scale-[1.03]"
+                        className="h-full w-full object-contain p-2 transition duration-500 group-hover:scale-[1.035] sm:p-3"
                       />
                     ) : null}
                   </div>
-                  <div className="border-t border-stone-100 px-4 py-3">
-                    <p className="truncate text-sm font-semibold text-slate-900">{related.name}</p>
+                  <div className="px-3 pt-5">
+                    <p className="truncate text-base font-semibold tracking-wide text-slate-950 transition group-hover:text-amber-800">
+                      {related.name}
+                    </p>
                     <p
-                      className={`mt-0.5 text-sm font-medium ${
+                      className={`mt-2 text-sm tracking-wide ${
                         related.price === null ? 'text-slate-400' : 'text-amber-700'
                       }`}
                     >

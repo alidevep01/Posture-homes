@@ -64,29 +64,47 @@ function ProductListingPage() {
         canonicalPath={basePath}
       />
 
-      {/* Hero */}
-      <section className="border-b border-slate-200 bg-slate-950 py-12 text-white">
-        <div className="mx-auto max-w-7xl px-6">
-          <Link
-            to={backPath}
-            className="inline-flex items-center gap-1 text-sm text-slate-400 transition hover:text-white"
-          >
-            <ChevronLeft className="h-4 w-4" />
-            Back
-          </Link>
-          <h1 className="mt-4 text-4xl font-semibold text-white sm:text-5xl">
-            {category.label}
-          </h1>
-          <p className="mt-2 text-base text-slate-400">
-            {filteredItems.length} item{filteredItems.length !== 1 ? 's' : ''}
-            {query && ` matching "${query}"`}
-          </p>
+      {/* Catalog header */}
+      <section className="border-b border-slate-200 bg-white py-10">
+        <div className="mx-auto max-w-none px-3 sm:px-4 lg:px-6">
+          <nav className="flex flex-wrap items-center gap-2 text-sm tracking-wide text-slate-500">
+            <Link to="/" className="transition hover:text-slate-950">
+              Home
+            </Link>
+            <ChevronRight className="h-3.5 w-3.5 text-slate-300" />
+            <Link to={backPath} className="transition hover:text-slate-950">
+              {categorySlug === 'home-furniture' ? 'Home Furniture' : 'Office Furniture'}
+            </Link>
+            <ChevronRight className="h-3.5 w-3.5 text-slate-300" />
+            <span className="text-slate-950">{category.label}</span>
+          </nav>
+          <div className="mt-10 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-amber-700">
+                Collection
+              </p>
+              <h1 className="mt-3 text-4xl font-semibold text-slate-950 sm:text-5xl">
+                {category.label}
+              </h1>
+              <p className="mt-2 text-base text-slate-500">
+                {filteredItems.length} item{filteredItems.length !== 1 ? 's' : ''}
+                {query && ` matching "${query}"`}
+              </p>
+            </div>
+            <Link
+              to={backPath}
+              className="inline-flex items-center gap-1 text-sm font-semibold text-slate-600 transition hover:text-slate-950"
+            >
+              <ChevronLeft className="h-4 w-4" />
+              Back to categories
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* Search */}
       <div className="border-b border-slate-200 bg-white px-6 py-4">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-none">
           <div className="relative max-w-sm">
             <Search className="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
             <input
@@ -102,26 +120,26 @@ function ProductListingPage() {
 
       {/* Grid */}
       <SectionReveal>
-        <div className="mx-auto max-w-7xl px-6 py-10">
+        <div className="mx-auto max-w-none px-3 py-12 sm:px-4 lg:px-6">
           {pageItems.length === 0 ? (
             <div className="py-20 text-center text-slate-500">
               No items found{query ? ` for "${query}"` : ''}.
             </div>
           ) : (
-            <div className="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <div className="grid grid-cols-2 gap-x-3 gap-y-12 md:grid-cols-3 xl:grid-cols-4">
               {pageItems.map((item) => (
                 <Link
-                  key={item.slug}
+                  key={`${item.slug}-${item.images[0] ?? item.name}`}
                   to={`${basePath}/${item.slug}`}
-                  className="group overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+                  className="group block text-center"
                 >
-                  <div className="relative aspect-[3/4] overflow-hidden bg-white">
+                  <div className="relative flex aspect-square items-center justify-center overflow-hidden bg-white">
                     {item.images[0] ? (
                       <img
                         src={encodeImagePath(item.images[0])}
                         alt={item.name}
                         loading="lazy"
-                        className="h-full w-full object-contain p-4 transition duration-500 group-hover:scale-[1.03]"
+                        className="h-full w-full object-contain p-2 transition duration-500 group-hover:scale-[1.035] sm:p-3"
                       />
                     ) : (
                       <div className="flex h-full items-center justify-center text-slate-300 text-sm">
@@ -129,12 +147,12 @@ function ProductListingPage() {
                       </div>
                     )}
                   </div>
-                  <div className="border-t border-stone-100 px-4 py-3">
-                    <h2 className="truncate text-sm font-semibold leading-snug text-slate-900">
+                  <div className="px-3 pt-5">
+                    <h2 className="truncate text-base font-semibold tracking-wide text-slate-950 transition group-hover:text-amber-800">
                       {item.name}
                     </h2>
                     <p
-                      className={`mt-0.5 text-sm font-medium ${
+                      className={`mt-2 text-sm tracking-wide ${
                         item.price === null ? 'text-slate-400' : 'text-amber-700'
                       }`}
                     >
