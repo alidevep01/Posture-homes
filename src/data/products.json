@@ -21,8 +21,8 @@
           "name": "9809 Arm Chair",
           "price": 62000,
           "images": [
-            "/products/home/arm-chairs/9809 arm chair/9809-back-p62000.png",
-            "/products/home/arm-chairs/9809 arm chair/9809-front-p62000.png"
+            "/products/home/arm-chairs/9809 arm chair/9809-front-p62000.png",
+            "/products/home/arm-chairs/9809 arm chair/9809-back-p62000.png"
           ],
           "colors": [],
           "description": ""
@@ -53,8 +53,8 @@
           "name": "Beyl Arm Chair",
           "price": 122500,
           "images": [
-            "/products/home/arm-chairs/beyl arm chair/beyl-chair-back.png",
-            "/products/home/arm-chairs/beyl arm chair/beyl-chair-front-p122500.png"
+            "/products/home/arm-chairs/beyl arm chair/beyl-chair-front-p122500.png",
+            "/products/home/arm-chairs/beyl arm chair/beyl-chair-back.png"
           ],
           "colors": [],
           "description": ""
@@ -156,8 +156,8 @@
           "name": "Moda Chair",
           "price": 75000,
           "images": [
-            "/products/home/arm-chairs/moda chair/moda-chair-back.png",
-            "/products/home/arm-chairs/moda chair/moda-chair-front-p75000.png"
+            "/products/home/arm-chairs/moda chair/moda-chair-front-p75000.png",
+            "/products/home/arm-chairs/moda chair/moda-chair-back.png"
           ],
           "colors": [],
           "description": ""
@@ -188,8 +188,8 @@
           "name": "Roogle Accent Arm Chair 360 Rotation",
           "price": 60000,
           "images": [
-            "/products/home/arm-chairs/roogle accent arm chair 360 rotation/roogle-accent-chair-360rotation-back.png",
-            "/products/home/arm-chairs/roogle accent arm chair 360 rotation/roogle-accent-chair-360rotation-front-p60000.png"
+            "/products/home/arm-chairs/roogle accent arm chair 360 rotation/roogle-accent-chair-360rotation-front-p60000.png",
+            "/products/home/arm-chairs/roogle accent arm chair 360 rotation/roogle-accent-chair-360rotation-back.png"
           ],
           "colors": [],
           "description": ""
@@ -199,8 +199,8 @@
           "name": "Tori Arm Chair",
           "price": 80000,
           "images": [
-            "/products/home/arm-chairs/tori arm chair/tori-chair-back.png",
-            "/products/home/arm-chairs/tori arm chair/tori-chair-front-p80000.png"
+            "/products/home/arm-chairs/tori arm chair/tori-chair-front-p80000.png",
+            "/products/home/arm-chairs/tori arm chair/tori-chair-back.png"
           ],
           "colors": [],
           "description": ""
@@ -622,64 +622,292 @@
     {
       "slug": "dinning-chairs",
       "label": "Dining Chairs",
-      "coverImage": "/products/home/dinning-chairs/2203-black-dinning-chair-p31000.png",
+      "coverImage": "/products/home/dinning-chairs/alina/alina-front-p13200.png",
       "items": [
         {
-          "slug": "2203-black-dinning-chair",
-          "name": "2203 Black Dinning Chair",
-          "price": 31000,
+          "slug": "alina",
+          "name": "Alina",
+          "price": 13200,
           "images": [
-            "/products/home/dinning-chairs/2203-black-dinning-chair-p31000.png"
+            "/products/home/dinning-chairs/alina/alina-front-p13200.png",
+            "/products/home/dinning-chairs/alina/alina-back.png",
+            "/products/home/dinning-chairs/alina/alina-side.png"
           ],
           "colors": [],
           "description": ""
         },
         {
-          "slug": "ch008-dinnnig-chair-beige-tan",
-          "name": "Ch008 Dinnnig Chair Beige Tan",
-          "price": 40800,
+          "slug": "alto",
+          "name": "Alto",
+          "price": 8000,
           "images": [
-            "/products/home/dinning-chairs/ch008-dinnnig-chair-beige-tan-p40800.png"
+            "/products/home/dinning-chairs/alto/alto-front-p8000.png",
+            "/products/home/dinning-chairs/alto/alto-back.png",
+            "/products/home/dinning-chairs/alto/alto-side.png"
           ],
           "colors": [],
           "description": ""
         },
         {
-          "slug": "ch079-dinning-chair",
-          "name": "Ch079 Dinning Chair",
-          "price": 26500,
+          "slug": "amigo",
+          "name": "Amigo",
+          "price": 26000,
           "images": [
-            "/products/home/dinning-chairs/ch079-dinning-chair-p26500.png"
+            "/products/home/dinning-chairs/amigo/amigo-front-p26000.png",
+            "/products/home/dinning-chairs/amigo/amigo-back.png",
+            "/products/home/dinning-chairs/amigo/amigo-side.png"
           ],
           "colors": [],
           "description": ""
         },
         {
-          "slug": "ch273a-beige-dinning-chair",
-          "name": "Ch273a Beige Dinning Chair",
-          "price": 32500,
+          "slug": "arco",
+          "name": "Arco",
+          "price": 17500,
           "images": [
-            "/products/home/dinning-chairs/ch273a-beige-dinning-chair-p32500.png"
+            "/products/home/dinning-chairs/arco/arco-front-p17500.png",
+            "/products/home/dinning-chairs/arco/arco-back.png",
+            "/products/home/dinning-chairs/arco/arco-side.png"
           ],
           "colors": [],
           "description": ""
         },
         {
-          "slug": "dc10146215-dinning-chair",
-          "name": "Dc10146215 Dinning Chair",
-          "price": 30000,
+          "slug": "aries",
+          "name": "Aries",
+          "price": 21000,
           "images": [
-            "/products/home/dinning-chairs/dc10146215-dinning-chair-p30000.png"
+            "/products/home/dinning-chairs/aries/aries-front-p21000.png",
+            "/products/home/dinning-chairs/aries/aries-side1.png",
+            "/products/home/dinning-chairs/aries/aries-side2.png"
           ],
           "colors": [],
           "description": ""
         },
         {
-          "slug": "dcl18-dinning-chair",
-          "name": "Dcl18 Dinning Chair",
-          "price": 18000,
+          "slug": "ascona",
+          "name": "Ascona",
+          "price": 15000,
           "images": [
-            "/products/home/dinning-chairs/dcl18-dinning-chair-p18000.png"
+            "/products/home/dinning-chairs/ascona/ascona-front-p15000.png",
+            "/products/home/dinning-chairs/ascona/ascona-back.png",
+            "/products/home/dinning-chairs/ascona/ascona-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "ash",
+          "name": "Ash",
+          "price": 19500,
+          "images": [
+            "/products/home/dinning-chairs/ash/ash-front-p19500.png",
+            "/products/home/dinning-chairs/ash/ash-back.png",
+            "/products/home/dinning-chairs/ash/ash-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "aura",
+          "name": "Aura",
+          "price": 12000,
+          "images": [
+            "/products/home/dinning-chairs/aura/aura-front-p12000.png",
+            "/products/home/dinning-chairs/aura/aura-side1.png",
+            "/products/home/dinning-chairs/aura/aura-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "berlin",
+          "name": "Berlin",
+          "price": 19950,
+          "images": [
+            "/products/home/dinning-chairs/berlin/berlin-front-p19950.png",
+            "/products/home/dinning-chairs/berlin/berlin-back.png",
+            "/products/home/dinning-chairs/berlin/berlin-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "berry",
+          "name": "Berry",
+          "price": 13000,
+          "images": [
+            "/products/home/dinning-chairs/berry/berry-front-p13000.png",
+            "/products/home/dinning-chairs/berry/berry-back.png",
+            "/products/home/dinning-chairs/berry/berry-side1.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "blake",
+          "name": "Blake",
+          "price": 10950,
+          "images": [
+            "/products/home/dinning-chairs/blake/blake-front-p10950.png",
+            "/products/home/dinning-chairs/blake/blake-back.png",
+            "/products/home/dinning-chairs/blake/blake-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "bliss",
+          "name": "Bliss",
+          "price": 23000,
+          "images": [
+            "/products/home/dinning-chairs/bliss/bliss-front-p23000.png",
+            "/products/home/dinning-chairs/bliss/bliss-back.png",
+            "/products/home/dinning-chairs/bliss/bliss-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "cairo",
+          "name": "Cairo",
+          "price": 13000,
+          "images": [
+            "/products/home/dinning-chairs/cairo/cairo-front-p13000.png",
+            "/products/home/dinning-chairs/cairo/cairo-side1.png",
+            "/products/home/dinning-chairs/cairo/cairo-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "carange",
+          "name": "Carange",
+          "price": 8500,
+          "images": [
+            "/products/home/dinning-chairs/carange/carange-front-p8500.png",
+            "/products/home/dinning-chairs/carange/carange-side1.png",
+            "/products/home/dinning-chairs/carange/carange-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "casper",
+          "name": "Casper",
+          "price": 21000,
+          "images": [
+            "/products/home/dinning-chairs/casper/casper-front-p21000.png",
+            "/products/home/dinning-chairs/casper/casper-back.png",
+            "/products/home/dinning-chairs/casper/casper-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "charlie",
+          "name": "Charlie",
+          "price": 11950,
+          "images": [
+            "/products/home/dinning-chairs/charlie/charlie-front-p11950.png",
+            "/products/home/dinning-chairs/charlie/charlie-back.png",
+            "/products/home/dinning-chairs/charlie/charlie-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "chris",
+          "name": "Chris",
+          "price": 11300,
+          "images": [
+            "/products/home/dinning-chairs/chris/chris-front-p11300.png",
+            "/products/home/dinning-chairs/chris/chris-side1.png",
+            "/products/home/dinning-chairs/chris/chris-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "ciana",
+          "name": "Ciana",
+          "price": 13000,
+          "images": [
+            "/products/home/dinning-chairs/ciana/ciana-front-p13000.png",
+            "/products/home/dinning-chairs/ciana/ciana-back.png",
+            "/products/home/dinning-chairs/ciana/ciana-side1.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "cloud",
+          "name": "Cloud",
+          "price": 28000,
+          "images": [
+            "/products/home/dinning-chairs/cloud/cloud-front-p28000.png",
+            "/products/home/dinning-chairs/cloud/cloud-side1.png",
+            "/products/home/dinning-chairs/cloud/cloud-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "coach",
+          "name": "Coach",
+          "price": 28000,
+          "images": [
+            "/products/home/dinning-chairs/coach/coach-front-p28000.png",
+            "/products/home/dinning-chairs/coach/coach-back.png",
+            "/products/home/dinning-chairs/coach/coach-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "copper",
+          "name": "Copper",
+          "price": 32000,
+          "images": [
+            "/products/home/dinning-chairs/copper/copper-front-p32000.png",
+            "/products/home/dinning-chairs/copper/copper-side1.png",
+            "/products/home/dinning-chairs/copper/copper-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "corby",
+          "name": "Corby",
+          "price": 9500,
+          "images": [
+            "/products/home/dinning-chairs/corby/corby-front-p9500.png",
+            "/products/home/dinning-chairs/corby/corbback.png",
+            "/products/home/dinning-chairs/corby/corby-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "cowboy",
+          "name": "Cowboy",
+          "price": 7300,
+          "images": [
+            "/products/home/dinning-chairs/cowboy/cowboy-front-p7300.png",
+            "/products/home/dinning-chairs/cowboy/cowboy-side1.png",
+            "/products/home/dinning-chairs/cowboy/cowboy-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "dalos",
+          "name": "Dalos",
+          "price": null,
+          "images": [
+            "/products/home/dinning-chairs/dalos/dalos-front-22000.png",
+            "/products/home/dinning-chairs/dalos/dalos-back.png",
+            "/products/home/dinning-chairs/dalos/dalos-side.png"
           ],
           "colors": [],
           "description": ""
@@ -689,101 +917,523 @@
           "name": "Dd8594 Revolving Chair",
           "price": 19750,
           "images": [
-            "/products/home/dinning-chairs/dd8594-revolving-chair-01-p19750.png",
-            "/products/home/dinning-chairs/dd8594-revolving-chair-02-p19750.png",
-            "/products/home/dinning-chairs/dd8594-revolving-chair-03-p19750.png"
+            "/products/home/dinning-chairs/dd8594 revolving chair/dd8594-revolving-chair-01-p19750.png",
+            "/products/home/dinning-chairs/dd8594 revolving chair/dd8594-revolving-chair-02-p19750.png",
+            "/products/home/dinning-chairs/dd8594 revolving chair/dd8594-revolving-chair-03-p19750.png"
           ],
           "colors": [],
           "description": ""
         },
         {
-          "slug": "dinning-slavia-180-auto-return",
-          "name": "Dinning Slavia 180 Auto Return",
-          "price": 25000,
+          "slug": "dior",
+          "name": "Dior",
+          "price": 8500,
           "images": [
-            "/products/home/dinning-chairs/dinning-slavia-180-auto-return-p25000.png"
+            "/products/home/dinning-chairs/dior/dior-front-p8500.png",
+            "/products/home/dinning-chairs/dior/dior-back.png",
+            "/products/home/dinning-chairs/dior/dior-side.png"
           ],
           "colors": [],
           "description": ""
         },
         {
-          "slug": "dune-dinning-chair",
-          "name": "Dune Dinning Chair",
-          "price": 21500,
+          "slug": "dune",
+          "name": "Dune",
+          "price": null,
           "images": [
-            "/products/home/dinning-chairs/dune-dinning-chair-p21500.png"
+            "/products/home/dinning-chairs/dune/dune-front-woodp22500-metalp20000.png",
+            "/products/home/dinning-chairs/dune/dune-side1.png",
+            "/products/home/dinning-chairs/dune/dune-side2.png"
           ],
           "colors": [],
           "description": ""
         },
         {
-          "slug": "f191-dinning-chair",
-          "name": "F191 Dinning Chair",
-          "price": 11000,
+          "slug": "geneva",
+          "name": "Geneva",
+          "price": 21000,
           "images": [
-            "/products/home/dinning-chairs/f191-dinning-chair-p11000.png"
+            "/products/home/dinning-chairs/geneva/geneva-front-p21000.png",
+            "/products/home/dinning-chairs/geneva/geneva-back1.png",
+            "/products/home/dinning-chairs/geneva/geneva-back2.png"
           ],
           "colors": [],
           "description": ""
         },
         {
-          "slug": "hammer-seggies-dinning-chair",
-          "name": "Hammer Seggies Dinning Chair",
-          "price": 25000,
+          "slug": "giona",
+          "name": "Giona",
+          "price": 16800,
           "images": [
-            "/products/home/dinning-chairs/hammer-seggies-dinning-chair-p25000.png"
+            "/products/home/dinning-chairs/giona/giona-front-p16800.png",
+            "/products/home/dinning-chairs/giona/giona-back.png",
+            "/products/home/dinning-chairs/giona/giona-side.png"
           ],
           "colors": [],
           "description": ""
         },
         {
-          "slug": "lawson-dinning-chair",
-          "name": "Lawson Dinning Chair",
-          "price": 34000,
-          "images": [
-            "/products/home/dinning-chairs/lawson-dinning-chair-p34000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "my-konos-dinning-chair",
-          "name": "My Konos Dinning Chair",
-          "price": 20500,
-          "images": [
-            "/products/home/dinning-chairs/my-konos-dinning-chair-p20500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "serene-dinning-chair",
-          "name": "Serene Dinning Chair",
-          "price": 23000,
-          "images": [
-            "/products/home/dinning-chairs/serene-dinning-chair-01-p23000.png",
-            "/products/home/dinning-chairs/serene-dinning-chair-02-p23000.png",
-            "/products/home/dinning-chairs/serene-dinning-chair-03-p23000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "sh090-revolving-dinning-chair",
-          "name": "Sh090 Revolving Dinning Chair",
+          "slug": "grace",
+          "name": "Grace",
           "price": 19000,
           "images": [
-            "/products/home/dinning-chairs/sh090-revolving-dinning-chair-p19000.png"
+            "/products/home/dinning-chairs/grace/grace-front-p19000.png",
+            "/products/home/dinning-chairs/grace/grace-back-p19000.png",
+            "/products/home/dinning-chairs/grace/grace-side.png"
           ],
           "colors": [],
           "description": ""
         },
         {
-          "slug": "tango-dinning-chair",
-          "name": "Tango Dinning Chair",
-          "price": 16000,
+          "slug": "iris",
+          "name": "Iris",
+          "price": 9000,
           "images": [
-            "/products/home/dinning-chairs/tango-dinning-chair-p16000.png"
+            "/products/home/dinning-chairs/iris/iris-front-p9000.png",
+            "/products/home/dinning-chairs/iris/iris-side1.png",
+            "/products/home/dinning-chairs/iris/iris-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "jade",
+          "name": "Jade",
+          "price": 25000,
+          "images": [
+            "/products/home/dinning-chairs/jade/jade-front-p25000.png",
+            "/products/home/dinning-chairs/jade/jade-side-p25000.png",
+            "/products/home/dinning-chairs/jade/jade-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "jimmy",
+          "name": "Jimmy",
+          "price": 7000,
+          "images": [
+            "/products/home/dinning-chairs/jimmy/jimmy-front-p7000.png",
+            "/products/home/dinning-chairs/jimmy/jimmy-back.png",
+            "/products/home/dinning-chairs/jimmy/jimmy-side1.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "lara",
+          "name": "Lara",
+          "price": 20500,
+          "images": [
+            "/products/home/dinning-chairs/lara/lara-front-p20500.png",
+            "/products/home/dinning-chairs/lara/lara-back.png",
+            "/products/home/dinning-chairs/lara/lara-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "linus",
+          "name": "Linus",
+          "price": null,
+          "images": [
+            "/products/home/dinning-chairs/linus/linus-front-18500.png",
+            "/products/home/dinning-chairs/linus/linus-back.png",
+            "/products/home/dinning-chairs/linus/linus-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "luna",
+          "name": "Luna",
+          "price": 19000,
+          "images": [
+            "/products/home/dinning-chairs/luna/luna-front-p19000.png",
+            "/products/home/dinning-chairs/luna/luna-side1.png",
+            "/products/home/dinning-chairs/luna/luna-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "luna-metal",
+          "name": "Luna Metal",
+          "price": 9500,
+          "images": [
+            "/products/home/dinning-chairs/luna-metal/luna-metal-front-p9500.png",
+            "/products/home/dinning-chairs/luna-metal/luna-metal-side1.png",
+            "/products/home/dinning-chairs/luna-metal/luna-metal-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "melisa",
+          "name": "Melisa",
+          "price": 13900,
+          "images": [
+            "/products/home/dinning-chairs/melisa/melisa-front-p13900.png",
+            "/products/home/dinning-chairs/melisa/melisa-back.png",
+            "/products/home/dinning-chairs/melisa/melisa-side1.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "meraki",
+          "name": "Meraki",
+          "price": 14500,
+          "images": [
+            "/products/home/dinning-chairs/meraki/meraki-front-p14500.png",
+            "/products/home/dinning-chairs/meraki/meraki-side1.png",
+            "/products/home/dinning-chairs/meraki/meraki-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "merry",
+          "name": "Merry",
+          "price": 15500,
+          "images": [
+            "/products/home/dinning-chairs/merry/merry-front-p15500.png",
+            "/products/home/dinning-chairs/merry/merry-back.png",
+            "/products/home/dinning-chairs/merry/merry-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "mila",
+          "name": "Mila",
+          "price": 11000,
+          "images": [
+            "/products/home/dinning-chairs/mila/mila-front-p11000.png",
+            "/products/home/dinning-chairs/mila/mila-side1.png",
+            "/products/home/dinning-chairs/mila/mila-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "mykonos",
+          "name": "Mykonos",
+          "price": 19950,
+          "images": [
+            "/products/home/dinning-chairs/mykonos/mykonos-front-p19950.png",
+            "/products/home/dinning-chairs/mykonos/mykonos-side1.png",
+            "/products/home/dinning-chairs/mykonos/mykonos-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "nectar",
+          "name": "Nectar",
+          "price": 21600,
+          "images": [
+            "/products/home/dinning-chairs/nectar/nectar-front-p21600.png",
+            "/products/home/dinning-chairs/nectar/nectar-back.png",
+            "/products/home/dinning-chairs/nectar/nectar-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "olive-fixed",
+          "name": "Olive Fixed",
+          "price": 11000,
+          "images": [
+            "/products/home/dinning-chairs/olive-fixed/olive-fixed-front-p11000.png",
+            "/products/home/dinning-chairs/olive-fixed/olive-fixed-back.png",
+            "/products/home/dinning-chairs/olive-fixed/olive-fixed-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "olive-rev",
+          "name": "Olive Rev",
+          "price": 9500,
+          "images": [
+            "/products/home/dinning-chairs/olive-rev/olive-rev-front-p9500.png",
+            "/products/home/dinning-chairs/olive-rev/olive-rev-side1.png",
+            "/products/home/dinning-chairs/olive-rev/olive-rev-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "oracle",
+          "name": "Oracle",
+          "price": 10000,
+          "images": [
+            "/products/home/dinning-chairs/oracle/oracle-front-p10000.png",
+            "/products/home/dinning-chairs/oracle/oracle-back.png",
+            "/products/home/dinning-chairs/oracle/oracle-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "pablo",
+          "name": "Pablo",
+          "price": 23000,
+          "images": [
+            "/products/home/dinning-chairs/pablo/pablo-front-p23000.png",
+            "/products/home/dinning-chairs/pablo/pablo-side1.png",
+            "/products/home/dinning-chairs/pablo/pablo-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "phoenix",
+          "name": "Phoenix",
+          "price": 18000,
+          "images": [
+            "/products/home/dinning-chairs/phoenix/phoenix-front-p18000.png",
+            "/products/home/dinning-chairs/phoenix/phoenix-side1.png",
+            "/products/home/dinning-chairs/phoenix/phoenix-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "picasso",
+          "name": "Picasso",
+          "price": null,
+          "images": [
+            "/products/home/dinning-chairs/picasso/picasso-front-19950.png",
+            "/products/home/dinning-chairs/picasso/picasso-back.png",
+            "/products/home/dinning-chairs/picasso/picasso-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "rini",
+          "name": "Rini",
+          "price": 12800,
+          "images": [
+            "/products/home/dinning-chairs/rini/rini-front-p12800.png",
+            "/products/home/dinning-chairs/rini/rini-back.png",
+            "/products/home/dinning-chairs/rini/rini-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "root",
+          "name": "Root",
+          "price": 6800,
+          "images": [
+            "/products/home/dinning-chairs/root/root-front-p6800.png",
+            "/products/home/dinning-chairs/root/root-back.png",
+            "/products/home/dinning-chairs/root/root-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "sally",
+          "name": "Sally",
+          "price": 19500,
+          "images": [
+            "/products/home/dinning-chairs/sally/sally-front-p19500.png",
+            "/products/home/dinning-chairs/sally/sally-side1.png",
+            "/products/home/dinning-chairs/sally/sally-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "serene",
+          "name": "Serene",
+          "price": 23000,
+          "images": [
+            "/products/home/dinning-chairs/serene/serene-dinning-chair-01-p23000.png",
+            "/products/home/dinning-chairs/serene/serene-dinning-chair-02-p23000.png",
+            "/products/home/dinning-chairs/serene/serene-dinning-chair-03-p23000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "sierra",
+          "name": "Sierra",
+          "price": 24000,
+          "images": [
+            "/products/home/dinning-chairs/sierra/sierra-front-p24000.png",
+            "/products/home/dinning-chairs/sierra/sierra-back.png",
+            "/products/home/dinning-chairs/sierra/sierra-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "skyros",
+          "name": "Skyros",
+          "price": 23000,
+          "images": [
+            "/products/home/dinning-chairs/skyros/skyros-front-p23000.png",
+            "/products/home/dinning-chairs/skyros/skyros-back.png",
+            "/products/home/dinning-chairs/skyros/skyros-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "slavia",
+          "name": "Slavia",
+          "price": 1600,
+          "images": [
+            "/products/home/dinning-chairs/slavia/slavia-front-p1600.png",
+            "/products/home/dinning-chairs/slavia/slavia-side1.png",
+            "/products/home/dinning-chairs/slavia/slavia-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "snow",
+          "name": "Snow",
+          "price": 27000,
+          "images": [
+            "/products/home/dinning-chairs/snow/snow-front-p27000.png",
+            "/products/home/dinning-chairs/snow/snow-side1.png",
+            "/products/home/dinning-chairs/snow/snow-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "softy",
+          "name": "Softy",
+          "price": 5800,
+          "images": [
+            "/products/home/dinning-chairs/softy/softy-front-p5800.png",
+            "/products/home/dinning-chairs/softy/softy-side1.png",
+            "/products/home/dinning-chairs/softy/softy-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "spice",
+          "name": "Spice",
+          "price": 7000,
+          "images": [
+            "/products/home/dinning-chairs/spice/spice-front-p7000.png",
+            "/products/home/dinning-chairs/spice/spice-back.png",
+            "/products/home/dinning-chairs/spice/spice-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "tango",
+          "name": "Tango",
+          "price": 10400,
+          "images": [
+            "/products/home/dinning-chairs/tango/tango-front-p10400.png",
+            "/products/home/dinning-chairs/tango/tango-back.png",
+            "/products/home/dinning-chairs/tango/tango-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "thea",
+          "name": "Thea",
+          "price": 24000,
+          "images": [
+            "/products/home/dinning-chairs/thea/thea-front-p24000.png",
+            "/products/home/dinning-chairs/thea/thea-side1.png",
+            "/products/home/dinning-chairs/thea/thea-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "tisca",
+          "name": "Tisca",
+          "price": 15200,
+          "images": [
+            "/products/home/dinning-chairs/tisca/tisca-front-p15200.png",
+            "/products/home/dinning-chairs/tisca/tisca-side1.png",
+            "/products/home/dinning-chairs/tisca/tisca-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "vento",
+          "name": "Vento",
+          "price": 11500,
+          "images": [
+            "/products/home/dinning-chairs/vento/vento-front-p11500.png",
+            "/products/home/dinning-chairs/vento/vento-side1.png",
+            "/products/home/dinning-chairs/vento/vento-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "vero",
+          "name": "Vero",
+          "price": 8000,
+          "images": [
+            "/products/home/dinning-chairs/vero/vero-front-p8000.png",
+            "/products/home/dinning-chairs/vero/vero-side1.png",
+            "/products/home/dinning-chairs/vero/vero-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "virtus",
+          "name": "Virtus",
+          "price": 29000,
+          "images": [
+            "/products/home/dinning-chairs/virtus/virtus-front-p29000.png",
+            "/products/home/dinning-chairs/virtus/virtus-back.png",
+            "/products/home/dinning-chairs/virtus/virtus-side.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "yoko",
+          "name": "Yoko",
+          "price": 12500,
+          "images": [
+            "/products/home/dinning-chairs/yoko/yoko-front-p12500.png",
+            "/products/home/dinning-chairs/yoko/yoko-side.png",
+            "/products/home/dinning-chairs/yoko/yoko-side2.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "zenith",
+          "name": "Zenith",
+          "price": 17500,
+          "images": [
+            "/products/home/dinning-chairs/zenith/zenith-front-p17500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "zeta",
+          "name": "Zeta",
+          "price": 7000,
+          "images": [
+            "/products/home/dinning-chairs/zeta/zeta-front-p7000.png",
+            "/products/home/dinning-chairs/zeta/zeta-back.png",
+            "/products/home/dinning-chairs/zeta/zeta-side.png"
           ],
           "colors": [],
           "description": ""
@@ -873,8 +1523,8 @@
           "description": ""
         },
         {
-          "slug": "hand-made-sand-art-work-pcs",
-          "name": "Hand Made Sand Art Work Pcs",
+          "slug": "hand-made-sand-art-work-24-pcs",
+          "name": "Hand Made Sand Art Work 24 Pcs",
           "price": 165600,
           "images": [
             "/products/home/mix-media-art/hand-made-sand-art-work-24-pcs-p165600.png"
@@ -913,7 +1563,7 @@
           "description": ""
         },
         {
-          "slug": "hand-made-wallart",
+          "slug": "hand-made-wallart-104000",
           "name": "Hand Made Wallart",
           "price": 104000,
           "images": [
@@ -923,7 +1573,7 @@
           "description": ""
         },
         {
-          "slug": "hand-made-wallart",
+          "slug": "hand-made-wallart-74700",
           "name": "Hand Made Wallart",
           "price": 74700,
           "images": [
@@ -1181,7 +1831,7 @@
           "description": ""
         },
         {
-          "slug": "garden-chair-diva",
+          "slug": "garden-chair-diva-32500",
           "name": "Garden Chair Diva",
           "price": 32500,
           "images": [
@@ -1191,7 +1841,7 @@
           "description": ""
         },
         {
-          "slug": "garden-chair-diva",
+          "slug": "garden-chair-diva-35000",
           "name": "Garden Chair Diva",
           "price": 35000,
           "images": [
@@ -1957,796 +2607,66 @@
       ]
     },
     {
-      "slug": "dinning-series",
-      "label": "Dining Series",
-      "coverImage": "/products/office/dinning-series/alina/alina-back.png",
+      "slug": "conference-meeting-tables",
+      "label": "Conference & Meeting Tables",
+      "coverImage": "/products/office/conference meeting tables/MODEL - COT FLHYZ90 WOOD VENEER-MRP – 3,30,000.png",
       "items": [
         {
-          "slug": "alina",
-          "name": "Alina",
-          "price": 13200,
+          "slug": "model-cot-flhyz90-wood-veneer-mrp-3-30-000",
+          "name": "MODEL COT FLHYZ90 WOOD VENEER MRP – 3,30,000",
+          "price": 330000,
           "images": [
-            "/products/office/dinning-series/alina/alina-back.png",
-            "/products/office/dinning-series/alina/alina-front-p13200.png",
-            "/products/office/dinning-series/alina/alina-side.png"
+            "/products/office/conference meeting tables/MODEL - COT FLHYZ90 WOOD VENEER-MRP – 3,30,000.png"
           ],
           "colors": [],
           "description": ""
         },
         {
-          "slug": "alto",
-          "name": "Alto",
-          "price": 8000,
+          "slug": "model-cot-mzd01-mrp-84-000",
+          "name": "MODEL COT MZD01 MRP 84,000",
+          "price": 84000,
           "images": [
-            "/products/office/dinning-series/alto/alto-back.png",
-            "/products/office/dinning-series/alto/alto-front-p8000.png",
-            "/products/office/dinning-series/alto/alto-side.png"
+            "/products/office/conference meeting tables/MODEL - COT MZD01-MRP - 84,000.png"
           ],
           "colors": [],
           "description": ""
         },
         {
-          "slug": "amigo",
-          "name": "Amigo",
-          "price": 26000,
+          "slug": "model-cot-mzd02-mrp-1-04-000",
+          "name": "MODEL COT MZD02 MRP – 1,04,000",
+          "price": 104000,
           "images": [
-            "/products/office/dinning-series/amigo/amigo-back.png",
-            "/products/office/dinning-series/amigo/amigo-front-p26000.png",
-            "/products/office/dinning-series/amigo/amigo-side.png"
+            "/products/office/conference meeting tables/MODEL - COT MZD02-  MRP – 1,04,000.png"
           ],
           "colors": [],
           "description": ""
         },
         {
-          "slug": "arco",
-          "name": "Arco",
-          "price": 17500,
+          "slug": "model-cot-hf320-056-mrp-88-000",
+          "name": "MODEL COT HF320 056 MRP 88,000",
+          "price": 88000,
           "images": [
-            "/products/office/dinning-series/arco/arco-back.png",
-            "/products/office/dinning-series/arco/arco-front-p17500.png",
-            "/products/office/dinning-series/arco/arco-side.png"
+            "/products/office/conference meeting tables/MODEL - COT-HF320-056-MRP - 88,000.png"
           ],
           "colors": [],
           "description": ""
         },
         {
-          "slug": "aries",
-          "name": "Aries",
-          "price": 21000,
+          "slug": "model-cot-ts-mt03-mrp-88-000",
+          "name": "MODEL COT TS MT03 MRP – 88,000",
+          "price": 88000,
           "images": [
-            "/products/office/dinning-series/aries/aries-front-p21000.png",
-            "/products/office/dinning-series/aries/aries-side1.png",
-            "/products/office/dinning-series/aries/aries-side2.png"
+            "/products/office/conference meeting tables/MODEL - COT-TS-MT03-MRP – 88,000.png"
           ],
           "colors": [],
           "description": ""
         },
         {
-          "slug": "ascona",
-          "name": "Ascona",
-          "price": 15000,
+          "slug": "model-cotqs07dg-orng-mrp-1-10-000",
+          "name": "MODEL COTQS07DG ORNG MRP – 1,10,000",
+          "price": 110000,
           "images": [
-            "/products/office/dinning-series/ascona/ascona-back.png",
-            "/products/office/dinning-series/ascona/ascona-front-p15000.png",
-            "/products/office/dinning-series/ascona/ascona-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "ash",
-          "name": "Ash",
-          "price": 19500,
-          "images": [
-            "/products/office/dinning-series/ash/ash-back.png",
-            "/products/office/dinning-series/ash/ash-front-p19500.png",
-            "/products/office/dinning-series/ash/ash-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "aura",
-          "name": "Aura",
-          "price": 12000,
-          "images": [
-            "/products/office/dinning-series/aura/aura-front-p12000.png",
-            "/products/office/dinning-series/aura/aura-side1.png",
-            "/products/office/dinning-series/aura/aura-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "berlin",
-          "name": "Berlin",
-          "price": 19950,
-          "images": [
-            "/products/office/dinning-series/berlin/berlin-back.png",
-            "/products/office/dinning-series/berlin/berlin-front-p19950.png",
-            "/products/office/dinning-series/berlin/berlin-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "berry",
-          "name": "Berry",
-          "price": 13000,
-          "images": [
-            "/products/office/dinning-series/berry/berry-back.png",
-            "/products/office/dinning-series/berry/berry-front-p13000.png",
-            "/products/office/dinning-series/berry/berry-side1.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "blake",
-          "name": "Blake",
-          "price": 10950,
-          "images": [
-            "/products/office/dinning-series/blake/blake-back.png",
-            "/products/office/dinning-series/blake/blake-front-p10950.png",
-            "/products/office/dinning-series/blake/blake-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "bliss",
-          "name": "Bliss",
-          "price": 23000,
-          "images": [
-            "/products/office/dinning-series/bliss/bliss-back.png",
-            "/products/office/dinning-series/bliss/bliss-front-p23000.png",
-            "/products/office/dinning-series/bliss/bliss-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "cairo",
-          "name": "Cairo",
-          "price": 13000,
-          "images": [
-            "/products/office/dinning-series/cairo/cairo-front-p13000.png",
-            "/products/office/dinning-series/cairo/cairo-side1.png",
-            "/products/office/dinning-series/cairo/cairo-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "carange",
-          "name": "Carange",
-          "price": 8500,
-          "images": [
-            "/products/office/dinning-series/carange/carange-front-p8500.png",
-            "/products/office/dinning-series/carange/carange-side1.png",
-            "/products/office/dinning-series/carange/carange-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "casper",
-          "name": "Casper",
-          "price": 21000,
-          "images": [
-            "/products/office/dinning-series/casper/casper-back.png",
-            "/products/office/dinning-series/casper/casper-front-p21000.png",
-            "/products/office/dinning-series/casper/casper-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "charlie",
-          "name": "Charlie",
-          "price": 11950,
-          "images": [
-            "/products/office/dinning-series/charlie/charlie-back.png",
-            "/products/office/dinning-series/charlie/charlie-front-p11950.png",
-            "/products/office/dinning-series/charlie/charlie-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "chris",
-          "name": "Chris",
-          "price": 11300,
-          "images": [
-            "/products/office/dinning-series/chris/chris-front-p11300.png",
-            "/products/office/dinning-series/chris/chris-side1.png",
-            "/products/office/dinning-series/chris/chris-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "ciana",
-          "name": "Ciana",
-          "price": 13000,
-          "images": [
-            "/products/office/dinning-series/ciana/ciana-back.png",
-            "/products/office/dinning-series/ciana/ciana-front-p13000.png",
-            "/products/office/dinning-series/ciana/ciana-side1.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "cloud",
-          "name": "Cloud",
-          "price": 28000,
-          "images": [
-            "/products/office/dinning-series/cloud/cloud-front-p28000.png",
-            "/products/office/dinning-series/cloud/cloud-side1.png",
-            "/products/office/dinning-series/cloud/cloud-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "coach",
-          "name": "Coach",
-          "price": 28000,
-          "images": [
-            "/products/office/dinning-series/coach/coach-back.png",
-            "/products/office/dinning-series/coach/coach-front-p28000.png",
-            "/products/office/dinning-series/coach/coach-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "copper",
-          "name": "Copper",
-          "price": 32000,
-          "images": [
-            "/products/office/dinning-series/copper/copper-front-p32000.png",
-            "/products/office/dinning-series/copper/copper-side1.png",
-            "/products/office/dinning-series/copper/copper-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "corby",
-          "name": "Corby",
-          "price": 9500,
-          "images": [
-            "/products/office/dinning-series/corby/corbback.png",
-            "/products/office/dinning-series/corby/corby-front-p9500.png",
-            "/products/office/dinning-series/corby/corby-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "cowboy",
-          "name": "Cowboy",
-          "price": 7300,
-          "images": [
-            "/products/office/dinning-series/cowboy/cowboy-front-p7300.png",
-            "/products/office/dinning-series/cowboy/cowboy-side1.png",
-            "/products/office/dinning-series/cowboy/cowboy-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "dalos",
-          "name": "Dalos",
-          "price": null,
-          "images": [
-            "/products/office/dinning-series/dalos/dalos-back.png",
-            "/products/office/dinning-series/dalos/dalos-front-22000.png",
-            "/products/office/dinning-series/dalos/dalos-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "dior",
-          "name": "Dior",
-          "price": 8500,
-          "images": [
-            "/products/office/dinning-series/dior/dior-back.png",
-            "/products/office/dinning-series/dior/dior-front-p8500.png",
-            "/products/office/dinning-series/dior/dior-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "dune",
-          "name": "Dune",
-          "price": null,
-          "images": [
-            "/products/office/dinning-series/dune/dune-front-woodp22500-metalp20000.png",
-            "/products/office/dinning-series/dune/dune-side1.png",
-            "/products/office/dinning-series/dune/dune-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "geneva",
-          "name": "Geneva",
-          "price": 21000,
-          "images": [
-            "/products/office/dinning-series/geneva/geneva-back1.png",
-            "/products/office/dinning-series/geneva/geneva-back2.png",
-            "/products/office/dinning-series/geneva/geneva-front-p21000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "giona",
-          "name": "Giona",
-          "price": 16800,
-          "images": [
-            "/products/office/dinning-series/giona/giona-back.png",
-            "/products/office/dinning-series/giona/giona-front-p16800.png",
-            "/products/office/dinning-series/giona/giona-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "grace",
-          "name": "Grace",
-          "price": 19000,
-          "images": [
-            "/products/office/dinning-series/grace/grace-back-p19000.png",
-            "/products/office/dinning-series/grace/grace-front-p19000.png",
-            "/products/office/dinning-series/grace/grace-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "iris",
-          "name": "Iris",
-          "price": 9000,
-          "images": [
-            "/products/office/dinning-series/iris/iris-front-p9000.png",
-            "/products/office/dinning-series/iris/iris-side1.png",
-            "/products/office/dinning-series/iris/iris-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "jade",
-          "name": "Jade",
-          "price": 25000,
-          "images": [
-            "/products/office/dinning-series/jade/jade-front-p25000.png",
-            "/products/office/dinning-series/jade/jade-side-p25000.png",
-            "/products/office/dinning-series/jade/jade-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "jimmy",
-          "name": "Jimmy",
-          "price": 7000,
-          "images": [
-            "/products/office/dinning-series/jimmy/jimmy-back.png",
-            "/products/office/dinning-series/jimmy/jimmy-front-p7000.png",
-            "/products/office/dinning-series/jimmy/jimmy-side1.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "lara",
-          "name": "Lara",
-          "price": 20500,
-          "images": [
-            "/products/office/dinning-series/lara/lara-back.png",
-            "/products/office/dinning-series/lara/lara-front-p20500.png",
-            "/products/office/dinning-series/lara/lara-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "linus",
-          "name": "Linus",
-          "price": null,
-          "images": [
-            "/products/office/dinning-series/linus/linus-back.png",
-            "/products/office/dinning-series/linus/linus-front-18500.png",
-            "/products/office/dinning-series/linus/linus-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "luna",
-          "name": "Luna",
-          "price": 19000,
-          "images": [
-            "/products/office/dinning-series/luna/luna-front-p19000.png",
-            "/products/office/dinning-series/luna/luna-side1.png",
-            "/products/office/dinning-series/luna/luna-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "luna-metal",
-          "name": "Luna Metal",
-          "price": 9500,
-          "images": [
-            "/products/office/dinning-series/luna-metal/luna-metal-front-p9500.png",
-            "/products/office/dinning-series/luna-metal/luna-metal-side1.png",
-            "/products/office/dinning-series/luna-metal/luna-metal-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "melisa",
-          "name": "Melisa",
-          "price": 13900,
-          "images": [
-            "/products/office/dinning-series/melisa/melisa-back.png",
-            "/products/office/dinning-series/melisa/melisa-front-p13900.png",
-            "/products/office/dinning-series/melisa/melisa-side1.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "meraki",
-          "name": "Meraki",
-          "price": 14500,
-          "images": [
-            "/products/office/dinning-series/meraki/meraki-front-p14500.png",
-            "/products/office/dinning-series/meraki/meraki-side1.png",
-            "/products/office/dinning-series/meraki/meraki-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "merry",
-          "name": "Merry",
-          "price": 15500,
-          "images": [
-            "/products/office/dinning-series/merry/merry-back.png",
-            "/products/office/dinning-series/merry/merry-front-p15500.png",
-            "/products/office/dinning-series/merry/merry-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "mila",
-          "name": "Mila",
-          "price": 11000,
-          "images": [
-            "/products/office/dinning-series/mila/mila-front-p11000.png",
-            "/products/office/dinning-series/mila/mila-side1.png",
-            "/products/office/dinning-series/mila/mila-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "mykonos",
-          "name": "Mykonos",
-          "price": 19950,
-          "images": [
-            "/products/office/dinning-series/mykonos/mykonos-front-p19950.png",
-            "/products/office/dinning-series/mykonos/mykonos-side1.png",
-            "/products/office/dinning-series/mykonos/mykonos-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "nectar",
-          "name": "Nectar",
-          "price": 21600,
-          "images": [
-            "/products/office/dinning-series/nectar/nectar-back.png",
-            "/products/office/dinning-series/nectar/nectar-front-p21600.png",
-            "/products/office/dinning-series/nectar/nectar-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "olive-fixed",
-          "name": "Olive Fixed",
-          "price": 11000,
-          "images": [
-            "/products/office/dinning-series/olive-fixed/olive-fixed-back.png",
-            "/products/office/dinning-series/olive-fixed/olive-fixed-front-p11000.png",
-            "/products/office/dinning-series/olive-fixed/olive-fixed-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "olive-rev",
-          "name": "Olive Rev",
-          "price": 9500,
-          "images": [
-            "/products/office/dinning-series/olive-rev/olive-rev-front-p9500.png",
-            "/products/office/dinning-series/olive-rev/olive-rev-side1.png",
-            "/products/office/dinning-series/olive-rev/olive-rev-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "oracle",
-          "name": "Oracle",
-          "price": 10000,
-          "images": [
-            "/products/office/dinning-series/oracle/oracle-back.png",
-            "/products/office/dinning-series/oracle/oracle-front-p10000.png",
-            "/products/office/dinning-series/oracle/oracle-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "pablo",
-          "name": "Pablo",
-          "price": 23000,
-          "images": [
-            "/products/office/dinning-series/pablo/pablo-front-p23000.png",
-            "/products/office/dinning-series/pablo/pablo-side1.png",
-            "/products/office/dinning-series/pablo/pablo-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "phoenix",
-          "name": "Phoenix",
-          "price": 18000,
-          "images": [
-            "/products/office/dinning-series/phoenix/phoenix-front-p18000.png",
-            "/products/office/dinning-series/phoenix/phoenix-side1.png",
-            "/products/office/dinning-series/phoenix/phoenix-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "picasso",
-          "name": "Picasso",
-          "price": null,
-          "images": [
-            "/products/office/dinning-series/picasso/picasso-back.png",
-            "/products/office/dinning-series/picasso/picasso-front-19950.png",
-            "/products/office/dinning-series/picasso/picasso-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "rini",
-          "name": "Rini",
-          "price": 12800,
-          "images": [
-            "/products/office/dinning-series/rini/rini-back.png",
-            "/products/office/dinning-series/rini/rini-front-p12800.png",
-            "/products/office/dinning-series/rini/rini-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "root",
-          "name": "Root",
-          "price": 6800,
-          "images": [
-            "/products/office/dinning-series/root/root-back.png",
-            "/products/office/dinning-series/root/root-front-p6800.png",
-            "/products/office/dinning-series/root/root-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "sally",
-          "name": "Sally",
-          "price": 19500,
-          "images": [
-            "/products/office/dinning-series/sally/sally-front-p19500.png",
-            "/products/office/dinning-series/sally/sally-side1.png",
-            "/products/office/dinning-series/sally/sally-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "sierra",
-          "name": "Sierra",
-          "price": 24000,
-          "images": [
-            "/products/office/dinning-series/sierra/sierra-back.png",
-            "/products/office/dinning-series/sierra/sierra-front-p24000.png",
-            "/products/office/dinning-series/sierra/sierra-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "skyros",
-          "name": "Skyros",
-          "price": 23000,
-          "images": [
-            "/products/office/dinning-series/skyros/skyros-back.png",
-            "/products/office/dinning-series/skyros/skyros-front-p23000.png",
-            "/products/office/dinning-series/skyros/skyros-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "slavia",
-          "name": "Slavia",
-          "price": 1600,
-          "images": [
-            "/products/office/dinning-series/slavia/slavia-front-p1600.png",
-            "/products/office/dinning-series/slavia/slavia-side1.png",
-            "/products/office/dinning-series/slavia/slavia-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "snow",
-          "name": "Snow",
-          "price": 27000,
-          "images": [
-            "/products/office/dinning-series/snow/snow-front-p27000.png",
-            "/products/office/dinning-series/snow/snow-side1.png",
-            "/products/office/dinning-series/snow/snow-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "softy",
-          "name": "Softy",
-          "price": 5800,
-          "images": [
-            "/products/office/dinning-series/softy/softy-front-p5800.png",
-            "/products/office/dinning-series/softy/softy-side1.png",
-            "/products/office/dinning-series/softy/softy-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "spice",
-          "name": "Spice",
-          "price": 7000,
-          "images": [
-            "/products/office/dinning-series/spice/spice-back.png",
-            "/products/office/dinning-series/spice/spice-front-p7000.png",
-            "/products/office/dinning-series/spice/spice-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "tango",
-          "name": "Tango",
-          "price": 10400,
-          "images": [
-            "/products/office/dinning-series/tango/tango-back.png",
-            "/products/office/dinning-series/tango/tango-front-p10400.png",
-            "/products/office/dinning-series/tango/tango-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "thea",
-          "name": "Thea",
-          "price": 24000,
-          "images": [
-            "/products/office/dinning-series/thea/thea-front-p24000.png",
-            "/products/office/dinning-series/thea/thea-side1.png",
-            "/products/office/dinning-series/thea/thea-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "tisca",
-          "name": "Tisca",
-          "price": 15200,
-          "images": [
-            "/products/office/dinning-series/tisca/tisca-front-p15200.png",
-            "/products/office/dinning-series/tisca/tisca-side1.png",
-            "/products/office/dinning-series/tisca/tisca-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "vento",
-          "name": "Vento",
-          "price": 11500,
-          "images": [
-            "/products/office/dinning-series/vento/vento-front-p11500.png",
-            "/products/office/dinning-series/vento/vento-side1.png",
-            "/products/office/dinning-series/vento/vento-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "vero",
-          "name": "Vero",
-          "price": 8000,
-          "images": [
-            "/products/office/dinning-series/vero/vero-front-p8000.png",
-            "/products/office/dinning-series/vero/vero-side1.png",
-            "/products/office/dinning-series/vero/vero-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "virtus",
-          "name": "Virtus",
-          "price": 29000,
-          "images": [
-            "/products/office/dinning-series/virtus/virtus-back.png",
-            "/products/office/dinning-series/virtus/virtus-front-p29000.png",
-            "/products/office/dinning-series/virtus/virtus-side.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "yoko",
-          "name": "Yoko",
-          "price": 12500,
-          "images": [
-            "/products/office/dinning-series/yoko/yoko-front-p12500.png",
-            "/products/office/dinning-series/yoko/yoko-side.png",
-            "/products/office/dinning-series/yoko/yoko-side2.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "zenith",
-          "name": "Zenith",
-          "price": 17500,
-          "images": [
-            "/products/office/dinning-series/zenith/zenith-front-p17500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "zeta",
-          "name": "Zeta",
-          "price": 7000,
-          "images": [
-            "/products/office/dinning-series/zeta/zeta-back.png",
-            "/products/office/dinning-series/zeta/zeta-front-p7000.png",
-            "/products/office/dinning-series/zeta/zeta-side.png"
+            "/products/office/conference meeting tables/MODEL - COTQS07DG ORNG-MRP – 1,10,000.png"
           ],
           "colors": [],
           "description": ""
@@ -2754,51 +2674,17 @@
       ]
     },
     {
-      "slug": "executive-hb-chairs",
-      "label": "Executive High Back Chairs",
-      "coverImage": "/products/office/executive-hb-chairs/acosta-tan/acosta-mb-p18000.png",
+      "slug": "high-back-cushion-chairs",
+      "label": "High Back Cushion Chairs",
+      "coverImage": "/products/office/High Back Cushion Chairs/acosta-tan/acosta-tab-front-hb-p19000.png",
       "items": [
         {
           "slug": "acosta-tan",
           "name": "Acosta Tan",
-          "price": 18000,
+          "price": 19000,
           "images": [
-             "/products/office/executive-hb-chairs/acosta-tan/acosta-tab-front-hb-p19000.png",
-            "/products/office/executive-hb-chairs/acosta-tan/acosta-mb-back-p18000.png"
-           
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "atom-dlx-hb-ind",
-          "name": "ATOM DLX HB (IND)",
-          "price": 8900,
-          "images": [
-            "/products/office/executive-hb-chairs/ATOM DLX HB (IND)/ATOM DLX HB-front-p8900.png",
-            "/products/office/executive-hb-chairs/ATOM DLX HB (IND)/atom-dlx-mb-front-p7700.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "bassel-black-hb",
-          "name": "Bassel Black Hb",
-          "price": 26500,
-          "images": [
-            "/products/office/executive-hb-chairs/bassel-black-hb/bassel-black-hb-front-p26500.png",
-            "/products/office/executive-hb-chairs/bassel-black-hb/bassel-mb-back.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "bassel-white-hb",
-          "name": "Bassel White Hb",
-          "price": 29000,
-          "images": [
-            "/products/office/executive-hb-chairs/bassel-white-hb/bassel-mb-back.png",
-            "/products/office/executive-hb-chairs/bassel-white-hb/bassel-white-hb-front-p29000.png"
+            "/products/office/High Back Cushion Chairs/acosta-tan/acosta-tab-front-hb-p19000.png",
+            "/products/office/High Back Cushion Chairs/acosta-tan/acosta-mb-back--p18000.png"
           ],
           "colors": [],
           "description": ""
@@ -2806,43 +2692,10 @@
         {
           "slug": "cross",
           "name": "Cross",
-          "price": 17000,
+          "price": 18000,
           "images": [
-            "/products/office/executive-hb-chairs/cross/cross-back-mb-p17000.png",
-            "/products/office/executive-hb-chairs/cross/cross-front-hb-p18000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "deca-hb-12000",
-          "name": "DECA HB",
-          "price": 12000,
-          "images": [
-            "/products/office/executive-hb-chairs/DECA HB  12000-/DECA HB front- p12000.png",
-            "/products/office/executive-hb-chairs/DECA HB  12000-/DECA MB-back-p11000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "destiny-hb-grey",
-          "name": "Destiny Hb Grey",
-          "price": 39000,
-          "images": [
-            "/products/office/executive-hb-chairs/destiny-hb-grey/destiny-hb-grey-with-footrest-front-p39000.png",
-            "/products/office/executive-hb-chairs/destiny-hb-grey/destiny-mb-back.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "eon-dlx-hb",
-          "name": "EON DLX HB",
-          "price": 8700,
-          "images": [
-            "/products/office/executive-hb-chairs/EON DLX HB/EON DLX HB-front-p8700.png",
-            "/products/office/executive-hb-chairs/EON DLX HB/eon-dlx-mb-front-p7700.png"
+            "/products/office/High Back Cushion Chairs/cross/cross-front-hb-p18000.png",
+            "/products/office/High Back Cushion Chairs/cross/cross-back-mb-p17000.png"
           ],
           "colors": [],
           "description": ""
@@ -2852,52 +2705,8 @@
           "name": "Ergon Cush",
           "price": 22500,
           "images": [
-            "/products/office/executive-hb-chairs/ergon-cush/ergon-cush-black-front-hb-p22500.png",
-            "/products/office/executive-hb-chairs/ergon-cush/ergon-cush-white-back-mb-p21500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "ergon-mesh",
-          "name": "Ergon Mesh",
-          "price": 22000,
-          "images": [
-            "/products/office/executive-hb-chairs/ergon-mesh/ergon-black-front-hb-p22000.png",
-            "/products/office/executive-hb-chairs/ergon-mesh/ergon-white-front-mb-p21250.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "falcon-elite-hb",
-          "name": "Falcon Elite Hb",
-          "price": 74000,
-          "images": [
-            "/products/office/executive-hb-chairs/falcon-elite-hb/falcon-elite-front-p74000.png",
-            "/products/office/executive-hb-chairs/falcon-elite-hb/falcon-elite-mb-back.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "galaxy-grey-hb",
-          "name": "Galaxy Grey Hb",
-          "price": 24000,
-          "images": [
-            "/products/office/executive-hb-chairs/galaxy-grey-hb/galaxy-grey-mb-23000.png",
-            "/products/office/executive-hb-chairs/galaxy-grey-hb/galaxy-hb--front-p24000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "galaxy-mesh-hb",
-          "name": "Galaxy Mesh Hb",
-          "price": 32000,
-          "images": [
-            "/products/office/executive-hb-chairs/galaxy-mesh-hb/galaxy-mesh-front-p32000.png",
-            "/products/office/executive-hb-chairs/galaxy-mesh-hb/galaxy-mesh-mb-p31000.png"
+            "/products/office/High Back Cushion Chairs/ergon-cush/ergon-cush-black-front-hb-p22500.png",
+            "/products/office/High Back Cushion Chairs/ergon-cush/ergon-cush-white-back-mb-p21500.png"
           ],
           "colors": [],
           "description": ""
@@ -2907,96 +2716,8 @@
           "name": "Glaze Cushion Hb",
           "price": 8500,
           "images": [
-            "/products/office/executive-hb-chairs/glaze-cushion-hb/GLAZE CUSHION MB back.png",
-            "/products/office/executive-hb-chairs/glaze-cushion-hb/glaze-cushion-hb-front-p8500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "glaze-mesh-hb",
-          "name": "Glaze Mesh Hb",
-          "price": 10500,
-          "images": [
-            "/products/office/executive-hb-chairs/glaze-mesh-hb/glaze-mesh-hb-front-p10500.png",
-            "/products/office/executive-hb-chairs/glaze-mesh-hb/glaze-mesh-mb-back.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "hexa-hb",
-          "name": "HEXA HB",
-          "price": 13500,
-          "images": [
-            "/products/office/executive-hb-chairs/HEXA HB/HEXA HB-front-p13500.png",
-            "/products/office/executive-hb-chairs/HEXA HB/hexa-mb-back-p12500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "karina-dlx-hb",
-          "name": "KARINA DLX HB",
-          "price": 8700,
-          "images": [
-            "/products/office/executive-hb-chairs/KARINA DLX HB/KARINA DLX HB-front-p8700.png",
-            "/products/office/executive-hb-chairs/KARINA DLX HB/karina-dlx-mb-front-p7700.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "norway-hb-dark-grey",
-          "name": "Norway Hb Dark Grey",
-          "price": 33000,
-          "images": [
-            "/products/office/executive-hb-chairs/norway-hb-dark-grey/norway-hb-dark-grey-front-p33000.png",
-            "/products/office/executive-hb-chairs/norway-hb-dark-grey/norway-mb-dark-grey-back.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "norway-hb-light-grey",
-          "name": "Norway Hb Light Grey",
-          "price": 33000,
-          "images": [
-            "/products/office/executive-hb-chairs/norway-hb-light-grey/norway-hb-front-p33000.png",
-            "/products/office/executive-hb-chairs/norway-hb-light-grey/norway-mb-back.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "octa-hb",
-          "name": "OCTA HB",
-          "price": 9000,
-          "images": [
-            "/products/office/executive-hb-chairs/OCTA HB/OCTA HB-front-p9000.png",
-            "/products/office/executive-hb-chairs/OCTA HB/octa-mb-front-p8000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "omega-blk-mesh-hb",
-          "name": "OMEGA BLK MESH HB",
-          "price": 10000,
-          "images": [
-            "/products/office/executive-hb-chairs/OMEGA BLK MESH HB/OMEGA BLK MESH HB-front-p10000.png",
-            "/products/office/executive-hb-chairs/OMEGA BLK MESH HB/OMEGA BLK MESH mb-back-p9500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "omega-wht-mesh-hb",
-          "name": "OMEGA WHT MESH HB",
-          "price": 11000,
-          "images": [
-            "/products/office/executive-hb-chairs/OMEGA WHT MESH HB/OMEGA WHT MESH HB-front-p11000.png",
-            "/products/office/executive-hb-chairs/OMEGA WHT MESH HB/OMEGA WHT MESH MB-back-p10500.png"
+            "/products/office/High Back Cushion Chairs/glaze-cushion-hb/glaze-cushion-hb-front-p8500.png",
+            "/products/office/High Back Cushion Chairs/glaze-cushion-hb/GLAZE CUSHION MB back.png"
           ],
           "colors": [],
           "description": ""
@@ -3004,21 +2725,10 @@
         {
           "slug": "perth",
           "name": "Perth",
-          "price": 18000,
+          "price": 19000,
           "images": [
-            "/products/office/executive-hb-chairs/perth/perth-back-mb-p18000.png",
-            "/products/office/executive-hb-chairs/perth/perth-front-hb-p19000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "rooster-hb-grey",
-          "name": "Rooster Hb Grey",
-          "price": 39000,
-          "images": [
-            "/products/office/executive-hb-chairs/rooster-hb-grey/rooster-mb-back.png",
-            "/products/office/executive-hb-chairs/rooster-hb-grey/rooster-with-footrest-hb-front-p39000.png"
+            "/products/office/High Back Cushion Chairs/perth/perth-front-hb-p19000.png",
+            "/products/office/High Back Cushion Chairs/perth/perth-back-mb-p18000.png"
           ],
           "colors": [],
           "description": ""
@@ -3028,8 +2738,103 @@
           "name": "Spark White",
           "price": 18000,
           "images": [
-            "/products/office/executive-hb-chairs/spark-white/spark-white-back-mb-17000.png",
-            "/products/office/executive-hb-chairs/spark-white/spark-white-front-hb-p18000.png"
+            "/products/office/High Back Cushion Chairs/spark-white/spark-white-front-hb-p18000.png",
+            "/products/office/High Back Cushion Chairs/spark-white/spark-white-back-mb-17000.png"
+          ],
+          "colors": [],
+          "description": ""
+        }
+      ]
+    },
+    {
+      "slug": "high-back-mesh-chairs",
+      "label": "High Back Mesh Chairs",
+      "coverImage": "/products/office/High Back Mesh Chairs/ATOM DLX HB (IND)/ATOM DLX HB-front-p8900.png",
+      "items": [
+        {
+          "slug": "atom-dlx-hb-ind",
+          "name": "ATOM DLX HB (IND)",
+          "price": 8900,
+          "images": [
+            "/products/office/High Back Mesh Chairs/ATOM DLX HB (IND)/ATOM DLX HB-front-p8900.png",
+            "/products/office/High Back Mesh Chairs/ATOM DLX HB (IND)/atom-dlx-mb-front-p7700.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "deca-hb-12000",
+          "name": "DECA HB",
+          "price": 12000,
+          "images": [
+            "/products/office/High Back Mesh Chairs/DECA HB  12000-/DECA HB front- p12000.png",
+            "/products/office/High Back Mesh Chairs/DECA HB  12000-/DECA MB-back-p11000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "eon-dlx-hb",
+          "name": "EON DLX HB",
+          "price": 8700,
+          "images": [
+            "/products/office/High Back Mesh Chairs/EON DLX HB/EON DLX HB-front-p8700.png",
+            "/products/office/High Back Mesh Chairs/EON DLX HB/eon-dlx-mb-front-p7700.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "hexa-hb",
+          "name": "HEXA HB",
+          "price": 13500,
+          "images": [
+            "/products/office/High Back Mesh Chairs/HEXA HB/HEXA HB-front-p13500.png",
+            "/products/office/High Back Mesh Chairs/HEXA HB/hexa-mb-back-p12500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "karina-dlx-hb",
+          "name": "KARINA DLX HB",
+          "price": 8700,
+          "images": [
+            "/products/office/High Back Mesh Chairs/KARINA DLX HB/KARINA DLX HB-front-p8700.png",
+            "/products/office/High Back Mesh Chairs/KARINA DLX HB/karina-dlx-mb-front-p7700.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "octa-hb",
+          "name": "OCTA HB",
+          "price": 9000,
+          "images": [
+            "/products/office/High Back Mesh Chairs/OCTA HB/OCTA HB-front-p9000.png",
+            "/products/office/High Back Mesh Chairs/OCTA HB/octa-mb-front-p8000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "omega-blk-mesh-hb",
+          "name": "OMEGA BLK MESH HB",
+          "price": 10000,
+          "images": [
+            "/products/office/High Back Mesh Chairs/OMEGA BLK MESH HB/OMEGA BLK MESH HB-front-p10000.png",
+            "/products/office/High Back Mesh Chairs/OMEGA BLK MESH HB/OMEGA BLK MESH mb-back-p9500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "omega-wht-mesh-hb",
+          "name": "OMEGA WHT MESH HB",
+          "price": 11000,
+          "images": [
+            "/products/office/High Back Mesh Chairs/OMEGA WHT MESH HB/OMEGA WHT MESH HB-front-p11000.png",
+            "/products/office/High Back Mesh Chairs/OMEGA WHT MESH HB/OMEGA WHT MESH MB-back-p10500.png"
           ],
           "colors": [],
           "description": ""
@@ -3039,8 +2844,8 @@
           "name": "TRIO BLACK HB",
           "price": 11250,
           "images": [
-            "/products/office/executive-hb-chairs/TRIO BLACK HB/TRIO BLACK HB-front-p11250.png",
-            "/products/office/executive-hb-chairs/TRIO BLACK HB/trio-black-mb-back-10250.png"
+            "/products/office/High Back Mesh Chairs/TRIO BLACK HB/TRIO BLACK HB-front-p11250.png",
+            "/products/office/High Back Mesh Chairs/TRIO BLACK HB/trio-black-mb-back-10250.png"
           ],
           "colors": [],
           "description": ""
@@ -3050,8 +2855,140 @@
           "name": "TRIO GREY HB",
           "price": 12500,
           "images": [
-            "/products/office/executive-hb-chairs/TRIO GREY HB/TRIO GREY HB-front-p12500.png",
-            "/products/office/executive-hb-chairs/TRIO GREY HB/TRIO GREY MB-back-p11500.png"
+            "/products/office/High Back Mesh Chairs/TRIO GREY HB/TRIO GREY HB-front-p12500.png",
+            "/products/office/High Back Mesh Chairs/TRIO GREY HB/TRIO GREY MB-back-p11500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "bassel-black-hb",
+          "name": "Bassel Black Hb",
+          "price": 26500,
+          "images": [
+            "/products/office/High Back Mesh Chairs/bassel-black-hb/bassel-black-hb-front-p26500.png",
+            "/products/office/High Back Mesh Chairs/bassel-black-hb/bassel-mb-back.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "bassel-white-hb",
+          "name": "Bassel White Hb",
+          "price": 29000,
+          "images": [
+            "/products/office/High Back Mesh Chairs/bassel-white-hb/bassel-white-hb-front-p29000.png",
+            "/products/office/High Back Mesh Chairs/bassel-white-hb/bassel-mb-back.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "destiny-hb-grey",
+          "name": "Destiny Hb Grey",
+          "price": 39000,
+          "images": [
+            "/products/office/High Back Mesh Chairs/destiny-hb-grey/destiny-hb-grey-with-footrest-front-p39000.png",
+            "/products/office/High Back Mesh Chairs/destiny-hb-grey/destiny-mb-back.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "ergon-mesh",
+          "name": "Ergon Mesh",
+          "price": 22000,
+          "images": [
+            "/products/office/High Back Mesh Chairs/ergon-mesh/ergon-black-front-hb-p22000.png",
+            "/products/office/High Back Mesh Chairs/ergon-mesh/ergon-white-front-mb-p21250.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "falcon-elite-hb",
+          "name": "Falcon Elite Hb",
+          "price": 74000,
+          "images": [
+            "/products/office/High Back Mesh Chairs/falcon-elite-hb/falcon-elite-front-p74000.png",
+            "/products/office/High Back Mesh Chairs/falcon-elite-hb/falcon-elite-mb-back.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "freedom",
+          "name": "Freedom",
+          "price": 130000,
+          "images": [
+            "/products/office/High Back Mesh Chairs/freedom/freedom-front-p130000.png",
+            "/products/office/High Back Mesh Chairs/freedom/freedom-mb-back.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "galaxy-grey-hb",
+          "name": "Galaxy Grey Hb",
+          "price": 24000,
+          "images": [
+            "/products/office/High Back Mesh Chairs/galaxy-grey-hb/galaxy-hb--front-p24000.png",
+            "/products/office/High Back Mesh Chairs/galaxy-grey-hb/galaxy-grey-mb-23000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "galaxy-mesh-hb",
+          "name": "Galaxy Mesh Hb",
+          "price": 32000,
+          "images": [
+            "/products/office/High Back Mesh Chairs/galaxy-mesh-hb/galaxy-mesh-front-p32000.png",
+            "/products/office/High Back Mesh Chairs/galaxy-mesh-hb/galaxy-mesh-mb-p31000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "glaze-mesh-hb",
+          "name": "Glaze Mesh Hb",
+          "price": 10500,
+          "images": [
+            "/products/office/High Back Mesh Chairs/glaze-mesh-hb/glaze-mesh-hb-front-p10500.png",
+            "/products/office/High Back Mesh Chairs/glaze-mesh-hb/glaze-mesh-mb-back.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "norway-hb-dark-grey",
+          "name": "Norway Hb Dark Grey",
+          "price": 33000,
+          "images": [
+            "/products/office/High Back Mesh Chairs/norway-hb-dark-grey/norway-hb-dark-grey-front-p33000.png",
+            "/products/office/High Back Mesh Chairs/norway-hb-dark-grey/norway-mb-dark-grey-back.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "norway-hb-light-grey",
+          "name": "Norway Hb Light Grey",
+          "price": 33000,
+          "images": [
+            "/products/office/High Back Mesh Chairs/norway-hb-light-grey/norway-hb-front-p33000.png",
+            "/products/office/High Back Mesh Chairs/norway-hb-light-grey/norway-mb-back.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "rooster-hb-grey",
+          "name": "Rooster Hb Grey",
+          "price": 39000,
+          "images": [
+            "/products/office/High Back Mesh Chairs/rooster-hb-grey/rooster-with-footrest-hb-front-p39000.png",
+            "/products/office/High Back Mesh Chairs/rooster-hb-grey/rooster-mb-back.png"
           ],
           "colors": [],
           "description": ""
@@ -3061,8 +2998,8 @@
           "name": "Troy",
           "price": 10000,
           "images": [
-            "/products/office/executive-hb-chairs/troy/troy-hb-front-black-p10000.png",
-            "/products/office/executive-hb-chairs/troy/troy-white-mb-back-p26500.png"
+            "/products/office/High Back Mesh Chairs/troy/troy-hb-front-black-p10000.png",
+            "/products/office/High Back Mesh Chairs/troy/troy-white-mb-back-p26500.png"
           ],
           "colors": [],
           "description": ""
@@ -3072,8 +3009,8 @@
           "name": "Winner Black",
           "price": 14250,
           "images": [
-            "/products/office/executive-hb-chairs/winner-black/winner-black-front-hb-p14250.png",
-            "/products/office/executive-hb-chairs/winner-black/winner-black-mb-front-p13750.png"
+            "/products/office/High Back Mesh Chairs/winner-black/winner-black-front-hb-p14250.png",
+            "/products/office/High Back Mesh Chairs/winner-black/winner-black-mb-front-p13750.png"
           ],
           "colors": [],
           "description": ""
@@ -3083,8 +3020,8 @@
           "name": "Winner Grey",
           "price": 14250,
           "images": [
-            "/products/office/executive-hb-chairs/winner-grey/winner-grey-hb-front-pp15250.png",
-            "/products/office/executive-hb-chairs/winner-grey/winner-grey-mb-front-p14250.png"
+            "/products/office/High Back Mesh Chairs/winner-grey/winner-grey-hb-front-pp15250.png",
+            "/products/office/High Back Mesh Chairs/winner-grey/winner-grey-mb-front-p14250.png"
           ],
           "colors": [],
           "description": ""
@@ -3092,10 +3029,10 @@
         {
           "slug": "wisdom-black",
           "name": "Wisdom Black",
-          "price": 16500,
+          "price": 17500,
           "images": [
-            "/products/office/executive-hb-chairs/wisdom-black/wisdom-back-mb-p16500.png",
-            "/products/office/executive-hb-chairs/wisdom-black/wisdom-black-front-hb-p17500.png"
+            "/products/office/High Back Mesh Chairs/wisdom-black/wisdom-black-front-hb-p17500.png",
+            "/products/office/High Back Mesh Chairs/wisdom-black/wisdom-back-mb-p16500.png"
           ],
           "colors": [],
           "description": ""
@@ -3105,8 +3042,8 @@
           "name": "Zoy Black",
           "price": 26000,
           "images": [
-            "/products/office/executive-hb-chairs/zoy-black/zoy-black-hb-p26000.png",
-            "/products/office/executive-hb-chairs/zoy-black/zoy-black-mb-p24000.png"
+            "/products/office/High Back Mesh Chairs/zoy-black/zoy-black-hb-p26000.png",
+            "/products/office/High Back Mesh Chairs/zoy-black/zoy-black-mb-p24000.png"
           ],
           "colors": [],
           "description": ""
@@ -3116,323 +3053,8 @@
           "name": "Zoy White",
           "price": 29000,
           "images": [
-            "/products/office/executive-hb-chairs/zoy-white/zoy-white-hb-p29000.png",
-            "/products/office/executive-hb-chairs/zoy-white/zoy-white-mb-p27000.png"
-          ],
-          "colors": [],
-          "description": ""
-        }
-      ]
-    },
-    {
-      "slug": "executive-leather-pu-collection",
-      "label": "Executive Leather & PU Chairs",
-      "coverImage": "/products/office/executive-leather-pu-collection/ATTITUDE orange/ATTITUDE HB-front-p54000.png",
-      "items": [
-        {
-          "slug": "attitude-orange",
-          "name": "ATTITUDE Orange",
-          "price": 54000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/ATTITUDE orange/ATTITUDE HB-front-p54000.png",
-            "/products/office/executive-leather-pu-collection/ATTITUDE orange/attitude-mb-back-p52000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "attitude-pale-silver",
-          "name": "Attitude Pale Silver",
-          "price": 60000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/attitude Pale Silver/attitude-pale-silver-hb-front-p60000.png",
-            "/products/office/executive-leather-pu-collection/attitude Pale Silver/attitude-pale-silver-mb-back-58000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "austin",
-          "name": "Austin",
-          "price": 33000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/austin/austin-hb-front-p33000.png",
-            "/products/office/executive-leather-pu-collection/austin/austin-mb-front-p31000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "bentley-leather",
-          "name": "BENTLEY (LEATHER)",
-          "price": 67000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/BENTLEY (LEATHER)/BENTLEY (LEATHER) HB-front-p67000.png",
-            "/products/office/executive-leather-pu-collection/BENTLEY (LEATHER)/bentley-leather-mb-p63000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "boss-brown",
-          "name": "Boss Brown",
-          "price": 31500,
-          "images": [
-            "/products/office/executive-leather-pu-collection/Boss-brown/boss-brown-hb-front-p31500.png",
-            "/products/office/executive-leather-pu-collection/Boss-brown/boss-brown-mb-front-p30500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "calvin-leather",
-          "name": "CALVIN LEATHER",
-          "price": 54000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/CALVIN LEATHER/CALVIN LEATHER HB-front-p54000.png",
-            "/products/office/executive-leather-pu-collection/CALVIN LEATHER/CALVIN LEATHER mB-front-p48000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "dacota",
-          "name": "Dacota",
-          "price": 28000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/Dacota/dacota-hb-front-p28000.png",
-            "/products/office/executive-leather-pu-collection/Dacota/dacota-mb-front-p26000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "daisy",
-          "name": "Daisy",
-          "price": 31000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/daisy/daisy-hb-front-p31000.png",
-            "/products/office/executive-leather-pu-collection/daisy/daisy-mb-front-p29000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "duster-cushion",
-          "name": "DUSTER CUSHION",
-          "price": 33500,
-          "images": [
-            "/products/office/executive-leather-pu-collection/DUSTER CUSHION/DUSTER CUSHION-hb-front-p33500.png",
-            "/products/office/executive-leather-pu-collection/DUSTER CUSHION/duster-cushion-mb-front-p31500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "elite-sleek",
-          "name": "ELITE SLEEK",
-          "price": 23500,
-          "images": [
-            "/products/office/executive-leather-pu-collection/ELITE SLEEK/ELITE SLEEK-hb-front-p23500.png",
-            "/products/office/executive-leather-pu-collection/ELITE SLEEK/elite-sleek-mb-front-p22500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "epson",
-          "name": "Epson",
-          "price": 33000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/epson/epson-hb-front-p33000.png",
-            "/products/office/executive-leather-pu-collection/epson/epson-mb-front-31000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "heritage",
-          "name": "Heritage",
-          "price": 124000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/heritage/heritage-hb-front-p124000.png",
-            "/products/office/executive-leather-pu-collection/heritage/heritage-mb-front-p114000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "jaguar",
-          "name": "JAGUAR",
-          "price": 62000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/JAGUAR/JAGUAR-hb-front-p62000.png",
-            "/products/office/executive-leather-pu-collection/JAGUAR/jaguar-mb-front-p58000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "legacy",
-          "name": "Legacy",
-          "price": 28000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/legacy/legacy-hb-front-30000.png",
-            "/products/office/executive-leather-pu-collection/legacy/legacy-mb-front-p28000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "lucy",
-          "name": "Lucy",
-          "price": 16000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/lucy/lucy-hb-front-p16000.png",
-            "/products/office/executive-leather-pu-collection/lucy/lucy-mb-front-p15500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "magnet",
-          "name": "MAGNET",
-          "price": 64000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/MAGNET/MAGNET HB-front-p64000.png",
-            "/products/office/executive-leather-pu-collection/MAGNET/magnet-mb-front-p61000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "marquis-hb",
-          "name": "MARQUIS HB",
-          "price": 75000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/MARQUIS HB/MARQUIS HB-front-p75000.png",
-            "/products/office/executive-leather-pu-collection/MARQUIS HB/marquis-mb-front-p55000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "martin-hb",
-          "name": "MARTIN HB",
-          "price": 80000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/MARTIN HB/MARTIN HB-front-p80000.png",
-            "/products/office/executive-leather-pu-collection/MARTIN HB/martin-mb-front-p76000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "maverick",
-          "name": "Maverick",
-          "price": 31000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/maverick/maverick-hb-front-p31000.png",
-            "/products/office/executive-leather-pu-collection/maverick/maverick-mb-front-p29000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "oxford",
-          "name": "Oxford",
-          "price": 24000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/oxford/oxford-hb-front-p24000.png",
-            "/products/office/executive-leather-pu-collection/oxford/oxford-mb-front-p22000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "oyster-leather",
-          "name": "OYSTER (LEATHER)",
-          "price": 59000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/OYSTER (LEATHER)/OYSTER (LEATHER) HB-front-p59000.png",
-            "/products/office/executive-leather-pu-collection/OYSTER (LEATHER)/oyster-leather-mb-front-p54000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "sleek",
-          "name": "Sleek",
-          "price": 13000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/sleek/sleek-hb-front-p13000.png",
-            "/products/office/executive-leather-pu-collection/sleek/sleek-mb-front-p12000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "stanley",
-          "name": "Stanley",
-          "price": 26000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/stanley/stanley-hb-front-p26000.png",
-            "/products/office/executive-leather-pu-collection/stanley/stanley-mb-front-p24000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "trust",
-          "name": "TRUST",
-          "price": 27500,
-          "images": [
-            "/products/office/executive-leather-pu-collection/TRUST/TRUST-hb-front-p27500.png",
-            "/products/office/executive-leather-pu-collection/TRUST/trust-mb-back-p25500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "trust-grey",
-          "name": "Trust Grey",
-          "price": 27500,
-          "images": [
-            "/products/office/executive-leather-pu-collection/Trust-grey/TRUST-grey-hb-front-p27500.png",
-            "/products/office/executive-leather-pu-collection/Trust-grey/trust-grey-mb-back-p25500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "venice",
-          "name": "Venice",
-          "price": 16000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/Venice/venice-hb-front-p16000.png",
-            "/products/office/executive-leather-pu-collection/Venice/venice-mb-front-p15500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "virgo",
-          "name": "Virgo",
-          "price": 18500,
-          "images": [
-            "/products/office/executive-leather-pu-collection/Virgo/virgo-hb-front-p18500.png",
-            "/products/office/executive-leather-pu-collection/Virgo/virgo-mb-front-p17500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "winster",
-          "name": "WINSTER",
-          "price": 90000,
-          "images": [
-            "/products/office/executive-leather-pu-collection/WINSTER/WINSTER-hb-front-p90000.png",
-            "/products/office/executive-leather-pu-collection/WINSTER/winster-mb-front-p80000.png"
+            "/products/office/High Back Mesh Chairs/zoy-white/zoy-white-hb-p29000.png",
+            "/products/office/High Back Mesh Chairs/zoy-white/zoy-white-mb-p27000.png"
           ],
           "colors": [],
           "description": ""
@@ -3442,8 +3064,48 @@
     {
       "slug": "highcounter",
       "label": "High Counter Chairs",
-      "coverImage": "/products/office/Highcounter/astoria/astoria-front-p15500.png",
+      "coverImage": "/products/office/Highcounter/BOLZANO/BOLZANO-front-p12600.png",
       "items": [
+        {
+          "slug": "bolzano",
+          "name": "BOLZANO",
+          "price": 12600,
+          "images": [
+            "/products/office/Highcounter/BOLZANO/BOLZANO-front-p12600.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "rimini-pp",
+          "name": "RIMINI Pp",
+          "price": 6250,
+          "images": [
+            "/products/office/Highcounter/RIMINI-pp/RIMINI-pp-front-p6250.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "santorini",
+          "name": "SANTORINI",
+          "price": 5500,
+          "images": [
+            "/products/office/Highcounter/SANTORINI/SANTORINI-front-p5500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "sweden",
+          "name": "SWEDEN",
+          "price": 5500,
+          "images": [
+            "/products/office/Highcounter/SWEDEN/sweden-front-p5500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
         {
           "slug": "astoria",
           "name": "Astoria",
@@ -3460,16 +3122,6 @@
           "price": 5600,
           "images": [
             "/products/office/Highcounter/bistro hc/bistro-hc-front-p5600.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "bolzano",
-          "name": "BOLZANO",
-          "price": 12600,
-          "images": [
-            "/products/office/Highcounter/BOLZANO/BOLZANO-front-p12600.png"
           ],
           "colors": [],
           "description": ""
@@ -3675,16 +3327,6 @@
           "description": ""
         },
         {
-          "slug": "rimini-pp",
-          "name": "RIMINI Pp",
-          "price": 6250,
-          "images": [
-            "/products/office/Highcounter/RIMINI-pp/RIMINI-pp-front-p6250.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
           "slug": "rimni",
           "name": "Rimni",
           "price": 7900,
@@ -3715,31 +3357,11 @@
           "description": ""
         },
         {
-          "slug": "santorini",
-          "name": "SANTORINI",
-          "price": 5500,
-          "images": [
-            "/products/office/Highcounter/SANTORINI/SANTORINI-front-p5500.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
           "slug": "skyros-hc",
           "name": "Skyros Hc",
           "price": null,
           "images": [
             "/products/office/Highcounter/skyros-hc/skyros-front.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "sweden",
-          "name": "SWEDEN",
-          "price": 5500,
-          "images": [
-            "/products/office/Highcounter/SWEDEN/sweden-front-p5500.png"
           ],
           "colors": [],
           "description": ""
@@ -3807,16 +3429,883 @@
       ]
     },
     {
-      "slug": "sofa",
+      "slug": "office-lounge-chairs",
+      "label": "Office Lounge Chairs",
+      "coverImage": "/products/office/Office Lounge Chairs/082-p12500.png",
+      "items": [
+        {
+          "slug": "082",
+          "name": "082",
+          "price": 12500,
+          "images": [
+            "/products/office/Office Lounge Chairs/082-p12500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "belgium",
+          "name": "Belgium",
+          "price": 32000,
+          "images": [
+            "/products/office/Office Lounge Chairs/Belgium-p32000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "vivienne",
+          "name": "VIVIENNE",
+          "price": 56000,
+          "images": [
+            "/products/office/Office Lounge Chairs/VIVIENNE-p56000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "abira",
+          "name": "Abira",
+          "price": 9000,
+          "images": [
+            "/products/office/Office Lounge Chairs/abira-p9000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "abira-rev",
+          "name": "Abira Rev",
+          "price": 10250,
+          "images": [
+            "/products/office/Office Lounge Chairs/abira-rev-p10250.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "alex",
+          "name": "Alex",
+          "price": 9400,
+          "images": [
+            "/products/office/Office Lounge Chairs/alex-p9400.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "alex-rev",
+          "name": "Alex Rev",
+          "price": 10600,
+          "images": [
+            "/products/office/Office Lounge Chairs/alex-rev-p10600.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "amalfi",
+          "name": "Amalfi",
+          "price": 48000,
+          "images": [
+            "/products/office/Office Lounge Chairs/amalfi-p48000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "andros",
+          "name": "Andros",
+          "price": 17000,
+          "images": [
+            "/products/office/Office Lounge Chairs/andros-p17000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "antartica",
+          "name": "Antartica",
+          "price": 34000,
+          "images": [
+            "/products/office/Office Lounge Chairs/antartica-p34000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "athens",
+          "name": "Athens",
+          "price": 36000,
+          "images": [
+            "/products/office/Office Lounge Chairs/athens-p36000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "austria",
+          "name": "Austria",
+          "price": 54000,
+          "images": [
+            "/products/office/Office Lounge Chairs/austria-p54000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "barbados",
+          "name": "Barbados",
+          "price": 14500,
+          "images": [
+            "/products/office/Office Lounge Chairs/barbados-p14500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "bavuma",
+          "name": "Bavuma",
+          "price": 66000,
+          "images": [
+            "/products/office/Office Lounge Chairs/bavuma-p66000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "bern",
+          "name": "Bern",
+          "price": 40000,
+          "images": [
+            "/products/office/Office Lounge Chairs/bern-p40000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "bern-with-footrest",
+          "name": "Bern With Footrest",
+          "price": 54000,
+          "images": [
+            "/products/office/Office Lounge Chairs/bern-with-footrest-p54000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "bonanza",
+          "name": "Bonanza",
+          "price": 52000,
+          "images": [
+            "/products/office/Office Lounge Chairs/bonanza-p52000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "boston",
+          "name": "Boston",
+          "price": 11750,
+          "images": [
+            "/products/office/Office Lounge Chairs/boston-p11750.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "brussels",
+          "name": "Brussels",
+          "price": 46000,
+          "images": [
+            "/products/office/Office Lounge Chairs/brussels-p46000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "bugatti",
+          "name": "Bugatti",
+          "price": 36000,
+          "images": [
+            "/products/office/Office Lounge Chairs/bugatti-p36000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "bulgaria",
+          "name": "Bulgaria",
+          "price": 60000,
+          "images": [
+            "/products/office/Office Lounge Chairs/bulgaria-p60000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "burano",
+          "name": "Burano",
+          "price": 24000,
+          "images": [
+            "/products/office/Office Lounge Chairs/burano-p24000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "capitol",
+          "name": "Capitol",
+          "price": 28000,
+          "images": [
+            "/products/office/Office Lounge Chairs/capitol-p28000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "capri",
+          "name": "Capri",
+          "price": 15000,
+          "images": [
+            "/products/office/Office Lounge Chairs/capri-p15000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "carnival",
+          "name": "Carnival",
+          "price": 34000,
+          "images": [
+            "/products/office/Office Lounge Chairs/carnival-p34000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "carnival-with-footrest",
+          "name": "Carnival With Footrest",
+          "price": 52000,
+          "images": [
+            "/products/office/Office Lounge Chairs/carnival-with-footrest-p52000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "cavina",
+          "name": "Cavina",
+          "price": 35000,
+          "images": [
+            "/products/office/Office Lounge Chairs/cavina-p35000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "crystal-with-footrest",
+          "name": "Crystal With Footrest",
+          "price": 55000,
+          "images": [
+            "/products/office/Office Lounge Chairs/crystal-with-footrest-p55000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "dayton",
+          "name": "Dayton",
+          "price": 14500,
+          "images": [
+            "/products/office/Office Lounge Chairs/dayton-p14500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "edinburg",
+          "name": "Edinburg",
+          "price": 32000,
+          "images": [
+            "/products/office/Office Lounge Chairs/edinburg-p32000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "enigmna",
+          "name": "Enigmna",
+          "price": 47000,
+          "images": [
+            "/products/office/Office Lounge Chairs/enigmna-p47000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "epitome",
+          "name": "Epitome",
+          "price": 46000,
+          "images": [
+            "/products/office/Office Lounge Chairs/epitome-p46000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "espana",
+          "name": "Espana",
+          "price": 8800,
+          "images": [
+            "/products/office/Office Lounge Chairs/espana-p8800.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "eternia-with-footrest",
+          "name": "Eternia With Footrest",
+          "price": 68000,
+          "images": [
+            "/products/office/Office Lounge Chairs/eternia-with-footrest-p68000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "ferarra",
+          "name": "Ferarra",
+          "price": 42000,
+          "images": [
+            "/products/office/Office Lounge Chairs/ferarra-p42000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "fiji",
+          "name": "Fiji",
+          "price": 49000,
+          "images": [
+            "/products/office/Office Lounge Chairs/fiji-p49000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "gemini",
+          "name": "Gemini",
+          "price": 22500,
+          "images": [
+            "/products/office/Office Lounge Chairs/gemini-p22500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "greece",
+          "name": "Greece",
+          "price": 45000,
+          "images": [
+            "/products/office/Office Lounge Chairs/greece-p45000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "italiano-with-footrest",
+          "name": "Italiano With Footrest",
+          "price": 60000,
+          "images": [
+            "/products/office/Office Lounge Chairs/italiano-with-footrest-p60000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "jamaica",
+          "name": "Jamaica",
+          "price": 22000,
+          "images": [
+            "/products/office/Office Lounge Chairs/jamaica-p22000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "kiwis",
+          "name": "Kiwis",
+          "price": 12000,
+          "images": [
+            "/products/office/Office Lounge Chairs/kiwis-p12000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "kiwis-rev",
+          "name": "Kiwis Rev",
+          "price": 11500,
+          "images": [
+            "/products/office/Office Lounge Chairs/kiwis-rev-p11500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "knoll-12500",
+          "name": "Knoll",
+          "price": 12500,
+          "images": [
+            "/products/office/Office Lounge Chairs/knoll-p12500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "knoll-13000",
+          "name": "Knoll",
+          "price": 13000,
+          "images": [
+            "/products/office/Office Lounge Chairs/knoll-p13000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "lawson-hb-black",
+          "name": "Lawson Hb Black",
+          "price": 21000,
+          "images": [
+            "/products/office/Office Lounge Chairs/lawson-hb-black-p21000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "lawson-mb-black",
+          "name": "Lawson Mb Black",
+          "price": 18500,
+          "images": [
+            "/products/office/Office Lounge Chairs/lawson-mb-black-p18500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "lazy-boy-set-leatherp84000-pup57000",
+          "name": "Lazy Boy Set Leatherp84000 Pup57000",
+          "price": null,
+          "images": [
+            "/products/office/Office Lounge Chairs/lazy-boy-set-leatherp84000-pup57000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "lexus",
+          "name": "Lexus",
+          "price": 32000,
+          "images": [
+            "/products/office/Office Lounge Chairs/lexus-p32000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "london",
+          "name": "London",
+          "price": 19950,
+          "images": [
+            "/products/office/Office Lounge Chairs/london-p19950.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "london-with-footrest",
+          "name": "London With Footrest",
+          "price": 30000,
+          "images": [
+            "/products/office/Office Lounge Chairs/london-with-footrest-p30000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "lucerne",
+          "name": "Lucerne",
+          "price": 34000,
+          "images": [
+            "/products/office/Office Lounge Chairs/lucerne-p34000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "luv",
+          "name": "Luv",
+          "price": 12500,
+          "images": [
+            "/products/office/Office Lounge Chairs/luv-p12500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "max",
+          "name": "Max",
+          "price": 34000,
+          "images": [
+            "/products/office/Office Lounge Chairs/max-p34000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "milano",
+          "name": "Milano",
+          "price": 44000,
+          "images": [
+            "/products/office/Office Lounge Chairs/milano-p44000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "milos",
+          "name": "Milos",
+          "price": 31000,
+          "images": [
+            "/products/office/Office Lounge Chairs/milos-p31000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "paris",
+          "name": "Paris",
+          "price": 21000,
+          "images": [
+            "/products/office/Office Lounge Chairs/paris-p21000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "prince",
+          "name": "Prince",
+          "price": 24000,
+          "images": [
+            "/products/office/Office Lounge Chairs/prince-p24000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "prince-with-footrest",
+          "name": "Prince With Footrest",
+          "price": 38000,
+          "images": [
+            "/products/office/Office Lounge Chairs/prince-with-footrest-p38000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "prius",
+          "name": "Prius",
+          "price": 22000,
+          "images": [
+            "/products/office/Office Lounge Chairs/prius-p22000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "romania",
+          "name": "Romania",
+          "price": 26000,
+          "images": [
+            "/products/office/Office Lounge Chairs/romania-p26000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "rome",
+          "name": "Rome",
+          "price": 29000,
+          "images": [
+            "/products/office/Office Lounge Chairs/rome-p29000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "roogle",
+          "name": "Roogle",
+          "price": 32000,
+          "images": [
+            "/products/office/Office Lounge Chairs/roogle-p32000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "royal-espana",
+          "name": "Royal Espana",
+          "price": 12500,
+          "images": [
+            "/products/office/Office Lounge Chairs/royal-espana-p12500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "santosa",
+          "name": "Santosa",
+          "price": 21000,
+          "images": [
+            "/products/office/Office Lounge Chairs/santosa-p21000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "sasaki-with-footrest",
+          "name": "Sasaki With Footrest",
+          "price": 55500,
+          "images": [
+            "/products/office/Office Lounge Chairs/sasaki-with-footrest-p55500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "sasaski",
+          "name": "Sasaski",
+          "price": 39500,
+          "images": [
+            "/products/office/Office Lounge Chairs/sasaski-p39500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "sasmson",
+          "name": "Sasmson",
+          "price": 12500,
+          "images": [
+            "/products/office/Office Lounge Chairs/sasmson-p12500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "siam-4-star",
+          "name": "Siam 4 Star",
+          "price": 11000,
+          "images": [
+            "/products/office/Office Lounge Chairs/siam-4-star-p11000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "siam-aluminium",
+          "name": "Siam Aluminium",
+          "price": 14500,
+          "images": [
+            "/products/office/Office Lounge Chairs/siam-aluminium-p14500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "siam-apex",
+          "name": "Siam Apex",
+          "price": 19950,
+          "images": [
+            "/products/office/Office Lounge Chairs/siam-apex-p19950.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "siam-crest",
+          "name": "Siam Crest",
+          "price": 16000,
+          "images": [
+            "/products/office/Office Lounge Chairs/siam-crest-p16000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "siam-wood",
+          "name": "Siam Wood",
+          "price": 15000,
+          "images": [
+            "/products/office/Office Lounge Chairs/siam-wood-p15000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "sierra",
+          "name": "Sierra",
+          "price": 48000,
+          "images": [
+            "/products/office/Office Lounge Chairs/sierra-p48000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "slovakia",
+          "name": "Slovakia",
+          "price": 44000,
+          "images": [
+            "/products/office/Office Lounge Chairs/slovakia-p44000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "sofia",
+          "name": "Sofia",
+          "price": 13000,
+          "images": [
+            "/products/office/Office Lounge Chairs/sofia-p13000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "sorento",
+          "name": "Sorento",
+          "price": 32000,
+          "images": [
+            "/products/office/Office Lounge Chairs/sorento-p32000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "sorento-with-footrest",
+          "name": "Sorento With Footrest",
+          "price": 52000,
+          "images": [
+            "/products/office/Office Lounge Chairs/sorento-with-footrest-p52000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "star-blk-4star",
+          "name": "Star Blk 4star",
+          "price": 11500,
+          "images": [
+            "/products/office/Office Lounge Chairs/star-blk-4star-p11500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "star",
+          "name": "Star",
+          "price": 9400,
+          "images": [
+            "/products/office/Office Lounge Chairs/star-p9400.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "stefano",
+          "name": "Stefano",
+          "price": 14500,
+          "images": [
+            "/products/office/Office Lounge Chairs/stefano-p14500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "sumo",
+          "name": "Sumo",
+          "price": 19500,
+          "images": [
+            "/products/office/Office Lounge Chairs/sumo-p19500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "swan",
+          "name": "Swan",
+          "price": 9800,
+          "images": [
+            "/products/office/Office Lounge Chairs/swan-p9800.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "swing",
+          "name": "Swing",
+          "price": 44000,
+          "images": [
+            "/products/office/Office Lounge Chairs/swing-p44000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "terrano",
+          "name": "Terrano",
+          "price": 12800,
+          "images": [
+            "/products/office/Office Lounge Chairs/terrano-p12800.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "toledo",
+          "name": "Toledo",
+          "price": 13000,
+          "images": [
+            "/products/office/Office Lounge Chairs/toledo-p13000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "tucson",
+          "name": "Tucson",
+          "price": 10950,
+          "images": [
+            "/products/office/Office Lounge Chairs/tucson-p10950.png"
+          ],
+          "colors": [],
+          "description": ""
+        }
+      ]
+    },
+    {
+      "slug": "office-sofas",
       "label": "Office Sofas",
-      "coverImage": "/products/office/sofa/aero.png",
+      "coverImage": "/products/office/Office Sofas/aero.png",
       "items": [
         {
           "slug": "aero",
           "name": "Aero",
           "price": null,
           "images": [
-            "/products/office/sofa/aero.png"
+            "/products/office/Office Sofas/aero.png"
           ],
           "colors": [],
           "description": ""
@@ -3826,7 +4315,7 @@
           "name": "Arcus",
           "price": null,
           "images": [
-            "/products/office/sofa/arcus.png"
+            "/products/office/Office Sofas/arcus.png"
           ],
           "colors": [],
           "description": ""
@@ -3836,7 +4325,7 @@
           "name": "Barcelona",
           "price": null,
           "images": [
-            "/products/office/sofa/barcelona.png"
+            "/products/office/Office Sofas/barcelona.png"
           ],
           "colors": [],
           "description": ""
@@ -3846,7 +4335,7 @@
           "name": "Benz",
           "price": null,
           "images": [
-            "/products/office/sofa/benz.png"
+            "/products/office/Office Sofas/benz.png"
           ],
           "colors": [],
           "description": ""
@@ -3856,7 +4345,7 @@
           "name": "California",
           "price": null,
           "images": [
-            "/products/office/sofa/california.png"
+            "/products/office/Office Sofas/california.png"
           ],
           "colors": [],
           "description": ""
@@ -3866,7 +4355,7 @@
           "name": "Canvas",
           "price": null,
           "images": [
-            "/products/office/sofa/canvas.png"
+            "/products/office/Office Sofas/canvas.png"
           ],
           "colors": [],
           "description": ""
@@ -3876,7 +4365,7 @@
           "name": "Chester",
           "price": null,
           "images": [
-            "/products/office/sofa/chester.png"
+            "/products/office/Office Sofas/chester.png"
           ],
           "colors": [],
           "description": ""
@@ -3886,7 +4375,7 @@
           "name": "Corbusier",
           "price": null,
           "images": [
-            "/products/office/sofa/corbusier.png"
+            "/products/office/Office Sofas/corbusier.png"
           ],
           "colors": [],
           "description": ""
@@ -3896,7 +4385,7 @@
           "name": "Crystal",
           "price": null,
           "images": [
-            "/products/office/sofa/crystal.png"
+            "/products/office/Office Sofas/crystal.png"
           ],
           "colors": [],
           "description": ""
@@ -3906,7 +4395,7 @@
           "name": "Curve",
           "price": null,
           "images": [
-            "/products/office/sofa/curve.png"
+            "/products/office/Office Sofas/curve.png"
           ],
           "colors": [],
           "description": ""
@@ -3916,7 +4405,7 @@
           "name": "Dream",
           "price": null,
           "images": [
-            "/products/office/sofa/dream.png"
+            "/products/office/Office Sofas/dream.png"
           ],
           "colors": [],
           "description": ""
@@ -3926,7 +4415,7 @@
           "name": "Flame",
           "price": null,
           "images": [
-            "/products/office/sofa/flame.png"
+            "/products/office/Office Sofas/flame.png"
           ],
           "colors": [],
           "description": ""
@@ -3936,7 +4425,7 @@
           "name": "Florance",
           "price": null,
           "images": [
-            "/products/office/sofa/florance.png"
+            "/products/office/Office Sofas/florance.png"
           ],
           "colors": [],
           "description": ""
@@ -3946,7 +4435,7 @@
           "name": "Fortune",
           "price": null,
           "images": [
-            "/products/office/sofa/fortune.png"
+            "/products/office/Office Sofas/fortune.png"
           ],
           "colors": [],
           "description": ""
@@ -3956,7 +4445,7 @@
           "name": "Futon",
           "price": null,
           "images": [
-            "/products/office/sofa/futon.png"
+            "/products/office/Office Sofas/futon.png"
           ],
           "colors": [],
           "description": ""
@@ -3966,7 +4455,7 @@
           "name": "Glamour",
           "price": null,
           "images": [
-            "/products/office/sofa/glamour.png"
+            "/products/office/Office Sofas/glamour.png"
           ],
           "colors": [],
           "description": ""
@@ -3976,7 +4465,7 @@
           "name": "Havoc",
           "price": null,
           "images": [
-            "/products/office/sofa/havoc.png"
+            "/products/office/Office Sofas/havoc.png"
           ],
           "colors": [],
           "description": ""
@@ -3986,7 +4475,7 @@
           "name": "Heritage",
           "price": null,
           "images": [
-            "/products/office/sofa/heritage.png"
+            "/products/office/Office Sofas/heritage.png"
           ],
           "colors": [],
           "description": ""
@@ -3996,7 +4485,7 @@
           "name": "Imperial",
           "price": null,
           "images": [
-            "/products/office/sofa/imperial.png"
+            "/products/office/Office Sofas/imperial.png"
           ],
           "colors": [],
           "description": ""
@@ -4006,7 +4495,7 @@
           "name": "June",
           "price": null,
           "images": [
-            "/products/office/sofa/june.png"
+            "/products/office/Office Sofas/june.png"
           ],
           "colors": [],
           "description": ""
@@ -4016,7 +4505,7 @@
           "name": "Kitkat",
           "price": null,
           "images": [
-            "/products/office/sofa/kitkat.png"
+            "/products/office/Office Sofas/kitkat.png"
           ],
           "colors": [],
           "description": ""
@@ -4026,7 +4515,7 @@
           "name": "Liberty",
           "price": null,
           "images": [
-            "/products/office/sofa/liberty.png"
+            "/products/office/Office Sofas/liberty.png"
           ],
           "colors": [],
           "description": ""
@@ -4036,7 +4525,7 @@
           "name": "Lopez",
           "price": null,
           "images": [
-            "/products/office/sofa/lopez.png"
+            "/products/office/Office Sofas/lopez.png"
           ],
           "colors": [],
           "description": ""
@@ -4046,7 +4535,7 @@
           "name": "Mapple",
           "price": null,
           "images": [
-            "/products/office/sofa/mapple.png"
+            "/products/office/Office Sofas/mapple.png"
           ],
           "colors": [],
           "description": ""
@@ -4056,7 +4545,7 @@
           "name": "Meridian",
           "price": null,
           "images": [
-            "/products/office/sofa/meridian.png"
+            "/products/office/Office Sofas/meridian.png"
           ],
           "colors": [],
           "description": ""
@@ -4066,7 +4555,7 @@
           "name": "Montana",
           "price": null,
           "images": [
-            "/products/office/sofa/montana.png"
+            "/products/office/Office Sofas/montana.png"
           ],
           "colors": [],
           "description": ""
@@ -4076,7 +4565,7 @@
           "name": "Nero",
           "price": null,
           "images": [
-            "/products/office/sofa/nero.png"
+            "/products/office/Office Sofas/nero.png"
           ],
           "colors": [],
           "description": ""
@@ -4086,7 +4575,7 @@
           "name": "New Vogue",
           "price": null,
           "images": [
-            "/products/office/sofa/new-vogue.png"
+            "/products/office/Office Sofas/new-vogue.png"
           ],
           "colors": [],
           "description": ""
@@ -4096,7 +4585,7 @@
           "name": "Nova",
           "price": null,
           "images": [
-            "/products/office/sofa/nova.png"
+            "/products/office/Office Sofas/nova.png"
           ],
           "colors": [],
           "description": ""
@@ -4106,7 +4595,7 @@
           "name": "Oxy",
           "price": null,
           "images": [
-            "/products/office/sofa/oxy.png"
+            "/products/office/Office Sofas/oxy.png"
           ],
           "colors": [],
           "description": ""
@@ -4116,7 +4605,7 @@
           "name": "Saphire",
           "price": null,
           "images": [
-            "/products/office/sofa/saphire.png"
+            "/products/office/Office Sofas/saphire.png"
           ],
           "colors": [],
           "description": ""
@@ -4126,7 +4615,7 @@
           "name": "Spencer",
           "price": null,
           "images": [
-            "/products/office/sofa/spencer.png"
+            "/products/office/Office Sofas/spencer.png"
           ],
           "colors": [],
           "description": ""
@@ -4136,7 +4625,7 @@
           "name": "Tiara",
           "price": null,
           "images": [
-            "/products/office/sofa/tiara.png"
+            "/products/office/Office Sofas/tiara.png"
           ],
           "colors": [],
           "description": ""
@@ -4146,7 +4635,7 @@
           "name": "Tokyo",
           "price": null,
           "images": [
-            "/products/office/sofa/tokyo.png"
+            "/products/office/Office Sofas/tokyo.png"
           ],
           "colors": [],
           "description": ""
@@ -4156,7 +4645,7 @@
           "name": "Vegas",
           "price": null,
           "images": [
-            "/products/office/sofa/vegas.png"
+            "/products/office/Office Sofas/vegas.png"
           ],
           "colors": [],
           "description": ""
@@ -4166,7 +4655,7 @@
           "name": "Veronica",
           "price": null,
           "images": [
-            "/products/office/sofa/veronica.png"
+            "/products/office/Office Sofas/veronica.png"
           ],
           "colors": [],
           "description": ""
@@ -4176,7 +4665,7 @@
           "name": "Zara",
           "price": null,
           "images": [
-            "/products/office/sofa/zara.png"
+            "/products/office/Office Sofas/zara.png"
           ],
           "colors": [],
           "description": ""
@@ -4186,7 +4675,609 @@
           "name": "Zurich",
           "price": null,
           "images": [
-            "/products/office/sofa/zurich.png"
+            "/products/office/Office Sofas/zurich.png"
+          ],
+          "colors": [],
+          "description": ""
+        }
+      ]
+    },
+    {
+      "slug": "premium-leather-office-chairs",
+      "label": "Premium Leather Office Chairs",
+      "coverImage": "/products/office/Premium Leather Office Chairs/BENTLEY (LEATHER)/BENTLEY (LEATHER) HB-front-p67000.png",
+      "items": [
+        {
+          "slug": "bentley-leather",
+          "name": "BENTLEY (LEATHER)",
+          "price": 67000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/BENTLEY (LEATHER)/BENTLEY (LEATHER) HB-front-p67000.png",
+            "/products/office/Premium Leather Office Chairs/BENTLEY (LEATHER)/bentley-leather-mb-p63000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "boss-brown",
+          "name": "Boss Brown",
+          "price": 31500,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/Boss-brown/boss-brown-hb-front-p31500.png",
+            "/products/office/Premium Leather Office Chairs/Boss-brown/boss-brown-mb-front-p30500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "calvin-leather",
+          "name": "CALVIN LEATHER",
+          "price": 54000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/CALVIN LEATHER/CALVIN LEATHER HB-front-p54000.png",
+            "/products/office/Premium Leather Office Chairs/CALVIN LEATHER/CALVIN LEATHER mB-front-p48000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "dacota",
+          "name": "Dacota",
+          "price": 28000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/Dacota/dacota-hb-front-p28000.png",
+            "/products/office/Premium Leather Office Chairs/Dacota/dacota-mb-front-p26000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "elite-sleek",
+          "name": "ELITE SLEEK",
+          "price": 23500,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/ELITE SLEEK/ELITE SLEEK-hb-front-p23500.png",
+            "/products/office/Premium Leather Office Chairs/ELITE SLEEK/elite-sleek-mb-front-p22500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "jaguar",
+          "name": "JAGUAR",
+          "price": 62000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/JAGUAR/JAGUAR-hb-front-p62000.png",
+            "/products/office/Premium Leather Office Chairs/JAGUAR/jaguar-mb-front-p58000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "magnet",
+          "name": "MAGNET",
+          "price": 64000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/MAGNET/MAGNET HB-front-p64000.png",
+            "/products/office/Premium Leather Office Chairs/MAGNET/magnet-mb-front-p61000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "marquis-hb",
+          "name": "MARQUIS HB",
+          "price": 75000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/MARQUIS HB/MARQUIS HB-front-p75000.png",
+            "/products/office/Premium Leather Office Chairs/MARQUIS HB/marquis-mb-front-p55000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "martin-hb",
+          "name": "MARTIN HB",
+          "price": 80000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/MARTIN HB/MARTIN HB-front-p80000.png",
+            "/products/office/Premium Leather Office Chairs/MARTIN HB/martin-mb-front-p76000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "oyster-leather",
+          "name": "OYSTER (LEATHER)",
+          "price": 59000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/OYSTER (LEATHER)/OYSTER (LEATHER) HB-front-p59000.png",
+            "/products/office/Premium Leather Office Chairs/OYSTER (LEATHER)/oyster-leather-mb-front-p54000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "venice",
+          "name": "Venice",
+          "price": 16000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/Venice/venice-hb-front-p16000.png",
+            "/products/office/Premium Leather Office Chairs/Venice/venice-mb-front-p15500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "virgo",
+          "name": "Virgo",
+          "price": 18500,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/Virgo/virgo-hb-front-p18500.png",
+            "/products/office/Premium Leather Office Chairs/Virgo/virgo-mb-front-p17500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "winster",
+          "name": "WINSTER",
+          "price": 90000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/WINSTER/WINSTER-hb-front-p90000.png",
+            "/products/office/Premium Leather Office Chairs/WINSTER/winster-mb-front-p80000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "attitude-pale-silver",
+          "name": "Attitude Pale Silver",
+          "price": 60000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/attitude Pale Silver/attitude-pale-silver-hb-front-p60000.png",
+            "/products/office/Premium Leather Office Chairs/attitude Pale Silver/attitude-pale-silver-mb-back-58000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "austin",
+          "name": "Austin",
+          "price": 33000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/austin/austin-hb-front-p33000.png",
+            "/products/office/Premium Leather Office Chairs/austin/austin-mb-front-p31000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "daisy",
+          "name": "Daisy",
+          "price": 31000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/daisy/daisy-hb-front-p31000.png",
+            "/products/office/Premium Leather Office Chairs/daisy/daisy-mb-front-p29000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "epson",
+          "name": "Epson",
+          "price": 33000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/epson/epson-hb-front-p33000.png",
+            "/products/office/Premium Leather Office Chairs/epson/epson-mb-front-31000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "heritage",
+          "name": "Heritage",
+          "price": 124000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/heritage/heritage-hb-front-p124000.png",
+            "/products/office/Premium Leather Office Chairs/heritage/heritage-mb-front-p114000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "legacy",
+          "name": "Legacy",
+          "price": 28000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/legacy/legacy-hb-front-30000.png",
+            "/products/office/Premium Leather Office Chairs/legacy/legacy-mb-front-p28000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "lucy",
+          "name": "Lucy",
+          "price": 16000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/lucy/lucy-hb-front-p16000.png",
+            "/products/office/Premium Leather Office Chairs/lucy/lucy-mb-front-p15500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "maverick",
+          "name": "Maverick",
+          "price": 31000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/maverick/maverick-hb-front-p31000.png",
+            "/products/office/Premium Leather Office Chairs/maverick/maverick-mb-front-p29000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "oxford",
+          "name": "Oxford",
+          "price": 24000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/oxford/oxford-hb-front-p24000.png",
+            "/products/office/Premium Leather Office Chairs/oxford/oxford-mb-front-p22000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "sleek",
+          "name": "Sleek",
+          "price": 13000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/sleek/sleek-hb-front-p13000.png",
+            "/products/office/Premium Leather Office Chairs/sleek/sleek-mb-front-p12000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "stanley",
+          "name": "Stanley",
+          "price": 26000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/stanley/stanley-hb-front-p26000.png",
+            "/products/office/Premium Leather Office Chairs/stanley/stanley-mb-front-p24000.png"
+          ],
+          "colors": [],
+          "description": ""
+        }
+      ]
+    },
+    {
+      "slug": "premium-office-tables",
+      "label": "Premium Office Tables",
+      "coverImage": "/products/office/Premium Office Tables/MODEL - OT HANS-MRP – 84,000-.png",
+      "items": [
+        {
+          "slug": "model-ot-hans-mrp",
+          "name": "MODEL OT HANS MRP –",
+          "price": 84000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - OT HANS-MRP – 84,000-.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ot-md-a2-mrp-84-000",
+          "name": "MODEL OT MD A2 MRP 84,000",
+          "price": 84000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - OT MD-A2-MRP - 84,000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ot-mza04-1816-left-mrp",
+          "name": "MODEL OT MZA04 1816 LEFT MRP",
+          "price": 70000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - OT MZA04 1816 LEFT-MRP - 70,000-.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ot-qs02-dark-grey-orange-mrp-1-90-000",
+          "name": "MODEL OT QS02 DARK GREY ORANGE MRP 1,90,000",
+          "price": 190000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - OT QS02 DARK GREY ORANGE-MRP - 1,90,000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ot-jd01-a03-20-mrp",
+          "name": "MODEL OT JD01 A03 20 MRP –",
+          "price": 120000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - OT-JD01-A03-20-MRP – 1,20,000-.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ot-jy-a2-mrp-1-70-000",
+          "name": "MODEL OT JY A2 MRP 1,70,000",
+          "price": 170000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - OT-JY-A2-MRP - 1,70,000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ot-maa04-1816-mrp",
+          "name": "MODEL OT MAA04 1816 MRP",
+          "price": 75000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - OT-MAA04 1816-MRP - 75,000-.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ot-maa04-1616-mrp-70-000",
+          "name": "MODEL OT MAA04 1616 MRP 70,000",
+          "price": 70000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - OT-MAA04-1616-MRP - 70,000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ot-maa07-1206-mrp",
+          "name": "MODEL OT MAA07 1206 MRP –",
+          "price": 36000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - OT-MAA07 1206 - MRP – 36,000-.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ot-rg-t03-mrp-1-92-000",
+          "name": "MODEL OT RG T03 MRP 1,92,000",
+          "price": 192000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - OT-RG T03-MRP - 1,92,000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-otfb01m01t05-mrp",
+          "name": "MODEL OTFB01M01T05 MRP",
+          "price": 90000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - OTFB01M01T05-MRP - 90,000-.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-otqs02ar-dgry-orng-mrp-1-50-000",
+          "name": "MODEL OTQS02AR DGRY ORNG MRP 1,50,000",
+          "price": 150000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - OTQS02AR DGRY ORNG-MRP - 1,50,000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-otrg-t10-mrp-1-50-000",
+          "name": "MODEL OTRG T10 MRP 1,50,000",
+          "price": 150000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - OTRG-T10- MRP - 1,50,000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ps-201-mrp-1-74-000",
+          "name": "MODEL PS 201 MRP 1,74,000",
+          "price": 174000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - PS 201-MRP - 1,74,000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ps10a-left-side-motorised-ht-adj-mrp-1-70-000",
+          "name": "MODEL PS10A LEFT SIDE MOTORISED HT ADJ MRP 1,70,000",
+          "price": 170000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - PS10A LEFT SIDE MOTORISED HT ADJ-MRP - 1,70,000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ps10a-right-side-motorised-ht-adj-mrp-1-70-000",
+          "name": "MODEL PS10A RIGHT SIDE MOTORISED HT ADJ MRP 1,70,000",
+          "price": 170000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - PS10A RIGHT SIDE MOTORISED HT ADJ-MRP - 1,70,000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ps10a-right-side-motorised-ht-adj-mrp-1-84-000",
+          "name": "MODEL PS10A RIGHT SIDE MOTORISED HT ADJ MRP 1,84,000",
+          "price": 184000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - PS10A RIGHT SIDE MOTORISED HT ADJ-MRP - 1,84,000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ps822-mrp-72-000",
+          "name": "MODEL PS822 MRP 72,000",
+          "price": 72000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - PS822-MRP - 72,000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ps912-mrp",
+          "name": "MODEL PS912 MRP –",
+          "price": 120000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - PS912-MRP – 1,20,000-.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ps916-price-1-54-000",
+          "name": "MODEL PS916 PRICE 1,54,000",
+          "price": null,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - PS916-PRICE - 1,54,000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-sya01-mrp-1-60-000",
+          "name": "MODEL SYA01 MRP – 1,60,000",
+          "price": 160000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL - SYA01-MRP – 1,60,000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ot-ts-t01-right-mrp-1-36-000",
+          "name": "MODEL – OT TS T01 RIGHT MRP – 1,36,000",
+          "price": 136000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL – OT TS-T01 RIGHT-MRP – 1,36,000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ot-ts-t01-right-mrp-1-40-000",
+          "name": "MODEL – OT TS T01 RIGHT MRP – 1,40,000",
+          "price": 140000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL – OT TS-T01 RIGHT-MRP – 1,40,000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "model-ot-hy160-a-hf160-t-056-mrp",
+          "name": "MODEL –OT HY160 A HF160 T 056 MRP –",
+          "price": 74000,
+          "images": [
+            "/products/office/Premium Office Tables/MODEL –OT HY160-A HF160-T-056-MRP – 74,000-.png"
+          ],
+          "colors": [],
+          "description": ""
+        }
+      ]
+    },
+    {
+      "slug": "pu-office-chairs",
+      "label": "PU Office Chairs",
+      "coverImage": "/products/office/PU Office Chairs/ATTITUDE orange/ATTITUDE HB-front-p54000.png",
+      "items": [
+        {
+          "slug": "attitude-orange",
+          "name": "ATTITUDE Orange",
+          "price": 54000,
+          "images": [
+            "/products/office/PU Office Chairs/ATTITUDE orange/ATTITUDE HB-front-p54000.png",
+            "/products/office/PU Office Chairs/ATTITUDE orange/attitude-mb-back-p52000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "bentley-pu",
+          "name": "BENTLEY PU",
+          "price": 67000,
+          "images": [
+            "/products/office/PU Office Chairs/BENTLEY PU/BENTLEY (LEATHER) HB-front-p67000.png",
+            "/products/office/PU Office Chairs/BENTLEY PU/bentley-leather-mb-p63000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "calvin-pu",
+          "name": "CALVIN PU",
+          "price": 54000,
+          "images": [
+            "/products/office/PU Office Chairs/CALVIN PU/CALVIN LEATHER HB-front-p54000.png",
+            "/products/office/PU Office Chairs/CALVIN PU/CALVIN LEATHER mB-front-p48000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "duster-cushion",
+          "name": "DUSTER CUSHION",
+          "price": 33500,
+          "images": [
+            "/products/office/PU Office Chairs/DUSTER CUSHION/DUSTER CUSHION-hb-front-p33500.png",
+            "/products/office/PU Office Chairs/DUSTER CUSHION/duster-cushion-mb-front-p31500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "oyster-pu",
+          "name": "OYSTER PU",
+          "price": 59000,
+          "images": [
+            "/products/office/PU Office Chairs/OYSTER PU/OYSTER (LEATHER) HB-front-p59000.png",
+            "/products/office/PU Office Chairs/OYSTER PU/oyster-leather-mb-front-p54000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "trust-pu-warm-grey",
+          "name": "TRUST PU Warm Grey",
+          "price": 27500,
+          "images": [
+            "/products/office/PU Office Chairs/TRUST PU warm grey/TRUST-hb-front-p27500.png",
+            "/products/office/PU Office Chairs/TRUST PU warm grey/trust-mb-back-p25500.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "trust-pu-dark-gray",
+          "name": "TRUSt PU Dark Gray",
+          "price": null,
+          "images": [
+            "/products/office/PU Office Chairs/TRUSt PU Dark Gray/trust-hb-dark-grey-front.png",
+            "/products/office/PU Office Chairs/TRUSt PU Dark Gray/trust-hb-back-dark-grey-p.png"
           ],
           "colors": [],
           "description": ""
@@ -4196,14 +5287,14 @@
     {
       "slug": "puffy",
       "label": "Puffy Chairs",
-      "coverImage": "/products/office/puffy/albert-p6000.png",
+      "coverImage": "/products/office/Puffy/albert-p6000.png",
       "items": [
         {
           "slug": "albert",
           "name": "Albert",
           "price": 6000,
           "images": [
-            "/products/office/puffy/albert-p6000.png"
+            "/products/office/Puffy/albert-p6000.png"
           ],
           "colors": [],
           "description": ""
@@ -4213,7 +5304,7 @@
           "name": "Astro",
           "price": 6000,
           "images": [
-            "/products/office/puffy/astro-p6000.png"
+            "/products/office/Puffy/astro-p6000.png"
           ],
           "colors": [],
           "description": ""
@@ -4223,7 +5314,7 @@
           "name": "Bloomington",
           "price": 5500,
           "images": [
-            "/products/office/puffy/bloomington-p5500.png"
+            "/products/office/Puffy/bloomington-p5500.png"
           ],
           "colors": [],
           "description": ""
@@ -4233,7 +5324,7 @@
           "name": "Bolt",
           "price": 8000,
           "images": [
-            "/products/office/puffy/bolt-p8000.png"
+            "/products/office/Puffy/bolt-p8000.png"
           ],
           "colors": [],
           "description": ""
@@ -4243,7 +5334,7 @@
           "name": "Bruno",
           "price": 15000,
           "images": [
-            "/products/office/puffy/bruno-p15000.png"
+            "/products/office/Puffy/bruno-p15000.png"
           ],
           "colors": [],
           "description": ""
@@ -4253,7 +5344,7 @@
           "name": "Capsul",
           "price": 4500,
           "images": [
-            "/products/office/puffy/capsul-p4500.png"
+            "/products/office/Puffy/capsul-p4500.png"
           ],
           "colors": [],
           "description": ""
@@ -4263,7 +5354,7 @@
           "name": "Dior",
           "price": 8000,
           "images": [
-            "/products/office/puffy/dior-p8000.png"
+            "/products/office/Puffy/dior-p8000.png"
           ],
           "colors": [],
           "description": ""
@@ -4273,7 +5364,7 @@
           "name": "Drift",
           "price": 6500,
           "images": [
-            "/products/office/puffy/drift-p6500.png"
+            "/products/office/Puffy/drift-p6500.png"
           ],
           "colors": [],
           "description": ""
@@ -4283,7 +5374,7 @@
           "name": "Drum",
           "price": 13000,
           "images": [
-            "/products/office/puffy/drum-p13000.png"
+            "/products/office/Puffy/drum-p13000.png"
           ],
           "colors": [],
           "description": ""
@@ -4293,7 +5384,7 @@
           "name": "Eva",
           "price": 5000,
           "images": [
-            "/products/office/puffy/eva-p5000.png"
+            "/products/office/Puffy/eva-p5000.png"
           ],
           "colors": [],
           "description": ""
@@ -4303,7 +5394,7 @@
           "name": "Flow",
           "price": 5500,
           "images": [
-            "/products/office/puffy/flow-p5500.png"
+            "/products/office/Puffy/flow-p5500.png"
           ],
           "colors": [],
           "description": ""
@@ -4313,7 +5404,7 @@
           "name": "Gold",
           "price": 5800,
           "images": [
-            "/products/office/puffy/gold-p5800.png"
+            "/products/office/Puffy/gold-p5800.png"
           ],
           "colors": [],
           "description": ""
@@ -4323,7 +5414,7 @@
           "name": "Hush",
           "price": 5500,
           "images": [
-            "/products/office/puffy/hush-p5500.png"
+            "/products/office/Puffy/hush-p5500.png"
           ],
           "colors": [],
           "description": ""
@@ -4333,7 +5424,7 @@
           "name": "Kenzi",
           "price": 9500,
           "images": [
-            "/products/office/puffy/kenzi-p9500.png"
+            "/products/office/Puffy/kenzi-p9500.png"
           ],
           "colors": [],
           "description": ""
@@ -4343,7 +5434,7 @@
           "name": "Libra",
           "price": 12000,
           "images": [
-            "/products/office/puffy/libra-p12000.png"
+            "/products/office/Puffy/libra-p12000.png"
           ],
           "colors": [],
           "description": ""
@@ -4353,7 +5444,7 @@
           "name": "Louis",
           "price": 9500,
           "images": [
-            "/products/office/puffy/louis-p9500.png"
+            "/products/office/Puffy/louis-p9500.png"
           ],
           "colors": [],
           "description": ""
@@ -4363,7 +5454,7 @@
           "name": "Lume",
           "price": 5500,
           "images": [
-            "/products/office/puffy/lume-p5500.png"
+            "/products/office/Puffy/lume-p5500.png"
           ],
           "colors": [],
           "description": ""
@@ -4373,7 +5464,7 @@
           "name": "Majesty",
           "price": 15000,
           "images": [
-            "/products/office/puffy/majesty-p15000.png"
+            "/products/office/Puffy/majesty-p15000.png"
           ],
           "colors": [],
           "description": ""
@@ -4383,7 +5474,7 @@
           "name": "Merry",
           "price": 6500,
           "images": [
-            "/products/office/puffy/merry-p6500.png"
+            "/products/office/Puffy/merry-p6500.png"
           ],
           "colors": [],
           "description": ""
@@ -4393,7 +5484,7 @@
           "name": "Mitro",
           "price": 9500,
           "images": [
-            "/products/office/puffy/mitro-p9500.png"
+            "/products/office/Puffy/mitro-p9500.png"
           ],
           "colors": [],
           "description": ""
@@ -4403,7 +5494,7 @@
           "name": "Moon",
           "price": 6000,
           "images": [
-            "/products/office/puffy/moon-p6000.png"
+            "/products/office/Puffy/moon-p6000.png"
           ],
           "colors": [],
           "description": ""
@@ -4413,7 +5504,7 @@
           "name": "Mushroom",
           "price": 5500,
           "images": [
-            "/products/office/puffy/mushroom-p5500.png"
+            "/products/office/Puffy/mushroom-p5500.png"
           ],
           "colors": [],
           "description": ""
@@ -4423,7 +5514,7 @@
           "name": "Novel",
           "price": 13000,
           "images": [
-            "/products/office/puffy/novel-p13000.png"
+            "/products/office/Puffy/novel-p13000.png"
           ],
           "colors": [],
           "description": ""
@@ -4433,7 +5524,7 @@
           "name": "Opal",
           "price": 6500,
           "images": [
-            "/products/office/puffy/opal-p6500.png"
+            "/products/office/Puffy/opal-p6500.png"
           ],
           "colors": [],
           "description": ""
@@ -4443,7 +5534,7 @@
           "name": "Reno",
           "price": 6000,
           "images": [
-            "/products/office/puffy/reno-p6000.png"
+            "/products/office/Puffy/reno-p6000.png"
           ],
           "colors": [],
           "description": ""
@@ -4453,7 +5544,7 @@
           "name": "Sung",
           "price": 8000,
           "images": [
-            "/products/office/puffy/sung-p8000.png"
+            "/products/office/Puffy/sung-p8000.png"
           ],
           "colors": [],
           "description": ""
@@ -4463,7 +5554,7 @@
           "name": "Tori",
           "price": 6500,
           "images": [
-            "/products/office/puffy/tori-p6500.png"
+            "/products/office/Puffy/tori-p6500.png"
           ],
           "colors": [],
           "description": ""
@@ -4473,7 +5564,7 @@
           "name": "Vibe",
           "price": 8000,
           "images": [
-            "/products/office/puffy/vibe-p8000.png"
+            "/products/office/Puffy/vibe-p8000.png"
           ],
           "colors": [],
           "description": ""
@@ -4483,7 +5574,7 @@
           "name": "Zoya",
           "price": 8000,
           "images": [
-            "/products/office/puffy/zoya-p8000.png"
+            "/products/office/Puffy/zoya-p8000.png"
           ],
           "colors": [],
           "description": ""
@@ -4491,16 +5582,16 @@
       ]
     },
     {
-      "slug": "recliner",
+      "slug": "recliner-office-chairs",
       "label": "Recliner Office Chairs",
-      "coverImage": "/products/office/recliner/ancora-p62000.png",
+      "coverImage": "/products/office/Recliner Office Chairs/ancora-p62000.png",
       "items": [
         {
           "slug": "ancora",
           "name": "Ancora",
           "price": 62000,
           "images": [
-            "/products/office/recliner/ancora-p62000.png"
+            "/products/office/Recliner Office Chairs/ancora-p62000.png"
           ],
           "colors": [],
           "description": ""
@@ -4510,7 +5601,7 @@
           "name": "Arbor",
           "price": 92000,
           "images": [
-            "/products/office/recliner/arbor-p92000.png"
+            "/products/office/Recliner Office Chairs/arbor-p92000.png"
           ],
           "colors": [],
           "description": ""
@@ -4520,7 +5611,7 @@
           "name": "Creta",
           "price": 86000,
           "images": [
-            "/products/office/recliner/creta-p86000.png"
+            "/products/office/Recliner Office Chairs/creta-p86000.png"
           ],
           "colors": [],
           "description": ""
@@ -4530,7 +5621,7 @@
           "name": "London",
           "price": 86000,
           "images": [
-            "/products/office/recliner/london-p86000.png"
+            "/products/office/Recliner Office Chairs/london-p86000.png"
           ],
           "colors": [],
           "description": ""
@@ -4540,7 +5631,7 @@
           "name": "Marbeio",
           "price": 120000,
           "images": [
-            "/products/office/recliner/marbeio-p120000.png"
+            "/products/office/Recliner Office Chairs/marbeio-p120000.png"
           ],
           "colors": [],
           "description": ""
@@ -4550,7 +5641,7 @@
           "name": "Marcus",
           "price": 96000,
           "images": [
-            "/products/office/recliner/marcus-p96000.png"
+            "/products/office/Recliner Office Chairs/marcus-p96000.png"
           ],
           "colors": [],
           "description": ""
@@ -4560,7 +5651,7 @@
           "name": "Neroli",
           "price": 38500,
           "images": [
-            "/products/office/recliner/neroli-p38500.png"
+            "/products/office/Recliner Office Chairs/neroli-p38500.png"
           ],
           "colors": [],
           "description": ""
@@ -4570,7 +5661,7 @@
           "name": "Phantom",
           "price": 68000,
           "images": [
-            "/products/office/recliner/phantom-p68000.png"
+            "/products/office/Recliner Office Chairs/phantom-p68000.png"
           ],
           "colors": [],
           "description": ""
@@ -4580,7 +5671,7 @@
           "name": "River",
           "price": 82000,
           "images": [
-            "/products/office/recliner/river-p82000.png"
+            "/products/office/Recliner Office Chairs/river-p82000.png"
           ],
           "colors": [],
           "description": ""
@@ -4590,7 +5681,7 @@
           "name": "Spencer",
           "price": 49000,
           "images": [
-            "/products/office/recliner/spencer-p49000.png"
+            "/products/office/Recliner Office Chairs/spencer-p49000.png"
           ],
           "colors": [],
           "description": ""
@@ -4600,7 +5691,54 @@
           "name": "Stone",
           "price": 92000,
           "images": [
-            "/products/office/recliner/stone-p92000.png"
+            "/products/office/Recliner Office Chairs/stone-p92000.png"
+          ],
+          "colors": [],
+          "description": ""
+        }
+      ]
+    },
+    {
+      "slug": "training-chairs",
+      "label": "Training Chairs",
+      "coverImage": "/products/office/Training Chairs/cosmo-tablet-p5000.png",
+      "items": [
+        {
+          "slug": "cosmo-tablet",
+          "name": "Cosmo Tablet",
+          "price": 5000,
+          "images": [
+            "/products/office/Training Chairs/cosmo-tablet-p5000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "flip-tablet",
+          "name": "Flip Tablet",
+          "price": 11000,
+          "images": [
+            "/products/office/Training Chairs/flip-tablet-p11000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "key-tablet",
+          "name": "Key Tablet",
+          "price": 7000,
+          "images": [
+            "/products/office/Training Chairs/key-tablet-p7000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "sweden-tablet",
+          "name": "Sweden Tablet",
+          "price": 5400,
+          "images": [
+            "/products/office/Training Chairs/sweden-tablet-p5400.png"
           ],
           "colors": [],
           "description": ""
@@ -4673,16 +5811,6 @@
           "description": ""
         },
         {
-          "slug": "cosmo-tablet",
-          "name": "Cosmo Tablet",
-          "price": 5000,
-          "images": [
-            "/products/office/workstations chairs/cosmo-tablet-p5000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
           "slug": "deca",
           "name": "Deca",
           "price": 11000,
@@ -4728,16 +5856,6 @@
           "price": 7200,
           "images": [
             "/products/office/workstations chairs/flash-eco-p7200.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "flip-tablet",
-          "name": "Flip Tablet",
-          "price": 11000,
-          "images": [
-            "/products/office/workstations chairs/flip-tablet-p11000.png"
           ],
           "colors": [],
           "description": ""
@@ -4798,16 +5916,6 @@
           "price": 7200,
           "images": [
             "/products/office/workstations chairs/karina-eco-p7200.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
-          "slug": "key-tablet",
-          "name": "Key Tablet",
-          "price": 7000,
-          "images": [
-            "/products/office/workstations chairs/key-tablet-p7000.png"
           ],
           "colors": [],
           "description": ""
@@ -5043,16 +6151,6 @@
           "description": ""
         },
         {
-          "slug": "sweden-tablet",
-          "name": "Sweden Tablet",
-          "price": 5400,
-          "images": [
-            "/products/office/workstations chairs/sweden-tablet-p5400.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
-        {
           "slug": "sweety",
           "name": "Sweety",
           "price": 8500,
@@ -5168,6 +6266,23 @@
           "price": 8000,
           "images": [
             "/products/office/workstations chairs/zen-p8000.png"
+          ],
+          "colors": [],
+          "description": ""
+        }
+      ]
+    },
+    {
+      "slug": "workstations",
+      "label": "Workstations",
+      "coverImage": "/products/office/workstations/CF-DS2412WA-b.webp",
+      "items": [
+        {
+          "slug": "cf-ds2412wa-b",
+          "name": "CF DS2412WA B",
+          "price": null,
+          "images": [
+            "/products/office/workstations/CF-DS2412WA-b.webp"
           ],
           "colors": [],
           "description": ""

@@ -44,10 +44,10 @@ const OFFICE_LABELS = {
   'conference meeting tables': 'Conference & Meeting Tables',
   'workstations chairs': 'Workstation Chairs',
   workstations: 'Workstations',
-  // managers-desk is intentionally omitted — folder contains only screenshots
+  // managers-desk intentionally omitted — folder contains only screenshots
 }
 
-// Categories to skip entirely (all screenshots / no usable images)
+// Categories to skip entirely (no usable product images)
 const SKIP_OFFICE_CATS = new Set(['managers-desk'])
 
 function isImageFile(name) {
@@ -60,6 +60,11 @@ function isDirectory(fullPath) {
   } catch {
     return false
   }
+}
+
+function byName(a, b) {
+  if (a === b) return 0
+  return a < b ? -1 : 1
 }
 
 // Extract price from filename or folder name
@@ -106,18 +111,61 @@ function publicPath(...parts) {
   return '/' + parts.map((p) => p.replace(/\\/g, '/')).join('/')
 }
 
+// Sort images so "front" images come first
+function sortImages(images) {
+  return [...images].sort((a, b) => {
+    const aFront = a.toLowerCase().includes('front') ? 0 : 1
+    const bFront = b.toLowerCase().includes('front') ? 0 : 1
+    return aFront - bFront || byName(a, b)
+  })
+}
+
+function makeUniqueItemSlugs(items) {
+  const slugCounts = new Map()
+
+  for (const item of items) {
+    const count = slugCounts.get(item.slug) ?? 0
+    slugCounts.set(item.slug, count + 1)
+  }
+
+  const usedSlugs = new Set()
+
+  return items.map((item) => {
+    if ((slugCounts.get(item.slug) ?? 0) === 1) {
+      usedSlugs.add(item.slug)
+      return item
+    }
+
+    const priceSuffix = item.price === null ? null : String(item.price)
+    let nextSlug = priceSuffix ? `${item.slug}-${priceSuffix}` : item.slug
+    let suffix = 2
+
+    while (usedSlugs.has(nextSlug)) {
+      nextSlug = `${item.slug}-${suffix}`
+      suffix += 1
+    }
+
+    usedSlugs.add(nextSlug)
+
+    return {
+      ...item,
+      slug: nextSlug,
+    }
+  })
+}
+
 // Process a NESTED category: subfolders = products, images inside = gallery
 function processNestedCategory(catDir, section, catSlug) {
-  const entries = readdirSync(catDir)
+  const entries = readdirSync(catDir).sort(byName)
   const items = []
 
   for (const entry of entries) {
     const entryPath = join(catDir, entry)
     if (!isDirectory(entryPath)) continue
 
-    const images = readdirSync(entryPath)
-      .filter(isImageFile)
-      .sort()
+    const images = sortImages(
+      readdirSync(entryPath).filter(isImageFile)
+    )
 
     if (images.length === 0) continue
 
@@ -145,7 +193,7 @@ function processNestedCategory(catDir, section, catSlug) {
     })
   }
 
-  return items
+  return makeUniqueItemSlugs(items)
 }
 
 // Process a FLAT category: each image = one product (group numbered variants)
@@ -153,7 +201,7 @@ function processFlatCategory(catDir, section, catSlug) {
   const files = readdirSync(catDir)
     .filter(isImageFile)
     .filter((f) => !f.startsWith('Screenshot'))
-    .sort()
+    .sort(byName)
 
   // Group images that belong to same product.
   // Detect numbered variants: strip trailing -01, -02, etc. before price or extension
@@ -165,7 +213,9 @@ function processFlatCategory(catDir, section, catSlug) {
 
     // Strip trailing -01, -02 ... -09 (but only if it looks like a sequence number)
     // e.g. "dd8594-revolving-chair-01-p19750" → "dd8594-revolving-chair-p19750"
-    const normalised = base.replace(/-0\d(?=-p|-$)/, '').replace(/-\d{2}(?=-p|-$)/, '')
+    const normalised = base
+      .replace(/-0\d(?=-p[\d,]+$|-$)/, '')
+      .replace(/-\d{2}(?=-p[\d,]+$|-$)/, '')
 
     if (!groups.has(normalised)) {
       groups.set(normalised, { key: normalised, files: [] })
@@ -187,7 +237,7 @@ function processFlatCategory(catDir, section, catSlug) {
       slug,
       name,
       price,
-      images: groupFiles.map((img) =>
+      images: sortImages(groupFiles).map((img) =>
         publicPath('products', section, catSlug, img)
       ),
       colors: [],
@@ -195,7 +245,7 @@ function processFlatCategory(catDir, section, catSlug) {
     })
   }
 
-  return items
+  return makeUniqueItemSlugs(items)
 }
 
 // Determine if a category uses nested or flat structure
@@ -206,7 +256,7 @@ function isNestedCategory(catDir) {
 
 function processSection(section, labelMap) {
   const sectionDir = join(PRODUCTS_DIR, section)
-  const catFolders = readdirSync(sectionDir)
+  const catFolders = readdirSync(sectionDir).sort(byName)
 
   const categories = []
 

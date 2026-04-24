@@ -1,10 +1,11 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { useMemo, useState } from "react";
+import { useRef, useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router";
 import PostureHomesLogo from "./PostureHomesLogo";
 import { navigationLinks } from "../utils/navigation";
 import { productDropdownLinks } from "../utils/productCategories";
+import { homeCategoryLinks, officeCategoryLinks } from "../data/productsData";
 import { primaryContactPhoneHref } from "../utils/contact";
 
 const desktopNavItemClassName =
@@ -43,41 +44,123 @@ const pageSectionNavigation: Record<string, NavigationLink[]> = {
   ],
 };
 
+// Which page-section links should get a subcategory dropdown
+const sectionDropdownMap: Record<string, typeof homeCategoryLinks> = {
+  "/products/home-furniture": homeCategoryLinks,
+  "/products/office-furniture": officeCategoryLinks,
+};
+
+function SubcategoryDropdown({ links }: { links: typeof homeCategoryLinks }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 6 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 6 }}
+      transition={{ duration: 0.16, ease: "easeOut" }}
+      className="absolute left-1/2 top-full z-50 mt-2 w-64 -translate-x-1/2 overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-xl"
+    >
+      <div className="max-h-80 overflow-y-auto py-2">
+        {links.map((link) => (
+          <Link
+            key={link.slug}
+            to={link.href}
+            className="flex items-center justify-between px-4 py-2.5 text-sm text-slate-700 transition hover:bg-[#f4ecdf] hover:text-slate-900"
+          >
+            <span>{link.label}</span>
+            <span className="ml-2 text-xs text-slate-400">{link.itemCount}</span>
+          </Link>
+        ))}
+      </div>
+    </motion.div>
+  );
+}
+
+// Desktop nav item with optional subcategory hover dropdown
+function DesktopNavLink({
+  link,
+  dropdownLinks,
+}: {
+  link: NavigationLink;
+  dropdownLinks?: typeof homeCategoryLinks;
+}) {
+  const [open, setOpen] = useState(false);
+  const leaveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const handleEnter = () => {
+    if (leaveTimer.current) clearTimeout(leaveTimer.current);
+    setOpen(true);
+  };
+  const handleLeave = () => {
+    leaveTimer.current = setTimeout(() => setOpen(false), 120);
+  };
+
+  const inner =
+    link.type === "route" ? (
+      <Link to={link.href} className={desktopNavItemClassName}>
+        {link.label}
+      </Link>
+    ) : (
+      <a href={link.href} className={desktopNavItemClassName}>
+        {link.label}
+      </a>
+    );
+
+  if (!dropdownLinks) {
+    return <motion.div whileHover={{ y: -1, scale: 1.01 }}>{inner}</motion.div>;
+  }
+
+  return (
+    <div
+      className="relative"
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
+    >
+      <div className="flex items-center gap-0.5">
+        {inner}
+        <ChevronDown
+          className={`h-3.5 w-3.5 text-slate-400 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+        />
+      </div>
+      <AnimatePresence>
+        {open && <SubcategoryDropdown links={dropdownLinks} />}
+      </AnimatePresence>
+    </div>
+  );
+}
+
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const [isMobileSectionOpen, setIsMobileSectionOpen] = useState(false);
   const location = useLocation();
 
   const isHomePage = location.pathname === "/";
   const isBlogPage =
     location.pathname === "/blog" || location.pathname.startsWith("/blog/");
   const pageNavigationLinks = pageSectionNavigation[location.pathname];
+  const sectionDropdownLinks = sectionDropdownMap[location.pathname];
   const shouldShowProductsDropdown = !pageNavigationLinks;
 
-  const processedNavigationLinks = useMemo(
-    () =>
-      pageNavigationLinks ??
-      navigationLinks.map((link) => ({
-        ...link,
-        href:
-          link.type === "anchor" &&
-          link.href.startsWith("#") &&
-          !isHomePage
-            ? `/${link.href}`
-            : link.href,
-      })),
-    [isHomePage, pageNavigationLinks],
-  );
+  const processedNavigationLinks =
+    pageNavigationLinks ??
+    navigationLinks.map((link) => ({
+      ...link,
+      href:
+        link.type === "anchor" && link.href.startsWith("#") && !isHomePage
+          ? `/${link.href}`
+          : link.href,
+    }));
 
   const closeMenus = () => {
     setIsMobileMenuOpen(false);
     setIsProductsOpen(false);
+    setIsMobileSectionOpen(false);
   };
 
   const renderNavigationLink = (
     link: NavigationLink,
     className: string,
-    onClick?: () => void,
+    onClick?: () => void
   ) =>
     link.type === "route" ? (
       <Link to={link.href} onClick={onClick} className={className}>
@@ -124,18 +207,18 @@ function Navbar() {
           <PostureHomesLogo compact />
         </Link>
 
+        {/* Desktop nav */}
         <ul className="hidden items-center gap-8 md:flex">
           {processedNavigationLinks.map((link) => (
             <li key={link.label}>
-              {link.type === "route" ? (
-                <motion.div whileHover={{ y: -1, scale: 1.01 }}>
-                  {renderNavigationLink(link, desktopNavItemClassName)}
-                </motion.div>
-              ) : (
-                <motion.div whileHover={{ y: -1, scale: 1.01 }}>
-                  {renderNavigationLink(link, desktopNavItemClassName)}
-                </motion.div>
-              )}
+              <DesktopNavLink
+                link={link}
+                dropdownLinks={
+                  link.label === "Products" && sectionDropdownLinks
+                    ? sectionDropdownLinks
+                    : undefined
+                }
+              />
             </li>
           ))}
         </ul>
@@ -169,10 +252,53 @@ function Navbar() {
             <ul className="mx-auto flex max-w-6xl flex-col px-6 py-4">
               {processedNavigationLinks.map((link) => (
                 <li key={link.label}>
-                  {renderNavigationLink(
-                    link,
-                    "block rounded-2xl px-4 py-3 text-base font-semibold text-slate-700 transition duration-300 hover:bg-[#f4ecdf] hover:text-slate-900",
-                    closeMenus,
+                  {/* On product pages, "Products" nav link gets an expandable subcategory list */}
+                  {link.label === "Products" && sectionDropdownLinks ? (
+                    <>
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setIsMobileSectionOpen((o) => !o)
+                        }
+                        className="flex w-full items-center justify-between rounded-2xl px-4 py-3 text-base font-semibold text-slate-700 transition hover:bg-[#f4ecdf]"
+                      >
+                        Products
+                        <ChevronDown
+                          className={`h-4 w-4 transition-transform duration-200 ${isMobileSectionOpen ? "rotate-180" : ""}`}
+                        />
+                      </button>
+                      <AnimatePresence initial={false}>
+                        {isMobileSectionOpen && (
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: "auto" }}
+                            exit={{ opacity: 0, height: 0 }}
+                            transition={{ duration: 0.18, ease: "easeOut" }}
+                            className="overflow-hidden"
+                          >
+                            <div className="pb-2 pl-4">
+                              {sectionDropdownLinks.map((item) => (
+                                <Link
+                                  key={item.slug}
+                                  to={item.href}
+                                  onClick={closeMenus}
+                                  className="flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-semibold text-slate-600 transition hover:bg-[#f4ecdf]"
+                                >
+                                  <span>{item.label}</span>
+                                  <span className="text-xs text-slate-400">{item.itemCount}</span>
+                                </Link>
+                              ))}
+                            </div>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </>
+                  ) : (
+                    renderNavigationLink(
+                      link,
+                      "block rounded-2xl px-4 py-3 text-base font-semibold text-slate-700 transition duration-300 hover:bg-[#f4ecdf] hover:text-slate-900",
+                      closeMenus
+                    )
                   )}
                 </li>
               ))}
@@ -187,9 +313,7 @@ function Navbar() {
                   >
                     Products
                     <ChevronDown
-                      className={`h-4 w-4 transition duration-300 ${
-                        isProductsOpen ? "rotate-180" : ""
-                      }`}
+                      className={`h-4 w-4 transition duration-300 ${isProductsOpen ? "rotate-180" : ""}`}
                     />
                   </button>
 

@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Link, Navigate, useParams } from 'react-router'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { Link, Navigate, useParams, useSearchParams } from 'react-router'
+import { ChevronLeft, ChevronRight, X } from 'lucide-react'
 import Seo from '../components/Seo'
 import SectionReveal from '../components/SectionReveal'
 import ContactForm from '../components/ContactForm'
@@ -24,7 +24,7 @@ function ImageGallery({ images, name }: { images: string[]; name: string }) {
   return (
     <div className="space-y-3">
       {/* Main image */}
-      <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem] bg-white shadow-sm">
+      <div className="relative aspect-[5/3] overflow-hidden rounded-[1.5rem] bg-white shadow-sm">
         <img
           src={encodeImagePath(images[activeIndex] ?? '')}
           alt={`${name} - view ${activeIndex + 1}`}
@@ -34,14 +34,14 @@ function ImageGallery({ images, name }: { images: string[]; name: string }) {
           <>
             <button
               onClick={prev}
-              className="absolute left-3 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/85 text-slate-800 shadow backdrop-blur-sm transition hover:bg-white"
+              className="absolute left-3 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-slate-800 shadow backdrop-blur-sm transition hover:bg-white"
               aria-label="Previous image"
             >
               <ChevronLeft className="h-4 w-4" />
             </button>
             <button
               onClick={next}
-              className="absolute right-3 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/85 text-slate-800 shadow backdrop-blur-sm transition hover:bg-white"
+              className="absolute right-3 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-slate-800 shadow backdrop-blur-sm transition hover:bg-white"
               aria-label="Next image"
             >
               <ChevronRight className="h-4 w-4" />
@@ -80,9 +80,56 @@ function ImageGallery({ images, name }: { images: string[]; name: string }) {
   )
 }
 
+function EnquiryModal({
+  itemName,
+  categoryLabel,
+  quantity,
+  onClose,
+}: {
+  itemName: string
+  categoryLabel: string
+  quantity: number
+  onClose: () => void
+}) {
+  const defaultMessage = `Hi, I'm interested in the following product:\n\nProduct: ${itemName}\nCategory: ${categoryLabel}\nQuantity: ${quantity}\n\nPlease share availability and pricing details.`
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-end justify-center sm:items-center p-4">
+      <div
+        className="fixed inset-0 bg-black/50 backdrop-blur-sm"
+        onClick={onClose}
+        aria-hidden="true"
+      />
+      <div className="relative z-10 w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-t-3xl sm:rounded-3xl bg-white shadow-2xl">
+        <div className="sticky top-0 flex items-center justify-between border-b border-stone-100 bg-white px-6 py-4 rounded-t-3xl sm:rounded-t-3xl">
+          <p className="text-sm font-semibold text-slate-900">Send Enquiry</p>
+          <button
+            onClick={onClose}
+            className="flex h-8 w-8 items-center justify-center rounded-full border border-stone-200 text-slate-500 transition hover:bg-stone-100"
+            aria-label="Close"
+          >
+            <X className="h-4 w-4" />
+          </button>
+        </div>
+        <div className="p-6">
+          <ContactForm
+            key={`${itemName}-${quantity}`}
+            title={`Enquiry: ${itemName}`}
+            description="Product and quantity are pre-filled. Add any additional notes below."
+            submitLabel="Send Enquiry"
+            defaultMessage={defaultMessage}
+          />
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function ProductDetailPage() {
   const { categorySlug, subCategorySlug, itemSlug } = useParams()
+  const [searchParams] = useSearchParams()
   const [quantity, setQuantity] = useState(1)
+  const [showEnquiry, setShowEnquiry] = useState(false)
 
   const section = sectionFromCategorySlug(categorySlug ?? '')
   const category =
@@ -96,9 +143,12 @@ function ProductDetailPage() {
     return <Navigate to="/" replace />
   }
 
-  const backPath = `/products/${categorySlug}/${subCategorySlug}`
+  // Preserve page/search params when going back
+  const backQuery = searchParams.toString()
+  const backPath = `/products/${categorySlug}/${subCategorySlug}${backQuery ? `?${backQuery}` : ''}`
 
-  const defaultMessage = `Hi, I'm interested in the following product:\n\nProduct: ${item.name}\nCategory: ${category.label}\nQuantity: ${quantity}\n\nPlease share availability and pricing details.`
+  // Related: up to 4 items from same category, excluding current
+  const relatedItems = category.items.filter((i) => i.slug !== item.slug).slice(0, 4)
 
   return (
     <main className="bg-[#fafafa]">
@@ -135,8 +185,8 @@ function ProductDetailPage() {
 
       {/* Product detail */}
       <SectionReveal>
-        <div className="mx-auto max-w-screen-xl px-6 py-12">
-          <div className="grid gap-12 lg:grid-cols-[3fr_2fr]">
+        <div className="mx-auto max-w-[92rem] px-6 py-12">
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,1.25fr)_minmax(340px,0.75fr)]">
             {/* Gallery */}
             <div className="lg:sticky lg:top-24 lg:self-start">
               {item.images.length > 0 ? (
@@ -223,43 +273,68 @@ function ProductDetailPage() {
                 We respond within 12 hours
               </div>
 
-              {/* CTA anchor */}
-              <a
-                href="#enquiry"
+              {/* CTA */}
+              <button
+                onClick={() => setShowEnquiry(true)}
                 className="mt-4 inline-flex items-center justify-center rounded-full bg-slate-900 px-8 py-3.5 text-sm font-semibold text-white transition hover:bg-slate-700"
               >
                 Send Enquiry
-              </a>
+              </button>
             </div>
           </div>
         </div>
       </SectionReveal>
 
-      {/* Enquiry form */}
-      <SectionReveal id="enquiry" className="border-t border-slate-200">
-        <div className="mx-auto max-w-6xl px-6 py-16">
-          <header className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-amber-700">
-              Enquire now
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold leading-tight text-slate-950">
-              Interested in {item.name}?
-            </h2>
-            <p className="mt-3 text-base leading-7 text-slate-600">
-              Send us your requirements and we'll get back to you within 12 hours with
-              availability, pricing, and next steps.
-            </p>
-          </header>
-          <div className="mt-8">
-            <ContactForm
-              title={`Enquiry: ${item.name}`}
-              description={`Quantity and product details are pre-filled. Add any additional notes or questions below.`}
-              submitLabel="Send Enquiry"
-              defaultMessage={defaultMessage}
-            />
+      {/* Related products */}
+      {relatedItems.length > 0 && (
+        <SectionReveal className="border-t border-slate-200 bg-white">
+          <div className="mx-auto max-w-none px-3 py-14 sm:px-4 lg:px-6">
+            <h2 className="text-xl font-semibold text-slate-900">More from {category.label}</h2>
+            <div className="mt-8 grid grid-cols-2 gap-x-3 gap-y-12 md:grid-cols-4">
+              {relatedItems.map((related) => (
+                <Link
+                  key={`${related.slug}-${related.images[0] ?? related.name}`}
+                  to={`/products/${categorySlug}/${subCategorySlug}/${related.slug}`}
+                  className="group block text-center"
+                >
+                  <div className="relative flex aspect-square items-center justify-center overflow-hidden bg-white">
+                    {related.images[0] ? (
+                      <img
+                        src={encodeImagePath(related.images[0])}
+                        alt={related.name}
+                        loading="lazy"
+                        className="h-full w-full object-contain p-2 transition duration-500 group-hover:scale-[1.035] sm:p-3"
+                      />
+                    ) : null}
+                  </div>
+                  <div className="px-3 pt-5">
+                    <p className="truncate text-base font-semibold tracking-wide text-slate-950 transition group-hover:text-amber-800">
+                      {related.name}
+                    </p>
+                    <p
+                      className={`mt-2 text-sm tracking-wide ${
+                        related.price === null ? 'text-slate-400' : 'text-amber-700'
+                      }`}
+                    >
+                      {formatPrice(related.price)}
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </SectionReveal>
+        </SectionReveal>
+      )}
+
+      {/* Enquiry modal */}
+      {showEnquiry && (
+        <EnquiryModal
+          itemName={item.name}
+          categoryLabel={category.label}
+          quantity={quantity}
+          onClose={() => setShowEnquiry(false)}
+        />
+      )}
     </main>
   )
 }
