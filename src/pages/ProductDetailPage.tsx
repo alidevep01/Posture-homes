@@ -12,10 +12,7 @@ function formatPrice(price: number | null): string {
 }
 
 function encodeImagePath(path: string): string {
-  return path
-    .split('/')
-    .map((segment, i) => (i === 0 ? segment : encodeURIComponent(segment)))
-    .join('/')
+  return encodeURI(path)
 }
 
 function ImageGallery({ images, name }: { images: string[]; name: string }) {
@@ -27,11 +24,11 @@ function ImageGallery({ images, name }: { images: string[]; name: string }) {
   return (
     <div className="space-y-3">
       {/* Main image */}
-      <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem] bg-stone-100">
+      <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem] bg-white shadow-sm">
         <img
           src={encodeImagePath(images[activeIndex] ?? '')}
           alt={`${name} - view ${activeIndex + 1}`}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain"
         />
         {images.length > 1 && (
           <>
@@ -63,7 +60,7 @@ function ImageGallery({ images, name }: { images: string[]; name: string }) {
             <button
               key={i}
               onClick={() => setActiveIndex(i)}
-              className={`h-16 w-20 flex-shrink-0 overflow-hidden rounded-xl border-2 transition ${
+              className={`h-16 w-20 flex-shrink-0 overflow-hidden rounded-xl border-2 bg-white transition ${
                 i === activeIndex ? 'border-slate-900' : 'border-transparent'
               }`}
               aria-label={`View image ${i + 1}`}
@@ -72,7 +69,7 @@ function ImageGallery({ images, name }: { images: string[]; name: string }) {
                 src={encodeImagePath(img)}
                 alt=""
                 aria-hidden="true"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
                 loading="lazy"
               />
             </button>
@@ -138,10 +135,10 @@ function ProductDetailPage() {
 
       {/* Product detail */}
       <SectionReveal>
-        <div className="mx-auto max-w-6xl px-6 py-12">
-          <div className="grid gap-10 lg:grid-cols-2">
+        <div className="mx-auto max-w-screen-xl px-6 py-12">
+          <div className="grid gap-12 lg:grid-cols-[3fr_2fr]">
             {/* Gallery */}
-            <div>
+            <div className="lg:sticky lg:top-24 lg:self-start">
               {item.images.length > 0 ? (
                 <ImageGallery images={item.images} name={item.name} />
               ) : (

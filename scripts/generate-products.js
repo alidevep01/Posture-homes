@@ -29,16 +29,26 @@ const HOME_LABELS = {
 }
 
 const OFFICE_LABELS = {
-  'executive-hb-chairs': 'Executive High Back Chairs',
-  'executive-leather-pu-collection': 'Executive Leather & PU Chairs',
+  'High Back Cushion Chairs': 'High Back Cushion Chairs',
+  'High Back Mesh Chairs': 'High Back Mesh Chairs',
   Highcounter: 'High Counter Chairs',
-  'dinning-series': 'Dining Series',
+  'Office Lounge Chairs': 'Office Lounge Chairs',
+  'Office Sofas': 'Office Sofas',
+  'PU Office Chairs': 'PU Office Chairs',
+  'Premium Leather Office Chairs': 'Premium Leather Office Chairs',
+  'Premium Office Tables': 'Premium Office Tables',
+  Puffy: 'Puffy Chairs',
+  'Recliner Office Chairs': 'Recliner Office Chairs',
+  'Training Chairs': 'Training Chairs',
   'cafe series': 'Café Series',
-  puffy: 'Puffy Chairs',
-  recliner: 'Recliner Office Chairs',
-  sofa: 'Office Sofas',
+  'conference meeting tables': 'Conference & Meeting Tables',
   'workstations chairs': 'Workstation Chairs',
+  workstations: 'Workstations',
+  // managers-desk is intentionally omitted — folder contains only screenshots
 }
+
+// Categories to skip entirely (all screenshots / no usable images)
+const SKIP_OFFICE_CATS = new Set(['managers-desk'])
 
 function isImageFile(name) {
   return IMAGE_EXTS.has(extname(name).toLowerCase())
@@ -203,6 +213,7 @@ function processSection(section, labelMap) {
   for (const catFolder of catFolders) {
     const catDir = join(sectionDir, catFolder)
     if (!isDirectory(catDir)) continue
+    if (section === 'office' && SKIP_OFFICE_CATS.has(catFolder)) continue
 
     const label = labelMap[catFolder] ?? toTitle(catFolder)
     const slug = toSlug(catFolder)

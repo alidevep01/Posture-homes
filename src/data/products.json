@@ -2763,8 +2763,9 @@
           "name": "Acosta Tan",
           "price": 18000,
           "images": [
-            "/products/office/executive-hb-chairs/acosta-tan/acosta-mb-p18000.png",
-            "/products/office/executive-hb-chairs/acosta-tan/acosta-tab-hb-p19000.png"
+             "/products/office/executive-hb-chairs/acosta-tan/acosta-tab-front-hb-p19000.png",
+            "/products/office/executive-hb-chairs/acosta-tan/acosta-mb-back-p18000.png"
+           
           ],
           "colors": [],
           "description": ""
