@@ -11,12 +11,6 @@ const PRODUCTS_DIR = join(ROOT, 'public', 'products')
 const OUTPUT = join(ROOT, 'src', 'data', 'products.json')
 
 const IMAGE_EXTS = new Set(['.png', '.jpg', '.jpeg', '.webp', '.avif'])
-const PUBLIC_CATEGORY_PATH_ALIASES = {
-  office: {
-    'Premium Office Tables': 'premium office tables',
-    Puffy: 'puffy',
-  },
-}
 
 // Clean category label mapping
 const HOME_LABELS = {
@@ -42,8 +36,8 @@ const OFFICE_LABELS = {
   'Office Sofas': 'Office Sofas',
   'PU Office Chairs': 'PU Office Chairs',
   'Premium Leather Office Chairs': 'Premium Leather Office Chairs',
-  'Premium Office Tables': 'Premium Office Tables',
-  Puffy: 'Puffy Chairs',
+  'premium office tables': 'Premium Office Tables',
+  puffy: 'Puffy Chairs',
   'Recliner Office Chairs': 'Recliner Office Chairs',
   'Training Chairs': 'Training Chairs',
   'cafe series': 'Café Series',
@@ -117,10 +111,6 @@ function publicPath(...parts) {
   return '/' + parts.map((p) => p.replace(/\\/g, '/')).join('/')
 }
 
-function publicCategoryFolder(section, catFolder) {
-  return PUBLIC_CATEGORY_PATH_ALIASES[section]?.[catFolder] ?? catFolder
-}
-
 // Sort images so "front" images come first
 function sortImages(images) {
   return [...images].sort((a, b) => {
@@ -168,7 +158,6 @@ function makeUniqueItemSlugs(items) {
 function processNestedCategory(catDir, section, catSlug) {
   const entries = readdirSync(catDir).sort(byName)
   const items = []
-  const publicCategory = publicCategoryFolder(section, catSlug)
 
   for (const entry of entries) {
     const entryPath = join(catDir, entry)
@@ -197,7 +186,7 @@ function processNestedCategory(catDir, section, catSlug) {
       name,
       price,
       images: images.map((img) =>
-        publicPath('products', section, publicCategory, entry, img)
+        publicPath('products', section, catSlug, entry, img)
       ),
       colors: [],
       description: '',
@@ -213,7 +202,6 @@ function processFlatCategory(catDir, section, catSlug) {
     .filter(isImageFile)
     .filter((f) => !f.startsWith('Screenshot'))
     .sort(byName)
-  const publicCategory = publicCategoryFolder(section, catSlug)
 
   // Group images that belong to same product.
   // Detect numbered variants: strip trailing -01, -02, etc. before price or extension
@@ -250,7 +238,7 @@ function processFlatCategory(catDir, section, catSlug) {
       name,
       price,
       images: sortImages(groupFiles).map((img) =>
-        publicPath('products', section, publicCategory, img)
+        publicPath('products', section, catSlug, img)
       ),
       colors: [],
       description: '',
