@@ -5,6 +5,7 @@ import {
   LuChevronRight as ChevronRight,
   LuSearch as Search,
 } from 'react-icons/lu'
+import ImageWithLoader from '../components/ImageWithLoader'
 import Seo from '../components/Seo'
 import SectionReveal from '../components/SectionReveal'
 import { getCategory, sectionFromCategorySlug } from '../data/productsData'
@@ -139,10 +140,12 @@ function ProductListingPage() {
                 >
                   <div className="relative flex aspect-square items-center justify-center overflow-hidden bg-white">
                     {item.images[0] ? (
-                      <img
+                      <ImageWithLoader
                         src={encodeImagePath(item.images[0])}
                         alt={item.name}
                         loading="lazy"
+                        wrapperClassName="h-full w-full"
+                        spinnerClassName="h-6 w-6 text-slate-300"
                         className="h-full w-full object-contain p-2 transition duration-500 group-hover:scale-[1.035] sm:p-3"
                       />
                     ) : (

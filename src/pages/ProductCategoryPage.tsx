@@ -6,6 +6,7 @@ import {
   LuSofa as Sofa,
   LuTruck as Truck,
 } from "react-icons/lu";
+import ImageWithLoader from "../components/ImageWithLoader";
 import SectionReveal from "../components/SectionReveal";
 import ContactForm from "../components/ContactForm";
 import Seo from "../components/Seo";
@@ -113,10 +114,12 @@ function CategoryGrid({
             >
               <div className="relative flex aspect-square items-center justify-center overflow-hidden bg-white">
                 {cat.coverImage ? (
-                  <img
+                  <ImageWithLoader
                     src={encodeImagePath(cat.coverImage)}
                     alt={cat.label}
                     loading="lazy"
+                    wrapperClassName="h-full w-full"
+                    spinnerClassName="h-6 w-6 text-slate-300"
                     className="h-full w-full object-contain p-2 transition duration-500 group-hover:scale-[1.035] sm:p-3"
                   />
                 ) : (

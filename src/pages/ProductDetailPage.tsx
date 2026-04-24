@@ -5,6 +5,7 @@ import {
   LuChevronRight as ChevronRight,
   LuX as X,
 } from 'react-icons/lu'
+import ImageWithLoader from '../components/ImageWithLoader'
 import Seo from '../components/Seo'
 import SectionReveal from '../components/SectionReveal'
 import ContactForm from '../components/ContactForm'
@@ -29,9 +30,10 @@ function ImageGallery({ images, name }: { images: string[]; name: string }) {
     <div className="space-y-3">
       {/* Main image */}
       <div className="relative aspect-[5/3] overflow-hidden rounded-[1.5rem] border border-stone-100 bg-white">
-        <img
+        <ImageWithLoader
           src={encodeImagePath(images[activeIndex] ?? '')}
           alt={`${name} - view ${activeIndex + 1}`}
+          wrapperClassName="h-full w-full"
           className="h-full w-full object-contain p-2 sm:p-3"
         />
         {images.length > 1 && (
@@ -69,10 +71,12 @@ function ImageGallery({ images, name }: { images: string[]; name: string }) {
               }`}
               aria-label={`View image ${i + 1}`}
             >
-              <img
+              <ImageWithLoader
                 src={encodeImagePath(img)}
                 alt=""
                 aria-hidden="true"
+                wrapperClassName="h-full w-full"
+                spinnerClassName="h-4 w-4 text-slate-300"
                 className="h-full w-full object-contain p-1"
                 loading="lazy"
               />
@@ -303,10 +307,12 @@ function ProductDetailPage() {
                 >
                   <div className="relative flex aspect-square items-center justify-center overflow-hidden bg-white">
                     {related.images[0] ? (
-                      <img
+                      <ImageWithLoader
                         src={encodeImagePath(related.images[0])}
                         alt={related.name}
                         loading="lazy"
+                        wrapperClassName="h-full w-full"
+                        spinnerClassName="h-6 w-6 text-slate-300"
                         className="h-full w-full object-contain p-2 transition duration-500 group-hover:scale-[1.035] sm:p-3"
                       />
                     ) : null}
