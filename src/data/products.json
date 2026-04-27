@@ -2332,14 +2332,15 @@
     {
       "slug": "cafe-series",
       "label": "Café Series",
-      "coverImage": "/products/office/cafe series/bistro-p4000.png",
+      "coverImage": "/products/office/cafe series/bistro/bistro-front-p4000.jpeg",
       "items": [
         {
           "slug": "bistro",
           "name": "Bistro",
           "price": 4000,
           "images": [
-            "/products/office/cafe series/bistro-p4000.png"
+            "/products/office/cafe series/bistro/bistro-front-p4000.jpeg",
+            "/products/office/cafe series/bistro/bistro-back.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2349,7 +2350,8 @@
           "name": "Bistro Without Arms",
           "price": 3500,
           "images": [
-            "/products/office/cafe series/bistro-without-arms-p3500.png"
+            "/products/office/cafe series/bistro-without-arms/bistroWithoutArms-front-p3500.jpeg",
+            "/products/office/cafe series/bistro-without-arms/bistroWithoutArms-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2359,7 +2361,8 @@
           "name": "Bonny Gold",
           "price": 8500,
           "images": [
-            "/products/office/cafe series/bonny-gold-p8500.png"
+            "/products/office/cafe series/bonny-gold/bonny-gold-front-p8500.jpeg",
+            "/products/office/cafe series/bonny-gold/bonny-gold-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2369,7 +2372,8 @@
           "name": "Bonny",
           "price": 4400,
           "images": [
-            "/products/office/cafe series/bonny-p4400.png"
+            "/products/office/cafe series/bonny/bonny-front-p4400.jpeg",
+            "/products/office/cafe series/bonny/bonny-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2379,7 +2383,8 @@
           "name": "Cane Arms",
           "price": 3000,
           "images": [
-            "/products/office/cafe series/cane-arms-p3000.png"
+            "/products/office/cafe series/cane-arms/cane-arms-front-p3000.jpeg",
+            "/products/office/cafe series/cane-arms/cane-arms-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2389,7 +2394,8 @@
           "name": "Cane Without Arms",
           "price": 2600,
           "images": [
-            "/products/office/cafe series/cane-without-arms-p2600.png"
+            "/products/office/cafe series/cane-without-arms/cane-without-arms-front-p2600.jpeg",
+            "/products/office/cafe series/cane-without-arms/cane-without-arms-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2399,7 +2405,8 @@
           "name": "Delsey Ind",
           "price": 3500,
           "images": [
-            "/products/office/cafe series/delsey-ind-p3500.png"
+            "/products/office/cafe series/delsey-ind/delsey-ind-front-p3500.jpeg",
+            "/products/office/cafe series/delsey-ind/delsey-ind-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2409,7 +2416,8 @@
           "name": "Fin",
           "price": 8500,
           "images": [
-            "/products/office/cafe series/fin-p8500.png"
+            "/products/office/cafe series/fin/fin-front-p8500.jpeg",
+            "/products/office/cafe series/fin/fin-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2419,7 +2427,8 @@
           "name": "Furry",
           "price": 3100,
           "images": [
-            "/products/office/cafe series/furry-p3100.png"
+            "/products/office/cafe series/furry/furry-front-p3100.jpeg",
+            "/products/office/cafe series/furry/furry-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2429,7 +2438,8 @@
           "name": "Jerry",
           "price": 4500,
           "images": [
-            "/products/office/cafe series/jerry-p4500.png"
+            "/products/office/cafe series/jerry/jerry-front-p4500.jpeg",
+            "/products/office/cafe series/jerry/jerry-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2439,7 +2449,8 @@
           "name": "Lisbon Cush Woody",
           "price": 5750,
           "images": [
-            "/products/office/cafe series/lisbon-cush-woody-p5750.png"
+            "/products/office/cafe series/lisbon-cush-woody/lisbon-cush-woody-front-p5750.jpeg",
+            "/products/office/cafe series/lisbon-cush-woody/lisbon-cush-woody-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2449,7 +2460,8 @@
           "name": "Lisbon Pp",
           "price": 3600,
           "images": [
-            "/products/office/cafe series/lisbon-pp-p3600.png"
+            "/products/office/cafe series/lisbon-pp/lisbon-pp-front-p3600.jpeg",
+            "/products/office/cafe series/lisbon-pp/lisbon-pp-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2459,7 +2471,8 @@
           "name": "Melody Pp Blk Cush",
           "price": 5250,
           "images": [
-            "/products/office/cafe series/melody-pp-blk-cush-p5250.png"
+            "/products/office/cafe series/melody-pp-blk/melody-pp-blk-cush-front-p5250.jpeg",
+            "/products/office/cafe series/melody-pp-blk/melody-pp-blk-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2469,7 +2482,8 @@
           "name": "Melody Pp Wht Cush",
           "price": 5750,
           "images": [
-            "/products/office/cafe series/melody-pp-wht-cush-p5750.png"
+            "/products/office/cafe series/melody-pp-wht/melody-pp-wht-cush-front-p5750.jpeg",
+            "/products/office/cafe series/melody-pp-wht/melody-pp-wht-cush-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2479,7 +2493,8 @@
           "name": "Sterling",
           "price": 4800,
           "images": [
-            "/products/office/cafe series/sterling-p4800.png"
+            "/products/office/cafe series/sterling/sterling-front-p4800.jpeg",
+            "/products/office/cafe series/sterling/sterling-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2489,7 +2504,8 @@
           "name": "Stripe=3600",
           "price": null,
           "images": [
-            "/products/office/cafe series/stripe=3600.png"
+            "/products/office/cafe series/stripe/stripe-front-p3600.jpeg",
+            "/products/office/cafe series/stripe/stripe-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2499,7 +2515,8 @@
           "name": "Sweden Ch",
           "price": 3600,
           "images": [
-            "/products/office/cafe series/sweden-ch-p3600.png"
+            "/products/office/cafe series/sweden-ch/sweden-ch-front-p3600.jpeg",
+            "/products/office/cafe series/sweden-ch/sweden-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2509,7 +2526,8 @@
           "name": "Sweden Dlx Cush",
           "price": 4000,
           "images": [
-            "/products/office/cafe series/sweden-dlx-cush-p4000.png"
+            "/products/office/cafe series/sweden-dlx-cush/sweden-dlx-cush-front-p4000.jpeg",
+            "/products/office/cafe series/sweden-dlx-cush/sweden-dlx-cush-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2519,7 +2537,8 @@
           "name": "Sweden Pp",
           "price": 2800,
           "images": [
-            "/products/office/cafe series/sweden-pp-p2800.png"
+            "/products/office/cafe series/sweden-pp/sweden-pp-front-p2800.jpeg",
+            "/products/office/cafe series/sweden-pp/sweden-pp-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2529,7 +2548,8 @@
           "name": "Swing",
           "price": 4200,
           "images": [
-            "/products/office/cafe series/swing-p4200.png"
+            "/products/office/cafe series/swing/swing-front-p4200.jpeg",
+            "/products/office/cafe series/swing/swing-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2539,7 +2559,8 @@
           "name": "Texla",
           "price": 5500,
           "images": [
-            "/products/office/cafe series/texla-p5500.png"
+            "/products/office/cafe series/texla/texla-front-p5500.jpeg",
+            "/products/office/cafe series/texla/texla-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2549,7 +2570,8 @@
           "name": "Toxy Gold",
           "price": 6000,
           "images": [
-            "/products/office/cafe series/toxy-gold-p6000.png"
+            "/products/office/cafe series/toxy-gold/toxy-gold-front-p6000.jpeg",
+            "/products/office/cafe series/toxy-gold/toxy-gold-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2559,7 +2581,8 @@
           "name": "Toxy Metal",
           "price": 6000,
           "images": [
-            "/products/office/cafe series/toxy-metal-p6000.png"
+            "/products/office/cafe series/toxy-metal/toxy-metal-front-p6000.jpeg",
+            "/products/office/cafe series/toxy-metal/toxy-metal-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2569,7 +2592,8 @@
           "name": "Toxy Woody",
           "price": 6000,
           "images": [
-            "/products/office/cafe series/toxy-woody-p6000.png"
+            "/products/office/cafe series/toxy-woody/toxy-woody-front-p6000.jpeg",
+            "/products/office/cafe series/toxy-woody/toxy-woody-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2579,7 +2603,8 @@
           "name": "Vibe",
           "price": 3400,
           "images": [
-            "/products/office/cafe series/vibe-p3400.png"
+            "/products/office/cafe series/vibe/vibe-front-p3400.jpeg",
+            "/products/office/cafe series/vibe/vibe-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2589,7 +2614,8 @@
           "name": "Yuki",
           "price": 2400,
           "images": [
-            "/products/office/cafe series/yuki-p2400.png"
+            "/products/office/cafe series/yuki/yuki-front-p2400.jpeg",
+            "/products/office/cafe series/yuki/yuki-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2599,7 +2625,8 @@
           "name": "Zuri",
           "price": 2400,
           "images": [
-            "/products/office/cafe series/zuri-p2400.png"
+            "/products/office/cafe series/zuri/zuri-front-p2400.jpeg",
+            "/products/office/cafe series/zuri/zuri-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2631,16 +2658,7 @@
           "colors": [],
           "description": ""
         },
-        {
-          "slug": "model-cot-mzd02-mrp-1-04-000",
-          "name": "MODEL COT MZD02 MRP – 1,04,000",
-          "price": 104000,
-          "images": [
-            "/products/office/conference meeting tables/MODEL - COT MZD02-  MRP – 1,04,000.png"
-          ],
-          "colors": [],
-          "description": ""
-        },
+        
         {
           "slug": "model-cot-hf320-056-mrp-88-000",
           "name": "MODEL COT HF320 056 MRP 88,000",
@@ -2667,6 +2685,26 @@
           "price": 110000,
           "images": [
             "/products/office/conference meeting tables/MODEL - COTQS07DG ORNG-MRP – 1,10,000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "u-conference-table",
+          "name": "U Shaped Conference Table",
+          "price": null,
+          "images": [
+            "/products/office/conference meeting tables/u-shaped-conference-table.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "v-conference-table",
+          "name": "V Shaped Conference Table",
+          "price": null,
+          "images": [
+            "/products/office/conference meeting tables/v-shaped-conference-table.png"
           ],
           "colors": [],
           "description": ""
