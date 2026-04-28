@@ -125,20 +125,20 @@ function ProductListingPage() {
 
       {/* Grid */}
       <SectionReveal>
-        <div className="mx-auto max-w-none px-3 py-12 sm:px-4 lg:px-6">
+        <div className="mx-auto max-w-none px-2 py-8 sm:px-3 lg:px-4">
           {pageItems.length === 0 ? (
             <div className="py-20 text-center text-slate-500">
               No items found{query ? ` for "${query}"` : ''}.
             </div>
           ) : (
-            <div className="grid grid-cols-2 gap-x-3 gap-y-12 md:grid-cols-3 xl:grid-cols-4">
+            <div className="grid auto-rows-fr grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4">
               {pageItems.map((item) => (
                 <Link
                   key={`${item.slug}-${item.images[0] ?? item.name}`}
                   to={`${basePath}/${item.slug}`}
-                  className="group block text-center"
+                  className="group flex h-full flex-col bg-white text-center"
                 >
-                  <div className="relative flex aspect-square items-center justify-center overflow-hidden bg-white">
+                  <div className="relative flex aspect-[11/12] w-full shrink-0 items-center justify-center overflow-hidden bg-white">
                     {item.images[0] ? (
                       <ImageWithLoader
                         src={encodeImagePath(item.images[0])}
@@ -146,7 +146,7 @@ function ProductListingPage() {
                         loading="lazy"
                         wrapperClassName="h-full w-full"
                         spinnerClassName="h-6 w-6 text-slate-300"
-                        className="h-full w-full object-contain p-2 transition duration-500 group-hover:scale-[1.035] sm:p-3"
+                        className="h-full w-full object-contain p-0 transition duration-500 group-hover:scale-[1.035]"
                       />
                     ) : (
                       <div className="flex h-full items-center justify-center text-slate-300 text-sm">
@@ -154,7 +154,7 @@ function ProductListingPage() {
                       </div>
                     )}
                   </div>
-                  <div className="px-3 pt-5">
+                  <div className="flex min-h-[86px] flex-col items-center px-2 pt-3">
                     <h2 className="truncate text-base font-semibold tracking-wide text-slate-950 transition group-hover:text-amber-800">
                       {item.name}
                     </h2>

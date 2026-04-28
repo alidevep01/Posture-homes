@@ -94,7 +94,7 @@ function CategoryGrid({
   const categories = getCategories(section);
   return (
     <SectionReveal id="products" className="border-b border-slate-200 bg-white">
-      <div className="mx-auto max-w-none px-3 py-16 sm:px-4 sm:py-20 lg:px-6">
+      <div className="mx-auto max-w-none px-2 py-12 sm:px-3 sm:py-14 lg:px-4">
         <header className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-amber-700">
             Products
@@ -105,14 +105,14 @@ function CategoryGrid({
           <p className="mt-4 text-base leading-8 text-slate-600">{subtitle}</p>
         </header>
 
-        <div className="mt-14 grid grid-cols-2 gap-x-3 gap-y-12 md:grid-cols-3 xl:grid-cols-4">
+        <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4">
           {categories.map((cat) => (
             <Link
               key={cat.slug}
               to={`${basePath}/${cat.slug}`}
               className="group block text-center"
             >
-              <div className="relative flex aspect-square items-center justify-center overflow-hidden bg-white">
+              <div className="relative flex aspect-square items-center justify-center overflow-hidden">
                 {cat.coverImage ? (
                   <ImageWithLoader
                     src={encodeImagePath(cat.coverImage)}
@@ -120,7 +120,7 @@ function CategoryGrid({
                     loading="lazy"
                     wrapperClassName="h-full w-full"
                     spinnerClassName="h-6 w-6 text-slate-300"
-                    className="h-full w-full object-contain p-2 transition duration-500 group-hover:scale-[1.035] sm:p-3"
+                    className="h-full w-full object-contain p-1 transition duration-500 group-hover:scale-[1.035] sm:p-2"
                   />
                 ) : (
                   <div className="flex h-full items-center justify-center text-slate-300 text-sm">
@@ -128,8 +128,8 @@ function CategoryGrid({
                   </div>
                 )}
               </div>
-              <div className="px-3 pt-5">
-                <h3 className="text-base font-semibold tracking-wide text-slate-950 transition group-hover:text-amber-800">
+              <div className="flex min-h-[72px] flex-col items-center justify-start px-2 pt-3">
+                <h3 className="text-base font-semibold uppercase tracking-wide text-slate-950 transition group-hover:text-amber-800">
                   {cat.label}
                 </h3>
                 <p className="mt-1 text-sm text-slate-500">{cat.items.length} items</p>
