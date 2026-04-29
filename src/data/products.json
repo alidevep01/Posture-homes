@@ -2636,14 +2636,14 @@
     {
       "slug": "conference-meeting-tables",
       "label": "Conference & Meeting Tables",
-      "coverImage": "/products/office/conference meeting tables/MODEL - COT FLHYZ90 WOOD VENEER-MRP – 3,30,000.png",
+      "coverImage": "/products/office/conference meeting tables/MODEL-COTFLHYZ90WOODVENEER-MRP330000.jpeg",
       "items": [
         {
           "slug": "model-cot-flhyz90-wood-veneer-mrp-3-30-000",
           "name": "MODEL COT FLHYZ90 WOOD VENEER MRP – 3,30,000",
           "price": 330000,
           "images": [
-            "/products/office/conference meeting tables/MODEL - COT FLHYZ90 WOOD VENEER-MRP – 3,30,000.png"
+            "/products/office/conference meeting tables/MODEL-COTFLHYZ90WOODVENEER-MRP330000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2653,7 +2653,7 @@
           "name": "MODEL COT MZD01 MRP 84,000",
           "price": 84000,
           "images": [
-            "/products/office/conference meeting tables/MODEL - COT MZD01-MRP - 84,000.png"
+            "/products/office/conference meeting tables/MODEL-COTMZD01-MRP-84000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2664,7 +2664,7 @@
           "name": "MODEL COT HF320 056 MRP 88,000",
           "price": 88000,
           "images": [
-            "/products/office/conference meeting tables/MODEL - COT-HF320-056-MRP - 88,000.png"
+            "/products/office/conference meeting tables/MODEL-COT-HF320-056-MRP-88000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2674,7 +2674,7 @@
           "name": "MODEL COT TS MT03 MRP – 88,000",
           "price": 88000,
           "images": [
-            "/products/office/conference meeting tables/MODEL - COT-TS-MT03-MRP – 88,000.png"
+            "/products/office/conference meeting tables/MODEL-COT-TS-MT03-MRP88000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2684,7 +2684,7 @@
           "name": "MODEL COTQS07DG ORNG MRP – 1,10,000",
           "price": 110000,
           "images": [
-            "/products/office/conference meeting tables/MODEL - COTQS07DG ORNG-MRP – 1,10,000.png"
+            "/products/office/conference meeting tables/MODEL-COTQS07DGORNG-MRP110000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2694,7 +2694,7 @@
           "name": "U Shaped Conference Table",
           "price": null,
           "images": [
-            "/products/office/conference meeting tables/u-shaped-conference-table.png"
+            "/products/office/conference meeting tables/u-shaped-conference-table.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -2704,7 +2704,7 @@
           "name": "V Shaped Conference Table",
           "price": null,
           "images": [
-            "/products/office/conference meeting tables/v-shaped-conference-table.png"
+            "/products/office/conference meeting tables/v-shaped-conference-table.jpeg"
           ],
           "colors": [],
           "description": ""

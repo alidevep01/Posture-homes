@@ -155,7 +155,7 @@ function ProductListingPage() {
                     )}
                   </div>
                   <div className="flex min-h-[86px] flex-col items-center px-2 pt-3">
-                    <h2 className="truncate text-base font-semibold tracking-wide text-slate-950 transition group-hover:text-amber-800">
+                    <h2 className="line-clamp-2 max-w-full text-base font-semibold leading-snug tracking-wide text-slate-950 transition group-hover:text-amber-800">
                       {item.name}
                     </h2>
                     <p
