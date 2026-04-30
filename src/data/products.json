@@ -3102,24 +3102,26 @@
     {
       "slug": "highcounter",
       "label": "High Counter Chairs",
-      "coverImage": "/products/office/Highcounter/BOLZANO/BOLZANO-front-p12600.png",
+      "coverImage": "/products/office/Highcounter/BOLZANO/BOLZANO-front-p12600.jpeg",
       "items": [
         {
           "slug": "bolzano",
           "name": "BOLZANO",
           "price": 12600,
           "images": [
-            "/products/office/Highcounter/BOLZANO/BOLZANO-front-p12600.png"
+            "/products/office/Highcounter/BOLZANO/BOLZANO-front-p12600.jpeg",
+            "/products/office/Highcounter/BOLZANO/BOLZANO-side.jpeg"
           ],
           "colors": [],
           "description": ""
         },
         {
           "slug": "rimini-pp",
-          "name": "RIMINI Pp",
+          "name": "RIMINI PP",
           "price": 6250,
           "images": [
-            "/products/office/Highcounter/RIMINI-pp/RIMINI-pp-front-p6250.png"
+            "/products/office/Highcounter/RIMINI-pp/RIMINI-pp-front-p6250.jpeg",
+            "/products/office/Highcounter/RIMINI-pp/RIMINI-pp-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3129,7 +3131,8 @@
           "name": "SANTORINI",
           "price": 5500,
           "images": [
-            "/products/office/Highcounter/SANTORINI/SANTORINI-front-p5500.png"
+            "/products/office/Highcounter/SANTORINI/SANTORINI-front-p5500.jpeg",
+            "/products/office/Highcounter/SANTORINI/SANTORINI-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3139,7 +3142,8 @@
           "name": "SWEDEN",
           "price": 5500,
           "images": [
-            "/products/office/Highcounter/SWEDEN/sweden-front-p5500.png"
+            "/products/office/Highcounter/SWEDEN/sweden-front-p5500.jpeg",
+            "/products/office/Highcounter/SWEDEN/sweden-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3149,7 +3153,8 @@
           "name": "Astoria",
           "price": 15500,
           "images": [
-            "/products/office/Highcounter/astoria/astoria-front-p15500.png"
+            "/products/office/Highcounter/astoria/astoria-front.jpeg",
+            "/products/office/Highcounter/astoria/astoria-side-p15500.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3159,7 +3164,8 @@
           "name": "Bistro Hc",
           "price": 5600,
           "images": [
-            "/products/office/Highcounter/bistro hc/bistro-hc-front-p5600.png"
+            "/products/office/Highcounter/bistro hc/bistro-hc-front-p5600.jpeg",
+            "/products/office/Highcounter/bistro hc/bistro-hc-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3169,7 +3175,8 @@
           "name": "Click",
           "price": 4500,
           "images": [
-            "/products/office/Highcounter/click/click-front-p4500.png"
+            "/products/office/Highcounter/click/click-front-p4500.jpeg",
+            "/products/office/Highcounter/click/click-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3179,7 +3186,8 @@
           "name": "Cowboy",
           "price": 12000,
           "images": [
-            "/products/office/Highcounter/cowboy/cowboy-front-p12000.png"
+            "/products/office/Highcounter/cowboy/cowboy-front-p12000.jpeg",
+            "/products/office/Highcounter/cowboy/cowboy-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3189,7 +3197,8 @@
           "name": "Dale",
           "price": 5000,
           "images": [
-            "/products/office/Highcounter/dale/dale-front-p5000.png"
+            "/products/office/Highcounter/dale/dale-front-p5000.jpeg",
+            "/products/office/Highcounter/dale/dale-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3199,7 +3208,8 @@
           "name": "Danny",
           "price": 14000,
           "images": [
-            "/products/office/Highcounter/danny/danny-front-p14000.png"
+            "/products/office/Highcounter/danny/danny-front-p14000.jpeg",
+            "/products/office/Highcounter/danny/danny-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3209,7 +3219,8 @@
           "name": "Derby",
           "price": 11500,
           "images": [
-            "/products/office/Highcounter/derby/derby-front-p11500.png"
+            "/products/office/Highcounter/derby/derby-front-p11500.jpeg",
+            "/products/office/Highcounter/derby/derby-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3219,7 +3230,8 @@
           "name": "Digi",
           "price": 13500,
           "images": [
-            "/products/office/Highcounter/digi/digi-front-p13500.png"
+            "/products/office/Highcounter/digi/digi-front-p13500.jpeg",
+            "/products/office/Highcounter/digi/digi-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3229,7 +3241,8 @@
           "name": "Dove",
           "price": 4950,
           "images": [
-            "/products/office/Highcounter/dove/dove-front-p4950.png"
+            "/products/office/Highcounter/dove/dove-front-p4950.jpeg",
+            "/products/office/Highcounter/dove/dove-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3239,7 +3252,8 @@
           "name": "Duke",
           "price": 8500,
           "images": [
-            "/products/office/Highcounter/duke/duke-front-p8500.png"
+            "/products/office/Highcounter/duke/duke-front-p8500.jpeg",
+            "/products/office/Highcounter/duke/duke-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3249,7 +3263,8 @@
           "name": "Eagle",
           "price": 11000,
           "images": [
-            "/products/office/Highcounter/eagle/eagle-front-p11000.png"
+            "/products/office/Highcounter/eagle/eagle-front-p11000.jpeg",
+            "/products/office/Highcounter/eagle/eagle-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3259,7 +3274,8 @@
           "name": "Erica",
           "price": 10250,
           "images": [
-            "/products/office/Highcounter/erica/erica-front-p10250.png"
+            "/products/office/Highcounter/erica/erica-front-p10250.jpeg",
+            "/products/office/Highcounter/erica/erica-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3269,7 +3285,8 @@
           "name": "Fanny",
           "price": 15000,
           "images": [
-            "/products/office/Highcounter/fanny/fanny-front-p15000.png"
+            "/products/office/Highcounter/fanny/fanny-front-p15000.jpeg",
+            "/products/office/Highcounter/fanny/fanny-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3279,7 +3296,8 @@
           "name": "Finch",
           "price": 9500,
           "images": [
-            "/products/office/Highcounter/finch/finch-front-p9500.png"
+            "/products/office/Highcounter/finch/finch-front-p9500.jpeg",
+            "/products/office/Highcounter/finch/finch-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3289,7 +3307,8 @@
           "name": "Florida",
           "price": 12500,
           "images": [
-            "/products/office/Highcounter/florida/florida-front-p12500.png"
+            "/products/office/Highcounter/florida/florida-front-p12500.jpeg",
+            "/products/office/Highcounter/florida/florida-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3299,7 +3318,8 @@
           "name": "Joss",
           "price": 8400,
           "images": [
-            "/products/office/Highcounter/joss/joss-front-p8400.png"
+            "/products/office/Highcounter/joss/joss-front-p8400.jpeg",
+            "/products/office/Highcounter/joss/joss-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3309,7 +3329,8 @@
           "name": "Melody Hc",
           "price": 9000,
           "images": [
-            "/products/office/Highcounter/melody hc/melody-hc-front-p9000.png"
+            "/products/office/Highcounter/melody hc/melody-hc-front-p9000.jpeg",
+            "/products/office/Highcounter/melody hc/melody-hc-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3319,7 +3340,8 @@
           "name": "Opava",
           "price": 4900,
           "images": [
-            "/products/office/Highcounter/opava/opava-front-p4900.png"
+            "/products/office/Highcounter/opava/opava-front-p4900.jpeg",
+            "/products/office/Highcounter/opava/opava-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3329,7 +3351,8 @@
           "name": "Pedro",
           "price": 17500,
           "images": [
-            "/products/office/Highcounter/pedro/pedro-front-p17500.png"
+            "/products/office/Highcounter/pedro/pedro-front-p17500.jpeg",
+            "/products/office/Highcounter/pedro/pedro-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3339,7 +3362,8 @@
           "name": "Pulsewood",
           "price": 6500,
           "images": [
-            "/products/office/Highcounter/pulsewood/pulsewood-front-p6500.png"
+            "/products/office/Highcounter/pulsewood/pulsewood-front-p6500.jpeg",
+            "/products/office/Highcounter/pulsewood/pulsewood-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3349,7 +3373,8 @@
           "name": "Rhodes",
           "price": 16500,
           "images": [
-            "/products/office/Highcounter/rhodes/rhodes-front-p16500.png"
+            "/products/office/Highcounter/rhodes/rhodes-front-p16500.jpeg",
+            "/products/office/Highcounter/rhodes/rhodes-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3359,7 +3384,8 @@
           "name": "Ricky",
           "price": 17000,
           "images": [
-            "/products/office/Highcounter/ricky/ricky-front-p17000.png"
+            "/products/office/Highcounter/ricky/ricky-front-p17000.jpeg",
+            "/products/office/Highcounter/ricky/ricky-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3369,7 +3395,8 @@
           "name": "Rimni",
           "price": 7900,
           "images": [
-            "/products/office/Highcounter/rimni/rimni-front-p7900.png"
+            "/products/office/Highcounter/rimni/rimni-front-p7900.jpeg",
+            "/products/office/Highcounter/rimni/rimni-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3379,7 +3406,8 @@
           "name": "Rocky",
           "price": null,
           "images": [
-            "/products/office/Highcounter/rocky/rocky-front-p.png"
+            "/products/office/Highcounter/rocky/rocky-front-p.jpeg",
+            "/products/office/Highcounter/rocky/rocky-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3389,7 +3417,8 @@
           "name": "Rooney",
           "price": 8600,
           "images": [
-            "/products/office/Highcounter/rooney/rooney-p8600.png"
+            "/products/office/Highcounter/rooney/rooney-p8600.jpeg",
+            "/products/office/Highcounter/rooney/rooney-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3399,7 +3428,8 @@
           "name": "Skyros Hc",
           "price": null,
           "images": [
-            "/products/office/Highcounter/skyros-hc/skyros-front.png"
+            "/products/office/Highcounter/skyros-hc/skyros-front.jpeg",
+            "/products/office/Highcounter/skyros-hc/skyros-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3409,7 +3439,8 @@
           "name": "Tanrif",
           "price": 8200,
           "images": [
-            "/products/office/Highcounter/tanrif/tanrif-front-p8200.png"
+            "/products/office/Highcounter/tanrif/tanrif-front-p8200.jpeg",
+            "/products/office/Highcounter/tanrif/tanrif-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3419,7 +3450,8 @@
           "name": "Tobago",
           "price": 6000,
           "images": [
-            "/products/office/Highcounter/tobago/tobago-front-p6000.png"
+            "/products/office/Highcounter/tobago/tobago-front-p6000.jpeg",
+            "/products/office/Highcounter/tobago/tobago-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3429,7 +3461,8 @@
           "name": "Toxedo",
           "price": 11000,
           "images": [
-            "/products/office/Highcounter/toxedo/toxedo-front-p11000.png"
+            "/products/office/Highcounter/toxedo/toxedo-front-p11000.jpeg",
+            "/products/office/Highcounter/toxedo/toxedo-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3439,7 +3472,8 @@
           "name": "Trento",
           "price": 13500,
           "images": [
-            "/products/office/Highcounter/trento/trento-front-p13500.png"
+            "/products/office/Highcounter/trento/trento-front-p13500.jpeg",
+            "/products/office/Highcounter/trento/trento-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3449,7 +3483,8 @@
           "name": "Vice",
           "price": 18000,
           "images": [
-            "/products/office/Highcounter/vice/vice-front-p18000.png"
+            "/products/office/Highcounter/vice/vice-front-p18000.jpeg",
+            "/products/office/Highcounter/vice/vice-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3459,7 +3494,8 @@
           "name": "Woody",
           "price": 9500,
           "images": [
-            "/products/office/Highcounter/woody/woody-front-p9500.png"
+            "/products/office/Highcounter/woody/woody-front-p9500.jpeg",
+            "/products/office/Highcounter/woody/woody-side.jpeg"
           ],
           "colors": [],
           "description": ""
