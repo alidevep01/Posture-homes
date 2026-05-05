@@ -48,7 +48,46 @@ const pageSectionNavigation: Record<string, NavigationLink[]> = {
   ],
 };
 
-// Which page-section links should get a subcategory dropdown
+function getProductSectionPath(pathname: string) {
+  if (pathname.startsWith("/products/home-furniture")) {
+    return "/products/home-furniture";
+  }
+
+  if (pathname.startsWith("/products/office-furniture")) {
+    return "/products/office-furniture";
+  }
+
+  return null;
+}
+
+function getProductPageNavigation(pathname: string): NavigationLink[] | undefined {
+  const sectionPath = getProductSectionPath(pathname);
+
+  if (!sectionPath) {
+    return undefined;
+  }
+
+  if (pathname === sectionPath) {
+    return pageSectionNavigation[sectionPath];
+  }
+
+  if (sectionPath === "/products/home-furniture") {
+    return [
+      { href: sectionPath, label: "Products", type: "route" },
+      { href: `${sectionPath}#process`, label: "Process", type: "route" },
+      { href: primaryContactPhoneHref, label: "Contact us", type: "anchor" },
+    ];
+  }
+
+  return [
+    { href: sectionPath, label: "Products", type: "route" },
+    { href: `${sectionPath}#process`, label: "Process", type: "route" },
+    { href: `${sectionPath}#clientele`, label: "Clientele", type: "route" },
+    { href: primaryContactPhoneHref, label: "Contact us", type: "anchor" },
+  ];
+}
+
+// Which product-section links should get a subcategory dropdown
 const sectionDropdownMap: Record<string, typeof homeCategoryLinks> = {
   "/products/home-furniture": homeCategoryLinks,
   "/products/office-furniture": officeCategoryLinks,
@@ -141,8 +180,13 @@ function Navbar() {
   const isHomePage = location.pathname === "/";
   const isBlogPage =
     location.pathname === "/blog" || location.pathname.startsWith("/blog/");
-  const pageNavigationLinks = pageSectionNavigation[location.pathname];
-  const sectionDropdownLinks = sectionDropdownMap[location.pathname];
+  const productSectionPath = getProductSectionPath(location.pathname);
+  const pageNavigationLinks =
+    pageSectionNavigation[location.pathname] ??
+    getProductPageNavigation(location.pathname);
+  const sectionDropdownLinks = productSectionPath
+    ? sectionDropdownMap[productSectionPath]
+    : undefined;
   const shouldShowProductsDropdown = !pageNavigationLinks;
 
   const processedNavigationLinks =

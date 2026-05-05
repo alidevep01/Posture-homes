@@ -125,7 +125,7 @@ function ProductListingPage() {
 
       {/* Grid */}
       <SectionReveal>
-        <div className="mx-auto max-w-none px-2 py-8 sm:px-3 lg:px-4">
+        <div className="mx-auto max-w-none px-2 pb-20 pt-8 sm:px-3 lg:px-4">
           {pageItems.length === 0 ? (
             <div className="py-20 text-center text-slate-500">
               No items found{query ? ` for "${query}"` : ''}.
@@ -146,7 +146,7 @@ function ProductListingPage() {
                         loading="lazy"
                         wrapperClassName="h-full w-full"
                         spinnerClassName="h-6 w-6 text-slate-300"
-                        className="h-full w-full object-contain p-0 transition duration-500 group-hover:scale-[1.035]"
+                        className="h-full w-full object-cover p-0 transition duration-500 group-hover:scale-[1.035]"
                       />
                     ) : (
                       <div className="flex h-full items-center justify-center text-slate-300 text-sm">

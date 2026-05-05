@@ -3505,14 +3505,15 @@
     {
       "slug": "office-lounge-chairs",
       "label": "Office Lounge Chairs",
-      "coverImage": "/products/office/Office Lounge Chairs/082-p12500.png",
+      "coverImage": "/products/office/Office Lounge Chairs/082/082-front-p12500.jpeg",
       "items": [
         {
           "slug": "082",
           "name": "082",
           "price": 12500,
           "images": [
-            "/products/office/Office Lounge Chairs/082-p12500.png"
+            "/products/office/Office Lounge Chairs/082/082-front-p12500.jpeg",
+            "/products/office/Office Lounge Chairs/082/082-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3522,7 +3523,8 @@
           "name": "Belgium",
           "price": 32000,
           "images": [
-            "/products/office/Office Lounge Chairs/Belgium-p32000.png"
+            "/products/office/Office Lounge Chairs/Belgium/Belgium-front-p32000.jpeg",
+            "/products/office/Office Lounge Chairs/Belgium/Belgium-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3532,7 +3534,8 @@
           "name": "VIVIENNE",
           "price": 56000,
           "images": [
-            "/products/office/Office Lounge Chairs/VIVIENNE-p56000.png"
+            "/products/office/Office Lounge Chairs/VIVIENNE/VIVIENNE-front-p56000.jpeg",
+            "/products/office/Office Lounge Chairs/VIVIENNE/VIVIENNE-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3542,7 +3545,8 @@
           "name": "Abira",
           "price": 9000,
           "images": [
-            "/products/office/Office Lounge Chairs/abira-p9000.png"
+            "/products/office/Office Lounge Chairs/abira/abira-front-p9000.jpeg",
+            "/products/office/Office Lounge Chairs/abira/abira-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3552,7 +3556,8 @@
           "name": "Abira Rev",
           "price": 10250,
           "images": [
-            "/products/office/Office Lounge Chairs/abira-rev-p10250.png"
+            "/products/office/Office Lounge Chairs/abira-rev/abira-rev-front-p10250.jpeg",
+            "/products/office/Office Lounge Chairs/abira-rev/abira-rev-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3562,7 +3567,8 @@
           "name": "Alex",
           "price": 9400,
           "images": [
-            "/products/office/Office Lounge Chairs/alex-p9400.png"
+            "/products/office/Office Lounge Chairs/alex/alex-front-p9400.jpeg",
+            "/products/office/Office Lounge Chairs/alex/alex-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3572,7 +3578,8 @@
           "name": "Alex Rev",
           "price": 10600,
           "images": [
-            "/products/office/Office Lounge Chairs/alex-rev-p10600.png"
+            "/products/office/Office Lounge Chairs/alex-rev/alex-rev-front-p10600.jpeg",
+            "/products/office/Office Lounge Chairs/alex-rev/alex-rev-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3582,7 +3589,8 @@
           "name": "Amalfi",
           "price": 48000,
           "images": [
-            "/products/office/Office Lounge Chairs/amalfi-p48000.png"
+            "/products/office/Office Lounge Chairs/amalfi/amalfi-front-p48000.jpeg",
+            "/products/office/Office Lounge Chairs/amalfi/amalfi-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3592,7 +3600,8 @@
           "name": "Andros",
           "price": 17000,
           "images": [
-            "/products/office/Office Lounge Chairs/andros-p17000.png"
+            "/products/office/Office Lounge Chairs/andros/andros-front-p17000.jpeg",
+            "/products/office/Office Lounge Chairs/andros/andros-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3602,7 +3611,8 @@
           "name": "Antartica",
           "price": 34000,
           "images": [
-            "/products/office/Office Lounge Chairs/antartica-p34000.png"
+            "/products/office/Office Lounge Chairs/antartica/antartica-front-p34000.jpeg",
+            "/products/office/Office Lounge Chairs/antartica/antartica-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3612,7 +3622,8 @@
           "name": "Athens",
           "price": 36000,
           "images": [
-            "/products/office/Office Lounge Chairs/athens-p36000.png"
+            "/products/office/Office Lounge Chairs/athens/athens-front-p36000.jpeg",
+            "/products/office/Office Lounge Chairs/athens/athens-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3622,7 +3633,8 @@
           "name": "Austria",
           "price": 54000,
           "images": [
-            "/products/office/Office Lounge Chairs/austria-p54000.png"
+            "/products/office/Office Lounge Chairs/austria/austria-front-p54000.jpeg",
+            "/products/office/Office Lounge Chairs/austria/austria-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3632,7 +3644,8 @@
           "name": "Barbados",
           "price": 14500,
           "images": [
-            "/products/office/Office Lounge Chairs/barbados-p14500.png"
+            "/products/office/Office Lounge Chairs/barbados/barbados-front-p14500.jpeg",
+            "/products/office/Office Lounge Chairs/barbados/barbados-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3642,7 +3655,8 @@
           "name": "Bavuma",
           "price": 66000,
           "images": [
-            "/products/office/Office Lounge Chairs/bavuma-p66000.png"
+            "/products/office/Office Lounge Chairs/bavuma/bavuma-front-p66000.jpeg",  
+            "/products/office/Office Lounge Chairs/bavuma/bavuma-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3652,7 +3666,8 @@
           "name": "Bern",
           "price": 40000,
           "images": [
-            "/products/office/Office Lounge Chairs/bern-p40000.png"
+            "/products/office/Office Lounge Chairs/bern/bern-front-p40000.jpeg",
+            "/products/office/Office Lounge Chairs/bern/bern-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3662,7 +3677,8 @@
           "name": "Bern With Footrest",
           "price": 54000,
           "images": [
-            "/products/office/Office Lounge Chairs/bern-with-footrest-p54000.png"
+            "/products/office/Office Lounge Chairs/bern-with-footrest/bern-with-footrest-front-p54000.jpeg",
+            "/products/office/Office Lounge Chairs/bern-with-footrest/bern-with-footrest-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3672,7 +3688,8 @@
           "name": "Bonanza",
           "price": 52000,
           "images": [
-            "/products/office/Office Lounge Chairs/bonanza-p52000.png"
+            "/products/office/Office Lounge Chairs/bonanza/bonanza-front-p52000.jpeg",
+            "/products/office/Office Lounge Chairs/bonanza/bonanza-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3682,7 +3699,8 @@
           "name": "Boston",
           "price": 11750,
           "images": [
-            "/products/office/Office Lounge Chairs/boston-p11750.png"
+            "/products/office/Office Lounge Chairs/boston/boston-front-p11750.jpeg",
+            "/products/office/Office Lounge Chairs/boston/boston-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3692,7 +3710,8 @@
           "name": "Brussels",
           "price": 46000,
           "images": [
-            "/products/office/Office Lounge Chairs/brussels-p46000.png"
+            "/products/office/Office Lounge Chairs/brussels/brussels-front-p46000.jpeg",
+            "/products/office/Office Lounge Chairs/brussels/brussels-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3702,7 +3721,8 @@
           "name": "Bugatti",
           "price": 36000,
           "images": [
-            "/products/office/Office Lounge Chairs/bugatti-p36000.png"
+            "/products/office/Office Lounge Chairs/bugatti/bugatti-front-p36000.jpeg",
+            "/products/office/Office Lounge Chairs/bugatti/bugatti-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3712,7 +3732,8 @@
           "name": "Bulgaria",
           "price": 60000,
           "images": [
-            "/products/office/Office Lounge Chairs/bulgaria-p60000.png"
+            "/products/office/Office Lounge Chairs/bulgaria/bulgaria-front-p60000.jpeg",
+            "/products/office/Office Lounge Chairs/bulgaria/bulgaria-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3722,7 +3743,8 @@
           "name": "Burano",
           "price": 24000,
           "images": [
-            "/products/office/Office Lounge Chairs/burano-p24000.png"
+            "/products/office/Office Lounge Chairs/burano/burano-front-p24000.jpeg",
+            "/products/office/Office Lounge Chairs/burano/burano-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3732,7 +3754,8 @@
           "name": "Capitol",
           "price": 28000,
           "images": [
-            "/products/office/Office Lounge Chairs/capitol-p28000.png"
+            "/products/office/Office Lounge Chairs/capitol/capitol-front-p28000.jpeg",
+            "/products/office/Office Lounge Chairs/capitol/capitol-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3742,7 +3765,8 @@
           "name": "Capri",
           "price": 15000,
           "images": [
-            "/products/office/Office Lounge Chairs/capri-p15000.png"
+            "/products/office/Office Lounge Chairs/capri/capri-front-p15000.jpeg",
+            "/products/office/Office Lounge Chairs/capri/capri-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3752,7 +3776,8 @@
           "name": "Carnival",
           "price": 34000,
           "images": [
-            "/products/office/Office Lounge Chairs/carnival-p34000.png"
+            "/products/office/Office Lounge Chairs/carnival/carnival-front-p34000.jpeg",
+            "/products/office/Office Lounge Chairs/carnival/carnival-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3762,7 +3787,8 @@
           "name": "Carnival With Footrest",
           "price": 52000,
           "images": [
-            "/products/office/Office Lounge Chairs/carnival-with-footrest-p52000.png"
+            "/products/office/Office Lounge Chairs/carnival-with-footrest/carnival-with-footrest-front-p52000.jpeg",
+            "/products/office/Office Lounge Chairs/carnival-with-footrest/carnival-with-footrest-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3772,7 +3798,8 @@
           "name": "Cavina",
           "price": 35000,
           "images": [
-            "/products/office/Office Lounge Chairs/cavina-p35000.png"
+            "/products/office/Office Lounge Chairs/cavina/cavina-front-p35000.jpeg",
+            "/products/office/Office Lounge Chairs/cavina/cavina-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3782,7 +3809,8 @@
           "name": "Crystal With Footrest",
           "price": 55000,
           "images": [
-            "/products/office/Office Lounge Chairs/crystal-with-footrest-p55000.png"
+            "/products/office/Office Lounge Chairs/crystal-with-footrest/crystal-with-footrest-front-p55000.jpeg",
+            "/products/office/Office Lounge Chairs/crystal-with-footrest/crystal-with-footrest-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3792,7 +3820,8 @@
           "name": "Dayton",
           "price": 14500,
           "images": [
-            "/products/office/Office Lounge Chairs/dayton-p14500.png"
+            "/products/office/Office Lounge Chairs/dayton/dayton-front-p14500.jpeg",
+            "/products/office/Office Lounge Chairs/dayton/dayton-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3802,7 +3831,8 @@
           "name": "Edinburg",
           "price": 32000,
           "images": [
-            "/products/office/Office Lounge Chairs/edinburg-p32000.png"
+            "/products/office/Office Lounge Chairs/edinburg/edinburg-front-p32000.jpeg",
+            "/products/office/Office Lounge Chairs/edinburg/edinburg-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3812,7 +3842,8 @@
           "name": "Enigmna",
           "price": 47000,
           "images": [
-            "/products/office/Office Lounge Chairs/enigmna-p47000.png"
+            "/products/office/Office Lounge Chairs/enigmna/enigmna-front-p47000.jpeg",
+            "/products/office/Office Lounge Chairs/enigmna/enigmna-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3822,7 +3853,8 @@
           "name": "Epitome",
           "price": 46000,
           "images": [
-            "/products/office/Office Lounge Chairs/epitome-p46000.png"
+            "/products/office/Office Lounge Chairs/epitome/epitome-front-p46000.jpeg",
+            "/products/office/Office Lounge Chairs/epitome/epitome-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3832,7 +3864,8 @@
           "name": "Espana",
           "price": 8800,
           "images": [
-            "/products/office/Office Lounge Chairs/espana-p8800.png"
+            "/products/office/Office Lounge Chairs/espana/espana-front-p8800.jpeg",
+            "/products/office/Office Lounge Chairs/espana/espana-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3842,7 +3875,8 @@
           "name": "Eternia With Footrest",
           "price": 68000,
           "images": [
-            "/products/office/Office Lounge Chairs/eternia-with-footrest-p68000.png"
+            "/products/office/Office Lounge Chairs/eternia-with-footrest/eternia-with-footrest-front-p68000.jpeg",
+            "/products/office/Office Lounge Chairs/eternia-with-footrest/eternia-with-footrest-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3852,7 +3886,8 @@
           "name": "Ferarra",
           "price": 42000,
           "images": [
-            "/products/office/Office Lounge Chairs/ferarra-p42000.png"
+            "/products/office/Office Lounge Chairs/ferarra/ferarra-front-p42000.jpeg",
+            "/products/office/Office Lounge Chairs/ferarra/ferarra-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3862,7 +3897,8 @@
           "name": "Fiji",
           "price": 49000,
           "images": [
-            "/products/office/Office Lounge Chairs/fiji-p49000.png"
+            "/products/office/Office Lounge Chairs/fiji/fiji-front-p49000.jpeg",
+            "/products/office/Office Lounge Chairs/fiji/fiji-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3872,7 +3908,8 @@
           "name": "Gemini",
           "price": 22500,
           "images": [
-            "/products/office/Office Lounge Chairs/gemini-p22500.png"
+            "/products/office/Office Lounge Chairs/gemini/gemini-front-p22500.jpeg",
+            "/products/office/Office Lounge Chairs/gemini/gemini-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3882,7 +3919,8 @@
           "name": "Greece",
           "price": 45000,
           "images": [
-            "/products/office/Office Lounge Chairs/greece-p45000.png"
+            "/products/office/Office Lounge Chairs/greece/greece-front-p45000.jpeg",
+            "/products/office/Office Lounge Chairs/greece/greece-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3892,7 +3930,8 @@
           "name": "Italiano With Footrest",
           "price": 60000,
           "images": [
-            "/products/office/Office Lounge Chairs/italiano-with-footrest-p60000.png"
+            "/products/office/Office Lounge Chairs/italiano-with-footrest/italiano-with-footrest-front-p60000.jpeg",
+            "/products/office/Office Lounge Chairs/italiano-with-footrest/italiano-with-footrest-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3902,7 +3941,8 @@
           "name": "Jamaica",
           "price": 22000,
           "images": [
-            "/products/office/Office Lounge Chairs/jamaica-p22000.png"
+            "/products/office/Office Lounge Chairs/jamaica/jamaica-front-p22000.jpeg",
+            "/products/office/Office Lounge Chairs/jamaica/jamaica-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3912,7 +3952,8 @@
           "name": "Kiwis",
           "price": 12000,
           "images": [
-            "/products/office/Office Lounge Chairs/kiwis-p12000.png"
+            "/products/office/Office Lounge Chairs/kiwis/kiwis-front-p12000.jpeg",
+            "/products/office/Office Lounge Chairs/kiwis/kiwis-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3922,7 +3963,8 @@
           "name": "Kiwis Rev",
           "price": 11500,
           "images": [
-            "/products/office/Office Lounge Chairs/kiwis-rev-p11500.png"
+            "/products/office/Office Lounge Chairs/kiwis-rev/kiwis-rev-front-p11500.jpeg",
+            "/products/office/Office Lounge Chairs/kiwis-rev/kiwis-rev-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3932,7 +3974,8 @@
           "name": "Knoll",
           "price": 12500,
           "images": [
-            "/products/office/Office Lounge Chairs/knoll-p12500.png"
+            "/products/office/Office Lounge Chairs/knoll-blue/knoll-front-p12500.jpeg",
+            "/products/office/Office Lounge Chairs/knoll-blue/knoll-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3942,7 +3985,8 @@
           "name": "Knoll",
           "price": 13000,
           "images": [
-            "/products/office/Office Lounge Chairs/knoll-p13000.png"
+            "/products/office/Office Lounge Chairs/knoll/knoll-front-p13000.jpeg",
+            "/products/office/Office Lounge Chairs/knoll/knoll-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3952,7 +3996,8 @@
           "name": "Lawson Hb Black",
           "price": 21000,
           "images": [
-            "/products/office/Office Lounge Chairs/lawson-hb-black-p21000.png"
+            "/products/office/Office Lounge Chairs/lawson-hb-black/lawson-hb-black-front-p21000.jpeg",
+            "/products/office/Office Lounge Chairs/lawson-hb-black/lawson-hb-black-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3962,7 +4007,8 @@
           "name": "Lawson Mb Black",
           "price": 18500,
           "images": [
-            "/products/office/Office Lounge Chairs/lawson-mb-black-p18500.png"
+            "/products/office/Office Lounge Chairs/lawson-mb-black/lawson-mb-black-front-p18500.jpeg",
+            "/products/office/Office Lounge Chairs/lawson-mb-black/lawson-mb-black-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3972,7 +4018,8 @@
           "name": "Lazy Boy Set Leatherp84000 Pup57000",
           "price": null,
           "images": [
-            "/products/office/Office Lounge Chairs/lazy-boy-set-leatherp84000-pup57000.png"
+            "/products/office/Office Lounge Chairs/lazy-boy-set-leather/lazy-boy-set-leather-front.jpeg",
+            "/products/office/Office Lounge Chairs/lazy-boy-set-leather/lazy-boy-set-leather-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3982,7 +4029,8 @@
           "name": "Lexus",
           "price": 32000,
           "images": [
-            "/products/office/Office Lounge Chairs/lexus-p32000.png"
+            "/products/office/Office Lounge Chairs/lexus/lexus-front-p32000.jpeg",
+            "/products/office/Office Lounge Chairs/lexus/lexus-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -3992,7 +4040,8 @@
           "name": "London",
           "price": 19950,
           "images": [
-            "/products/office/Office Lounge Chairs/london-p19950.png"
+            "/products/office/Office Lounge Chairs/london/london-front-p19950.jpeg",
+            "/products/office/Office Lounge Chairs/london/london-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4002,7 +4051,8 @@
           "name": "London With Footrest",
           "price": 30000,
           "images": [
-            "/products/office/Office Lounge Chairs/london-with-footrest-p30000.png"
+            "/products/office/Office Lounge Chairs/london-with-footrest/london-with-footrest-front-p30000.jpeg",
+            "/products/office/Office Lounge Chairs/london-with-footrest/london-with-footrest-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4012,7 +4062,8 @@
           "name": "Lucerne",
           "price": 34000,
           "images": [
-            "/products/office/Office Lounge Chairs/lucerne-p34000.png"
+            "/products/office/Office Lounge Chairs/lucerne/lucerne-front-p34000.jpeg",
+            "/products/office/Office Lounge Chairs/lucerne/lucerne-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4022,7 +4073,8 @@
           "name": "Luv",
           "price": 12500,
           "images": [
-            "/products/office/Office Lounge Chairs/luv-p12500.png"
+            "/products/office/Office Lounge Chairs/luv/luv-front-p12500.jpeg",
+            "/products/office/Office Lounge Chairs/luv/luv-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4032,7 +4084,8 @@
           "name": "Max",
           "price": 34000,
           "images": [
-            "/products/office/Office Lounge Chairs/max-p34000.png"
+            "/products/office/Office Lounge Chairs/max/max-front-p34000.jpeg",
+            "/products/office/Office Lounge Chairs/max/max-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4042,7 +4095,8 @@
           "name": "Milano",
           "price": 44000,
           "images": [
-            "/products/office/Office Lounge Chairs/milano-p44000.png"
+            "/products/office/Office Lounge Chairs/milano/milano-front-p44000.jpeg",
+            "/products/office/Office Lounge Chairs/milano/milano-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4052,7 +4106,8 @@
           "name": "Milos",
           "price": 31000,
           "images": [
-            "/products/office/Office Lounge Chairs/milos-p31000.png"
+            "/products/office/Office Lounge Chairs/milos/milos-front-p31000.jpeg",
+            "/products/office/Office Lounge Chairs/milos/milos-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4062,7 +4117,8 @@
           "name": "Paris",
           "price": 21000,
           "images": [
-            "/products/office/Office Lounge Chairs/paris-p21000.png"
+            "/products/office/Office Lounge Chairs/paris/paris-front-p21000.jpeg",
+            "/products/office/Office Lounge Chairs/paris/paris-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4072,7 +4128,8 @@
           "name": "Prince",
           "price": 24000,
           "images": [
-            "/products/office/Office Lounge Chairs/prince-p24000.png"
+            "/products/office/Office Lounge Chairs/prince/prince-front-p24000.jpeg",
+            "/products/office/Office Lounge Chairs/prince/prince-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4082,7 +4139,8 @@
           "name": "Prince With Footrest",
           "price": 38000,
           "images": [
-            "/products/office/Office Lounge Chairs/prince-with-footrest-p38000.png"
+            "/products/office/Office Lounge Chairs/prince-with-footrest/prince-with-footrest-front-p38000.jpeg",
+            "/products/office/Office Lounge Chairs/prince-with-footrest/prince-with-footrest-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4092,7 +4150,8 @@
           "name": "Prius",
           "price": 22000,
           "images": [
-            "/products/office/Office Lounge Chairs/prius-p22000.png"
+            "/products/office/Office Lounge Chairs/prius/prius-front-p22000.jpeg",
+            "/products/office/Office Lounge Chairs/prius/prius-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4102,7 +4161,8 @@
           "name": "Romania",
           "price": 26000,
           "images": [
-            "/products/office/Office Lounge Chairs/romania-p26000.png"
+            "/products/office/Office Lounge Chairs/romania/romania-front-p26000.jpeg",
+            "/products/office/Office Lounge Chairs/romania/romania-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4112,7 +4172,8 @@
           "name": "Rome",
           "price": 29000,
           "images": [
-            "/products/office/Office Lounge Chairs/rome-p29000.png"
+            "/products/office/Office Lounge Chairs/rome/rome-front-p29000.jpeg",
+            "/products/office/Office Lounge Chairs/rome/rome-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4122,7 +4183,8 @@
           "name": "Roogle",
           "price": 32000,
           "images": [
-            "/products/office/Office Lounge Chairs/roogle-p32000.png"
+            "/products/office/Office Lounge Chairs/roogle/roogle-front-p32000.jpeg",
+            "/products/office/Office Lounge Chairs/roogle/roogle-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4132,7 +4194,8 @@
           "name": "Royal Espana",
           "price": 12500,
           "images": [
-            "/products/office/Office Lounge Chairs/royal-espana-p12500.png"
+            "/products/office/Office Lounge Chairs/royal-espana/royal-espana-front-p12500.jpeg",
+            "/products/office/Office Lounge Chairs/royal-espana/royal-espana-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4142,7 +4205,8 @@
           "name": "Santosa",
           "price": 21000,
           "images": [
-            "/products/office/Office Lounge Chairs/santosa-p21000.png"
+            "/products/office/Office Lounge Chairs/santosa/santosa-front-p21000.jpeg",
+            "/products/office/Office Lounge Chairs/santosa/santosa-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4152,7 +4216,8 @@
           "name": "Sasaki With Footrest",
           "price": 55500,
           "images": [
-            "/products/office/Office Lounge Chairs/sasaki-with-footrest-p55500.png"
+            "/products/office/Office Lounge Chairs/sasaki-with-footrest/sasaki-with-footrest-front-p55500.jpeg",
+            "/products/office/Office Lounge Chairs/sasaki-with-footrest/sasaki-with-footrest-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4162,7 +4227,8 @@
           "name": "Sasaski",
           "price": 39500,
           "images": [
-            "/products/office/Office Lounge Chairs/sasaski-p39500.png"
+            "/products/office/Office Lounge Chairs/sasaski/sasaski-front-p39500.jpeg",
+            "/products/office/Office Lounge Chairs/sasaski/sasaski-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4172,7 +4238,8 @@
           "name": "Sasmson",
           "price": 12500,
           "images": [
-            "/products/office/Office Lounge Chairs/sasmson-p12500.png"
+            "/products/office/Office Lounge Chairs/sasmson/sasmson-front-p12500.jpeg",
+            "/products/office/Office Lounge Chairs/sasmson/sasmson-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4182,7 +4249,8 @@
           "name": "Siam 4 Star",
           "price": 11000,
           "images": [
-            "/products/office/Office Lounge Chairs/siam-4-star-p11000.png"
+            "/products/office/Office Lounge Chairs/siam-4-star/siam-4-star-front-p11000.jpeg",
+            "/products/office/Office Lounge Chairs/siam-4-star/siam-4-star-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4192,7 +4260,8 @@
           "name": "Siam Aluminium",
           "price": 14500,
           "images": [
-            "/products/office/Office Lounge Chairs/siam-aluminium-p14500.png"
+            "/products/office/Office Lounge Chairs/siam-aluminium/siam-aluminium-front-p14500.jpeg",
+            "/products/office/Office Lounge Chairs/siam-aluminium/siam-aluminium-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4202,7 +4271,8 @@
           "name": "Siam Apex",
           "price": 19950,
           "images": [
-            "/products/office/Office Lounge Chairs/siam-apex-p19950.png"
+            "/products/office/Office Lounge Chairs/siam-apex/siam-apex-front-p19950.jpeg",
+            "/products/office/Office Lounge Chairs/siam-apex/siam-apex-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4212,7 +4282,8 @@
           "name": "Siam Crest",
           "price": 16000,
           "images": [
-            "/products/office/Office Lounge Chairs/siam-crest-p16000.png"
+            "/products/office/Office Lounge Chairs/siam-crest/siam-crest-front-p16000.jpeg",
+            "/products/office/Office Lounge Chairs/siam-crest/siam-crest-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4222,7 +4293,8 @@
           "name": "Siam Wood",
           "price": 15000,
           "images": [
-            "/products/office/Office Lounge Chairs/siam-wood-p15000.png"
+            "/products/office/Office Lounge Chairs/siam-wood/siam-wood-front-p15000.jpeg",
+            "/products/office/Office Lounge Chairs/siam-wood/siam-wood-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4232,7 +4304,8 @@
           "name": "Sierra",
           "price": 48000,
           "images": [
-            "/products/office/Office Lounge Chairs/sierra-p48000.png"
+            "/products/office/Office Lounge Chairs/sierra/sierra-front-p48000.jpeg",
+            "/products/office/Office Lounge Chairs/sierra/sierra-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4242,7 +4315,8 @@
           "name": "Slovakia",
           "price": 44000,
           "images": [
-            "/products/office/Office Lounge Chairs/slovakia-p44000.png"
+            "/products/office/Office Lounge Chairs/slovakia/slovakia-front-p44000.jpeg",
+            "/products/office/Office Lounge Chairs/slovakia/slovakia-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4252,7 +4326,8 @@
           "name": "Sofia",
           "price": 13000,
           "images": [
-            "/products/office/Office Lounge Chairs/sofia-p13000.png"
+            "/products/office/Office Lounge Chairs/sofia/sofia-front-p13000.jpeg",
+            "/products/office/Office Lounge Chairs/sofia/sofia-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4262,7 +4337,9 @@
           "name": "Sorento",
           "price": 32000,
           "images": [
-            "/products/office/Office Lounge Chairs/sorento-p32000.png"
+            "/products/office/Office Lounge Chairs/sorento/sorento-front-p32000.jpeg",
+            "/products/office/Office Lounge Chairs/sorento/sorento-side.jpeg"
+
           ],
           "colors": [],
           "description": ""
@@ -4272,7 +4349,8 @@
           "name": "Sorento With Footrest",
           "price": 52000,
           "images": [
-            "/products/office/Office Lounge Chairs/sorento-with-footrest-p52000.png"
+            "/products/office/Office Lounge Chairs/sorento-with-footrest/sorento-with-footrest-front-p52000.jpeg",
+            "/products/office/Office Lounge Chairs/sorento-with-footrest/sorento-with-footrest-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4282,7 +4360,8 @@
           "name": "Star Blk 4star",
           "price": 11500,
           "images": [
-            "/products/office/Office Lounge Chairs/star-blk-4star-p11500.png"
+            "/products/office/Office Lounge Chairs/star-blk-4star/star-blk-4star-front-p11500.jpeg",  
+            "/products/office/Office Lounge Chairs/star-blk-4star/star-blk-4star-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4292,7 +4371,8 @@
           "name": "Star",
           "price": 9400,
           "images": [
-            "/products/office/Office Lounge Chairs/star-p9400.png"
+            "/products/office/Office Lounge Chairs/star/star-front-p9400.jpeg",
+            "/products/office/Office Lounge Chairs/star/star-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4302,7 +4382,8 @@
           "name": "Stefano",
           "price": 14500,
           "images": [
-            "/products/office/Office Lounge Chairs/stefano-p14500.png"
+            "/products/office/Office Lounge Chairs/stefano/stefano-front-p14500.jpeg",
+            "/products/office/Office Lounge Chairs/stefano/stefano-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4312,7 +4393,8 @@
           "name": "Sumo",
           "price": 19500,
           "images": [
-            "/products/office/Office Lounge Chairs/sumo-p19500.png"
+            "/products/office/Office Lounge Chairs/sumo/sumo-front-p19500.jpeg",
+            "/products/office/Office Lounge Chairs/sumo/sumo-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4322,7 +4404,8 @@
           "name": "Swan",
           "price": 9800,
           "images": [
-            "/products/office/Office Lounge Chairs/swan-p9800.png"
+            "/products/office/Office Lounge Chairs/swan/swan-front-p9800.jpeg",
+            "/products/office/Office Lounge Chairs/swan/swan-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4332,7 +4415,8 @@
           "name": "Swing",
           "price": 44000,
           "images": [
-            "/products/office/Office Lounge Chairs/swing-p44000.png"
+            "/products/office/Office Lounge Chairs/swing/swing-front-p44000.jpeg",
+            "/products/office/Office Lounge Chairs/swing/swing-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4342,7 +4426,8 @@
           "name": "Terrano",
           "price": 12800,
           "images": [
-            "/products/office/Office Lounge Chairs/terrano-p12800.png"
+            "/products/office/Office Lounge Chairs/terrano/terrano-front-p12800.jpeg",
+            "/products/office/Office Lounge Chairs/terrano/terrano-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4352,7 +4437,8 @@
           "name": "Toledo",
           "price": 13000,
           "images": [
-            "/products/office/Office Lounge Chairs/toledo-p13000.png"
+            "/products/office/Office Lounge Chairs/toledo/toledo-front-p13000.jpeg",
+            "/products/office/Office Lounge Chairs/toledo/toledo-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4362,7 +4448,8 @@
           "name": "Tucson",
           "price": 10950,
           "images": [
-            "/products/office/Office Lounge Chairs/tucson-p10950.png"
+            "/products/office/Office Lounge Chairs/tucson/tucson-front-p10950.jpeg",
+            "/products/office/Office Lounge Chairs/tucson/tucson-side.jpeg"
           ],
           "colors": [],
           "description": ""
