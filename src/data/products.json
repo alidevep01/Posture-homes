@@ -3876,7 +3876,7 @@
           "price": 68000,
           "images": [
             "/products/office/Office Lounge Chairs/eternia-with-footrest/eternia-with-footrest-front-p68000.jpeg",
-            "/products/office/Office Lounge Chairs/eternia-with-footrest/eternia-with-footrest-side.jpeg"
+            "/products/office/Office Lounge Chairs/eternia-with-footrest/eternia-with-footrest-sid.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4041,7 +4041,7 @@
           "price": 19950,
           "images": [
             "/products/office/Office Lounge Chairs/london/london-front-p19950.jpeg",
-            "/products/office/Office Lounge Chairs/london/london-side.jpeg"
+            "/products/office/Office Lounge Chairs/london/london-sid.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -6436,14 +6436,64 @@
     {
       "slug": "workstations",
       "label": "Workstations",
-      "coverImage": "/products/office/workstations/CF-DS2412WA-b.webp",
+      "coverImage": "/products/office/workstations/CF-DS2412WA-b/CF-DS2412WA-b.png",
       "items": [
         {
           "slug": "cf-ds2412wa-b",
           "name": "CF DS2412WA B",
           "price": null,
           "images": [
-            "/products/office/workstations/CF-DS2412WA-b.webp"
+            "/products/office/workstations/CF-DS2412WA-b/CF-DS2412WA-b.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+         {
+          "slug": "workstation-1",
+          "name": "workstation-1",
+          "price": null,
+          "images": [
+            "/products/office/workstations/workstation-1/workstation-1.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
+          "slug": "workstation-2",
+          "name": "workstation-2",
+          "price": null,
+          "images": [
+            "/products/office/workstations/workstation-2/workstation-2.png"
+          ],
+          "colors": [],
+          "description": ""
+         },
+         {
+          "slug": "workstation-3",
+          "name": "workstation-3",
+          "price": null,
+          "images": [
+            "/products/office/workstations/workstation-3/workstation-3.png"
+          ],
+          "colors": [],
+          "description": ""
+         },
+         {
+          "slug": "workstation-4",
+          "name": "workstation-4",
+          "price": null,
+          "images": [
+            "/products/office/workstations/workstation-4/workstation-4.png"
+          ],
+          "colors": [],
+          "description": ""
+         },
+         {
+          "slug": "workstation-5",
+          "name": "workstation-5",
+          "price": null,
+          "images": [
+            "/products/office/workstations/workstation-5/workstation-5.png"
           ],
           "colors": [],
           "description": ""
