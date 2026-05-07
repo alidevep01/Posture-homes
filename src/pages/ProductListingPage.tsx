@@ -146,7 +146,7 @@ function ProductListingPage() {
                         loading="lazy"
                         wrapperClassName="h-full w-full"
                         spinnerClassName="h-6 w-6 text-slate-300"
-                        className="h-full w-full object-cover p-0 transition duration-500 group-hover:scale-[1.035]"
+                        className="h-full w-full object-contain p-0 transition duration-500 group-hover:scale-[1.035]"
                       />
                     ) : (
                       <div className="flex h-full items-center justify-center text-slate-300 text-sm">

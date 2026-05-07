@@ -4459,14 +4459,15 @@
     {
       "slug": "office-sofas",
       "label": "Office Sofas",
-      "coverImage": "/products/office/Office Sofas/aero.png",
+      "coverImage": "/products/office/Office Sofas/aero/aero.jpeg",
       "items": [
         {
           "slug": "aero",
           "name": "Aero",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/aero.png"
+            "/products/office/Office Sofas/aero/aero.jpeg",
+            "/products/office/Office Sofas/aero/aero-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4476,7 +4477,8 @@
           "name": "Arcus",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/arcus.png"
+            "/products/office/Office Sofas/arcus/arcus.jpeg",
+            "/products/office/Office Sofas/arcus/arcus-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4486,7 +4488,8 @@
           "name": "Barcelona",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/barcelona.png"
+            "/products/office/Office Sofas/barcelona/barcelona.jpeg",
+            "/products/office/Office Sofas/barcelona/barcelona-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4496,7 +4499,8 @@
           "name": "Benz",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/benz.png"
+            "/products/office/Office Sofas/benz/benz.jpeg",
+            "/products/office/Office Sofas/benz/benz-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4506,7 +4510,8 @@
           "name": "California",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/california.png"
+            "/products/office/Office Sofas/california/california.jpeg",
+            "/products/office/Office Sofas/california/california-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4516,7 +4521,8 @@
           "name": "Canvas",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/canvas.png"
+            "/products/office/Office Sofas/canvas/canvas.jpeg",
+            "/products/office/Office Sofas/canvas/canvas-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4526,7 +4532,8 @@
           "name": "Chester",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/chester.png"
+            "/products/office/Office Sofas/chester/chester.jpeg",
+            "/products/office/Office Sofas/chester/chester-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4536,7 +4543,8 @@
           "name": "Corbusier",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/corbusier.png"
+            "/products/office/Office Sofas/corbusier/corbusier.jpeg",
+            "/products/office/Office Sofas/corbusier/corbusier-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4546,7 +4554,8 @@
           "name": "Crystal",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/crystal.png"
+            "/products/office/Office Sofas/crystal/crystal.jpeg",
+            "/products/office/Office Sofas/crystal/crystal-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4556,7 +4565,8 @@
           "name": "Curve",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/curve.png"
+            "/products/office/Office Sofas/curve/curve.jpeg",
+            "/products/office/Office Sofas/curve/curve-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4566,7 +4576,8 @@
           "name": "Dream",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/dream.png"
+            "/products/office/Office Sofas/dream/dream.jpeg",
+            "/products/office/Office Sofas/dream/dream-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4576,7 +4587,8 @@
           "name": "Flame",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/flame.png"
+            "/products/office/Office Sofas/flame/flame.jpeg",
+            "/products/office/Office Sofas/flame/flame-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4586,7 +4598,8 @@
           "name": "Florance",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/florance.png"
+            "/products/office/Office Sofas/florance/florance.jpeg",
+            "/products/office/Office Sofas/florance/florance-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4596,7 +4609,8 @@
           "name": "Fortune",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/fortune.png"
+            "/products/office/Office Sofas/fortune/fortune.jpeg",
+            "/products/office/Office Sofas/fortune/fortune-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4606,7 +4620,8 @@
           "name": "Futon",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/futon.png"
+            "/products/office/Office Sofas/futon/futon.jpeg",
+            "/products/office/Office Sofas/futon/futon-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4616,7 +4631,8 @@
           "name": "Glamour",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/glamour.png"
+            "/products/office/Office Sofas/glamour/glamour.jpeg",
+            "/products/office/Office Sofas/glamour/glamour-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4626,7 +4642,8 @@
           "name": "Havoc",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/havoc.png"
+            "/products/office/Office Sofas/havoc/havoc.jpeg",
+            "/products/office/Office Sofas/havoc/havoc-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4636,7 +4653,8 @@
           "name": "Heritage",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/heritage.png"
+            "/products/office/Office Sofas/heritage/heritage.jpeg",
+            "/products/office/Office Sofas/heritage/heritage-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4646,7 +4664,8 @@
           "name": "Imperial",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/imperial.png"
+            "/products/office/Office Sofas/imperial/imperial.jpeg",
+            "/products/office/Office Sofas/imperial/imperial-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4656,7 +4675,8 @@
           "name": "June",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/june.png"
+            "/products/office/Office Sofas/june/june.jpeg",
+            "/products/office/Office Sofas/june/june-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4666,7 +4686,8 @@
           "name": "Kitkat",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/kitkat.png"
+            "/products/office/Office Sofas/kitkat/kitkat.jpeg",
+            "/products/office/Office Sofas/kitkat/kitkat-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4676,7 +4697,8 @@
           "name": "Liberty",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/liberty.png"
+            "/products/office/Office Sofas/liberty/liberty.jpeg",
+            "/products/office/Office Sofas/liberty/liberty-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4686,7 +4708,8 @@
           "name": "Lopez",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/lopez.png"
+            "/products/office/Office Sofas/lopez/lopez.jpeg",
+            "/products/office/Office Sofas/lopez/lopez-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4696,7 +4719,8 @@
           "name": "Mapple",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/mapple.png"
+            "/products/office/Office Sofas/mapple/mapple.jpeg",
+            "/products/office/Office Sofas/mapple/mapple-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4706,7 +4730,8 @@
           "name": "Meridian",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/meridian.png"
+            "/products/office/Office Sofas/meridian/meridians.jpeg",
+            "/products/office/Office Sofas/meridian/meridians-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4716,7 +4741,8 @@
           "name": "Montana",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/montana.png"
+            "/products/office/Office Sofas/montana/montana.jpeg",
+            "/products/office/Office Sofas/montana/montana-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4726,7 +4752,8 @@
           "name": "Nero",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/nero.png"
+            "/products/office/Office Sofas/nero/nero.jpeg",
+            "/products/office/Office Sofas/nero/nero-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4736,7 +4763,8 @@
           "name": "New Vogue",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/new-vogue.png"
+            "/products/office/Office Sofas/new-vogue/new-vogue.jpeg",
+            "/products/office/Office Sofas/new-vogue/new-vogue-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4746,7 +4774,8 @@
           "name": "Nova",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/nova.png"
+            "/products/office/Office Sofas/nova/nova.jpeg",
+            "/products/office/Office Sofas/nova/nova-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4756,7 +4785,8 @@
           "name": "Oxy",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/oxy.png"
+            "/products/office/Office Sofas/oxy/oxy.jpeg",
+            "/products/office/Office Sofas/oxy/oxy-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4766,7 +4796,8 @@
           "name": "Saphire",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/saphire.png"
+            "/products/office/Office Sofas/saphire/saphire.jpeg",
+            "/products/office/Office Sofas/saphire/saphire-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4776,7 +4807,8 @@
           "name": "Spencer",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/spencer.png"
+            "/products/office/Office Sofas/spencer/spencer.jpeg",
+            "/products/office/Office Sofas/spencer/spencer-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4786,7 +4818,8 @@
           "name": "Tiara",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/tiara.png"
+            "/products/office/Office Sofas/tiara/tiara.jpeg",
+            "/products/office/Office Sofas/tiara/tiara-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4796,7 +4829,8 @@
           "name": "Tokyo",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/tokyo.png"
+            "/products/office/Office Sofas/tokyo/tokyo.jpeg",
+            "/products/office/Office Sofas/tokyo/tokyo-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4806,7 +4840,8 @@
           "name": "Vegas",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/vegas.png"
+            "/products/office/Office Sofas/vegas/vegas.jpeg",
+            "/products/office/Office Sofas/vegas/vegas-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4816,7 +4851,8 @@
           "name": "Veronica",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/veronica.png"
+            "/products/office/Office Sofas/veronica/veronica.jpeg",
+            "/products/office/Office Sofas/veronica/veronica-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4826,7 +4862,8 @@
           "name": "Zara",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/zara.png"
+            "/products/office/Office Sofas/zara/zara.jpeg",
+            "/products/office/Office Sofas/zara/zara-side.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -4836,7 +4873,8 @@
           "name": "Zurich",
           "price": null,
           "images": [
-            "/products/office/Office Sofas/zurich.png"
+            "/products/office/Office Sofas/zurich/zurich.jpeg",
+            "/products/office/Office Sofas/zurich/zurich-side.jpeg"
           ],
           "colors": [],
           "description": ""
