@@ -56,28 +56,30 @@ function AboutSection({
               About us
             </p>
             <h2 className="mt-4 text-3xl leading-tight text-slate-950 sm:text-4xl">
-              Luxury furniture, curated decor, and founder-led craftsmanship for
-              refined homes.
+              Posture Homes and Posture Furniture, united by founder-led
+              craftsmanship for refined spaces.
             </h2>
             <p className="mt-5 text-base leading-8 text-slate-600">
-              Posture Homes is a premier destination for homeowners seeking to
-              elevate their living spaces through luxury furniture, curated
-              artifacts, mix media art, and custom-made rugs. Every collection
-              is shaped around craftsmanship, creativity, and a personalized
-              design point of view.
+              Posture brings together the residential focus of Posture Homes
+              and the workplace capability of Posture Furniture. Across both
+              sides, the brand combines craftsmanship, creativity, ergonomics,
+              and dependable execution to create spaces that feel personal,
+              refined, and practical.
             </p>
             <p className="mt-4 text-base leading-8 text-slate-600">
-              Our approach is rooted in bespoke furniture traditions, where each
-              piece is tailored to the client, the space, and the lifestyle it
-              supports. The result is a home experience built around timeless
-              design, elevated materials, and furniture that feels distinctly
-              personal.
+              Posture Homes helps homeowners elevate living spaces through
+              bespoke furniture, curated artifacts, mix media art, and
+              custom-made rugs. Posture Furniture extends the same design
+              discipline into offices with ergonomic chairs, executive desks,
+              modular workstations, and workplace furniture built for comfort
+              and performance.
             </p>
             <p className="mt-4 text-base leading-8 text-slate-600">
               Founded in 2021 by Mr. Aditya Dugar and Mrs. Namrata Jain,
-              Posture Homes brings together interior design insight,
-              ergonomics, engineering, and a commitment to exceptional
-              craftsmanship, sustainability, and customer satisfaction.
+              Posture brings together interior design insight, ergonomics,
+              engineering, and a commitment to exceptional craftsmanship,
+              sustainability, and customer satisfaction across both homes and
+              workspaces.
             </p>
 
             <div className="mt-8 rounded-[1.75rem] border border-stone-200 bg-white px-6 py-6 shadow-[0_20px_50px_-42px_rgba(15,23,42,0.18)]">
@@ -85,10 +87,11 @@ function AboutSection({
                 Meet our founders
               </p>
               <p className="mt-3 text-sm leading-7 text-slate-600">
-                Mr. Aditya Dugar and Mrs. Namrata Jain founded Posture Homes
-                with a clear vision: create timeless designs using high-quality
+                Mr. Aditya Dugar and Mrs. Namrata Jain founded Posture with a
+                clear vision: create timeless designs using high-quality
                 materials and exceptional craftsmanship, while delivering a
-                thoughtful and personalized client experience.
+                thoughtful client experience across residential and office
+                environments.
               </p>
             </div>
 
