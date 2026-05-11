@@ -5372,15 +5372,15 @@
     {
       "slug": "pu-office-chairs",
       "label": "PU Office Chairs",
-      "coverImage": "/products/office/PU Office Chairs/ATTITUDE orange/ATTITUDE HB-front-p54000.png",
+      "coverImage": "/products/office/PU Office Chairs/ATTITUDE orange/ATTITUDEHB-front-p54000.jpeg",
       "items": [
         {
           "slug": "attitude-orange",
           "name": "ATTITUDE Orange",
           "price": 54000,
           "images": [
-            "/products/office/PU Office Chairs/ATTITUDE orange/ATTITUDE HB-front-p54000.png",
-            "/products/office/PU Office Chairs/ATTITUDE orange/attitude-mb-back-p52000.png"
+            "/products/office/PU Office Chairs/ATTITUDE orange/ATTITUDEHB-front-p54000.jpeg",
+            "/products/office/PU Office Chairs/ATTITUDE orange/attitude-mb-back-p52000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5390,8 +5390,8 @@
           "name": "BENTLEY PU",
           "price": 67000,
           "images": [
-            "/products/office/PU Office Chairs/BENTLEY PU/BENTLEY (LEATHER) HB-front-p67000.png",
-            "/products/office/PU Office Chairs/BENTLEY PU/bentley-leather-mb-p63000.png"
+            "/products/office/PU Office Chairs/BENTLEY PU/BENTLEYLEATHERHB-front-p67000.jpeg",
+            "/products/office/PU Office Chairs/BENTLEY PU/bentley-leather-mb-p63000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5401,8 +5401,8 @@
           "name": "CALVIN PU",
           "price": 54000,
           "images": [
-            "/products/office/PU Office Chairs/CALVIN PU/CALVIN LEATHER HB-front-p54000.png",
-            "/products/office/PU Office Chairs/CALVIN PU/CALVIN LEATHER mB-front-p48000.png"
+            "/products/office/PU Office Chairs/CALVIN PU/CALVINLEATHERHB-front-p54000.jpeg",
+            "/products/office/PU Office Chairs/CALVIN PU/CALVINLEATHERmB-front-p48000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5412,8 +5412,8 @@
           "name": "DUSTER CUSHION",
           "price": 33500,
           "images": [
-            "/products/office/PU Office Chairs/DUSTER CUSHION/DUSTER CUSHION-hb-front-p33500.png",
-            "/products/office/PU Office Chairs/DUSTER CUSHION/duster-cushion-mb-front-p31500.png"
+            "/products/office/PU Office Chairs/DUSTER CUSHION/DUSTERCUSHION-hb-front-p33500.jpeg",
+            "/products/office/PU Office Chairs/DUSTER CUSHION/duster-cushion-mb-front-p31500.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5423,8 +5423,8 @@
           "name": "OYSTER PU",
           "price": 59000,
           "images": [
-            "/products/office/PU Office Chairs/OYSTER PU/OYSTER (LEATHER) HB-front-p59000.png",
-            "/products/office/PU Office Chairs/OYSTER PU/oyster-leather-mb-front-p54000.png"
+            "/products/office/PU Office Chairs/OYSTER PU/OYSTERLEATHERHB-front-p59000.jpeg",
+            "/products/office/PU Office Chairs/OYSTER PU/oyster-leather-mb-front-p54000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5434,8 +5434,8 @@
           "name": "TRUST PU Warm Grey",
           "price": 27500,
           "images": [
-            "/products/office/PU Office Chairs/TRUST PU warm grey/TRUST-hb-front-p27500.png",
-            "/products/office/PU Office Chairs/TRUST PU warm grey/trust-mb-back-p25500.png"
+            "/products/office/PU Office Chairs/TRUST PU warm grey/TRUST-hb-front-p27500.jpeg",
+            "/products/office/PU Office Chairs/TRUST PU warm grey/trust-mb-back-p25500.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5445,8 +5445,8 @@
           "name": "TRUSt PU Dark Gray",
           "price": null,
           "images": [
-            "/products/office/PU Office Chairs/TRUSt PU Dark Gray/trust-hb-dark-grey-front.png",
-            "/products/office/PU Office Chairs/TRUSt PU Dark Gray/trust-hb-back-dark-grey-p.png"
+            "/products/office/PU Office Chairs/TRUSt PU Dark Gray/trust-hb-dark-grey-front.jpeg",
+            "/products/office/PU Office Chairs/TRUSt PU Dark Gray/trust-hb-back-dark-grey-p.jpeg"
           ],
           "colors": [],
           "description": ""
