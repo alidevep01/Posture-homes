@@ -5456,14 +5456,15 @@
     {
       "slug": "puffy",
       "label": "Puffy Chairs",
-      "coverImage": "/products/office/puffy/albert-p6000.png",
+      "coverImage": "/products/office/puffy/albert/albert-p6000.jpeg",
       "items": [
         {
           "slug": "albert",
           "name": "Albert",
           "price": 6000,
           "images": [
-            "/products/office/puffy/albert-p6000.png"
+            "/products/office/puffy/albert/albert-p6000.jpeg",
+            "/products/office/puffy/albert/albert-side-p6000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5473,7 +5474,8 @@
           "name": "Astro",
           "price": 6000,
           "images": [
-            "/products/office/puffy/astro-p6000.png"
+            "/products/office/puffy/astro/astro-p6000.jpeg",
+            "/products/office/puffy/astro/astro-side-p6000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5483,7 +5485,8 @@
           "name": "Bloomington",
           "price": 5500,
           "images": [
-            "/products/office/puffy/bloomington-p5500.png"
+            "/products/office/puffy/bloomington/bloomington-p5500.jpeg",
+            "/products/office/puffy/bloomington/bloomington-side-p5500.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5493,7 +5496,8 @@
           "name": "Bolt",
           "price": 8000,
           "images": [
-            "/products/office/puffy/bolt-p8000.png"
+            "/products/office/puffy/bolt/bolt-p8000.jpeg",
+            "/products/office/puffy/bolt/bolt-side-p8000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5503,7 +5507,8 @@
           "name": "Bruno",
           "price": 15000,
           "images": [
-            "/products/office/puffy/bruno-p15000.png"
+            "/products/office/puffy/bruno/bruno-p15000.jpeg",
+            "/products/office/puffy/bruno/bruno-side-p15000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5513,7 +5518,8 @@
           "name": "Capsul",
           "price": 4500,
           "images": [
-            "/products/office/puffy/capsul-p4500.png"
+            "/products/office/puffy/capsul/capsul-p4500.jpeg",
+            "/products/office/puffy/capsul/capsul-side-p4500.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5523,7 +5529,8 @@
           "name": "Dior",
           "price": 8000,
           "images": [
-            "/products/office/puffy/dior-p8000.png"
+            "/products/office/puffy/dior/dior-p8000.jpeg",
+            "/products/office/puffy/dior/dior-side-p8000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5533,7 +5540,8 @@
           "name": "Drift",
           "price": 6500,
           "images": [
-            "/products/office/puffy/drift-p6500.png"
+            "/products/office/puffy/drift/drift-p6500.jpeg",
+            "/products/office/puffy/drift/drift-side-p6500.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5543,7 +5551,8 @@
           "name": "Drum",
           "price": 13000,
           "images": [
-            "/products/office/puffy/drum-p13000.png"
+            "/products/office/puffy/drum/drum-p13000.jpeg",
+            "/products/office/puffy/drum/drum-side-p13000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5553,7 +5562,8 @@
           "name": "Eva",
           "price": 5000,
           "images": [
-            "/products/office/puffy/eva-p5000.png"
+            "/products/office/puffy/eva/eva-p5000.jpeg",
+            "/products/office/puffy/eva/eva-side-p5000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5563,7 +5573,8 @@
           "name": "Flow",
           "price": 5500,
           "images": [
-            "/products/office/puffy/flow-p5500.png"
+            "/products/office/puffy/flow/flow-p5500.jpeg",
+            "/products/office/puffy/flow/flow-side-p5500.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5573,7 +5584,8 @@
           "name": "Gold",
           "price": 5800,
           "images": [
-            "/products/office/puffy/gold-p5800.png"
+            "/products/office/puffy/gold/gold-p5800.jpeg",
+            "/products/office/puffy/gold/gold-side-p5800.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5583,7 +5595,8 @@
           "name": "Hush",
           "price": 5500,
           "images": [
-            "/products/office/puffy/hush-p5500.png"
+            "/products/office/puffy/hush/hush-p5500.jpeg",
+            "/products/office/puffy/hush/hush-side-p5500.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5593,7 +5606,8 @@
           "name": "Kenzi",
           "price": 9500,
           "images": [
-            "/products/office/puffy/kenzi-p9500.png"
+            "/products/office/puffy/kenzi/kenzi-p9500.jpeg",
+            "/products/office/puffy/kenzi/kenzi-side-p9500.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5603,7 +5617,8 @@
           "name": "Libra",
           "price": 12000,
           "images": [
-            "/products/office/puffy/libra-p12000.png"
+            "/products/office/puffy/libra/libra-p12000.jpeg",
+            "/products/office/puffy/libra/libra-side-p12000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5613,7 +5628,8 @@
           "name": "Louis",
           "price": 9500,
           "images": [
-            "/products/office/puffy/louis-p9500.png"
+            "/products/office/puffy/louis/louis-p9500.jpeg",
+            "/products/office/puffy/louis/louis-side-p9500.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5623,7 +5639,8 @@
           "name": "Lume",
           "price": 5500,
           "images": [
-            "/products/office/puffy/lume-p5500.png"
+            "/products/office/puffy/lume/lume-p5500.jpeg",
+            "/products/office/puffy/lume/lume-side-p5500.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5633,7 +5650,8 @@
           "name": "Majesty",
           "price": 15000,
           "images": [
-            "/products/office/puffy/majesty-p15000.png"
+            "/products/office/puffy/majesty/majesty-p15000.jpeg",
+            "/products/office/puffy/majesty/majesty-side-p15000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5643,7 +5661,8 @@
           "name": "Merry",
           "price": 6500,
           "images": [
-            "/products/office/puffy/merry-p6500.png"
+            "/products/office/puffy/merry/merry-p6500.jpeg",  
+            "/products/office/puffy/merry/merry-side-p6500.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5653,7 +5672,8 @@
           "name": "Mitro",
           "price": 9500,
           "images": [
-            "/products/office/puffy/mitro-p9500.png"
+            "/products/office/puffy/mitro/mitro-p9500.jpeg",
+            "/products/office/puffy/mitro/mitro-side-p9500.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5663,7 +5683,8 @@
           "name": "Moon",
           "price": 6000,
           "images": [
-            "/products/office/puffy/moon-p6000.png"
+            "/products/office/puffy/moon/moon-p6000.jpeg",
+            "/products/office/puffy/moon/moon-side-p6000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5673,7 +5694,8 @@
           "name": "Mushroom",
           "price": 5500,
           "images": [
-            "/products/office/puffy/mushroom-p5500.png"
+            "/products/office/puffy/mushroom/mushroom-p5500.jpeg",
+            "/products/office/puffy/mushroom/mushroom-side-p5500.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5683,7 +5705,8 @@
           "name": "Novel",
           "price": 13000,
           "images": [
-            "/products/office/puffy/novel-p13000.png"
+            "/products/office/puffy/novel/novel-p13000.jpeg",
+            "/products/office/puffy/novel/novel-side-p13000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5693,7 +5716,8 @@
           "name": "Opal",
           "price": 6500,
           "images": [
-            "/products/office/puffy/opal-p6500.png"
+            "/products/office/puffy/opal/opal-p6500.jpeg",
+            "/products/office/puffy/opal/opal-side-p6500.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5703,7 +5727,8 @@
           "name": "Reno",
           "price": 6000,
           "images": [
-            "/products/office/puffy/reno-p6000.png"
+            "/products/office/puffy/reno/reno-p6000.jpeg",
+            "/products/office/puffy/reno/reno-side-p6000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5713,7 +5738,8 @@
           "name": "Sung",
           "price": 8000,
           "images": [
-            "/products/office/puffy/sung-p8000.png"
+            "/products/office/puffy/sung/sung-p8000.jpeg",
+            "/products/office/puffy/sung/sung-side-p8000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5723,7 +5749,8 @@
           "name": "Tori",
           "price": 6500,
           "images": [
-            "/products/office/puffy/tori-p6500.png"
+            "/products/office/puffy/tori/tori-p6500.jpeg",
+            "/products/office/puffy/tori/tori-side-p6500.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5733,7 +5760,8 @@
           "name": "Vibe",
           "price": 8000,
           "images": [
-            "/products/office/puffy/vibe-p8000.png"
+            "/products/office/puffy/vibe/vibe-p8000.jpeg",
+            "/products/office/puffy/vibe/vibe-side-p8000.jpeg"
           ],
           "colors": [],
           "description": ""
@@ -5743,7 +5771,8 @@
           "name": "Zoya",
           "price": 8000,
           "images": [
-            "/products/office/puffy/zoya-p8000.png"
+            "/products/office/puffy/zoya/zoya-p8000.jpeg",
+            "/products/office/puffy/zoya/zoya-side-p8000.jpeg"
           ],
           "colors": [],
           "description": ""
