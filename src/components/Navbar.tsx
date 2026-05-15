@@ -107,10 +107,18 @@ function SubcategoryDropdown({ links }: { links: typeof homeCategoryLinks }) {
           <Link
             key={link.slug}
             to={link.href}
-            className="flex items-center justify-between px-4 py-2.5 text-sm text-slate-700 transition hover:bg-[#f4ecdf] hover:text-slate-900"
+            className="flex items-center justify-between gap-4 px-4 py-2.5 text-sm text-slate-700 transition hover:bg-[#f4ecdf] hover:text-slate-900"
           >
             <span>{link.label}</span>
-            <span className="ml-2 text-xs text-slate-400">{link.itemCount}</span>
+            {link.image ? (
+              <img
+                src={link.image}
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                className="h-11 w-11 shrink-0 rounded-lg border border-stone-100 bg-white object-contain p-1"
+              />
+            ) : null}
           </Link>
         ))}
       </div>
@@ -330,10 +338,18 @@ function Navbar() {
                                   key={item.slug}
                                   to={item.href}
                                   onClick={closeMenus}
-                                  className="flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-semibold text-slate-600 transition hover:bg-[#f4ecdf]"
+                                  className="flex items-center justify-between gap-4 rounded-xl px-4 py-2.5 text-sm font-semibold text-slate-600 transition hover:bg-[#f4ecdf]"
                                 >
                                   <span>{item.label}</span>
-                                  <span className="text-xs text-slate-400">{item.itemCount}</span>
+                                  {item.image ? (
+                                    <img
+                                      src={item.image}
+                                      alt=""
+                                      aria-hidden="true"
+                                      loading="lazy"
+                                      className="h-11 w-11 shrink-0 rounded-lg border border-stone-100 bg-white object-contain p-1"
+                                    />
+                                  ) : null}
                                 </Link>
                               ))}
                             </div>
