@@ -42,14 +42,19 @@ export function sectionFromCategorySlug(categorySlug: string): ProductSection | 
   return null
 }
 
-type CategoryLink = { slug: string; label: string; href: string; itemCount: number }
+type CategoryLink = {
+  slug: string
+  label: string
+  href: string
+  image: string | null
+}
 
 function buildCategoryLinks(section: ProductSection, sectionSlug: string): CategoryLink[] {
   return getCategories(section).map((c) => ({
     slug: c.slug,
     label: c.label,
     href: `/products/${sectionSlug}/${c.slug}`,
-    itemCount: c.items.length,
+    image: c.coverImage,
   }))
 }
 
