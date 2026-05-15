@@ -5899,14 +5899,15 @@
     {
       "slug": "training-chairs",
       "label": "Training Chairs",
-      "coverImage": "/products/office/Training Chairs/cosmo-tablet-p5000.png",
+      "coverImage": "/products/office/Training Chairs/cosmo/cosmo-tablet-p5000.png",
       "items": [
         {
           "slug": "cosmo-tablet",
           "name": "Cosmo Tablet",
           "price": 5000,
           "images": [
-            "/products/office/Training Chairs/cosmo-tablet-p5000.png"
+            "/products/office/Training Chairs/cosmo/cosmo-tablet-p5000.png",
+            "/products/office/Training Chairs/cosmo/cosmo-tablet-side-p5000.png"
           ],
           "colors": [],
           "description": ""
@@ -5916,7 +5917,8 @@
           "name": "Flip Tablet",
           "price": 11000,
           "images": [
-            "/products/office/Training Chairs/flip-tablet-p11000.png"
+            "/products/office/Training Chairs/flip/flip-tablet-p11000.png",
+            "/products/office/Training Chairs/flip/flip-tablet-side-p11000.png"
           ],
           "colors": [],
           "description": ""
@@ -5926,7 +5928,8 @@
           "name": "Key Tablet",
           "price": 7000,
           "images": [
-            "/products/office/Training Chairs/key-tablet-p7000.png"
+            "/products/office/Training Chairs/key/key-tablet-p7000.png",
+            "/products/office/Training Chairs/key/key-tablet-side-p7000.png"
           ],
           "colors": [],
           "description": ""
@@ -5936,7 +5939,8 @@
           "name": "Sweden Tablet",
           "price": 5400,
           "images": [
-            "/products/office/Training Chairs/sweden-tablet-p5400.png"
+            "/products/office/Training Chairs/sweden/sweden-tablet-p5400.png",
+            "/products/office/Training Chairs/sweden/sweden-tablet-side-p5400.png"
           ],
           "colors": [],
           "description": ""
