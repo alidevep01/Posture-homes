@@ -5950,14 +5950,15 @@
     {
       "slug": "workstations-chairs",
       "label": "Workstation Chairs",
-      "coverImage": "/products/office/workstations chairs/astor-vistor-p14500.png",
+      "coverImage": "/products/office/workstations chairs/astor-vistor/astor-vistor-p14500.png",
       "items": [
         {
           "slug": "astor-vistor",
           "name": "Astor Vistor",
           "price": 14500,
           "images": [
-            "/products/office/workstations chairs/astor-vistor-p14500.png"
+            "/products/office/workstations chairs/astor-vistor/astor-vistor-p14500.png",
+            "/products/office/workstations chairs/astor-vistor/astor-vistor-side-p14500.png"
           ],
           "colors": [],
           "description": ""
@@ -5967,7 +5968,8 @@
           "name": "Brick",
           "price": 13500,
           "images": [
-            "/products/office/workstations chairs/brick-p13500.png"
+            "/products/office/workstations chairs/brick/brick-p13500.png",
+            "/products/office/workstations chairs/brick/brick-side-p13500.png"
           ],
           "colors": [],
           "description": ""
@@ -5977,7 +5979,8 @@
           "name": "Colt Black",
           "price": 6400,
           "images": [
-            "/products/office/workstations chairs/colt-black-p6400.png"
+            "/products/office/workstations chairs/colt-black/colt-black-p6400.png",
+            "/products/office/workstations chairs/colt-black/colt-black-side-p6400.png"
           ],
           "colors": [],
           "description": ""
@@ -5987,7 +5990,8 @@
           "name": "Colt Visitor",
           "price": 8000,
           "images": [
-            "/products/office/workstations chairs/colt-visitor-p8000.png"
+            "/products/office/workstations chairs/colt-visitor/colt-visitor-p8000.png",
+            "/products/office/workstations chairs/colt-visitor/colt-visitor-side-p8000.png"
           ],
           "colors": [],
           "description": ""
@@ -5997,7 +6001,8 @@
           "name": "Colt White",
           "price": 7200,
           "images": [
-            "/products/office/workstations chairs/colt-white-p7200.png"
+            "/products/office/workstations chairs/colt-white/colt-white-p7200.png",
+            "/products/office/workstations chairs/colt-white/colt-white-side-p7200.png"
           ],
           "colors": [],
           "description": ""
@@ -6007,7 +6012,8 @@
           "name": "Cosmo Cushion",
           "price": 3700,
           "images": [
-            "/products/office/workstations chairs/cosmo-cushion-p3700.png"
+            "/products/office/workstations chairs/cosmo-cushion/cosmo-cushion-p3700.png",
+            "/products/office/workstations chairs/cosmo-cushion/cosmo-cushion-side-p3700.png"
           ],
           "colors": [],
           "description": ""
@@ -6017,7 +6023,8 @@
           "name": "Deca",
           "price": 11000,
           "images": [
-            "/products/office/workstations chairs/deca-p11000.png"
+            "/products/office/workstations chairs/deca/deca-p11000.png",
+            "/products/office/workstations chairs/deca/deca-side-p11000.png"
           ],
           "colors": [],
           "description": ""
@@ -6027,7 +6034,8 @@
           "name": "Eon Eco",
           "price": 7200,
           "images": [
-            "/products/office/workstations chairs/eon-eco-p7200.png"
+            "/products/office/workstations chairs/eon-eco/eon-eco-p7200.png",
+            "/products/office/workstations chairs/eon-eco/eon-eco-side-p7200.png"
           ],
           "colors": [],
           "description": ""
@@ -6037,7 +6045,8 @@
           "name": "Ergon Black",
           "price": 8500,
           "images": [
-            "/products/office/workstations chairs/ergon-black-p8500.png"
+            "/products/office/workstations chairs/ergon-black/ergon-black-p8500.png",
+            "/products/office/workstations chairs/ergon-black/ergon-black-side-p8500.png"
           ],
           "colors": [],
           "description": ""
@@ -6047,7 +6056,8 @@
           "name": "Ergon White",
           "price": 10500,
           "images": [
-            "/products/office/workstations chairs/ergon-white-p10500.png"
+            "/products/office/workstations chairs/ergon-white/ergon-white-p10500.png",
+            "/products/office/workstations chairs/ergon-white/ergon-white-side-p10500.png"
           ],
           "colors": [],
           "description": ""
@@ -6057,7 +6067,8 @@
           "name": "Flash Eco",
           "price": 7200,
           "images": [
-            "/products/office/workstations chairs/flash-eco-p7200.png"
+            "/products/office/workstations chairs/flash-eco/flash-eco-p7200.png",
+            "/products/office/workstations chairs/flash-eco/flash-eco-side-p7200.png"
           ],
           "colors": [],
           "description": ""
@@ -6067,7 +6078,8 @@
           "name": "Glaze",
           "price": 10000,
           "images": [
-            "/products/office/workstations chairs/glaze-p10000.png"
+            "/products/office/workstations chairs/glaze/glaze-p10000.png",
+            "/products/office/workstations chairs/glaze/glaze-side-p10000.png"
           ],
           "colors": [],
           "description": ""
@@ -6077,7 +6089,8 @@
           "name": "Glaze Seat Cushion",
           "price": 8000,
           "images": [
-            "/products/office/workstations chairs/glaze-seat-cushion-p8000.png"
+            "/products/office/workstations chairs/glaze-seat-cushion/glaze-seat-cushion-p8000.png",
+            "/products/office/workstations chairs/glaze-seat-cushion/glaze-seat-cushion-side-p8000.png"
           ],
           "colors": [],
           "description": ""
@@ -6087,7 +6100,8 @@
           "name": "Hexa",
           "price": 11500,
           "images": [
-            "/products/office/workstations chairs/hexa-p11500.png"
+            "/products/office/workstations chairs/hexa/hexa-p11500.png",
+            "/products/office/workstations chairs/hexa/hexa-side-p11500.png"
           ],
           "colors": [],
           "description": ""
@@ -6097,7 +6111,8 @@
           "name": "Jupiter",
           "price": 6300,
           "images": [
-            "/products/office/workstations chairs/jupiter-p6300.png"
+            "/products/office/workstations chairs/jupiter/jupiter-p6300.png",
+            "/products/office/workstations chairs/jupiter/jupiter-side-p6300.png"
           ],
           "colors": [],
           "description": ""
@@ -6107,7 +6122,8 @@
           "name": "Kabel",
           "price": 5500,
           "images": [
-            "/products/office/workstations chairs/kabel-p5500.png"
+            "/products/office/workstations chairs/kabel/kabel-p5500.png",
+            "/products/office/workstations chairs/kabel/kabel-side-p5500.png"
           ],
           "colors": [],
           "description": ""
@@ -6117,7 +6133,8 @@
           "name": "Karina Eco",
           "price": 7200,
           "images": [
-            "/products/office/workstations chairs/karina-eco-p7200.png"
+            "/products/office/workstations chairs/karina-eco/karina-eco-p7200.png",
+            "/products/office/workstations chairs/karina-eco/karina-eco-side-p7200.png"
           ],
           "colors": [],
           "description": ""
@@ -6127,7 +6144,8 @@
           "name": "Leo",
           "price": 5400,
           "images": [
-            "/products/office/workstations chairs/leo-p5400.png"
+            "/products/office/workstations chairs/leo/leo-p5400.png",
+            "/products/office/workstations chairs/leo/leo-side-p5400.png"
           ],
           "colors": [],
           "description": ""
@@ -6137,7 +6155,8 @@
           "name": "Lido",
           "price": 19450,
           "images": [
-            "/products/office/workstations chairs/lido-p19450.png"
+            "/products/office/workstations chairs/lido/lido-p19450.png",
+            "/products/office/workstations chairs/lido/lido-side-p19450.png"
           ],
           "colors": [],
           "description": ""
@@ -6147,7 +6166,8 @@
           "name": "Mono",
           "price": 5200,
           "images": [
-            "/products/office/workstations chairs/mono-p5200.png"
+            "/products/office/workstations chairs/mono/mono-p5200.png",
+            "/products/office/workstations chairs/mono/mono-side-p5200.png"
           ],
           "colors": [],
           "description": ""
@@ -6157,7 +6177,8 @@
           "name": "Mono White",
           "price": 6000,
           "images": [
-            "/products/office/workstations chairs/mono-white-p6000.png"
+            "/products/office/workstations chairs/mono-white/mono-white-p6000.png",
+            "/products/office/workstations chairs/mono-white/mono-white-side-p6000.png"
           ],
           "colors": [],
           "description": ""
@@ -6167,7 +6188,8 @@
           "name": "Norway",
           "price": 32000,
           "images": [
-            "/products/office/workstations chairs/norway-p32000.png"
+            "/products/office/workstations chairs/norway/norway-p32000.png",
+            "/products/office/workstations chairs/norway/norway-side-p32000.png"
           ],
           "colors": [],
           "description": ""
@@ -6177,7 +6199,8 @@
           "name": "Octa",
           "price": 8500,
           "images": [
-            "/products/office/workstations chairs/octa-p8500.png"
+            "/products/office/workstations chairs/octa/octa-p8500.png",
+            "/products/office/workstations chairs/octa/octa-side-p8500.png"
           ],
           "colors": [],
           "description": ""
@@ -6187,7 +6210,8 @@
           "name": "Octa Visitor",
           "price": 8500,
           "images": [
-            "/products/office/workstations chairs/octa-visitor-p8500.png"
+            "/products/office/workstations chairs/octa-visitor/octa-visitor-p8500.png",
+            "/products/office/workstations chairs/octa-visitor/octa-visitor-side-p8500.png"
           ],
           "colors": [],
           "description": ""
@@ -6197,7 +6221,8 @@
           "name": "Omega",
           "price": 10500,
           "images": [
-            "/products/office/workstations chairs/omega-p10500.png"
+            "/products/office/workstations chairs/omega/omega-p10500.png",
+            "/products/office/workstations chairs/omega/omega-side-p10500.png"
           ],
           "colors": [],
           "description": ""
@@ -6207,7 +6232,8 @@
           "name": "Pearl",
           "price": 13500,
           "images": [
-            "/products/office/workstations chairs/pearl-p13500.png"
+            "/products/office/workstations chairs/pearl/pearl-p13500.png",
+            "/products/office/workstations chairs/pearl/pearl-side-p13500.png"
           ],
           "colors": [],
           "description": ""
@@ -6217,7 +6243,8 @@
           "name": "Polo Eco",
           "price": 6700,
           "images": [
-            "/products/office/workstations chairs/polo-eco-p6700.png"
+            "/products/office/workstations chairs/polo-eco/polo-eco-p6700.png",
+            "/products/office/workstations chairs/polo-eco/polo-eco-side-p6700.png"
           ],
           "colors": [],
           "description": ""
@@ -6227,7 +6254,8 @@
           "name": "Queen Black",
           "price": 5700,
           "images": [
-            "/products/office/workstations chairs/queen-black-p5700.png"
+            "/products/office/workstations chairs/queen-black/queen-black-p5700.png",
+            "/products/office/workstations chairs/queen-black/queen-black-side-p5700.png"
           ],
           "colors": [],
           "description": ""
@@ -6237,7 +6265,8 @@
           "name": "Queen Pp",
           "price": 6000,
           "images": [
-            "/products/office/workstations chairs/queen-pp-p6000.png"
+            "/products/office/workstations chairs/queen-pp/queen-pp-p6000.png",
+            "/products/office/workstations chairs/queen-pp/queen-pp-side-p6000.png"
           ],
           "colors": [],
           "description": ""
@@ -6247,7 +6276,8 @@
           "name": "Queen Visitor",
           "price": 6600,
           "images": [
-            "/products/office/workstations chairs/queen-visitor-p6600.png"
+            "/products/office/workstations chairs/queen-visitor/queen-visitor-p6600.png",
+            "/products/office/workstations chairs/queen-visitor/queen-visitor-side-p6600.png"
           ],
           "colors": [],
           "description": ""
@@ -6257,7 +6287,8 @@
           "name": "Queen White",
           "price": 6700,
           "images": [
-            "/products/office/workstations chairs/queen-white-p6700.png"
+            "/products/office/workstations chairs/queen-white/queen-white-p6700.png",
+            "/products/office/workstations chairs/queen-white/queen-white-side-p6700.png"
           ],
           "colors": [],
           "description": ""
@@ -6267,7 +6298,8 @@
           "name": "Quest Eco",
           "price": 7200,
           "images": [
-            "/products/office/workstations chairs/quest-eco-p7200.png"
+            "/products/office/workstations chairs/quest-eco/quest-eco-p7200.png",
+            "/products/office/workstations chairs/quest-eco/quest-eco-side-p7200.png"
           ],
           "colors": [],
           "description": ""
@@ -6277,7 +6309,8 @@
           "name": "Sara",
           "price": 5500,
           "images": [
-            "/products/office/workstations chairs/sara-p5500.png"
+            "/products/office/workstations chairs/sara/sara-p5500.png",
+            "/products/office/workstations chairs/sara/sara-side-p5500.png"
           ],
           "colors": [],
           "description": ""
@@ -6287,7 +6320,8 @@
           "name": "Sara Pp",
           "price": 5800,
           "images": [
-            "/products/office/workstations chairs/sara-pp-p5800.png"
+            "/products/office/workstations chairs/sara-pp/sara-pp-p5800.png",
+            "/products/office/workstations chairs/sara-pp/sara-pp-side-p5800.png"
           ],
           "colors": [],
           "description": ""
@@ -6297,7 +6331,8 @@
           "name": "Sara White",
           "price": 6500,
           "images": [
-            "/products/office/workstations chairs/sara-white-p6500.png"
+            "/products/office/workstations chairs/sara-white/sara-white-p6500.png",
+            "/products/office/workstations chairs/sara-white/sara-white-side-p6500.png"
           ],
           "colors": [],
           "description": ""
@@ -6307,7 +6342,8 @@
           "name": "Sleek Visitor",
           "price": 10500,
           "images": [
-            "/products/office/workstations chairs/sleek-visitor-p10500.png"
+            "/products/office/workstations chairs/sleek-visitor/sleek-visitor-p10500.png",
+            "/products/office/workstations chairs/sleek-visitor/sleek-visitor-side-p10500.png"
           ],
           "colors": [],
           "description": ""
@@ -6317,7 +6353,8 @@
           "name": "Smart",
           "price": 17500,
           "images": [
-            "/products/office/workstations chairs/smart-p17500.png"
+            "/products/office/workstations chairs/smart/smart-p17500.png",
+            "/products/office/workstations chairs/smart/smart-side-p17500.png"
           ],
           "colors": [],
           "description": ""
@@ -6327,7 +6364,8 @@
           "name": "Smile Cush Eco",
           "price": 6700,
           "images": [
-            "/products/office/workstations chairs/smile-cush-eco-p6700.png"
+            "/products/office/workstations chairs/smile-cush-eco/smile-cush-eco-p6700.png",
+            "/products/office/workstations chairs/smile-cush-eco/smile-cush-eco-side-p6700.png"
           ],
           "colors": [],
           "description": ""
@@ -6337,7 +6375,8 @@
           "name": "Smile Eco",
           "price": 6100,
           "images": [
-            "/products/office/workstations chairs/smile-eco-p6100.png"
+            "/products/office/workstations chairs/smile-eco/smile-eco-p6100.png",
+            "/products/office/workstations chairs/smile-eco/smile-eco-side-p6100.png"
           ],
           "colors": [],
           "description": ""
@@ -6347,7 +6386,8 @@
           "name": "Smile",
           "price": 6700,
           "images": [
-            "/products/office/workstations chairs/smile-p6700.png"
+            "/products/office/workstations chairs/smile/smile-p6700.png",
+            "/products/office/workstations chairs/smile/smile-side-p6700.png"
           ],
           "colors": [],
           "description": ""
@@ -6357,7 +6397,8 @@
           "name": "Sweety",
           "price": 8500,
           "images": [
-            "/products/office/workstations chairs/sweety-p8500.png"
+            "/products/office/workstations chairs/sweety/sweety-p8500.png",
+            "/products/office/workstations chairs/sweety/sweety-side-p8500.png"
           ],
           "colors": [],
           "description": ""
@@ -6367,7 +6408,8 @@
           "name": "Time Black",
           "price": 7000,
           "images": [
-            "/products/office/workstations chairs/time-black-p7000.png"
+            "/products/office/workstations chairs/time-black/time-black-p7000.png",
+            "/products/office/workstations chairs/time-black/time-black-side-p7000.png"
           ],
           "colors": [],
           "description": ""
@@ -6377,7 +6419,8 @@
           "name": "Time Grey",
           "price": 8000,
           "images": [
-            "/products/office/workstations chairs/time-grey-p8000.png"
+            "/products/office/workstations chairs/time-grey/time-grey-p8000.png",
+            "/products/office/workstations chairs/time-grey/time-grey-side-p8000.png"
           ],
           "colors": [],
           "description": ""
@@ -6387,7 +6430,8 @@
           "name": "Trio Black",
           "price": 10250,
           "images": [
-            "/products/office/workstations chairs/trio-black-p10250.png"
+            "/products/office/workstations chairs/trio-black/trio-black-p10250.png",
+            "/products/office/workstations chairs/trio-black/trio-black-side-p10250.png"
           ],
           "colors": [],
           "description": ""
@@ -6397,7 +6441,8 @@
           "name": "Trio",
           "price": 11500,
           "images": [
-            "/products/office/workstations chairs/trio-p11500.png"
+            "/products/office/workstations chairs/trio/trio-p11500.png",
+            "/products/office/workstations chairs/trio/trio-side-p11500.png"
           ],
           "colors": [],
           "description": ""
@@ -6407,7 +6452,8 @@
           "name": "Troy",
           "price": 10000,
           "images": [
-            "/products/office/workstations chairs/troy-p10000.png"
+            "/products/office/workstations chairs/troy/troy-p10000.png",
+            "/products/office/workstations chairs/troy/troy-side-p10000.png"
           ],
           "colors": [],
           "description": ""
@@ -6417,7 +6463,8 @@
           "name": "Vista Black",
           "price": 7200,
           "images": [
-            "/products/office/workstations chairs/vista-black-p7200.png"
+            "/products/office/workstations chairs/vista-black/vista-black-p7200.png",
+            "/products/office/workstations chairs/vista-black/vista-black-side-p7200.png"
           ],
           "colors": [],
           "description": ""
@@ -6427,7 +6474,8 @@
           "name": "Vitro Black",
           "price": 7500,
           "images": [
-            "/products/office/workstations chairs/vitro-black-p7500.png"
+            "/products/office/workstations chairs/vitro-black/vitro-black-p7500.png",
+            "/products/office/workstations chairs/vitro-black/vitro-black-side-p7500.png"
           ],
           "colors": [],
           "description": ""
@@ -6437,7 +6485,8 @@
           "name": "Vitro",
           "price": 8500,
           "images": [
-            "/products/office/workstations chairs/vitro-p8500.png"
+            "/products/office/workstations chairs/vitro/vitro-p8500.png",
+            "/products/office/workstations chairs/vitro/vitro-side-p8500.png"
           ],
           "colors": [],
           "description": ""
@@ -6447,7 +6496,8 @@
           "name": "Winner Black",
           "price": 13750,
           "images": [
-            "/products/office/workstations chairs/winner-black-p13750.png"
+            "/products/office/workstations chairs/winner-black/winner-black-p13750.png",
+            "/products/office/workstations chairs/winner-black/winner-black-side-p13750.png"
           ],
           "colors": [],
           "description": ""
@@ -6457,7 +6507,8 @@
           "name": "Winner Grey",
           "price": 14250,
           "images": [
-            "/products/office/workstations chairs/winner-grey-p14250.png"
+            "/products/office/workstations chairs/winner-grey/winner-grey-p14250.png",
+            "/products/office/workstations chairs/winner-grey/winner-grey-side-p14250.png"
           ],
           "colors": [],
           "description": ""
@@ -6467,7 +6518,8 @@
           "name": "Zen",
           "price": 8000,
           "images": [
-            "/products/office/workstations chairs/zen-p8000.png"
+            "/products/office/workstations chairs/zen/zen-p8000.png",
+            "/products/office/workstations chairs/zen/zen-side-p8000.png"
           ],
           "colors": [],
           "description": ""
