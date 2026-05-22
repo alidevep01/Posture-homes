@@ -2500,9 +2500,9 @@
           "description": ""
         },
         {
-          "slug": "stripe-3600",
-          "name": "Stripe=3600",
-          "price": null,
+          "slug": "stripe",
+          "name": "Stripe",
+          "price": 3600,
           "images": [
             "/products/office/cafe series/stripe/stripe-front-p3600.jpeg",
             "/products/office/cafe series/stripe/stripe-side.jpeg"
