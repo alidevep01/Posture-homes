@@ -211,6 +211,11 @@ function ProductDetailPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-amber-700">
                 {category.label}
               </p>
+              {item.executiveChairTypeLabel ? (
+                <span className="mt-3 inline-flex w-fit rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-amber-800">
+                  {item.executiveChairTypeLabel}
+                </span>
+              ) : null}
               <h1 className="mt-3 text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl">
                 {item.name}
               </h1>

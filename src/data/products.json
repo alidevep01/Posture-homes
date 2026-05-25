@@ -4997,6 +4997,16 @@
           "description": ""
         },
         {
+          "slug": "phantom",
+          "name": "Phantom",
+          "price": 68000,
+          "images": [
+            "/products/office/Premium Leather Office Chairs/Phantom/phantom-p68000.png"
+          ],
+          "colors": [],
+          "description": ""
+        },
+        {
           "slug": "venice",
           "name": "Venice",
           "price": 16000,

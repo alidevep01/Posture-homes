@@ -11,6 +11,13 @@ import SectionReveal from '../components/SectionReveal'
 import { getCategory, sectionFromCategorySlug } from '../data/productsData'
 
 const PAGE_SIZE = 12
+const EXECUTIVE_CHAIR_FILTERS = [
+  { value: 'all', label: 'All' },
+  { value: 'cushion', label: 'Cushion' },
+  { value: 'mesh', label: 'Mesh' },
+  { value: 'premium-leather', label: 'Premium Leather' },
+  { value: 'pu', label: 'PU' },
+] as const
 
 function formatPrice(price: number | null): string {
   if (price === null) return 'Price on request'
@@ -27,16 +34,23 @@ function ProductListingPage() {
 
   const page = Math.max(1, parseInt(searchParams.get('page') ?? '1', 10))
   const query = searchParams.get('q') ?? ''
+  const executiveChairType = searchParams.get('type') ?? 'all'
 
   const section = sectionFromCategorySlug(categorySlug ?? '')
   const category = section && subCategorySlug ? getCategory(section, subCategorySlug) : undefined
+  const isExecutiveChairCategory = category?.slug === 'executive-chairs'
 
   const filteredItems = useMemo(() => {
     if (!category) return []
-    if (!query.trim()) return category.items
+    const items =
+      isExecutiveChairCategory && executiveChairType !== 'all'
+        ? category.items.filter((item) => item.executiveChairType === executiveChairType)
+        : category.items
+
+    if (!query.trim()) return items
     const lower = query.toLowerCase()
-    return category.items.filter((item) => item.name.toLowerCase().includes(lower))
-  }, [category, query])
+    return items.filter((item) => item.name.toLowerCase().includes(lower))
+  }, [category, executiveChairType, isExecutiveChairCategory, query])
 
   const totalPages = Math.ceil(filteredItems.length / PAGE_SIZE)
   const pageItems = filteredItems.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
@@ -51,7 +65,29 @@ function ProductListingPage() {
   }
 
   function handleSearch(value: string) {
-    setSearchParams(value.trim() ? { q: value } : {})
+    setSearchParams((prev) => {
+      const next = new URLSearchParams(prev)
+      next.delete('page')
+      if (value.trim()) {
+        next.set('q', value)
+      } else {
+        next.delete('q')
+      }
+      return next
+    })
+  }
+
+  function handleExecutiveChairFilter(value: string) {
+    setSearchParams((prev) => {
+      const next = new URLSearchParams(prev)
+      next.delete('page')
+      if (value === 'all') {
+        next.delete('type')
+      } else {
+        next.set('type', value)
+      }
+      return next
+    })
   }
 
   if (!section || !category) {
@@ -60,6 +96,7 @@ function ProductListingPage() {
 
   const backPath = `/products/${categorySlug}`
   const basePath = `/products/${categorySlug}/${subCategorySlug}`
+  const detailQuery = searchParams.toString()
 
   return (
     <main className="bg-[#fafafa]">
@@ -107,9 +144,9 @@ function ProductListingPage() {
         </div>
       </section>
 
-      {/* Search */}
+      {/* Search and filters */}
       <div className="border-b border-slate-200 bg-white px-6 py-4">
-        <div className="mx-auto max-w-none">
+        <div className="mx-auto flex max-w-none flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <div className="relative max-w-sm">
             <Search className="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
             <input
@@ -120,6 +157,31 @@ function ProductListingPage() {
               className="w-full rounded-full border border-slate-200 bg-[#fafafa] py-2.5 pl-10 pr-4 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-slate-900"
             />
           </div>
+          {isExecutiveChairCategory ? (
+            <div
+              className="flex flex-wrap gap-2"
+              role="group"
+              aria-label="Filter executive chairs by type"
+            >
+              {EXECUTIVE_CHAIR_FILTERS.map((filter) => {
+                const isActive = executiveChairType === filter.value
+                return (
+                  <button
+                    key={filter.value}
+                    type="button"
+                    onClick={() => handleExecutiveChairFilter(filter.value)}
+                    className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${
+                      isActive
+                        ? 'border-slate-900 bg-slate-900 text-white'
+                        : 'border-slate-200 bg-[#fafafa] text-slate-600 hover:border-slate-900 hover:text-slate-950'
+                    }`}
+                  >
+                    {filter.label}
+                  </button>
+                )
+              })}
+            </div>
+          ) : null}
         </div>
       </div>
 
@@ -135,7 +197,7 @@ function ProductListingPage() {
               {pageItems.map((item) => (
                 <Link
                   key={`${item.slug}-${item.images[0] ?? item.name}`}
-                  to={`${basePath}/${item.slug}`}
+                  to={`${basePath}/${item.slug}${detailQuery ? `?${detailQuery}` : ''}`}
                   className="group flex h-full flex-col bg-white text-center"
                 >
                   <div className="relative flex aspect-[11/12] w-full shrink-0 items-center justify-center overflow-hidden bg-white">
@@ -155,6 +217,11 @@ function ProductListingPage() {
                     )}
                   </div>
                   <div className="flex min-h-[86px] flex-col items-center px-2 pt-3">
+                    {item.executiveChairTypeLabel ? (
+                      <span className="mb-2 rounded-full border border-amber-200 bg-amber-50 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-amber-800">
+                        {item.executiveChairTypeLabel}
+                      </span>
+                    ) : null}
                     <h2 className="line-clamp-2 max-w-full text-base font-semibold leading-snug tracking-wide text-slate-950 transition group-hover:text-amber-800">
                       {item.name}
                     </h2>

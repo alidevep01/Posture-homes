@@ -7,6 +7,8 @@ export type ProductItem = {
   images: string[]
   colors: string[]
   description: string
+  executiveChairType?: 'cushion' | 'mesh' | 'premium-leather' | 'pu'
+  executiveChairTypeLabel?: string
 }
 
 export type ProductCategory = {
@@ -20,7 +22,86 @@ export type ProductSection = 'home' | 'office'
 
 const data = rawData as { home: ProductCategory[]; office: ProductCategory[] }
 
+const EXECUTIVE_CHAIR_CATEGORY_SLUGS = [
+  'high-back-cushion-chairs',
+  'high-back-mesh-chairs',
+  'premium-leather-office-chairs',
+  'pu-office-chairs',
+] as const
+
+const executiveChairTypeByCategory: Record<
+  (typeof EXECUTIVE_CHAIR_CATEGORY_SLUGS)[number],
+  NonNullable<ProductItem['executiveChairType']>
+> = {
+  'high-back-cushion-chairs': 'cushion',
+  'high-back-mesh-chairs': 'mesh',
+  'premium-leather-office-chairs': 'premium-leather',
+  'pu-office-chairs': 'pu',
+}
+
+const executiveChairTypeLabels: Record<
+  NonNullable<ProductItem['executiveChairType']>,
+  string
+> = {
+  cushion: 'Cushion',
+  mesh: 'Mesh',
+  'premium-leather': 'Premium Leather',
+  pu: 'PU',
+}
+
+const executiveChairSourceSlugs = new Set<string>(EXECUTIVE_CHAIR_CATEGORY_SLUGS)
+
+function buildExecutiveChairCategory(): ProductCategory {
+  const sourceCategories = data.office.filter((category) =>
+    executiveChairSourceSlugs.has(category.slug),
+  )
+
+  const items = sourceCategories.flatMap((category) => {
+    const type = executiveChairTypeByCategory[
+      category.slug as (typeof EXECUTIVE_CHAIR_CATEGORY_SLUGS)[number]
+    ]
+    const typeLabel = executiveChairTypeLabels[type]
+
+    return category.items.map((item) => ({
+      ...item,
+      slug: `${type}-${item.slug}`,
+      name: item.name.includes(typeLabel) ? item.name : `${item.name} ${typeLabel}`,
+      executiveChairType: type,
+      executiveChairTypeLabel: typeLabel,
+    }))
+  })
+
+  return {
+    slug: 'executive-chairs',
+    label: 'Executive Chairs',
+    coverImage:
+      sourceCategories.find((category) => category.slug === 'premium-leather-office-chairs')
+        ?.coverImage ??
+      sourceCategories[0]?.coverImage ??
+      null,
+    items,
+  }
+}
+
 export function getCategories(section: ProductSection): ProductCategory[] {
+  if (section === 'office') {
+    const categories = data.office.filter(
+      (category) => !executiveChairSourceSlugs.has(category.slug),
+    )
+    const executiveChairCategory = buildExecutiveChairCategory()
+    const insertIndex = categories.findIndex((category) =>
+      category.label.localeCompare(executiveChairCategory.label) > 0
+    )
+
+    if (insertIndex === -1) return [...categories, executiveChairCategory]
+
+    return [
+      ...categories.slice(0, insertIndex),
+      executiveChairCategory,
+      ...categories.slice(insertIndex),
+    ]
+  }
+
   return data[section]
 }
 
