@@ -25,13 +25,19 @@ function ImageWithLoader({
   ...imgProps
 }: ImageWithLoaderProps) {
   const imageRef = useRef<HTMLImageElement | null>(null);
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [hasError, setHasError] = useState(false);
+  const [imageState, setImageState] = useState<{
+    src: string | undefined;
+    isLoaded: boolean;
+    hasError: boolean;
+  }>({
+    src: undefined,
+    isLoaded: false,
+    hasError: false,
+  });
 
-  useEffect(() => {
-    setIsLoaded(false);
-    setHasError(false);
-  }, [src]);
+  const isCurrentImage = imageState.src === src;
+  const isLoaded = isCurrentImage && imageState.isLoaded;
+  const hasError = isCurrentImage && imageState.hasError;
 
   useEffect(() => {
     const image = imageRef.current;
@@ -40,15 +46,33 @@ function ImageWithLoader({
       return;
     }
 
-    if (image.complete) {
-      if (image.naturalWidth > 0) {
-        setIsLoaded(true);
-        setHasError(false);
-      } else {
-        setHasError(true);
-        setIsLoaded(true);
-      }
+    if (!image.complete) {
+      return;
     }
+
+    let isActive = true;
+
+    const updateCompletedImage = () => {
+      if (!isActive) {
+        return;
+      }
+
+      if (image.naturalWidth > 0) {
+        setImageState({ src, isLoaded: true, hasError: false });
+      } else {
+        setImageState({ src, isLoaded: true, hasError: true });
+      }
+    };
+
+    if (image.naturalWidth > 0 && "decode" in image) {
+      image.decode().then(updateCompletedImage, updateCompletedImage);
+    } else {
+      window.queueMicrotask(updateCompletedImage);
+    }
+
+    return () => {
+      isActive = false;
+    };
   }, [src]);
 
   const showSpinner = Boolean(src) && !isLoaded && !hasError;
@@ -73,12 +97,11 @@ function ImageWithLoader({
         src={src}
         alt={alt}
         onLoad={(event) => {
-          setIsLoaded(true);
+          setImageState({ src, isLoaded: true, hasError: false });
           onLoad?.(event);
         }}
         onError={(event) => {
-          setHasError(true);
-          setIsLoaded(true);
+          setImageState({ src, isLoaded: true, hasError: true });
           onError?.(event);
         }}
         className={[

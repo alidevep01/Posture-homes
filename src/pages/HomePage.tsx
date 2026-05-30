@@ -1,6 +1,7 @@
 import CategoryGridSection from "../sections/CategoryGridSection";
 import ContactSection from "../sections/ContactSection";
 import AboutSection from "../sections/AboutSection";
+import MilestoneTickerSection from "../sections/MilestoneTickerSection";
 import Seo from "../components/Seo";
 
 function HomePage() {
@@ -22,6 +23,7 @@ function HomePage() {
       <CategoryGridSection revealMode="footer" />
       <ContactSection revealMode="footer" />
       <AboutSection revealMode="footer" />
+      <MilestoneTickerSection revealMode="footer" />
     </main>
   );
 }
