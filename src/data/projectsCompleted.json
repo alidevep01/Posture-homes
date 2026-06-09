@@ -1,0 +1,710 @@
+[
+  {
+    "slug": "apple",
+    "name": "Apple",
+    "media": [
+      {
+        "src": "/projects-completed/apple/1.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/apple/2.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/apple/3.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/apple/4.mp4",
+        "type": "video"
+      },
+      {
+        "src": "/projects-completed/apple/5.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/apple/6.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/apple/7.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/apple/8.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/apple/9.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/apple/10.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/apple/11.jpg",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "slug": "cbit",
+    "name": "CBIT",
+    "media": [
+      {
+        "src": "/projects-completed/cbit/1.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/cbit/2.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/cbit/3.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/cbit/4.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/cbit/5.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/cbit/6.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/cbit/7.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/cbit/8.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/cbit/9.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/cbit/10.jpg",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "slug": "curia",
+    "name": "Curia",
+    "media": [
+      {
+        "src": "/projects-completed/curia/1.webp",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/curia/2.webp",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/curia/3.webp",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/curia/4.webp",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/curia/5.webp",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/curia/6.mp4",
+        "type": "video"
+      },
+      {
+        "src": "/projects-completed/curia/7.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/curia/8.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/curia/9.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/curia/10.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/curia/11.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/curia/12.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/curia/13.jpg",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "slug": "dev-x-coworking",
+    "name": "DevX Coworking",
+    "media": [
+      {
+        "src": "/projects-completed/dev-x-coworking/20220531_143552.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/dev-x-coworking/20220531_143558.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/dev-x-coworking/20220531_143604.jpg",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "slug": "eb1a-experts",
+    "name": "EB1A Experts",
+    "media": [
+      {
+        "src": "/projects-completed/eb1a-experts/20250827_153957.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/eb1a-experts/20250827_154012.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/eb1a-experts/20250827_155045.mp4",
+        "type": "video"
+      },
+      {
+        "src": "/projects-completed/eb1a-experts/20250827_155129.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/eb1a-experts/20250827_155217.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/eb1a-experts/20250827_155301.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/eb1a-experts/20250827_155310.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/eb1a-experts/20250827_155322.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/eb1a-experts/20250827_155346.mp4",
+        "type": "video"
+      },
+      {
+        "src": "/projects-completed/eb1a-experts/20250827_155521.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/eb1a-experts/20250827_155526.jpg",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "slug": "eka-one",
+    "name": "EKA One",
+    "media": [
+      {
+        "src": "/projects-completed/eka-one/20250419_180218.mp4",
+        "type": "video"
+      },
+      {
+        "src": "/projects-completed/eka-one/20250419_180455.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/eka-one/20250419_180545.mp4",
+        "type": "video"
+      }
+    ]
+  },
+  {
+    "slug": "fitness-9-gym",
+    "name": "Fitness 9 Gym",
+    "media": [
+      {
+        "src": "/projects-completed/fitness-9-gym/20260129_194108.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/fitness-9-gym/20260129_194122.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/fitness-9-gym/20260129_195334.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/fitness-9-gym/20260129_195413.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/fitness-9-gym/20260129_195427.jpg",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "slug": "inspiredge",
+    "name": "Inspira Enterprise",
+    "media": [
+      {
+        "src": "/projects-completed/inspiredge/20221229_122437.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/inspiredge/20221229_122451.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/inspiredge/20221229_122505.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/inspiredge/20221229_122511.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/inspiredge/20221229_122513.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/inspiredge/20221229_122627.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/inspiredge/20221229_122633.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/inspiredge/20221229_123414.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/inspiredge/20221229_123430.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/inspiredge/20221229_123517.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/inspiredge/20221229_123520.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/inspiredge/20221229_123549.jpg",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "slug": "invoice-cloud",
+    "name": "Invoice Cloud",
+    "media": [
+      {
+        "src": "/projects-completed/invoice-cloud/2-5.webp",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/invoice-cloud/4-4.webp",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/invoice-cloud/5-scaled.webp",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/invoice-cloud/6-1.webp",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "slug": "jito-hyderabad",
+    "name": "JITO Hyderabad",
+    "media": [
+      {
+        "src": "/projects-completed/jito-hyderabad/20250406_094444.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/jito-hyderabad/20250406_094452.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/jito-hyderabad/20250406_094459.mp4",
+        "type": "video"
+      },
+      {
+        "src": "/projects-completed/jito-hyderabad/20250406_094700.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/jito-hyderabad/20250406_094756.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/jito-hyderabad/20250406_115205.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/jito-hyderabad/20250406_115209.jpg",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "slug": "kapil-business-center",
+    "name": "Kapil Business Center",
+    "media": [
+      {
+        "src": "/projects-completed/kapil-business-center/20260522_114616.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kapil-business-center/20260522_114619.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kapil-business-center/20260522_114623.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kapil-business-center/20260522_114627.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kapil-business-center/20260522_114633.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kapil-business-center/20260522_114659.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kapil-business-center/20260522_114701.jpg",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "slug": "kothari-group",
+    "name": "Kothari Group",
+    "media": [
+      {
+        "src": "/projects-completed/kothari-group/20221028_135148.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kothari-group/20221028_135214.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kothari-group/20221028_135652.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kothari-group/20221028_135743.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kothari-group/20221028_135843.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kothari-group/20221028_140030.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kothari-group/20221028_140043.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kothari-group/20221028_140146.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kothari-group/20221028_140150.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kothari-group/20221028_140424.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kothari-group/20221028_140431.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kothari-group/20221028_140552.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kothari-group/20221028_140623.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kothari-group/20221028_140657.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kothari-group/20221028_140845.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kothari-group/20221028_140858.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/kothari-group/20221028_140923.jpg",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "slug": "manika-exports",
+    "name": "Manika Exports",
+    "media": [
+      {
+        "src": "/projects-completed/manika-exports/20260514_125227.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/manika-exports/20260514_125303.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/manika-exports/20260514_125319.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/manika-exports/20260514_125342.jpg",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "slug": "oremus",
+    "name": "Oremus",
+    "media": [
+      {
+        "src": "/projects-completed/oremus/20220918_140537.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20220918_142647.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20220918_142711.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20220921_120855.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20220921_120903.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20220929_102026.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20220929_102050.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20220929_102052.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230419_142850.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230419_142905.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230419_142915.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230419_143113.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230419_143136.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230419_143319.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230419_143418.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230419_143629.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230419_143655.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230419_143741.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230419_143747.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230619_195226.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230619_195238.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230619_195243.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230619_195428.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230619_195619.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230619_195735.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230619_195738.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230619_195738(1).jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230619_195852.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230619_200010.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230619_200027.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230619_200114.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230619_200124.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/oremus/20230619_200215.jpg",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "slug": "samasrti-internatinoal-school",
+    "name": "Samashti International School",
+    "media": [
+      {
+        "src": "/projects-completed/samasrti-internatinoal-school/20221229_161609.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/samasrti-internatinoal-school/20221229_161623.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/samasrti-internatinoal-school/20221229_161627.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/samasrti-internatinoal-school/20221229_164641.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/samasrti-internatinoal-school/20221229_164653.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/samasrti-internatinoal-school/20221229_171206.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/samasrti-internatinoal-school/20221229_171217.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/samasrti-internatinoal-school/20221229_171240.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/samasrti-internatinoal-school/20221229_175351.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/samasrti-internatinoal-school/20221229_175522.jpg",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "slug": "vinati-jewellers",
+    "name": "Vinati Jewellers",
+    "media": [
+      {
+        "src": "/projects-completed/vinati-jewellers/20230619_195209.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/vinati-jewellers/20230619_195238.jpg",
+        "type": "image"
+      },
+      {
+        "src": "/projects-completed/vinati-jewellers/20230619_195243.jpg",
+        "type": "image"
+      }
+    ]
+  }
+]

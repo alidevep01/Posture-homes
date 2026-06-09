@@ -3,6 +3,7 @@ import ContactSection from "../sections/ContactSection";
 import AboutSection from "../sections/AboutSection";
 import MilestoneTickerSection from "../sections/MilestoneTickerSection";
 import Seo from "../components/Seo";
+import CompletedProjectsPreviewSection from "../sections/CompletedProjectsPreviewSection";
 
 function HomePage() {
   return (
@@ -21,6 +22,7 @@ function HomePage() {
         ]}
       />
       <CategoryGridSection revealMode="footer" />
+      <CompletedProjectsPreviewSection />
       <ContactSection revealMode="footer" />
       <AboutSection revealMode="footer" />
       <MilestoneTickerSection revealMode="footer" />

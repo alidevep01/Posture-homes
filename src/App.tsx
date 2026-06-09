@@ -15,6 +15,8 @@ const ProductCategoryPage = lazy(() => import('./pages/ProductCategoryPage'))
 const ProductListingPage = lazy(() => import('./pages/ProductListingPage'))
 const ProductDetailPage = lazy(() => import('./pages/ProductDetailPage'))
 const SourcingPage = lazy(() => import('./pages/SourcingPage'))
+const ProjectsPage = lazy(() => import('./pages/ProjectsPage'))
+const ProjectDetailPage = lazy(() => import('./pages/ProjectDetailPage'))
 
 function SectionFallback() {
   return <div className="min-h-24" aria-hidden="true" />
@@ -35,6 +37,8 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/legal" element={<LegalPage />} />
             <Route path="/sourcing" element={<SourcingPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/projects/:projectSlug" element={<ProjectDetailPage />} />
             <Route
               path="/products/:categorySlug"
               element={<ProductCategoryPage />}

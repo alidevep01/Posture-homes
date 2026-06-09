@@ -21,6 +21,7 @@ const footerLinks = [
   { label: "Home Furniture", href: "/products/home-furniture" },
   { label: "Office Furniture", href: "/products/office-furniture" },
   { label: "Sourcing", href: "/sourcing" },
+  { label: "Projects", href: "/projects" },
   { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
 ] as const;
