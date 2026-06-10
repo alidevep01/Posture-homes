@@ -17,7 +17,7 @@ function formatClientName(slug) {
     "eb1a-experts": "EB1A Experts",
     "eka-one": "EKA One",
     "fitness-9-gym": "Fitness 9 Gym",
-    inspiredge: "Inspira Enterprise",
+    inspiredge: "Inspire Edge",
     "invoice-cloud": "Invoice Cloud",
     "jito-hyderabad": "JITO Hyderabad",
     "kapil-business-center": "Kapil Business Center",
