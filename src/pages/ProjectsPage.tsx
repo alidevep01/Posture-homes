@@ -2,11 +2,6 @@ import ProjectCoverCard from "../components/ProjectCoverCard";
 import Seo from "../components/Seo";
 import { completedProjects } from "../data/projectsCompleted";
 
-const mediaCount = completedProjects.reduce(
-  (total, project) => total + project.media.length,
-  0,
-);
-
 function ProjectsPage() {
   return (
     <main className="bg-[#fafafa]">
